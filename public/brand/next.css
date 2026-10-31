@@ -22,11 +22,6 @@ html[data-branding="next"] {
   --gd-olive: #6e9a34;
   --gd-ink: #2c2c2c;
   --gd-light-ink: #f5f5f5;
-  /* What sits behind a wordmark: the selection handles are filled with it. */
-  --gd-tile: #ffffff;
-}
-html[data-branding="next"][data-gd-theme="dark"] {
-  --gd-tile: #3a3a3a;
 }
 
 /* The loading screen (the mark on ink instead of the old pink) is inline
@@ -42,15 +37,15 @@ html[data-branding="next"][data-gd-theme="dark"] {
 }
 .gd-lockup .gd-mark {
   flex: none;
-  width: 48px;
-  height: 48px;
+  width: 56px;
+  height: 56px;
 }
 .gd-word {
   display: inline-flex;
   align-items: baseline;
   white-space: nowrap;
   font-family: "Manrope", system-ui, sans-serif;
-  font-size: 19px;
+  font-size: 34px;
   letter-spacing: -0.02em;
   line-height: 1.2;
 }
@@ -58,47 +53,12 @@ html[data-branding="next"][data-gd-theme="dark"] {
   font-weight: 800;
 }
 .gd-word > span {
-  font-weight: 400;
-}
-.gd-word > .gd-next {
-  position: relative;
-  margin-left: 12px;
-  padding: 0 5px;
-  align-self: center;
-  border: 1.5px solid var(--gd-magenta);
-  color: var(--gd-magenta);
-  font-weight: 600;
-  letter-spacing: -0.01em;
-  line-height: 1.25;
-}
-.gd-word .gd-handle {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background: var(--gd-tile);
-  border: 1.5px solid var(--gd-magenta);
-}
-.gd-word .gd-tl {
-  left: -5px;
-  top: -5px;
-}
-.gd-word .gd-tr {
-  right: -5px;
-  top: -5px;
-}
-.gd-word .gd-bl {
-  left: -5px;
-  bottom: -5px;
-}
-.gd-word .gd-br {
-  right: -5px;
-  bottom: -5px;
+  font-weight: 300;
 }
 
 /* ---- Welcome screen: the brand panel instead of the pink gradient. ---- */
 
 html[data-branding="next"] .g-dialog.g-new-document-dialog > .g-dialog-content > .sidebar {
-  --gd-tile: var(--gd-ink);
   background-color: var(--gd-ink);
   background-image: none;
   color: var(--gd-light-ink);
@@ -243,8 +203,11 @@ html[data-branding="next"] #header > .section.menu {
   margin-bottom: 18px;
 }
 .gd-intro .gd-intro-lockup .gd-mark {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
+}
+.gd-intro .gd-intro-lockup .gd-word {
+  font-size: 30px;
 }
 .gd-intro .gd-intro-title {
   margin: 0 0 10px;

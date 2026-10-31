@@ -1,7 +1,7 @@
 /**
  * The Gravit Next mark and wordmark (public/brand/mark.svg drawn
- * inline; it has the same colours on light and dark). The wordmark is "Gravit" bold and "Next" in a
- * selection box with four corner handles; next.css styles it.
+ * inline; it has the same colours on light and dark). The wordmark is "gravit" bold and "next" light,
+ * lower case, in the colour of the text around it; next.css styles it.
  */
 import { useId, type ReactNode } from "react";
 
@@ -60,18 +60,12 @@ export function BrandMark({ className = "gd-mark" }: { className?: string }): Re
   );
 }
 
-/** "Gravit" [Next]: the wordmark, as text (Manrope, next.css). */
+/** "gravit" bold and "next" light, as text (Manrope, next.css). */
 export function BrandWordmark(): ReactNode {
   return (
     <span className="gd-word" aria-label="Gravit Next">
-      <b>Gravit</b>
-      <span className="gd-next">
-        Next
-        <span className="gd-handle gd-tl" />
-        <span className="gd-handle gd-tr" />
-        <span className="gd-handle gd-bl" />
-        <span className="gd-handle gd-br" />
-      </span>
+      <b>gravit</b>
+      <span>next</span>
     </span>
   );
 }

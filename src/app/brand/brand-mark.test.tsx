@@ -41,13 +41,11 @@ describe("brand mark", () => {
     expect(shapes(renderToStaticMarkup(<BrandMark />))).toEqual(shapes(file));
   });
 
-  it("lays out the wordmark: Gravit bold, Next in a box with four handles", () => {
+  it("lays out the wordmark: gravit bold and next light, lower case, no box", () => {
     const html = renderToStaticMarkup(<BrandLockup className="x" />);
     expect(html).toMatch(/^<div class="gd-lockup x"><svg class="gd-mark"/);
     expect(html).toContain(
-      '<span class="gd-word" aria-label="Gravit Next"><b>Gravit</b>' +
-        '<span class="gd-next">Next<span class="gd-handle gd-tl"></span><span class="gd-handle gd-tr"></span>' +
-        '<span class="gd-handle gd-bl"></span><span class="gd-handle gd-br"></span></span></span></div>',
+      '<span class="gd-word" aria-label="Gravit Next"><b>gravit</b><span>next</span></span></div>',
     );
   });
 });

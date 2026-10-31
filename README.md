@@ -1,9 +1,11 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/readme/banner-dark.png" />
-    <img src="docs/readme/banner-light.png" alt="Gravit Next" width="820" />
+    <source media="(prefers-color-scheme: dark)" srcset="docs/readme/logo-dark.png" />
+    <img src="docs/readme/logo-light.png" alt="Gravit Next" width="460" />
   </picture>
 </p>
+
+<p align="center">A free, offline vector design app that opens your Gravit Designer files.</p>
 
 <p align="center">
   <a href="https://github.com/GravitDesign/designer/releases"><img src="https://img.shields.io/badge/download-desktop%20app-E3136B?style=flat-square" alt="Download the desktop app" /></a>
