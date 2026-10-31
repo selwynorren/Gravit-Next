@@ -1,4 +1,4 @@
-// The worker half of the JPEG handshake (BUG-008): size request, then the
+// The worker half of the JPEG handshake: size request, then the
 // full RGBA pixels, turned into the JPEG's own components.
 import fs from "node:fs";
 import path from "node:path";
@@ -139,7 +139,7 @@ describe("DCTDecode", () => {
       `${ascii85(jpeg)}~>\npop dump\n`;
     const { interpreter, messages } = start(() => TINY, program, 1000);
     interpreter.run();
-    // dump fills a rectangle as wide as each byte (BUG-112): its second
+    // dump fills a rectangle as wide as each byte: its second
     // corner's x under the default CTM.
     return messages
       .filter((m) => m.func === "fill")

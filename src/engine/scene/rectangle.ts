@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 73 (GRectangle).
 /**
  * The rectangle, node "rectangle": the unit square from (-1, -1) to
  * (1, 1) mapped by `trf`, with four styled corners. Its anchor points are

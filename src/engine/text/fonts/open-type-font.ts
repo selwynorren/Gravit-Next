@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 587 (GOpenTypeFont).
 /**
  * A resolved font: an opentype.js font for outlines, metrics and simple
  * shaping, plus a HarfBuzz font for the scripts opentype.js can't shape.
@@ -102,7 +101,7 @@ export interface GlyphOptions extends Omit<RenderOptions, "script" | "features" 
  * cluster in the text) and the other glyphs of the cluster get "". The old
  * code sliced the string at the byte offsets, which shifted the characters
  * of non-ASCII text and gave "" to every glyph of right-to-left text
- * (BUGS-FIXED.md "BUG-024 HarfBuzz clusters used as UTF-16 indexes").
+ *.
  */
 export function clusterTexts(text: string, clusters: readonly number[]): string[] {
   const indexOfByte = new Map<number, number>();

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 81 (GEditorAnnotation).
 import type { Color } from "../../engine/color/color.ts";
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import { Point } from "../../engine/math/point.ts";

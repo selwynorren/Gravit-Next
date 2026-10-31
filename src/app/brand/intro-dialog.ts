@@ -1,12 +1,12 @@
 /**
- * The introduction of GravitDesign Next: a dialog that says plainly that
+ * The introduction of Gravit Next: a dialog that says plainly that
  * this is a community rebuild, not the Gravit Designer people know, what
  * that means for their files and what's gone. It opens once, on the
  * first start in the "next" look (after the desktop app's migration, on
  * top of the welcome screen); localStorage "designer.next-intro-shown"
  * remembers that it was closed. That first time it only closes once the
  * box under it is ticked: "Got it" is disabled and Escape and the
- * backdrop do nothing until then. Help > About GravitDesign Next
+ * backdrop do nothing until then. Help > About Gravit Next
  * (show-intro-action.ts) opens it again, closable and without the box.
  */
 import { createElement } from "react";

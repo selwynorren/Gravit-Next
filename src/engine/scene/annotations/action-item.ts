@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 727 (GActionItem).
 /**
  * A button drawn next to an actionable element (GActionable): it paints
  * itself, says how big it is and runs when clicked. Subclasses implement

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 228 (GPaintContext).
 import type { Color } from "../color/color.ts";
 import { RGBColor } from "../color/rgb-color.ts";
 import { GObject, registerClass } from "../core/object.ts";

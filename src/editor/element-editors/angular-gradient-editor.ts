@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 781 (GAngularGradientEditor).
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import { registerClass } from "../../engine/core/object.ts";
 import { Platform } from "../../engine/core/platform.ts";

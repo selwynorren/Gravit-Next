@@ -1,13 +1,3 @@
-// Old: chunk.vendor.js module 470 (the GL texture registry, exposed for
-// debugging as GGLMemoryManager).
-//
-// The old registry stored textures in an array under `texture.id`. For
-// recorded textures that was a number; for real ones it is a WebGLTexture,
-// which as a key becomes the string "[object WebGLTexture]". Real textures
-// therefore share one slot that the array walks (slice, forEach) never see,
-// so flush, destroyTextures and checkMemory find nothing. With the recorder
-// gone every texture is real; the behaviour is kept.
-
 /** What the registry needs of a texture. */
 export interface RegisteredTexture {
   id: unknown;

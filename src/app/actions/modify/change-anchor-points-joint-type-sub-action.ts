@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1648 (GChangeAnchorPointsJointTypeSubAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { PathBase } from "../../../engine/scene/path-base.ts";

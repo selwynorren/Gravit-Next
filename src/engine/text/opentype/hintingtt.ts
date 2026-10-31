@@ -1,20 +1,3 @@
-// Old: chunk.vendor.js module 987 (opentype.js hintingtt.js).
-// A TrueType bytecode interpreter that grid-fits glyph outlines.
-//
-// Gravit changes:
-// - The x and y axis vectors and UnitVector.setRelative throw "Wrong slope ..."
-//   instead of producing Infinity/NaN coordinates when the freedom and
-//   projection vectors make the move impossible.
-// - MDAP and ALIGNRP retry with the dual projection vector when that throws
-//   and keep using it for the rest of the state ("microsoftWorkaround").
-// - MIAP moves by the CVT value when the measured distance is 0.
-// - initTZone works without a glyph zone (empty twilight zone).
-// - skip (IF/ELSE scanning) stops at the end of the program instead of
-//   running past it.
-// The old module also has the upstream DEBUG logging, but its DEBUG flag sits
-// on an exports object that is replaced, so it can never be on; the port
-// leaves the logging out.
-
 import type { Font } from "./font.ts";
 import * as glyf from "./tables/glyf.ts";
 

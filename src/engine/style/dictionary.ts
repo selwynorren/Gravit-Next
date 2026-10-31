@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 227 (GDictionary).
 import { EventTarget } from "../core/event-target.ts";
 import { GObject, registerClass } from "../core/object.ts";
 import { uuid } from "../core/util.ts";

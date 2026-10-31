@@ -1,13 +1,3 @@
-// Old: public/pscore.js, systemdict entries dup … type.
-//
-// Kept quirks (QUESTIONS.md "PS worker: stack and misc operator quirks"):
-// - mark pushes a "[" mark.
-// - cleartomark without a mark empties the stack.
-// - dictstack makes the given array share the interpreter's dictionary
-//   stack and replaces its first entry (the plain systemdict) by a dict
-//   object wrapping it, which stays in the dictionary stack.
-// - type answers unknowntype for numbers, booleans and null alike.
-// - print discards its string; version pushes "3010".
 import type { PSCore } from "../core.ts";
 import type { PSPlainRecord, PSValue } from "../objects.ts";
 

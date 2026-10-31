@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 554.
 /**
  * An image kept as a data URL with its MIME type: the document thumbnail
  * (module 790) and the cloud metadata build one with fromBlob and read it

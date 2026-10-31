@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1688 (GUtil.image2Canvas, GUtil.image2Base64).
 /**
  * Draws an image onto a canvas of its natural size. A URL is loaded first
  * (cross-origin "Anonymous" for http(s) and protocol-relative URLs); the

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 18 (GCategory).
 /**
  * Menu categories of the actions. A category has a label, a visibility, an
  * icon and a parent; the main menu builds its menus and submenus from the

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 925 (the list marker codes: bullets, numbers, roman numerals).
 import { Vertex } from "../../geometry/vertex.ts";
 import { VertexContainer } from "../../geometry/vertex-container.ts";
 import { PathNumberCode, type MarkerData } from "./path-number.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1603 (the fast view action, unnamed; its title key is GFastViewAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { PaintCanvas } from "../../../engine/paint/paint-canvas.ts";
@@ -17,7 +16,7 @@ const PaintMode = ScenePaintConfiguration.PaintMode;
  * back to what the page's clip setting says, like Outline view: Output
  * (clipped) for a fixed-size page that clips its content, Full otherwise.
  * Old: it read clip names GPageProperties never defined, so a fixed-size
- * page always got Output (BUG-141).
+ * page always got Output.
  */
 export class FastViewAction extends Action {
   static ID = "view.fast-view";

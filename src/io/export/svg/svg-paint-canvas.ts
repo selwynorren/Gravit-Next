@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 1456 (GSVGPaintCanvas).
-//
-// The paint canvas the exporter paints through: a GPaintCanvas whose 2D
-// context is an SvgContext, so shapes, borders and blends end up as
-// recorded paths instead of pixels. Sub-canvases (blends, masks) are new
-// SVG canvases made with the context factory the exporter installs on the
-// root canvas (_createContext).
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import { Point } from "../../../engine/math/point.ts";
 import { Rect } from "../../../engine/math/rect.ts";

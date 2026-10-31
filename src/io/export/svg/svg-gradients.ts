@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 1148 (SVG gradient elements).
-//
-// The old module patched GLinearGradient and GRadialGradient: an export id
-// counter on each class, `_setPosition` and `asSVG` on their prototypes.
-// Here those are plain functions; the counters are module state that,
-// like the old class fields, only a page reload resets.
 import type { Color } from "../../../engine/color/color.ts";
 import { Transform } from "../../../engine/math/transform.ts";
 import type { Rect } from "../../../engine/math/rect.ts";

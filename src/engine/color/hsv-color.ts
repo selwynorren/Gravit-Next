@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 649 (GHSVColor).
 import { registerClass } from "../core/object.ts";
 import { Pattern } from "../style/pattern.ts";
 import { Color } from "./color.ts";

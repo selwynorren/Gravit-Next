@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 928 (the GTL default font meter).
 import type { Font } from "../fonts/font.ts";
 import type { FontManager } from "../fonts/font-manager.ts";
 import { Measurement } from "./measurement.ts";

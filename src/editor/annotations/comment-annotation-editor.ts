@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 772 (GCommentAnnotationEditor).
 /**
  * The editor of a comment annotation (the speech bubble placed with the
  * comment tool). It paints the bubble icon itself: a white bubble with a

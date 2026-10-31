@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 808 (GApplicationStatusEvent).
 /** The app finished a boot step: Init after the language, Ready after the first document. */
 import { Event } from "../../engine/core/event.ts";
 import { registerClass } from "../../engine/core/object.ts";

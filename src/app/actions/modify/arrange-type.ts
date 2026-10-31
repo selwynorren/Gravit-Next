@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 868 (unnamed; the share event).
 import { Event } from "../../../engine/core/event.ts";
 
 /**

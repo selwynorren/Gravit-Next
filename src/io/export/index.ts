@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 797 (the exporter registry).
-//
-// The three exporters, static classes without a shared interface.
-
 import { BitmapExport } from "./bitmap-export.ts";
 import { PDFExport } from "./pdf/pdf-export.ts";
 import { SvgExport } from "./svg/svg-export.ts";

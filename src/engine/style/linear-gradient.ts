@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 147 (GLinearGradient).
 import { registerClass } from "../core/object.ts";
 import { GMath } from "../math/math.ts";
 import type { Transform } from "../math/transform.ts";

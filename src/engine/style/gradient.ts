@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 138 (GGradient).
 import { registerClass } from "../core/object.ts";
 import { equals as valuesEqual } from "../core/util.ts";
 import { GMath } from "../math/math.ts";

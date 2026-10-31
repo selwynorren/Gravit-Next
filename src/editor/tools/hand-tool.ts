@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 756 (GHandTool).
 /** Scrolls the view by dragging it. */
 import { MouseEvent } from "../../engine/core/mouse-event.ts";
 import { registerClass } from "../../engine/core/object.ts";

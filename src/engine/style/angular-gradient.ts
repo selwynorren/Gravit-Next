@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 283 (GAngularGradient).
 import { registerClass } from "../core/object.ts";
 import { RGBColor } from "../color/rgb-color.ts";
 import { GMath } from "../math/math.ts";

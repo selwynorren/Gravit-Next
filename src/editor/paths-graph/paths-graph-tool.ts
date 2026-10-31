@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 753 (GPathsGraphTool).
 /**
  * The paths graph tool: draws lines into a paths graph, pen style. The
  * first press on empty canvas makes a new paths graph with one anchor;

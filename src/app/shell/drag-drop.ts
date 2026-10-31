@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1488 (DragDropTouch, DataTransfer).
 /**
  * The DragDropTouch polyfill: turns touches on elements with a true
  * `draggable` into the HTML5 drag events (dragstart, dragenter, drag,

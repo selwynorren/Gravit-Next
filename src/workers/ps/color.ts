@@ -1,16 +1,3 @@
-// Old: public/pscolor.js (PSColor, webpack module 1369 of its own build).
-//
-// Colour handling of the PostScript interpreter: image sample decoding,
-// colour space channel counts, CIEBasedABC → XYZ → RGB, PostScript
-// functions (types 0, 2 and 3), tint transforms of Separation and DeviceN
-// spaces, and _getGColor, which turns a colour space plus colour (or a
-// shading/pattern dict) into the plain objects the page turns into Gravit
-// colours, gradients and mesh images ({type: "rgb" | "cmyk" | "linear" |
-// "radial" | "imageData", ...}). The shading part of _getGColor lives in
-// color-shadings.ts.
-//
-// The objects posted to the page go through JSON, so their key order and
-// number values are part of the output.
 import { getPatternColor } from "./color-shadings.ts";
 import type { PSCore } from "./core.ts";
 import type { PSClasses, PSPlainRecord, PSValue } from "./objects.ts";

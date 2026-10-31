@@ -70,7 +70,7 @@ const expected = (x: number, y: number) => {
   return [255 * (1 - v), 255 * (v - u), 255 * u];
 };
 
-describe("mesh shadings (BUG-116)", () => {
+describe("mesh shadings", () => {
   it("draws a free-form triangle from string data", () => {
     const image = shfillImage(
       `%!PS\n<< /ShadingType 4 ${RGB_8BIT} /DataSource <${TRIANGLE_BYTES}> >> shfill\n`,

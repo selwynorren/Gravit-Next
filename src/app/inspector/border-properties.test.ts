@@ -89,7 +89,7 @@ describe("newBorderAlignment", () => {
     expect(newBorderAlignment(new Ellipse())).toBe(BorderAlignment.Inside);
   });
 
-  it("centers the border of an open path and keeps a closed one inside (BUG-154)", () => {
+  it("centers the border of an open path and keeps a closed one inside", () => {
     const path = new Path();
     path.setProperty("closed", false);
     expect(newBorderAlignment(path)).toBe(BorderAlignment.Center);
@@ -217,7 +217,7 @@ describe("BorderProperties", () => {
     expect(commits).toHaveLength(2);
   });
 
-  it("reopens the undone layer's chooser at its stop on undo and redo (BUG-153)", () => {
+  it("reopens the undone layer's chooser at its stop on undo and redo", () => {
     const { properties, panel } = initPanel();
     const { scene, rect } = rectWithBorders(2);
     properties.update(documentOf(scene), [rect]);

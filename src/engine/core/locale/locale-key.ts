@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 637, re-exported as GLocaleKey by modules 47
-// and 224.
 import { className } from "./class-name.ts";
 
 /** A translation key: the class id (old class name) and the key within it. */

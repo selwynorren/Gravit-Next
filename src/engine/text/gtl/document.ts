@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 652 (the GTL document, carota's doc.js).
 import { WordSplitter, type WordSpan } from "./characters.ts";
 import { Formatting, type CodeObject, type Run, type RunText } from "./formatting.ts";
 import { Frame } from "./frame.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1676 (GSoftwareUpdateManager).
 /**
  * Checks for a newer release and drives the update, triggering the
  * software update events on the designer for the footer panel.

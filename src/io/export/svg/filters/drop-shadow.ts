@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1461 (the drop shadow filter writer).
 import { Color } from "../../../../engine/color/color.ts";
 import type { PropertiesNode as Node } from "../../../../engine/scene/node-properties.ts";
 import type { FilterBuilder, FilterWriter } from "../filter-builder.ts";

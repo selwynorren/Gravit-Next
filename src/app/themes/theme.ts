@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1491 (GDesigner._setTheme and _updateTheme).
 /**
  * The light and dark themes are the two old stylesheets
  * (designer.browser.light.css and .dark.css in public/). Switching
@@ -73,7 +72,7 @@ export function setTheme(value: unknown, windows: ThemedWindows, relayout: () =>
   // The rulers read their colours from the stylesheet, so wait until the
   // new one applies. The old code ran the callback when its own request for
   // the stylesheet ($(link).load(href, done)) completed, which raced the
-  // link (BUG-170). That second download of the 2.3 MB file only stood in
+  // link. That second download of the 2.3 MB file only stood in
   // for "loaded", so the link's own load or error event is all we wait for.
   // An unchanged stylesheet still waits for a later task, as the request
   // did: at boot the first window is open by then, so its rulers are

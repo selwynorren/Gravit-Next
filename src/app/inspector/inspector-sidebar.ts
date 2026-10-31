@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 864 (GInspectorSidebar).
 /**
  * The right sidebar with the property panels. It creates every panel of
  * PROPERTIES_TABLE (the old gravit.properties, in that order) into its

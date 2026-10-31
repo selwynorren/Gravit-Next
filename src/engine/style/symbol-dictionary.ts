@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 933 (the scene's symbol dictionary, unnamed).
 /**
  * The masters of a scene, keyed by their multireference id, with a
  * thumbnail each. It follows the scene: a master inserted anywhere gets

@@ -169,7 +169,7 @@ describe("VertexOffsetter against recorded old outputs", () => {
   // come near the source": only insets of open paths change (one-sided but
   // for the cut arc that no longer starts at an unset point), and each now
   // has a result where the old code kept less or nothing.
-  it("keeps the inset parts of open paths that the old code dropped (BUG-012)", () => {
+  it("keeps the inset parts of open paths that the old code dropped", () => {
     const byName = new Map(fixture.cases.map((recorded) => [recorded.name, recorded]));
     const fixedNames = Object.keys(fixedCases).filter((n) => fixedCases[n]?.bug === "BUG-012");
     expect(fixedNames.length).toBeGreaterThan(20);
@@ -219,7 +219,7 @@ describe("VertexOffsetter against recorded old outputs", () => {
   // BUGS-FIXED.md "BUG-013 Offset tangent point uses dx for y": only the
   // tangent cases change, each to 0, where the line touches the arc or
   // passes through its end; no recorded offset output changes.
-  it("has fixed helper outputs only where the tangent point moved (BUG-013)", () => {
+  it("has fixed helper outputs only where the tangent point moved", () => {
     const byName = new Map(fixture.helpers.map((helper) => [helper.name, helper]));
     expect(Object.keys(fixedHelpers).sort()).toEqual([
       "line vs arc",

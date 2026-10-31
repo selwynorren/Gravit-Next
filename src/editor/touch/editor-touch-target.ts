@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1584.
 /**
  * The touch handling of the active view (GDesigner moves it to the view of
  * each activated window): pinch zoom and two-finger scroll, taps, moves

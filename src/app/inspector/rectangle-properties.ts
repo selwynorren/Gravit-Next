@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1271 (GRectangleProperties).
 /**
  * The "Corner" row of rectangles (and images, which are rectangles): a
  * radius slider and box for the uniform corner, and the advanced overlay
@@ -107,7 +106,7 @@ export class RectangleProperties extends Properties {
     advanced.appendChild(checkboxLabel("uf", "GRectangleProperties", "text.uniform-corners"));
 
     // The corner type buttons get the smoothness title and the lock buttons
-    // the corner type title, as before (see "Swapped corner titles" in QUESTIONS.md).
+    // the corner type title, as before.
     const corners = el("div", "corners-panel");
     const row = (...items: [string, string][]) => {
       const element = el("div", "corners-item-row with-padding");

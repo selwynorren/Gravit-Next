@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1267 (Color Thief v2 by Lokesh Dhakar, MIT, with its MMCQ quantizer).
 /**
  * Extracts the dominant colour and a palette of an image (the image
  * panel's "Colors" button). The image is drawn into a temporary canvas
@@ -9,7 +8,7 @@
  * is the original one, because the palette the panel shows depends on it.
  * Only the bounding box of the samples is fixed: the old one used "else
  * if" for the maxima, so a channel's maximum was only raised by samples
- * that didn't lower its minimum (BUG-155).
+ * that didn't lower its minimum.
  *
  * Left out: forcebw (never called, and it called sort on the queue
  * object, which has none) and the URL and XHR helpers (getColorFromUrl,
@@ -233,7 +232,7 @@ function vboxFromPixels(pixels: readonly RGB[], histo: Histogram): VBox {
     const gval = pixel[1] >> RSHIFT;
     const bval = pixel[2] >> RSHIFT;
     // The old code raised a maximum only for samples that didn't lower the
-    // minimum ("else if"), so the boxes came out too small (BUG-155).
+    // minimum ("else if"), so the boxes came out too small.
     if (rval < rmin) rmin = rval;
     if (rval > rmax) rmax = rval;
     if (gval < gmin) gmin = gval;

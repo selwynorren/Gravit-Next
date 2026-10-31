@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1172 (GInstallToDesktopAction) and module 1173 (the PWA support check).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { PlatformType, WebBrowser } from "../../../engine/core/platform.ts";
 import { Runtime } from "../../shell/container.ts";

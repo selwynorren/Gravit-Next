@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1466 (the SVG text core and its render context).
-//
-// A text exports through a copy of its GTL core whose drawing context
-// collects words instead of painting glyphs: drawText makes an SvgTextWord
-// per run (per glyph on a text path, with the glyph's transform) and
-// drawMarker keeps list markers as path data. renderSVG then writes the
-// words as <text> elements, clipped to the text box, and the markers as
-// paths.
 import { Color } from "../../../engine/color/color.ts";
 import { extend } from "../../../engine/core/util.ts";
 import { VertexInfo } from "../../../engine/geometry/vertex-info.ts";

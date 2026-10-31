@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 530 (GSimpleShape).
 /**
  * A ready shape, node "Ready Shape": a shape from the shape catalogue
  * whose vertices a ParameterizedVertexProcessor computes from the
@@ -204,7 +203,7 @@ export class SimpleShape extends Shape {
       );
       // A ready shape without handles has no list and stores an empty one.
       // The old store threw here, so such a shape could not be saved
-      // (BUG-005). The old restore reads "[]" back as an empty list.
+      //. The old restore reads "[]" back as an empty list.
       const values: number[] = [];
       const positions = this._annotationsParamVals ?? [];
       for (let i = 0; i < positions.length; ++i) {

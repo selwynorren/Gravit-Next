@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 807 (GSidebars.SidebarEvent).
 /** A sidebar was activated or deactivated, or an inspector child was added or removed. */
 import { Event } from "../../engine/core/event.ts";
 import { registerClass } from "../../engine/core/object.ts";

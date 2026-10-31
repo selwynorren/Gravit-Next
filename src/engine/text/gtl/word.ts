@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 917 (a measured word, carota's word.js).
 import type { WordSpan } from "./characters.ts";
 import { Formatting, type Run } from "./formatting.ts";
 import { Part, type CodeResolver, type TextCode } from "./inline.ts";

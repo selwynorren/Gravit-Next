@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1606 (GLockLayerAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";

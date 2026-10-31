@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 588 (GGLColorAdjustEffect).
-//
-// Brightness, contrast, hue and saturation in one effect. CSS filters do
-// it where they match the shader: never with more brightness, and in
-// compatibility mode (`comp`, on by default) only for contrast and more
-// saturation.
 import { Locale } from "../../../core/locale/locale.ts";
 import { GMath } from "../../../math/math.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../../paint/paint-canvas.ts";

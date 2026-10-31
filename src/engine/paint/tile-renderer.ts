@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 663.
-//
-// The scene canvas of the view: a grid of tile canvases (1 x 1 with the
-// current config) the scene is painted into, with the tile cache in front
-// and a queue that keeps only the latest paint request while one runs.
 import { GObject, registerClass } from "../core/object.ts";
 import { Point } from "../math/point.ts";
 import { Rect } from "../math/rect.ts";

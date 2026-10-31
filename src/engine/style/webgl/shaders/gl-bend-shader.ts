@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 474 (GGLBendShader).
-//
-// Bends the image along a sine: x moves with the global y and y with the
-// global x.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

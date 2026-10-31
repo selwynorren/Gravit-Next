@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1453 (the PDF border painter).
 import type { VertexReader } from "../../../engine/geometry/vertex-source.ts";
 import type { Rect } from "../../../engine/math/rect.ts";
 import type { Transform } from "../../../engine/math/transform.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 82 (GEditor).
 /**
  * The editor of one scene: the selection, the undo and redo stacks built
  * from transactions, the snapping guides and the operations the actions

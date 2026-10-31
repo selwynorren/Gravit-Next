@@ -19,7 +19,7 @@ import { RenderFlags } from "./render-flags.ts";
 import { TLCore, type TLRenderStyle } from "./tl-core.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../../assets/font");
+const fontDir = resolve(here, "../../../assets/font");
 
 const FILL = RenderFlags.RENDERFLAG_FILL | RenderFlags.RENDERFLAG_VERTEX;
 const STROKE = RenderFlags.RENDERFLAG_STROKE | RenderFlags.RENDERFLAG_VERTEX;

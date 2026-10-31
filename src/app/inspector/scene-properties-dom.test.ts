@@ -113,7 +113,7 @@ describe("SceneProperties handlers", () => {
     );
   });
 
-  it("keeps the isometric grid angle when the box doesn't start with a number (BUG-162)", () => {
+  it("keeps the isometric grid angle when the box doesn't start with a number", () => {
     const { scene, panel } = setup();
     const box = find(panel, 'input[data-property="ga1"]');
     change(box, "45");

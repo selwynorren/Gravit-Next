@@ -1,4 +1,3 @@
-// Old: public/pscore.js, systemdict newpath … initgraphics.
 import type { PSCore } from "../core.ts";
 import type { PSProcedure, PSValue } from "../objects.ts";
 import { currentPath, type PathPoint } from "./graphics-support.ts";

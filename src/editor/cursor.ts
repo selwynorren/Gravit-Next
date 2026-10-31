@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 52 (the editor's cursor table, GCursor).
-
 /**
  * The editor's cursors. Each value is the suffix of a "g-cursor-<name>"
  * CSS class; initStyle writes one rule per cursor. A leading "!" marks a

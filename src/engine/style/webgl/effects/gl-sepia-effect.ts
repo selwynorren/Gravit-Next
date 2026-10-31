@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 728 (GGLSepiaEffect).
-//
-// Sepia on WebGL, or through the CSS sepia filter where the browser has it.
 import { Locale } from "../../../core/locale/locale.ts";
 import { GMath } from "../../../math/math.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../../paint/paint-canvas.ts";

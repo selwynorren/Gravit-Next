@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 99 (GGuide).
 import type { Color } from "../../engine/color/color.ts";
 import { Platform } from "../../engine/core/platform.ts";
 import {

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 795 (model/sketchnode).
 import type { Transform } from "../../../engine/math/transform.ts";
 import type { Rect } from "../../../engine/math/rect.ts";
 import { Container } from "../../../engine/scene/node-container.ts";

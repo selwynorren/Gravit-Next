@@ -55,7 +55,7 @@ describe("boolean cluster against recorded old outputs", () => {
       expect(targeted[name]).toEqual(EXPECTED.targeted[name]);
     });
 
-  it("has fixed outputs only for recorded cases they change (BUG-014)", () => {
+  it("has fixed outputs only for recorded cases they change", () => {
     expect(FIXED.bug).toBe("BUG-014");
     for (const [name, value] of Object.entries(FIXED.targeted)) {
       expect(OLD.targeted[name], name).toBeDefined();

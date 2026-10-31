@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 238 (GMenu).
 /**
  * A menu: an `ul.g-menu` of MenuItems. A closed menu is detached; open()
  * appends it to body, positions it next to an element or at a point and

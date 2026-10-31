@@ -13,7 +13,7 @@ function program(name: string, edit: (text: string) => string): Uint8Array {
 const painted = (messages: RecordedMessage[]) =>
   messages.filter((m) => "func" in m && (m.func === "fill" || m.func === "stroke"));
 
-describe("outlined text (BUG-114)", () => {
+describe("outlined text", () => {
   it("strokes a font with PaintType 2 and no lowercase paintType", () => {
     // The corpus font also defines the misspelt key the old code read.
     const input = program("font-type1-stroked.ps", (t) => t.replace(" /paintType 2 def", ""));

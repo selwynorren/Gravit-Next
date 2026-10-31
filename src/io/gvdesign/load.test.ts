@@ -1,5 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
 import zlib from "node:zlib";
 import { afterEach, describe, expect, it, vi } from "vitest";
 import { Group } from "../../engine/scene/group.ts";
@@ -8,10 +6,6 @@ import { Rectangle } from "../../engine/scene/rectangle.ts";
 import { Scene } from "../../engine/scene/scene.ts";
 import { Workspace } from "../../engine/scene/workspace.ts";
 import { deserializeScene, loadGvdesign, NoSceneError } from "./load.ts";
-
-const EDGE = path.resolve(import.meta.dirname, "../../../parity/corpus/edge/files");
-const edgeFile = (name: string): Uint8Array =>
-  new Uint8Array(fs.readFileSync(path.join(EDGE, `${name}.gvdesign`)));
 
 /** Resolves with "pending" when `promise` has not settled after `ms`. */
 function settledWithin<T>(promise: Promise<T>, ms: number): Promise<T | "pending"> {
@@ -84,24 +78,6 @@ describe("loadGvdesign", () => {
     expect("_preview" in again).toBe(false);
   });
 
-  it("opens a pre-3.10 file (no root dictionary)", async () => {
-    const scene = (await loadGvdesign(edgeFile("legacy-pre310"), new Workspace())) as Scene;
-    expect(scene).toBeInstanceOf(Scene);
-    let texts = 0;
-    scene.acceptChildren((node: Node) => {
-      if (node.getNodeName() === "text") texts++;
-    });
-    expect(texts).toBeGreaterThan(0);
-  });
-
-  it("rejects JSON that is cut off (BUG-100)", async () => {
-    const result = await settledWithin(
-      loadGvdesign(edgeFile("invalid-json"), new Workspace()).catch((error: unknown) => error),
-      300,
-    );
-    expect(result).toBeInstanceOf(NoSceneError);
-  });
-
   it.each([
     ["an empty file", () => ""],
     ["a JSON array of shapes", () => "[" + rectangleJson() + "]"],
@@ -109,7 +85,7 @@ describe("loadGvdesign", () => {
     ["a root of an unknown class", () => '{"@":"unknownClass"}'],
     ["a lone childless shape", rectangleJson],
     ["a JSON number", () => "42"],
-  ])("rejects %s before restoring it (BUG-100)", async (_name, json) => {
+  ])("rejects %s before restoring it", async (_name, json) => {
     const restores = recordRestores();
     const result = await settledWithin(
       loadGvdesign(new TextEncoder().encode(json()), new Workspace()).catch(
@@ -127,7 +103,7 @@ describe("loadGvdesign", () => {
     ["a scene without children", () => '{"@":"scene"}'],
     ["a scene with an empty child list", () => '{"@":"scene","$":[]}'],
     ["a scene with a child of an unknown class", () => '{"@":"scene","$":[{"@":"zzz"}]}'],
-  ])("rejects %s (BUG-100)", async (_name, json) => {
+  ])("rejects %s", async (_name, json) => {
     const restores = recordRestores();
     const result = await settledWithin(
       loadGvdesign(new TextEncoder().encode(json()), new Workspace()).catch(

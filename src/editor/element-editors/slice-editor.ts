@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1084 (GSliceEditor).
 /**
  * The editor of a slice. Slices can't rotate (no rotation handle or
  * corners); a resize previews on a rectangle of the slice's box, and

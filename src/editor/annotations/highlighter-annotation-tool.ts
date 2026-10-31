@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 775 (GHighlighterAnnotationTool).
 /**
  * Draws a highlighter annotation with the freehand tool's stroke. One stroke ends the
  * tool's job; Esc and Enter do nothing.

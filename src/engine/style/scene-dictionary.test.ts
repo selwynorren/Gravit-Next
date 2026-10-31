@@ -133,7 +133,7 @@ describe("GSceneDictionary", () => {
     expect(() => scene.dictionary.sanitize()).toThrow("Missing entry value for " + url);
   });
 
-  it("keeps the data of an image removed before a save for when it comes back (BUG-026)", () => {
+  it("keeps the data of an image removed before a save for when it comes back", () => {
     // Undo of an inserted image, Save, Redo.
     const scene = new DictionaryTestScene();
     const image = imageWithUrl("data:image/png;base64,DDDD");

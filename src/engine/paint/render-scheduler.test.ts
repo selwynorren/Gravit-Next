@@ -79,7 +79,7 @@ describe("RenderScheduler", () => {
     expect(restore).toHaveBeenCalledTimes(2);
   });
 
-  it("ends the render phase on a canvas error in tryRunRendering and keeps rendering (BUG-009)", () => {
+  it("ends the render phase on a canvas error in tryRunRendering and keeps rendering", () => {
     const canvas = new PaintCanvas(true);
     const context = canvas.getRendererContext() as RecorderStateContext;
     const indexSize = new DOMException("negative radius", "IndexSizeError");
@@ -105,7 +105,7 @@ describe("RenderScheduler", () => {
     expect(done).toHaveBeenCalledWith(canvas);
   });
 
-  it("ends the render phase when the painting code itself throws (BUG-009)", async () => {
+  it("ends the render phase when the painting code itself throws", async () => {
     const canvas = new PaintCanvas(true);
     const bug = new TypeError("painting bug");
     const order: string[] = [];

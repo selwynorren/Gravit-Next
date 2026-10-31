@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 546 (GTransformBox).
 /**
  * The transform box of the selection ("q" in the app): a quadrilateral
  * around the selection with resize handles, a movable rotation centre

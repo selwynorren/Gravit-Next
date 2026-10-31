@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1526 (GEffectsPanel).
 /**
  * The add-effect popup of the effects panel: a category select and a grid
  * of effect tiles (EffectsButton), in an overlay next to the button that

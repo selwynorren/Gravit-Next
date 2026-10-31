@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1390 (GSVGImport).
 import pako from "pako";
 import { each, extend } from "../../../engine/core/util.ts";
 import { Length } from "../../../engine/math/length.ts";

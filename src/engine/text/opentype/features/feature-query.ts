@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 993 (opentype.js features/featureQuery.js, unchanged).
-// Looks up GSUB features of a script and applies their lookups to tokens;
-// only single substitution format 2, chaining context format 3 and
-// ligature format 1 are handled. Used for the arabic forms in bidi.ts.
-
 import { isTashkeelArabicChar } from "../char.ts";
 import type { Font } from "../font.ts";
 import type { LayoutFeatureRecord } from "../layout.ts";

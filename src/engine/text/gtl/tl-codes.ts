@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 920 (GTLCodes: inline nodes, list codes and the list edit filter).
 import type { Rect } from "../../math/rect.ts";
 import { CodeNode } from "./code-node.ts";
 import type { CodeObject, Run } from "./formatting.ts";

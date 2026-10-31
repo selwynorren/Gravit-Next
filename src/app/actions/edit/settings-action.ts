@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1613 (GSettingsAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { SettingsActionId } from "../../settings/settings-action-id.ts";
 import { lateExport } from "../../shell/late.ts";

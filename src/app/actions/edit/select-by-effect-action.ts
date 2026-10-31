@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1309 (GSelectByEffectAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Stylable } from "../../../engine/style/stylable.ts";
 import type { Node } from "../../../engine/scene/node.ts";

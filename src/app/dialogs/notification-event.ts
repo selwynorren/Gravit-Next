@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1321 (GNotificationEvent).
 /**
  * A notification for the footer's notification panel, triggered on the
  * designer by Designer.addNotification.

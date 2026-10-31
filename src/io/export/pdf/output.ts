@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 1215 (the PDF output base).
-
 /** What the writer accepts as a token: it is written as its string form. */
 export type PDFToken = string | number | boolean;
 

@@ -1,13 +1,3 @@
-// Old: chunk.vendor.js module 723 (opentype.js layout.js).
-// Gravit changes:
-// - getTable gives a table without scripts an empty scripts list.
-// - getLangSysTags lists the language system tags of a script.
-//
-// In opentype.js Position and Substitution share Layout's prototype object,
-// so every layout object has every method. The port uses subclasses; only
-// createDefaultTable (defined by Substitution in the old code) lives here,
-// since getTable(true) on any layout object reaches it.
-
 import * as check from "./check.ts";
 import type { Font } from "./font.ts";
 import type {

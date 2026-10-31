@@ -187,7 +187,7 @@ export interface DialogV1ViewProps {
   options?: {
     values: readonly string[];
     tooltips?: readonly string[];
-    /** Whether the radios start checked (see "One-time radio options" in QUESTIONS.md). */
+    /** Whether the radios start checked. */
     checked: boolean;
     onChange: () => void;
   };

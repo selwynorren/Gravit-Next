@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1563 (GContextMenu's touch overlay).
 /**
  * The context menu of the touch layout: an overlay
  * (`.g-overlay.context-menu-touch-overlay`) with rows of big buttons

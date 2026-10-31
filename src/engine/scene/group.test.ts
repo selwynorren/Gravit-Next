@@ -83,7 +83,7 @@ describe("GGroup", () => {
     expect(back.getChildren()).toHaveLength(2);
   });
 
-  describe("with a masking child (BUG-011)", () => {
+  describe("with a masking child", () => {
     function paintPath(container: Group | Layer): string {
       const context = new PaintContext();
       const configuration = new ScenePaintConfiguration();

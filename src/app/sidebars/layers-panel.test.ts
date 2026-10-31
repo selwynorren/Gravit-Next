@@ -207,7 +207,7 @@ describe("GLayerPanel", () => {
     expect(input?.value).toBe("A");
   });
 
-  it("shows a layer name as typed, as text and not as markup (BUG-166)", () => {
+  it("shows a layer name as typed, as text and not as markup", () => {
     const { a, element, panel } = setup();
     a.setProperty("name", "a <b>x</b>");
     panel.vtree.requestInvalidation(true);
@@ -220,7 +220,7 @@ describe("GLayerPanel", () => {
     expect(title.querySelector("b")).toBeNull();
   });
 
-  it("renames a layer with < in its name the way the old app stored it (BUG-166)", () => {
+  it("renames a layer with < in its name the way the old app stored it", () => {
     const { a, element, panel } = setup();
     a.setProperty("name", "a<b");
     panel.vtree.requestInvalidation(true);
@@ -236,7 +236,7 @@ describe("GLayerPanel", () => {
     expect(titles(element)[1]).toBe("a<b>");
   });
 
-  it("shows the dragged layer names as typed while dragging (BUG-166)", () => {
+  it("shows the dragged layer names as typed while dragging", () => {
     const { a, group, element, panel } = setup();
     a.setProperty("name", "a<b");
     group.setProperty("name", "c>d");
@@ -250,7 +250,7 @@ describe("GLayerPanel", () => {
     expect(title.textContent).toBe("a<b");
   });
 
-  it("shows every dragged layer name on the row while dragging, then its own again (BUG-159)", () => {
+  it("shows every dragged layer name on the row while dragging, then its own again", () => {
     const { a, group, element, panel } = setup();
     panel.options.startDraggingCallback = () => [a, group];
     const titleGroup = rows(element)[1]?.children[0] as TestElement;
@@ -381,7 +381,7 @@ describe("GLayerPanel risky branches", () => {
     expect(invalidate).toHaveBeenCalledTimes(1);
   });
 
-  it("with onlyUpdateStyle skips a row that was never rendered (BUG-168)", () => {
+  it("with onlyUpdateStyle skips a row that was never rendered", () => {
     const { inner, panel } = setup();
     // inner sits in the collapsed group G, so its row was never rendered.
     expect(titles(panel.element as unknown as TestElement)).toEqual(["G", "A"]);

@@ -1,14 +1,3 @@
-// Old: chunk.vendor.js module 1391, the value part of the canvg 1.x fork
-// the SVG importer is built on: attribute values (canvg's svg.Property),
-// the CSS font shorthand parser (svg.Font), canvg's bounding box
-// (svg.Rect), points, transform lists (svg.Transform), viewBox fitting
-// (svg.AspectRatio) and the view port stack. The elements are in
-// svg-parser.ts.
-//
-// canvg drew SVG onto a canvas; Gravit's fork builds scene nodes instead
-// and left the canvas half behind. Only the parts the scene building
-// reaches are ported. Where that code still reaches the canvas (`svg.ctx`
-// was never set), the port throws the TypeError the old code ran into.
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import { Length } from "../../../engine/math/length.ts";
 import { Transform } from "../../../engine/math/transform.ts";

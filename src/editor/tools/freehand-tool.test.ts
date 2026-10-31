@@ -221,7 +221,7 @@ describe("FreehandTool continuing a stroke", () => {
 describe("FreehandTool keys", () => {
   it("digits set _bop on the new path, each in its own undo step (old quirk, kept)", () => {
     // _bop is the legacy border opacity, which a path neither paints nor
-    // saves; see "Freehand digits set _bop" in QUESTIONS.md.
+    // saves;.
     const { page, input, editor } = setup();
     input.keyDown("5");
     expect(editor.hasUndoState()).toBe(false);

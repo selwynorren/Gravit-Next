@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1414 (the PDF transparency group form).
 import { PDFGroup } from "./group.ts";
 import type { PDFArray } from "./pdf-array.ts";
 import type { PDFObject } from "./pdf-object.ts";

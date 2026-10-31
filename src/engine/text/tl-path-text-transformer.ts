@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 215 (GTLPathTextTransformer).
 import { registerClass } from "../core/object.ts";
 import { PolyIntersector, PolyLine } from "../geometry/boolean/poly-segments.ts";
 import { QuadTree } from "../geometry/quadtree.ts";

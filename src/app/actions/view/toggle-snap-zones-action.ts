@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1289 (GToggleSnapZonesAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action } from "../action.ts";

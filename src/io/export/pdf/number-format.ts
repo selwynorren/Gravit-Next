@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 801 (the shared export number format).
 import { Rounding, type Roundable } from "./rounding.ts";
 
 /**

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 54 (GVertexContainer).
 import type { Transform } from "../math/transform.ts";
 import { Vertex } from "./vertex.ts";
 import { VertexSourceMixin, type VertexReader } from "./vertex-source.ts";

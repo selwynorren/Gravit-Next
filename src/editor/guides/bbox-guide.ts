@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 153 (GBBoxGuide).
 import { registerClass } from "../../engine/core/object.ts";
 import { QuadTree } from "../../engine/geometry/quadtree.ts";
 import { GMath } from "../../engine/math/math.ts";

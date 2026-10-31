@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1503 (GWindow).
 /**
  * One view of a document: a `div.window` in #windows holding the
  * document's GEditorWidget, plus the loading/saving overlay. The view is

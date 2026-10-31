@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 550 (GLineTool).
 /**
  * Draws a straight line: an open path of two anchor points. Shift snaps
  * it to 45° steps, Alt draws it from the centre. Lines get no fill.

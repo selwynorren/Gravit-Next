@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 930 (GEdgeLink, not in the G barrel).
 /**
  * A reference to a graph edge by id that resolves to the edge object once
  * it is known. Facets of the paths graph point at their edges this way.

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1432 (the PDF WinAnsi encoding).
 import { PDFEncoding } from "./encoding.ts";
 import { PDFString } from "./pdf-string.ts";
 

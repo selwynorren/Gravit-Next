@@ -23,7 +23,7 @@ import { TEXT_PROBE_FONTS, probeText } from "./text-probe.ts";
 import { Text } from "./text.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../assets/font");
+const fontDir = resolve(here, "../../assets/font");
 
 /** The files the old app serves for the probe fonts. */
 const FONT_FILES: Record<string, string> = {
@@ -208,7 +208,7 @@ describe("GText against the old engine", () => {
     expect(actual.missing).toEqual(expected.missing);
   });
 
-  it("reads every backup outline of a fake text (BUG-020)", () => {
+  it("reads every backup outline of a fake text", () => {
     expect(actual.fakeVertices).toEqual(fixed.fakeVertices);
     type Outline = { digest: string; head: unknown[]; bounds: [string, ...number[]] };
     const fake = actual.fakeVertices as { backups: Outline[]; outline: Outline };
@@ -280,7 +280,7 @@ describe("GText against the old engine", () => {
     expect(actual.quirks?.lockAfterResolved).toEqual(expected.quirks?.lockAfterResolved);
   });
 
-  it("unlocks the change events when setText waits for a missing font (BUG-010)", () => {
+  it("unlocks the change events when setText waits for a missing font", () => {
     // The old app left them locked (old-text.json quirks.lockAfterMissing = 1).
     expect(expected.quirks?.lockAfterMissing).toBe(1);
     expect(actual.quirks?.lockAfterMissing).toBe(0);
@@ -308,7 +308,7 @@ describe("GText", () => {
     expect(runs.find((run) => " " === run.text)?.underline).toBe(true);
   });
 
-  it("widens the border's pattern box only for borders that aren't inside (BUG-022)", () => {
+  it("widens the border's pattern box only for borders that aren't inside", () => {
     const text = new Text();
     text._setWorkspace(workspace(fontManager));
     text.setText("border");

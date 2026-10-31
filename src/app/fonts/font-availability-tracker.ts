@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1471 (font availability tracker).
 /**
  * Waits until a font manager has no pending fonts: checked now and after
  * every font that resolved or failed.

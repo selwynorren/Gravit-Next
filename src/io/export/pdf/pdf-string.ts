@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1144 (GPDFString).
 import { PDFValue } from "./pdf-name.ts";
 import { PDFObject } from "./pdf-object.ts";
 import { PDFRawBuffer } from "./raw-buffer.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1695 ($.fn.gAutoEdit).
 /**
  * In-place renaming (layer and page names): a double click puts a text
  * field (or a textarea) over the element, with its text selected. Enter
@@ -143,7 +142,7 @@ export class AutoEdit {
   submit(): void {
     const value = this.input ? this.input.value : null;
     // close() forgets the original text first, so unchanged names are
-    // submitted too (see "Renaming submits unchanged names" in QUESTIONS.md).
+    // submitted too.
     this.close();
     if (value && this.value !== value) {
       if (this.options.submitCallback) this.options.submitCallback.call(this.element, value);

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 916 (a text range, carota's range.js with Gravit's list editing).
 import type { BlockRange, TLDocument } from "./document.ts";
 import { Formatting, type CodeObject, type Run } from "./formatting.ts";
 import { Per } from "./list-util.ts";

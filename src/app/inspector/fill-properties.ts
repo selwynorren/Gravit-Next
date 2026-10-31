@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1261 (the fill paint layer panel).
 /**
  * The inspector's fill panel: one row per fill paint layer of the first
  * inspected element (color swatch, blend mode, opacity, visibility, plus

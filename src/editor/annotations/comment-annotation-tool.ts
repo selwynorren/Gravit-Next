@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 771 (GCommentAnnotationTool).
 /**
  * Places a comment annotation (the speech bubble pin) with a click.
  * Drags do nothing; a click inserts the bubble icon at the click point.

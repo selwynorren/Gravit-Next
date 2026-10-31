@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 443 (the Microsoft Teams runtime helper).
 /**
  * Whether the app runs inside Microsoft Teams. The Teams integration is
  * dropped with the cloud (PORT-PLAN, drop reasons), so the local app never

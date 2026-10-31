@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 1392 (the SVG importer's arc helpers, after
-// the svg-arc-to-cubic-bezier package).
 import { GMath } from "../../../engine/math/math.ts";
 
 export interface ArcPoint {

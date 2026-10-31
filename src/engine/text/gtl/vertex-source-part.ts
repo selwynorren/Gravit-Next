@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 924 (GTLCodes.VertexSource: an inline code drawn as a shape).
 import { VertexInfo } from "../../geometry/vertex-info.ts";
 import type { VertexReader } from "../../geometry/vertex-source.ts";
 import { VertexTransformer } from "../../geometry/vertex-transformer.ts";

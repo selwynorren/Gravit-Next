@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1219 (the PDF node marker).
 import { PDFObject } from "./pdf-object.ts";
 
 /**

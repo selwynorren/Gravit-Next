@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 1020 (GGLUnsharpMaskEffect).
-//
-// Sharpens by unsharp masking (glfx.js). The defaults do nothing.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

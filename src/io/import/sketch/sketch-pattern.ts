@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 600 (pattern/sketchpattern).
 import type { SceneNodeLike } from "./scene-node.ts";
 import type { SketchFile } from "./sketch-file.ts";
 import { SketchParser } from "./sketch-parser.ts";

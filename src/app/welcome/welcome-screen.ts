@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1544 (GNewDocumentDialog).
 /**
  * The welcome screen, which is also the new-document dialog: a sidebar
  * (New Design, Open from Computer, Open Recent, two help links and the
@@ -209,7 +208,7 @@ export class WelcomeScreen {
   }
 
   /**
-   * "Version i015.3 Web" (classic), or "GravitDesign Next 2.0.0 Web" in
+   * "Version i015.3 Web" (classic), or "Gravit Next 2.0.0 Web" in
    * the "next" look (CHANGES.md).
    */
   private _versionText(): string {

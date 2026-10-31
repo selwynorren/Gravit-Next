@@ -202,7 +202,7 @@ describe("EffectProperties row drag", () => {
     expect(start()).toBe(false);
   });
 
-  it("keeps the effect when the drag ends without a drop inside the panel (BUG-152)", () => {
+  it("keeps the effect when the drag ends without a drop inside the panel", () => {
     const { properties, panel } = initPanel();
     const { scene, rect } = rectWith(shadow(1), shadow(2));
     const other = besides(scene, shadow(1), shadow(2));

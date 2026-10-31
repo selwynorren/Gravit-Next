@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 659 (JPEG decoder, a fork of pdf.js' jpg.js).
 import { Color } from "./color.ts";
 
 // Gravit decodes JPEGs itself only for CMYK images, which browsers draw

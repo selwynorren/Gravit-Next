@@ -57,7 +57,7 @@ describe("SketchBase", () => {
     expect(root.findSymbol("none")).toBeUndefined();
   });
 
-  it("replaces a direct child at its index (BUG-104)", () => {
+  it("replaces a direct child at its index", () => {
     const file = fakeFile();
     const root = new SketchBase(
       layer("root", { layers: [layer("a"), layer("b"), layer("c")] }),
@@ -80,7 +80,7 @@ describe("SketchBase", () => {
     ]);
   });
 
-  it("replaces a deeper layer in its own parent (BUG-104)", () => {
+  it("replaces a deeper layer in its own parent", () => {
     const file = fakeFile();
     const root = new SketchBase(
       layer("root", {
@@ -99,7 +99,7 @@ describe("SketchBase", () => {
     expect(b?.getChildren()).toEqual([replacement]);
   });
 
-  it("replaces nothing for a layer it doesn't hold (BUG-104)", () => {
+  it("replaces nothing for a layer it doesn't hold", () => {
     const file = fakeFile();
     const root = new SketchBase(layer("root", { layers: [layer("a"), layer("b")] }), file, null);
     root.parse();

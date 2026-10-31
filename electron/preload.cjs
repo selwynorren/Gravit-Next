@@ -1,11 +1,13 @@
 /* global require, process */
 /* eslint-disable @typescript-eslint/no-require-imports -- a sandboxed preload is a CommonJS script */
 // Preload of the main window (sandboxed, context isolation on). It gives
-// the page one thing: the software update channel to the main process
+// the page two things: the software update channel to the main process
 // (updater.ts), as window.gravitDesktop.updates with the two methods of
 // ipcRenderer the client uses (src/app/dialogs/electron-update-client.ts
-// UpdateTransport). Only the update channel names pass; the page gets no
-// other access to Electron or Node. With GD_BRANDING set for the main
+// UpdateTransport), and the file channel (files.ts), as
+// window.gravitDesktop.files (src/app/desktop/desktop-files.ts). Only
+// those channel names pass; the page gets no other access to Electron or
+// Node. With GD_BRANDING set for the main
 // process (electron/branding.ts), it also gives the page the look as
 // window.__gdBranding, before the page's own scripts run.
 const { contextBridge, ipcRenderer } = require("electron");
@@ -28,7 +30,32 @@ const EVENTS = [
   "update-downloaded",
 ];
 
+// electron/files.ts Channel.
+const FILE_INVOKE = [
+  "gd-files:take-pending",
+  "gd-files:open-dialog",
+  "gd-files:save-dialog",
+  "gd-files:read",
+  "gd-files:write",
+  "gd-files:recent",
+];
+const FILE_SEND = ["gd-files:close-guard", "gd-files:close-confirmed"];
+const FILE_EVENTS = ["gd-files:open", "gd-files:recent-changed", "gd-files:close-request"];
+
 contextBridge.exposeInMainWorld("gravitDesktop", {
+  files: {
+    invoke(channel, payload) {
+      if (!FILE_INVOKE.includes(channel)) return Promise.reject(new Error("Unknown channel."));
+      return ipcRenderer.invoke(channel, payload);
+    },
+    send(channel, payload) {
+      if (FILE_SEND.includes(channel)) ipcRenderer.send(channel, payload);
+    },
+    on(channel, listener) {
+      if (!FILE_EVENTS.includes(channel) || typeof listener !== "function") return;
+      ipcRenderer.on(channel, (_event, data) => listener(data));
+    },
+  },
   updates: {
     send(channel) {
       if (COMMANDS.includes(channel)) ipcRenderer.send(channel);

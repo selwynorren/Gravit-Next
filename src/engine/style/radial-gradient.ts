@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 158 (GRadialGradient).
 import { registerClass } from "../core/object.ts";
 import { GMath } from "../math/math.ts";
 import type { Transform } from "../math/transform.ts";
@@ -11,7 +10,7 @@ import { Pattern } from "./pattern.ts";
  *
  * The center is saved as "_cx"/"_cy". The old app read it back from
  * "cx"/"cy" and so lost a moved center on every save and load; this one
- * reads "_cx"/"_cy" and still accepts "cx"/"cy" (BUG-002 in BUGS-FIXED.md).
+ * reads "_cx"/"_cy" and still accepts "cx"/"cy".
  */
 export class RadialGradient extends Gradient {
   static {

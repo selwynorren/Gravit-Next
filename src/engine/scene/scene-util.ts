@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1001 (GSceneUtil).
 import { Element } from "./element.ts";
 import { Group } from "./group.ts";
 import { Layer } from "./layer.ts";

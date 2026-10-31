@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 87 (GVertexSource).
 /**
  * Something vertices can be read from: rewind to an index, then read one
  * vertex at a time. The old GVertexSource was a plain class (not a

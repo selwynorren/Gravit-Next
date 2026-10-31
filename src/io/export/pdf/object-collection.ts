@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 602 (the PDF object collection).
 import { PDFValue } from "./pdf-name.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput } from "./output.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 783 (GTextAnnotationEditor).
 /**
  * The editor of a text annotation: a text editor. The text annotation
  * tool is not registered in the tool manager, so these come from files.

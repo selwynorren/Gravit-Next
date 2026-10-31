@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 909 (GElement.Layout).
 /**
  * Containers that lay out anchored children (constraints, GElement.Anchor).
  * When the container's `trf` changes, the change is remembered as

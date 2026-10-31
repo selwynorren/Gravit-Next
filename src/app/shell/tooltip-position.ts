@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1673 (the data-title tooltips and $.fn.gTooltip).
 /**
  * The simple tooltips: hovering an element with a `data-title` attribute
  * (or anything inside one) shows its text in the body-level `.g-tooltip`

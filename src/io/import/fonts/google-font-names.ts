@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1203.
-//
-// The Google Fonts families the PDF importer knows by name. An embedded
-// PDF font whose family is in this list is replaced by that family from
-// the font manager instead of being registered as an embedded font. The
-// app replaces the list with the families its font provider offers
-// (GPDFImport.updateFontFamilies) before every PDF import.
-
 const DEFAULT_FAMILIES: readonly string[] = [
   "ABeeZee",
   "Abel",

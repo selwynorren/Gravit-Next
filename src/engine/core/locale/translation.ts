@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 224 (loads every project's tables into one
-// locale and picks the language from the browser; Factory).
 import { ClassReference } from "./class-reference.ts";
 import { extend } from "./extend.ts";
 import { LocaleRuntime, type LocaleEnvironment } from "./locale-runtime.ts";

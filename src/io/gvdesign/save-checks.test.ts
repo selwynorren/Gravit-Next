@@ -43,7 +43,7 @@ describe("save checks", () => {
     expect(hasPagesWithInfiniteEmptyCanvas(scene)).toBe(false);
   });
 
-  it("does not refuse a hidden page, but a hidden empty infinite one (BUG-092)", () => {
+  it("does not refuse a hidden page, but a hidden empty infinite one", () => {
     const scene = new Scene(new Workspace());
     const page = scene.getActivePage() as NonNullable<ReturnType<Scene["getActivePage"]>>;
     page.setProperties(["w", "h", "vis"], [100, 100, false]);

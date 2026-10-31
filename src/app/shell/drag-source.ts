@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 450 (unnamed; context menu contexts).
 /** Where a context menu request comes from (the canvas, a panel, the crop mode). */
 export const DragSource = {
   Crop: 1,

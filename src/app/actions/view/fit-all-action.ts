@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 449 (GFitAllAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";

@@ -193,7 +193,7 @@ describe("Header", () => {
     expect(tab?.querySelector("input")?.value).toBe("Untitled-1*");
   });
 
-  it("shows a title with < > and & as typed, set as text (BUG-167)", () => {
+  it("shows a title with < > and & as typed, set as text", () => {
     // The fake innerHTML keeps markup as text, so the test watches its setter.
     const asHtml = vi.spyOn(FakeElement.prototype, "innerHTML", "set");
     const title = "a<b>x</b> & c&amp;";

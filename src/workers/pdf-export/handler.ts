@@ -1,18 +1,3 @@
-// Old: public/pdfexport.worker.js (its entry, module 1366).
-//
-// What the PDF export worker does with a message. It keeps the old
-// message protocol, which the main-thread halves in workers/raster.ts,
-// workers/zip-encoder.ts and io/export/jpeg-encoder.ts speak
-// (FMT-WORKER-012): a message carries a `uuid` and a `command`, the answer
-// the same uuid and command plus the result buffer (transferred).
-//
-// - "raster": converts a slice of RGBA pixels to a PDF color space (and
-//   an alpha mask unless `hasMask`). CMYK loads the SWOP profile first.
-// - "jpegencoder": encodes RGBA or CMYK pixels with the old JPEG encoder.
-// - "zipencoder": deflates a buffer.
-//
-// Bad requests throw, which the main thread sees as the worker's "error"
-// event.
 import { Color } from "../../engine/color/color.ts";
 import { JpegEncoder, type JpegColorSpace } from "../../io/export/jpeg-encoder.ts";
 import { colorSpaceByName } from "../../io/export/pdf/color-spaces.ts";

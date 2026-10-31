@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 711 (opentype.js tables/cff.js).
-// Gravit change: the charstring interpreter treats a missing nominalWidthX
-// (no Private DICT) as 0, so such glyphs get a number width instead of NaN.
-//
-// The CFF table holds the glyph outlines in PostScript (Type 2 charstring)
-// format. Specs: Adobe TN #5176 (CFF) and TN #5177 (Type 2 charstrings).
-
 import {
   CffEncoding,
   cffExpertEncoding,

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 123 (GProperties).
 /**
  * The base of every inspector panel. The inspector sidebar
  * (inspector-sidebar.ts) creates one instance of each panel in the old

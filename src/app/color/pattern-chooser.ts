@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1657 (the touch GPatternChooser).
 /**
  * The color chooser in touch mode: the desktop chooser (color-chooser.ts)
  * with bigger rows of eight swatches, small-caps palette buttons, another

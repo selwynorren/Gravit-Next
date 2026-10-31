@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1374 (GBrowserContainer).
 /**
  * The container of the browser and the installed PWA: the local file
  * storage (File System Access with the file input fallback), external

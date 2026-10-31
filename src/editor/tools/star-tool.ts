@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 754 (GStarTool).
 /** The polygon tool with five points, half the inner radius and 18° angle steps. */
 import { registerClass } from "../../engine/core/object.ts";
 import { PolygonTool } from "./polygon-tool.ts";

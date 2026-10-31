@@ -22,15 +22,15 @@ function firstExisting(candidates: readonly string[]): string {
 }
 
 /**
- * Images, fonts, icons and data files shared with the old app. They are
+ * Images, fonts, icons and data files. They are
  * large (about 180 MB), so the build doesn't copy them; the server serves
  * them from here. The packaged app has them next to app.asar.
  */
 export const ASSETS_ROOT = process.env.GD_ASSETS_ROOT
   ? path.resolve(process.env.GD_ASSETS_ROOT)
-  : firstExisting([path.join(APP_ROOT, "assets"), path.resolve(APP_ROOT, "..", "assets")]);
+  : firstExisting([path.join(APP_ROOT, "src", "assets"), path.resolve(APP_ROOT, "..", "assets")]);
 
-/** The old app's HTML user guide, served at /docs. */
+/** The HTML user guide, served at /docs. */
 export const DOCS_ROOT = process.env.GD_DOCS_ROOT
   ? path.resolve(process.env.GD_DOCS_ROOT)
-  : firstExisting([path.join(APP_ROOT, "guide"), path.resolve(APP_ROOT, "..", "docs")]);
+  : firstExisting([path.join(APP_ROOT, "docs", "guide"), path.resolve(APP_ROOT, "..", "docs")]);

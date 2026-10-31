@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 416 (the GTL OpenType text meter).
 import type { Font } from "../fonts/font.ts";
 import type { FontManager } from "../fonts/font-manager.ts";
 import type { GlyphOptions, OpenTypeFont } from "../fonts/open-type-font.ts";

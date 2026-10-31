@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 384 (GPolygonTool).
 /**
  * Draws a regular polygon around the press point: the drag sets the
  * outer radius and the angle of the first point; Shift locks the angle to

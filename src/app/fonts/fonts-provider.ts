@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 381 (GFontsProvider).
 /**
  * Base class of the font providers the designer's font manager asks, in
  * order, to list and resolve fonts: the bundled fonts, the imported ones,
@@ -72,7 +71,7 @@ export interface FontsProviderOwner {
  * fails them with UnknownError; either way the file is forgotten, so
  * the next request downloads it again. The old app failed only the first
  * request on a connection error and nobody on a 404, which left the
- * fonts pending for good (BUG-164).
+ * fonts pending for good.
  */
 export function downloadFontFile(
   pending: Map<string, ResolveCallbacks[]>,

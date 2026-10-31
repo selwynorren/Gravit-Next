@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1415 (the PDF axial shading).
 import {
   PDFGradientShading,
   type PDFCanvasGradient,

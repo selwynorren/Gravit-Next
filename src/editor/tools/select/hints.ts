@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._updateResizeHint and the
-// position hint of _updateSelectionTransform).
 /**
  * The inline hints next to the pointer while dragging: "w × h" (or the
  * length of a single line) while resizing, the angle while rotating, and

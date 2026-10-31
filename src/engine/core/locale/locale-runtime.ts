@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 889 (the GLocale class; the instance the app
-// uses is made in locale.ts).
 import { readBrowserLanguage, type BrowserLanguage } from "./browser-language.ts";
 import { className } from "./class-name.ts";
 import { ClassReference } from "./class-reference.ts";

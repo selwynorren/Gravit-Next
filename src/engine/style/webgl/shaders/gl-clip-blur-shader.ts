@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 365 (the clipping blur shader, GGLClipBlurShader).
-//
-// The blur of GGLBlurEffect with "clip" on: like GLBlurShader, but only
-// pixels above an alpha threshold blur, so the shape keeps its outline.
-// Samples are jittered and the result dithered, then anti-aliased.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 

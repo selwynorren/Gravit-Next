@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 988 (opentype.js bidi.js).
-// Gravit changes:
-// - processText doesn't reverse Arabic sentences (opentype.js 0.11.0 does,
-//   in reverseArabicSentences); the text keeps its logical order and the
-//   caller lays it out.
-// - getTextGlyphs(text, chars) also fills chars with the character of each
-//   glyph that wasn't deleted by a ligature.
-
 import * as arabicSentenceCheck from "./features/arab/context-check/arabic-sentence.ts";
 import * as arabicWordCheck from "./features/arab/context-check/arabic-word.ts";
 import { arabicPresentationForms } from "./features/arab/arabic-presentation-forms.ts";

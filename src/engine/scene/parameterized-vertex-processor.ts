@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 528 (GParameterizedVertexProcessor).
 /**
  * The geometry of a ready shape (GSimpleShape): vertices whose
  * coordinates are numbers or expressions of named parameters, the

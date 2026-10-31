@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 502 (GGLVignetteShader, from glfx.js).
-//
-// Darkens the corners of the whole image (tiling aware), dithered.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

@@ -7,7 +7,7 @@ import { OpenTypeFont, TextDirection, clusterTexts } from "./open-type-font.ts";
 import { OpenTypeUtil } from "./open-type-util.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../../assets/font");
+const fontDir = resolve(here, "../../../assets/font");
 
 function readFont(name: string): ArrayBuffer {
   const bytes = readFileSync(resolve(fontDir, name));
@@ -74,7 +74,7 @@ function fixedExpected(): Record<string, Record<string, unknown>> {
 describe("OpenTypeUtil", () => {
   const fixed = fixedExpected();
 
-  it("reads names and styles like the old reader, weights also from the typographic subfamily (BUG-015)", () => {
+  it("reads names and styles like the old reader, weights also from the typographic subfamily", () => {
     expect(actual.info).toEqual(fixed.info);
   });
 
@@ -99,7 +99,7 @@ describe("OpenTypeUtil", () => {
     expect(actual.odd).toEqual(expected.odd);
   });
 
-  it("reports weight 600 for OpenSans SemiBoldItalic from its typographic subfamily (BUG-015)", () => {
+  it("reports weight 600 for OpenSans SemiBoldItalic from its typographic subfamily", () => {
     const info = OpenTypeUtil.getOpenTypeInfo(readFont("OpenSans-SemiBoldItalic.ttf"));
     expect(info).toMatchObject({ name: "Open Sans Semibold", weight: 600, style: "I" });
     expect(OpenTypeUtil.getOpenTypeInfo(readFont("OpenSans-Light.ttf"))).toMatchObject({
@@ -136,7 +136,7 @@ const fixedShaping = (
   }
 ).shaping;
 
-describe("HarfBuzz glyph texts (BUG-024)", () => {
+describe("HarfBuzz glyph texts", () => {
   it("maps UTF-8 cluster offsets to string indexes", () => {
     // "é" and "à" take two bytes each in UTF-8.
     expect(clusterTexts("éàb", [0, 2, 4])).toEqual(["é", "à", "b"]);

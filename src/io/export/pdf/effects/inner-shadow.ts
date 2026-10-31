@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1449 (GPDFInnerShadowEffect).
 import { Color } from "../../../../engine/color/color.ts";
 import { VertexSource } from "../../../../engine/geometry/vertex-source.ts";
 import { Point } from "../../../../engine/math/point.ts";

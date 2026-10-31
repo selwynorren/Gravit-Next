@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 132 (GLength).
-//
-// A length with a unit, the unit conversion table and the small
-// expression evaluator behind the numeric input fields ("10mm + 2pt").
 import { GObject, registerClass } from "../core/object.ts";
 import { formatNumber, parseNumber } from "../core/util.ts";
 

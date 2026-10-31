@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 719 (opentype.js tables/os2.js, unchanged).
-// The OS/2 table: metrics and other data required by Windows.
-
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";
 

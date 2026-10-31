@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1233 (the PDF text encoding base).
 import type { PDFTextEncodeOptions } from "./text-writer.ts";
 
 /** Turns text into what goes into `TJ`: strings and kerning numbers. */

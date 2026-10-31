@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 163 (GDocument.placeOrImport).
 /**
  * The one entry point for files that go into an open document: File >
  * Import > Place Image, paste of files and drop on the canvas

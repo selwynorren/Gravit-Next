@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 45 (GPathBase, GPathBase.AnchorPoint, GPathBase.AnchorPoints).
 /**
  * A shape made of anchor points: the base of GPath and of the paths
  * graph's lines. The anchor points live in their own container

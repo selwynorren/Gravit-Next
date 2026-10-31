@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 163 (the branches of GDocument.load
-// for files other than .gvdesign).
 /**
  * Opening an imported file as a document (FMT-IMPORT-003): SVG and SVGZ
  * (FMT-IMPORT-008), EPS (FMT-IMPORT-013), PDF and AI (FMT-IMPORT-010),
@@ -136,6 +134,11 @@ function fakeUnresolvedTexts(root: Node & ContainerApi): void {
   });
 }
 
+/** Whether the data starts with the PostScript signature (a PDF starts with "%PDF"). */
+export function isPostScript(data: Uint8Array): boolean {
+  return data[0] === 0x25 && data[1] === 0x21 && data[2] === 0x50 && data[3] === 0x53;
+}
+
 /**
  * GDocument.load for every extension but .gvdesign. `extension` is the
  * storage item's (upper case).
@@ -151,6 +154,8 @@ export function openImportedFile(
     if (item.getName()) context.setTitle(item.getName());
     context.setScene(scene);
   };
+  // Illustrator 9 and older save .ai as PostScript, which pdf.js cannot read.
+  if ("AI" === extension && isPostScript(data)) extension = "EPS";
   if ("SVG" === extension || "SVGZ" === extension) {
     SVGImport.import(
       data,

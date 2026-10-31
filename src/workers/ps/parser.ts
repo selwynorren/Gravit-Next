@@ -1,13 +1,3 @@
-// Old: public/psparser.js (PSParser, webpack module 1372 of its own build).
-//
-// The tokenizer and read loop of the PostScript interpreter. read() skips
-// to the first "%!", then reads tokens and hands each to the core. The
-// loop yields to the event loop now and then (see PSHost.shouldYield) and
-// reports progress in whole percent.
-//
-// Kept: the time limit compares `new Date()` with a string (endTime is a
-// date string with the wait time appended), which is never true, so only
-// the page's own timeout ends a long import (FMT-WORKER-003).
 import type { PSCore } from "./core.ts";
 import type { PSClasses, PSValue } from "./objects.ts";
 

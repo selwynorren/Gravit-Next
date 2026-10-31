@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 359 (the PDF color spaces).
 import { PDFGrayColor } from "./alpha.ts";
 import { PDFRGBColor } from "./cmyk-color-array.ts";
 import { PDFCMYKColor } from "./color-value.ts";

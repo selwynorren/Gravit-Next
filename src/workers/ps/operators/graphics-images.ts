@@ -1,8 +1,3 @@
-// Old: public/pscore.js, systemdict imagecolor, image, pstack, imagemask.
-//
-// image decodes the samples itself and posts the pixels as RGBA (or
-// CMYK + alpha) with "drawImage", without JSON cloning, as a
-// Uint8ClampedArray.
 import { BitsReader, type PSCore } from "../core.ts";
 import type { PSDict, PSPlainRecord, PSValue } from "../objects.ts";
 import { colorHelper, type Valued } from "./graphics-support.ts";

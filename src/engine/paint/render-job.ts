@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 898.
-//
-// In the old engine a render job replayed one recorded canvas in time
-// slices and kept the resume points of interrupted slices. The port paints
-// directly, so a job never gets interrupted; it still carries the render
-// parameters of the pass and whether a draw was skipped, which is what the
-// render callbacks report.
-
 export type RenderParameters = Record<string, unknown>;
 
 /** Something a job renders; the old jobs counted canvases they touched. */

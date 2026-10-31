@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 237 (GStorage with GStorage.Directory and GStorage.Item).
 /**
  * The storage base classes (FMT-STORAGE-001). A storage opens and saves
  * files somewhere; its items are the files. The only storage the app keeps

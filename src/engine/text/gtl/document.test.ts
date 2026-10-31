@@ -12,7 +12,7 @@ import { TLCodes } from "./tl-codes.ts";
 import { TLCore } from "./tl-core.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontFile = resolve(here, "../../../../assets/font/OpenSans-Regular.ttf");
+const fontFile = resolve(here, "../../../assets/font/OpenSans-Regular.ttf");
 
 /** Recorded from the old app with gtl-document-probe.ts (old modules 367, 920 and 928). */
 const expected = JSON.parse(
@@ -72,10 +72,10 @@ describe("the GTL document against the old engine", () => {
   // The old inverse of a splice got the document as its start, so undo
   // broke the word list and the failed layouts rolled back until the undo
   // log was empty. Now undo restores the text before the edit and redo the
-  // edited one, without any rollback (BUG-025).
+  // edited one, without any rollback.
   type Step = { words?: string[]; frame?: boolean; plain?: string; log?: { rollbacks: number } };
   for (const name of Object.keys(expected.undo as Record<string, unknown>)) {
-    it(`undoes and redoes ${name} (BUG-025)`, () => {
+    it(`undoes and redoes ${name}`, () => {
       const steps = (actual.undo as Record<string, Step[]>)[name] as Step[];
       expect(steps).toEqual(fixed.undo[name]);
       const old = (expected.undo as Record<string, Step[]>)[name] as Step[];
@@ -85,7 +85,7 @@ describe("the GTL document against the old engine", () => {
     });
   }
 
-  it("undoes a setText back to the text before it (BUG-025)", () => {
+  it("undoes a setText back to the text before it", () => {
     const steps = (actual.undo as Record<string, Step[]>).setText as Step[];
     expect(steps[4]?.plain).toBe(steps[0]?.plain);
     expect(steps[6]?.plain).toBe("re me now");

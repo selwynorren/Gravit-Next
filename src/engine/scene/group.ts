@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 122 (GGroup).
 /**
  * The group, node "group": a container of items with its own `trf` and
  * style (opacity, blend, effects; no fills or borders). A group with a

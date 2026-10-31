@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1450 (GPDFInvokeResource).
 import { PDFObject } from "./pdf-object.ts";
 import { PDFOperators } from "./operators.ts";
 import type { PDFOutput } from "./output.ts";

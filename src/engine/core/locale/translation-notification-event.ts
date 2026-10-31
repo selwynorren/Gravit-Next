@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 638 (GTranslationNotificationEvent).
 import { registerClass } from "../object.ts";
 import { TranslationEvent } from "./translation-event.ts";
 

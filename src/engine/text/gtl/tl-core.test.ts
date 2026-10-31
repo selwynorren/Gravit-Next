@@ -21,7 +21,7 @@ import { TLCore } from "./tl-core.ts";
 import { TLUtil } from "./tl-util.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../../assets/font");
+const fontDir = resolve(here, "../../../assets/font");
 
 /** The files the old app serves for the probe fonts. */
 const FONT_FILES: Record<string, string> = {
@@ -112,7 +112,7 @@ describe("GTL against the old engine", () => {
     expect(actual.transformText).toEqual(expected.transformText);
   });
 
-  it("normalizes every line break (BUG-023)", () => {
+  it("normalizes every line break", () => {
     // The old GTLUtil.deCRLFify replaced only the first CRLF and the first CR.
     expect(expected.deCRLFify).toBe("a\nb\n\nc\rd   e\r");
     expect(actual.deCRLFify).toBe("a\nb\nc\nd   e\n");

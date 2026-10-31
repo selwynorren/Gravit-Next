@@ -1,9 +1,3 @@
-// Old: public/ps.worker.js (webpack module 1367 of its own build), the
-// init/run half; the message handling is in ps.worker.ts.
-//
-// Builds the interpreter in the old order (parser, classes, core, CTM,
-// color) and runs it. The old worker loaded the five ps*.js scripts with
-// importScripts at this point; here they are modules.
 import { PSColor } from "./color.ts";
 import { PSCore } from "./core.ts";
 import { PSCTM } from "./ctm.ts";

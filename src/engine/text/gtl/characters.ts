@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 927 (the word splitter, carota's split.js with Gravit's line breaking rules).
 import type { CodeResolver, TextCode } from "./inline.ts";
 import { RunDraw } from "./run-draw.ts";
 import type { Character } from "./runs.ts";

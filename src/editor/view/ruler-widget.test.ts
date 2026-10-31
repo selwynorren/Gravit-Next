@@ -89,6 +89,42 @@ describe("RulerWidget", () => {
     expect(log(ruler)).toEqual([]);
   });
 
+  it("relabels the ticks from the ruler origin without moving them", () => {
+    const scene = new Scene(new Workspace());
+    const ruler = new RulerWidget(RulerWidget.Orientation.Horizontal, scene);
+    ruler.resize(400, 19);
+    ruler.updateView(0, 1);
+    const ticks = () => log(ruler).filter((entry) => entry.startsWith("moveTo("));
+    const before = ticks();
+    log(ruler).length = 0;
+    // Setting an origin repaints, as a unit change does.
+    scene.setProperty("rox", 100);
+    expect(ticks()).toEqual(before);
+    // The 0 is now where 100 was, so the first label is -100 at the left edge.
+    expect(labels(ruler).slice(0, 4)).toEqual([
+      '"-100",-10,8',
+      '"-50",43,8',
+      '"0",98,8',
+      '"50",145,8',
+    ]);
+    log(ruler).length = 0;
+    scene.setProperty("rox", null);
+    expect(labels(ruler).slice(0, 2)).toEqual(['"0",-2,8', '"50",45,8']);
+  });
+
+  it("uses roy for the vertical ruler and ignores rox there", () => {
+    const scene = new Scene(new Workspace());
+    const ruler = new RulerWidget(RulerWidget.Orientation.Vertical, scene);
+    ruler.resize(19, 300);
+    ruler.updateView(0, 1);
+    log(ruler).length = 0;
+    scene.setProperty("rox", 100);
+    expect(labels(ruler).slice(0, 2)).toEqual(['"0",-2,8', '"50",45,8']);
+    log(ruler).length = 0;
+    scene.setProperty("roy", 100);
+    expect(labels(ruler).slice(0, 3)).toEqual(['"-100",-10,8', '"-50",43,8', '"0",98,8']);
+  });
+
   it("shows the unit in the unit box", () => {
     const scene = new Scene(new Workspace());
     const unit = new RulerWidget(null, scene, undefined, true, { rulerLeftFill: false });

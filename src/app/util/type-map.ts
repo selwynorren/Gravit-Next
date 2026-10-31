@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1301 (a typed key/value bag).
 /** A plain object's keys copied onto a map with presence checks. */
 export class TypeMap {
   [key: string]: unknown;

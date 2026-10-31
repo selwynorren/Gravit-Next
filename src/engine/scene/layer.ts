@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 159 (GLayer).
 /**
  * The layer, node "layer": a named block inside a page (or another layer)
  * that holds the items. It has no `trf` of its own. Like a group it can

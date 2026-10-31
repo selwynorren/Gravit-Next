@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1501 (GMenuBar).
 /**
  * The bar of top-level menus: `nav.g-menu-bar` holding a root Menu
  * (`ul.g-menu.g-menu-root`). Once one of its menus is open, hovering

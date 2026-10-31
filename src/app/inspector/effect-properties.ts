@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1262 (GEffectProperties).
 /**
  * The Effects panel of the inspector: one row (`.effect-block`) per effect
  * of the first selected element, newest on top, each with a header
@@ -555,7 +554,7 @@ export class EffectProperties extends Properties implements EffectFormHost {
       // Removes the effect only when it was let go on the trash, outside the
       // panel, like the fill and border panels. The old code removed it
       // after any drag that didn't end on a row: Escape, between rows or on
-      // the canvas (BUG-152).
+      // the canvas.
       if (dragged && deleting) {
         const removing = dragged;
         const elements = this._elements as EffectsOwner[];

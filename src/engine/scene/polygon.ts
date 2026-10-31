@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 284 (GPolygon).
 /**
  * The polygon and star, node "polygon": `pts` outer points on a circle of
  * radius `or` around (`cx`, `cy`) starting at angle `oa`, each followed

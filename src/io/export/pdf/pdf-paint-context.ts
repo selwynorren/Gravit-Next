@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1444 (GPDFPaintContext).
 import { registerClass } from "../../../engine/core/object.ts";
 import type { PaintCanvas } from "../../../engine/paint/paint-canvas.ts";
 import { PaintContext } from "../../../engine/paint/paint-context.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 902 (GStylable.BorderPaintLayer).
 import { equals, extend } from "../core/util.ts";
 import { VertexContainer } from "../geometry/vertex-container.ts";
 import type { Node } from "../scene/node.ts";

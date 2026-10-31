@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 31 (GAction).
 /**
  * The base of every action: menu entries, toolbar buttons, context menu
  * items and keyboard shortcuts all run an action by its id through the

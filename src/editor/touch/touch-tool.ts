@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 340 (GTouchTool).
 /**
  * A tool of the touch layout's tool bar: which sidebar, panel and tool bar
  * it opens and its icon. The touch UI defines the instances; this module

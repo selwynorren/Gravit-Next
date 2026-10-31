@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1605 (GEnterLayerGroupAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";

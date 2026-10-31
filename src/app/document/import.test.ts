@@ -13,7 +13,7 @@ import { editDistance, importFontProvider, pickFont } from "./import-font-provid
 import { optimizeImport, optimizerStats } from "./import-optimizer.ts";
 
 describe("file types", () => {
-  it("open, place and drop accept only eight types, in the old order", () => {
+  it("open, place and drop accept these nine types, in this order", () => {
     expect(FileTypes.getFileTypesArray().map((type) => type.ext)).toEqual([
       "gvdesign",
       "png",
@@ -22,8 +22,15 @@ describe("file types", () => {
       "jpeg",
       "svg",
       "pdf",
+      "ai",
       "eps",
     ]);
+  });
+
+  it("an .ai file can be opened but not saved to", () => {
+    expect(FileTypes.AI.load).toBe(true);
+    expect(FileTypes.AI.import_image).toBe(true);
+    expect(FileTypes.AI.store).toBe(false);
   });
 
   it("the config keeps the local constants", () => {
@@ -180,7 +187,7 @@ describe("import optimiser", () => {
     expect(group.getChildren()).toHaveLength(2);
   });
 
-  it("moves every child of the merged path, in order (BUG-101)", () => {
+  it("moves every child of the merged path, in order", () => {
     const group = new Group();
     const first = clipPath(1);
     const second = clipPath(3);

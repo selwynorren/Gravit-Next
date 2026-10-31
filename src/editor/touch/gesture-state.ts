@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1189.
 /**
  * What the gesture helper knows about the fingers between events: the
  * touches of the last event and whether the touch counts as a swipe.

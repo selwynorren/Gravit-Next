@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1616 (GVectorizeImageAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";

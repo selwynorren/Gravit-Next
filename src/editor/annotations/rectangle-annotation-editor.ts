@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 768 (GRectangleAnnotationEditor).
 /**
  * The editor of a rectangle annotation: a rectangle editor without the rotation corners and handle.
  * See AnnotationEditorMixin for what all annotation editors share.

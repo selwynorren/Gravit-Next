@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1304 (GSelectByPaintLayerAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Node } from "../../../engine/scene/node.ts";
 import type { Effects } from "../../../engine/style/effects.ts";

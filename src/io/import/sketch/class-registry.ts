@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 561 (sketchclasses: the name-to-class table).
 /**
  * Finds the importer class for a layer's `_class` ("shapeGroup",
  * "symbolInstance", ...). The old module required every class through the

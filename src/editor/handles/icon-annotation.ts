@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 383 (base of the icon handles: rotate,
-// preserve aspect ratio, skew).
 import type { Color } from "../../engine/color/color.ts";
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import type { Point } from "../../engine/math/point.ts";
@@ -125,7 +123,7 @@ export abstract class IconAnnotation {
   /**
    * Loads the icon from `url` (as a PNG data URL); null removes it. Loads
    * are not cancelled: the one that finishes last wins, even over a later
-   * setIcon(null) (see "Icon handle setIcon load race" in QUESTIONS.md).
+   * setIcon(null).
    */
   setIcon(url: string | null | undefined): void {
     if (!url) {

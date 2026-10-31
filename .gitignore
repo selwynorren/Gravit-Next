@@ -1,8 +1,7 @@
 node_modules/
 dist/
 dist-electron/
-# Private builds of parallel test runs (see PORTING.md).
-dist-run-*/
+
 release/
 test-results/
 *.tsbuildinfo
@@ -11,10 +10,8 @@ Thumbs.db
 .env
 .env.*
 
-# LevelDB log files are test fixtures of the profile migration.
-!src/app/migration/fixtures/**/*.log
-!parity/expected/electron/old-userdata/**/*.log
-
-# The old app the parity suite compares against: a checkout of the
-# parity-reference tag (see README.md).
-legacy/
+# Claude Code
+.claude/
+CLAUDE.md
+# Graphify
+graphify-out/

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 339 (GMenuItem).
 /**
  * One entry of a Menu: an item (usually backed by an action), a submenu
  * or a divider. It owns its `li.g-menu-item` as plain DOM (see menu.ts):
@@ -272,7 +271,7 @@ export class MenuItem extends EventTarget {
   /**
    * Sets the caption. Strings and keys are shown as text; the old item
    * inserted them as HTML, which also interpreted markup in file and
-   * layer names (see "Menu captions and tab titles are text" in QUESTIONS.md).
+   * layer names.
    */
   setCaption(caption: MenuItemContent): void {
     if (caption === this._caption) return;
@@ -291,7 +290,7 @@ export class MenuItem extends EventTarget {
 
   /**
    * Sets the info text. As before this shows or hides the whole item (not
-   * the info span): see "A menu item's info hides the item" in QUESTIONS.md.
+   * the info span):.
    */
   setInfo(info: MenuItemContent): void {
     if (info === this._info) return;

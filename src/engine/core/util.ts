@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 11 (GUtil).
 /**
  * Small helpers the whole engine uses: deep equality, object extension,
  * ids, number formatting, packing floats into base64, escaping and string

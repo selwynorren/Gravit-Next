@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 655 (the GTL canvas context).
-//
-// The context the GTL layout draws into. It wraps a 2D context and adds
-// what the layout needs on top: glyph outlines from the OpenType font
-// (vertex mode), a text transformer chain (path, direction) applied per
-// glyph, separate fill and stroke styles for pattern fills, a fill
-// transform, and collecting outlines (and their styles) instead of
-// painting them.
 import { Vertex } from "../geometry/vertex.ts";
 import { VertexContainer } from "../geometry/vertex-container.ts";
 import { VertexInfo } from "../geometry/vertex-info.ts";

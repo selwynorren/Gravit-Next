@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1435 (the PDF standard Type 1 font).
 import { PDFEncodings } from "./encodings.ts";
 import { PDFFont } from "./pdf-font.ts";
 

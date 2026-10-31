@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1422 (GPDFDocument).
 import { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { uuid } from "../../../engine/core/util.ts";
 import type { Point } from "../../../engine/math/point.ts";

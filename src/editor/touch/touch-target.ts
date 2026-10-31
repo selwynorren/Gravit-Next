@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 878.
 /**
  * Listens to the touch events of one element and feeds them to a gesture
  * helper. A touch move only counts once a finger is MIN_TOUCH_MOVE_DISTANCE

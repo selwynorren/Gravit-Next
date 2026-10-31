@@ -1,5 +1,5 @@
 /**
- * The accent part of the GravitDesign Next look: a stylesheet that, loaded
+ * The accent part of the Gravit Next look: a stylesheet that, loaded
  * after one of the old theme stylesheets, turns the old pink accent
  * (#d72e63 and its lighter and darker shades) into the brand magenta
  * (#E3136B) everywhere, and leaves everything else exactly as it was.

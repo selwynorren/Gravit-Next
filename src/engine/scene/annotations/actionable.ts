@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 327 (GActionable).
 /**
  * Elements with action buttons (GActionItem) in a row above their top
  * right corner, 5 units apart, right-aligned to the corner. Used by the

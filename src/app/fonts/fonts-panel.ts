@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1701 ($.fn.gFontsPanel).
 /**
  * The list of fonts in the font chooser (fonts-button.ts): one
  * `.fonts-row` per family with its name and, once a provider sent it,

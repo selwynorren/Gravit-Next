@@ -66,14 +66,14 @@ describe("Sketch paints", () => {
 
 /** Names the old importer read differently, with the fixed reading. */
 const FIXED_QUERIES: Record<string, Partial<ReturnType<typeof SketchText.composeQuery>>> = {
-  // The old importer took "Regular" for italic (BUG-106).
+  // The old importer took "Regular" for italic.
   "OpenSans-Regular": { fontStyle: "N" },
 };
 
 describe("SketchText.composeQuery", () => {
   for (const [name, query] of Object.entries(recorded.composeQuery)) {
     const fixed = FIXED_QUERIES[name];
-    it(`reads ${JSON.stringify(name)} ${fixed ? "upright (BUG-106)" : "like the old importer"}`, () => {
+    it(`reads ${JSON.stringify(name)} ${fixed ? "upright" : "like the old importer"}`, () => {
       expect(SketchText.composeQuery(name)).toEqual({ ...query, ...fixed });
     });
   }
@@ -83,7 +83,7 @@ describe("SketchText.composeQuery", () => {
     ["Lato-RegularItalic", "I"],
     ["Lato-Oblique", "I"],
     ["Lato-Italic", "I"],
-  ])("reads the style of %s as %s (BUG-106)", (name, style) => {
+  ])("reads the style of %s as %s", (name, style) => {
     expect(SketchText.composeQuery(name).fontStyle).toBe(style);
   });
 });

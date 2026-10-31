@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 48 (GVertex).
-
 /** Vertex commands. Curves spread over several vertices, see Vertex. */
 export const VertexCommand = {
   Move: 1,

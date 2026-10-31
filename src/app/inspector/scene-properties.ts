@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1659 (GSceneProperties).
 /**
  * The "Document" panel: unit, color mode, dpi and the grid (off, boxed
  * with width and height, isometric with size and two angles). Shown with
@@ -240,7 +239,7 @@ export class SceneProperties extends Properties {
         );
         const value = parseFloat((InputBox.of(input) as InputBox).value());
         // Only a finite number. The old check (not null, a number) let NaN
-        // through, which hid the grid and was saved as null (BUG-162).
+        // through, which hid the grid and was saved as null.
         if (Number.isFinite(value))
           this._assignProperty(
             property,

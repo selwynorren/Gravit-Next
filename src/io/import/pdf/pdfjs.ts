@@ -1,15 +1,3 @@
-// Old: designer.browser.dev.js module 792 (the pdf.js main build Gravit
-// bundled, version 2.1.286 with Gravit's patches) and chunk.vendor.js
-// module 1201, which pointed pdf.js at public/pdf.worker.js.
-//
-// The rewrite loads pdfjs-dist 2.1.266's main build as text, applies the
-// same patches (workers/pdf/pdfjs-patches.ts) and evaluates it once. pdf.js
-// itself compiles font glyphs with `new Function` (isEvalSupported), so
-// evaluating its build adds no new requirement. Every document gets its
-// own worker (workers/pdf), like getDocument without a worker did.
-//
-// The interfaces below describe the parts of the pdf.js API the importer
-// uses; pdf.js has no types of its own in this version.
 import mainSource from "pdfjs-dist/build/pdf.js?raw";
 import { applyPatches, MAIN_PATCHES } from "../../../workers/pdf/pdfjs-patches.ts";
 import { createPdfWorker } from "../../../workers/pdf/index.ts";

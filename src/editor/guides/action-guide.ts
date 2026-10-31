@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1076 (GActionGuide).
 import { GObject, registerClass } from "../../engine/core/object.ts";
 import { QuadTree } from "../../engine/geometry/quadtree.ts";
 import { Rect } from "../../engine/math/rect.ts";

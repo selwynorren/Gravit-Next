@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1412 (GPDFSetLineWidthOperation).
 import { PDFNumber } from "./pdf-number.ts";
 import { PDFObject } from "./pdf-object.ts";
 import { PDFOperators } from "./operators.ts";

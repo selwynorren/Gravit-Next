@@ -1,8 +1,0 @@
-[
-  "engine-model/nodes/class-registry",
-  "engine-model/nodes/defaults-constructed",
-  "engine-model/nodes/defaults-restored",
-  "engine-model/nodes/non-default-values",
-  "engine-model/nodes/validate-insertion",
-  "engine-model/special/annotations-and-comments"
-]

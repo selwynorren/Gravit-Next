@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 896.
-//
-// Despite the file name (from the port map) this is the JPEG side: it
-// writes the DPI into the JFIF APP0 header of a JPEG, if it starts with one.
-
 export class JpegDpi {
   _buffer: ArrayBuffer;
 

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1339 (GPageProperties).
 /**
  * The "Page" panel: background color and opacity, size (presets, width,
  * height, rotate, trim to content, clip content), bleed, margins and the
@@ -452,7 +451,7 @@ export class PageProperties extends Properties {
     const scene = sceneOf(activeDocument() as Document);
     // The last scene's listeners go first. The old code removed them after
     // adding the new ones, so with a second window of the same document
-    // (the same scene) it removed the listeners just added (BUG-160).
+    // (the same scene) it removed the listeners just added.
     if (this._lastScene) {
       this._lastScene.removeEventListener(
         AfterPropertiesChangeEvent,
@@ -696,7 +695,7 @@ export class PageProperties extends Properties {
       }
     };
     // The rows these look in are built by _updateUI below, so nothing is
-    // found; see "Page size button tooltips never attach" in QUESTIONS.md.
+    // found;.
     buttonTip("rotate-canvas", "rotate-canvas", { learnMore: "" });
     buttonTip("trim-canvas", "trim-canvas", { learnMore: "" });
     buttonTip("clip-content", "clip-content", {});

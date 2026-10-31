@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 512 (GAnchorLink, not in the G barrel).
 /**
  * A reference to an anchor by id that resolves to the anchor object once
  * it is known (edges of the paths graph point at anchors this way).

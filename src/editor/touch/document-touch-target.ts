@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1581.
 /**
  * The touch handling of the whole page (GDesigner listens with it on the
  * document from the start): taps become mouse events, two fingers close

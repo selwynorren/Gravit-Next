@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1035 (GEmptyAnnotation).
 /**
  * An annotation without a shape, node "ann": just the meta properties and
  * the comment thread. Not an element, so it is never painted or hit.

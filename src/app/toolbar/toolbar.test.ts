@@ -59,8 +59,71 @@ describe("Toolbar", () => {
       "section compound-section group-section",
       "section compound-section arrange-section",
       "section compound-section action-section",
+      "section compound-section guide-lock-section",
       "section compound-section export-section",
     ]);
+  });
+
+  describe("Lock Guides", () => {
+    function withScene(initial: boolean | null, hasDocument = true) {
+      const fixture = setup();
+      const properties: Record<string, unknown> = { gll: initial };
+      const calls: string[] = [];
+      fixture.scene = {
+        getProperty: (name: string) => properties[name],
+        setProperties: (names: string[], values: unknown[]) => {
+          calls.push("set " + names.join(","));
+          names.forEach((name, index) => (properties[name] = values[index]));
+        },
+      };
+      if (hasDocument)
+        fixture.editor = {
+          beginTransaction: () => calls.push("begin"),
+          commitTransaction: (name: string) => calls.push("commit " + name),
+          // The undo menu is built with the toolbar.
+          getCurrentStateId: () => "a",
+          hasRedoState: () => false,
+          hasUndoState: () => false,
+          getRedoStates: () => [],
+          getUndoStates: () => [],
+        };
+      return { properties, calls };
+    }
+    const lockButton = (): FakeElement =>
+      find(".guide-lock-section > .toolbar-button > .action-button");
+
+    it("starts unlocked, with the unlock icon", () => {
+      withScene(null);
+      makeToolbar();
+      expect(classes(lockButton())).not.toContain("g-active");
+      expect(classes(lockButton().children[0])).toContain("gravit-icon-unlock");
+    });
+
+    it("locks in one transaction and shows the lock", () => {
+      const { properties, calls } = withScene(null);
+      makeToolbar();
+      fire(lockButton(), "click");
+      expect(calls).toEqual(["begin", "set gll", "commit Toggle guide lock"]);
+      expect(properties.gll).toBe(true);
+      expect(classes(lockButton())).toContain("g-active");
+      expect(classes(lockButton().children[0])).toContain("gravit-icon-lock");
+    });
+
+    it("unlocks by writing the default, not false", () => {
+      const { properties } = withScene(true);
+      makeToolbar();
+      fire(lockButton(), "click");
+      expect(properties.gll).toBeNull();
+      expect(classes(lockButton())).not.toContain("g-active");
+      expect(classes(lockButton().children[0])).toContain("gravit-icon-unlock");
+    });
+
+    it("does nothing without a document", () => {
+      const { calls } = withScene(null, false);
+      makeToolbar();
+      fire(lockButton(), "click");
+      expect(calls).toEqual([]);
+    });
   });
 
   it("builds an action button with data-action, title, icon and the processing span", () => {

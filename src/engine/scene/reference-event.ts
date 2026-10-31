@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 472 (GReferenceEvent, not in the G barrel).
 /**
  * Sent to a node when the scene links it to a reference (a style, a
  * symbol master, a path for text) or unlinks it; the node keeps the

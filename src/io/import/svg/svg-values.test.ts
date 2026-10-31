@@ -33,7 +33,7 @@ function context(): PropertyContext {
 describe("SvgTransform", () => {
   it("applies transform lists like the old importer (outputs recorded from the old app)", () => {
     recorded.inputs.TRANSFORMS.forEach((text, i) => {
-      // matrix() and skews multiply on the other side now (BUG-080).
+      // matrix() and skews multiply on the other side now.
       if (/matrix|skew/i.test(text)) return;
       const result = attempt(() => {
         const scene: SceneContext = { transform: new Transform(1, 0, 0, 1, 3, 4) };
@@ -44,7 +44,7 @@ describe("SvgTransform", () => {
     });
   });
 
-  it("applies matrix() on the same side as translate() (BUG-080)", () => {
+  it("applies matrix() on the same side as translate()", () => {
     const scene: SceneContext = { transform: new Transform(2, 0, 0, 2, 0, 0) };
     new SvgTransform(context(), "matrix(1 0 0 1 10 0)").apply(scene);
     expect(scene.transform.getMatrix()).toEqual([2, 0, 0, 2, 20, 0]);
@@ -53,7 +53,7 @@ describe("SvgTransform", () => {
     expect(translated.transform.getMatrix()).toEqual([2, 0, 0, 2, 20, 0]);
   });
 
-  it("applies matrix() and skews in list order, the last one first (BUG-080)", () => {
+  it("applies matrix() and skews in list order, the last one first", () => {
     const map = (text: string, x: number, y: number) => {
       const scene: SceneContext = { transform: new Transform() };
       new SvgTransform(context(), text).apply(scene);
@@ -111,7 +111,7 @@ describe("SvgProperty", () => {
           property.hasValue(),
         ];
       });
-      // The old app threw for em and ex (BUG-079); without an element
+      // The old app threw for em and ex; without an element
       // they are now relative to 16px.
       const old = recorded.outputs.lengths[i];
       const expected =
@@ -139,7 +139,7 @@ describe("SvgProperty", () => {
 });
 
 describe("SvgBounds", () => {
-  it("moves the bottom edge to the y of a lower point (BUG-078)", () => {
+  it("moves the bottom edge to the y of a lower point", () => {
     const bounds = new SvgBounds();
     bounds.expand(new SvgPoint(5, 10));
     bounds.expand(new SvgPoint(2, 40));

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 929 (GEdge, not in the G barrel).
 /**
  * A graph edge from a source to a destination anchor, held as anchor
  * links so a restored edge can name its anchors by id before they exist.

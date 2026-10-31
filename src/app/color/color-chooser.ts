@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1150 (GPatternChooser and $.fn.gPatternChooser).
 /**
  * The color chooser: the overlay the paint fields open. It edits one
  * pattern (a color in RGB, HSB or CMYK, a linear, radial or angular
@@ -405,7 +404,7 @@ function svgBackground(svg: string): string {
   return 'url("data:image/svg+xml;base64,' + btoa(svg) + '")';
 }
 
-/** The texture paste message, which the old string table lacks (BUG-133). */
+/** The texture paste message, which the old string table lacks. */
 const TEXTURE_PASTE_ALERT = "Select a shape, copy it to clipboard then paste it as texture here.";
 
 /**
@@ -897,7 +896,7 @@ export class PatternChooser {
       ["C", "M", "Y", "K"].forEach((name, index) => {
         const label = el("label", "cymk-label");
         // Old: .css("width", undefined) wrote nothing (the touch chooser's
-        // "cymkWidth"; see "The touch chooser's CMYK boxes have no width" in QUESTIONS.md).
+        // "cymkWidth";).
         if (params.cmykWidth !== undefined) css(label, "width", params.cmykWidth);
         label.setAttribute("data-component-index", String(index));
         const input = el("input");
@@ -1384,7 +1383,7 @@ export class PatternChooser {
           break;
         }
       }
-    // The old app showed the arrowhead message here (BUG-133). The string
+    // The old app showed the arrowhead message here. The string
     // table is the old bundle's, so the texture message is English only.
     if (!pasted) window.alert(TEXTURE_PASTE_ALERT);
   }
@@ -2330,7 +2329,7 @@ export class PatternChooser {
       );
       // The old code looked for the type select in the texture editor,
       // where it isn't, so the select never showed the pattern's type
-      // (BUG-157).
+      //.
       const typeSelect = this._noiseEditor.querySelector('[data-property="noise_type"]');
       if (typeSelect) {
         for (const option of typeSelect.children) option.removeAttribute("selected");

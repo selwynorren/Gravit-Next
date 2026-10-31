@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 338 (GPDFNumber).
-
 /** How the writer formats numbers. */
 export const PDFNumber = {
   /** Four decimals at most, trailing zeros dropped; anything but a number is 0 (with a warning). */

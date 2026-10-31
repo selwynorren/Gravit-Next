@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 732 (GGLHueSaturationEffect).
-//
-// Hue and saturation on WebGL; without a hue change and with a saturation
-// of 0 or more the CSS saturate filter does it.
 import { Locale } from "../../../core/locale/locale.ts";
 import { GMath } from "../../../math/math.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../../paint/paint-canvas.ts";

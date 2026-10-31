@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1078 (the connector editor, no G name).
 /**
  * The editor of a connector: a path editor without resize box and
  * rotation handle. Moving the whole connector moves the paths it connects

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1425 (the PDF page contents).
 import { PDFByteStream } from "./byte-stream.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";
 import { PDFFlateDecode } from "./flate-decode.ts";

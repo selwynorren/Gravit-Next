@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 498 (GGLToonShader, from GPUImage).
-//
-// Sobel edges drawn black plus colour quantization. The old render step
-// sets "textlHeight" (sic), which the program doesn't have, so the texel
-// height uniform stays 0; kept for parity.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

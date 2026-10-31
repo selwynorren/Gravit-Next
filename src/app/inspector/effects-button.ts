@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1527 (GEffectsButton).
 /**
  * One tile of the add-effect panel (effects-panel.ts): an icon and a
  * caption that add the effect when clicked. Without arguments it is an

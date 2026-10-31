@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1086 (GSymbolEditor).
 /**
  * The editor of a symbol (master or instance). It paints in the symbol
  * colour (masters and instances only), shows the label over the symbol

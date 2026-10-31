@@ -1,13 +1,3 @@
-// Old: chunk.vendor.js module 708 (opentype.js opentype.js, the entry point).
-// Gravit changes:
-// - WOFF tables are inflated with pako 1.0.11 (inflate with raw: true)
-//   instead of tiny-inflate.
-// - parse() also accepts a DataView.
-// - A morx table sets font.hasGHBTables (the text then goes through HarfBuzz).
-// - parse() throws when there is no cmap table.
-// - numGlyphs is clamped to the number of glyphs actually read.
-// - parseTableEntries is exported (the PDF exporter uses it to find "CFF ").
-
 import { inflate as pakoInflate } from "pako";
 import { BoundingBox } from "./bbox.ts";
 import { defined } from "./check.ts";

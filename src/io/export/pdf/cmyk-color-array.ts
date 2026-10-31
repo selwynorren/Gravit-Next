@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 559 (the PDF RGB color).
 import { Color } from "../../../engine/color/color.ts";
 import { PDFArray } from "./pdf-array.ts";
 import { PDFColor } from "./pdf-color.ts";

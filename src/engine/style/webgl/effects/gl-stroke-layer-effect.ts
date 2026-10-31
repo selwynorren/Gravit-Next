@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1018 (GGLStrokeLayerEffect).
-//
-// A stroke made from the rendered pixels (so it follows text, images and
-// effects), outside, inside or centered on the edge. Width and softness
-// sliders are quadratic.
 import { Locale } from "../../../core/locale/locale.ts";
 import { LocaleKey } from "../../../core/locale/locale-key.ts";
 import { RGBColor } from "../../../color/rgb-color.ts";

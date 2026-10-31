@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 370 (GTextAnnotation).
 /**
  * A text note, node "ant": a GText that starts as black "New annotation"
  * (localized) in a 1:1 box. Building it already stamps `mtime`, since the

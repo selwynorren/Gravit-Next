@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1235 (what the vector exporters can't write natively).
-//
-// Used by the PDF exporter to decide which nodes to rasterize: custom
-// (WebGL) blend modes, texture, angular and background fills, and with
-// effects enabled any effect other than a drop or an inner shadow.
 import type { Node } from "../../engine/scene/node.ts";
 import { BlendShader } from "../../engine/paint/webgl/blend-shader.ts";
 import { AngularGradient } from "../../engine/style/angular-gradient.ts";

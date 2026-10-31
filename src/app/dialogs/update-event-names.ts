@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1349 (the Electron updater message names).
 /**
  * The IPC channel names between the app and the Electron updater.
  * "donwload-update" is the old spelling; the main process listened for it.

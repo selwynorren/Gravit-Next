@@ -1,6 +1,3 @@
-// Old: public/pscore.js, systemdict setlinewidth … sethsbcolor: line
-// parameters, cache device stubs, color spaces and colors, and the
-// device parameters the importer accepts and ignores.
 import type { PSCore } from "../core.ts";
 import type { PSArray, PSValue } from "../objects.ts";
 import { colorHelper, type Valued } from "./graphics-support.ts";

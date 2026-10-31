@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1226 (the PDF paint style).
 import { Color } from "../../../engine/color/color.ts";
 import { Gradient } from "../../../engine/style/gradient.ts";
 import { LinearGradient } from "../../../engine/style/linear-gradient.ts";

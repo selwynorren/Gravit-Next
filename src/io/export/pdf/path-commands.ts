@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1420 (the PDF path commands).
 import { Point } from "../../../engine/math/point.ts";
 import type { PDFMediaBox } from "./media-box.ts";
 import { PDFNumber } from "./pdf-number.ts";

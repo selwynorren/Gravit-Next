@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 748 (GLassoTool).
 /**
  * The lasso: the subselect tool with a free-hand selection area. The
  * outline follows the pointer; every 20 points (or 5+ points spanning

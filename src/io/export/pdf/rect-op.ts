@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1230 (the PDF `re` operator).
 import { PDFNumber } from "./pdf-number.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput } from "./output.ts";

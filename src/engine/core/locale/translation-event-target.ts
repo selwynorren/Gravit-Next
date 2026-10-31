@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 892.
 import type { TranslationEvent } from "./translation-event.ts";
 
 type EventClass<E extends TranslationEvent> = abstract new (...args: never[]) => E;

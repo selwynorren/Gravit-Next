@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 440 (the PDF `cm` operator).
 import type { Transform } from "../../../engine/math/transform.ts";
 import { PDFMatrixOperator } from "./operator.ts";
 

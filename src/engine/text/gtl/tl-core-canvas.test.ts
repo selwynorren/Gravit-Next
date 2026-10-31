@@ -15,7 +15,7 @@ import { RenderFlags } from "./render-flags.ts";
 import { TLCore } from "./tl-core.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontFile = resolve(here, "../../../../assets/font/OpenSans-Regular.ttf");
+const fontFile = resolve(here, "../../../assets/font/OpenSans-Regular.ttf");
 
 const FILL = RenderFlags.RENDERFLAG_FILL | RenderFlags.RENDERFLAG_VERTEX;
 const STROKE = RenderFlags.RENDERFLAG_STROKE | RenderFlags.RENDERFLAG_VERTEX;

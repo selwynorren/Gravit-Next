@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1598 (GFitCurrentLayerAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Rect } from "../../../engine/math/rect.ts";
 import { Action } from "../action.ts";

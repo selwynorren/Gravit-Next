@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 214 (GEllipse).
 /**
  * The ellipse, node "ellipse": the unit circle mapped by `trf`, cut from
  * start angle `sa` to end angle `ea` as a pie (closed through the

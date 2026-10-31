@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 767 (GRectangleAnnotationTool).
 /** Draws a rectangle annotation like the rectangle tool, without the position hint. */
 import { registerClass, type AnyConstructor } from "../../engine/core/object.ts";
 import { RectangleAnnotation } from "../../engine/scene/annotations/rectangle-annotation.ts";

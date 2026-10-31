@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1227 (the PDF gradient shading base).
 import type { Transform } from "../../../engine/math/transform.ts";
 import type { LinearGradient } from "../../../engine/style/linear-gradient.ts";
 import type { RadialGradient } from "../../../engine/style/radial-gradient.ts";

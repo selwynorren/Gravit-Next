@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 983 (opentype.js tables/sfnt.js, unchanged).
-// The sfnt wrapper: the table directory and the tables of a whole font
-// file. The writer always produces a CFF (OTTO) font.
-
 import * as check from "../check.ts";
 import type { Font } from "../font.ts";
 import type { Glyph } from "../glyph.ts";

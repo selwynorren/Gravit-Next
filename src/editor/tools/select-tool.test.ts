@@ -9,6 +9,7 @@ import { Cursor } from "../cursor.ts";
 import { EditorOptions } from "../editor-options.ts";
 import { ElementEditor } from "../element-editors/element-editor.ts";
 import type { SceneEditor } from "../element-editors/scene-editor.ts";
+import { GUIDE_EDIT_REQUEST, type GuideEditRequest } from "../guides/guide-edit-request.ts";
 import { installFakeDom } from "../view/testing/fake-dom.ts";
 import { PointerTool } from "./pointer-tool.ts";
 import { SelectTool } from "./select-tool.ts";
@@ -377,6 +378,42 @@ describe("SelectTool guide lines", () => {
     await input.up(350, 200);
     expect(start).toHaveBeenCalledWith(true, 0);
     expect(finish).toHaveBeenCalled();
+  });
+
+  it("does not find a locked guide, and finds it again once unlocked", () => {
+    const { scene, tool, input, view } = setup();
+    scene.setProperty("vgl", [300]);
+    view.getViewConfiguration().guideLinesVisible = true;
+    scene.setProperty("gll", true);
+    input.move(301, 200);
+    expect(tool._guideLineUnderMouse).toBeNull();
+    scene.setProperty("gll", null);
+    input.move(302, 200);
+    expect(tool._guideLineUnderMouse).toEqual({ isVertical: true, guideIndex: 0 });
+  });
+
+  it("asks for the Manage Guides dialog on a double click on a guide", () => {
+    const { scene, tool, input, view, editor } = setup();
+    scene.setProperty("hgl", [100, 200]);
+    view.getViewConfiguration().guideLinesVisible = true;
+    input.move(100, 201);
+    expect(tool._guideLineUnderMouse).toEqual({ isVertical: false, guideIndex: 1 });
+    const requests: CustomEvent<GuideEditRequest>[] = [];
+    vi.stubGlobal("window", {
+      dispatchEvent: (event: CustomEvent<GuideEditRequest>) => requests.push(event),
+    });
+    try {
+      const handled = tool._mouseDblClick(
+        Object.assign(new MouseEvent.DblClick(), { client: new Point(100, 201) }),
+      );
+      expect(handled).toBe(true);
+    } finally {
+      vi.unstubAllGlobals();
+    }
+    expect(requests.map((r) => [r.type, r.detail.isVertical, r.detail.guideIndex])).toEqual([
+      [GUIDE_EDIT_REQUEST, false, 1],
+    ]);
+    expect(requests[0]?.detail.editor).toBe(editor);
   });
 
   it("ignores hidden guide lines", () => {

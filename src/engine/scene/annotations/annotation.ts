@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 84 (GAnnotation).
 /**
  * What every review annotation shares: the meta properties (author, text,
  * timestamps, sequence, resolved and removed state, cloud ids), the

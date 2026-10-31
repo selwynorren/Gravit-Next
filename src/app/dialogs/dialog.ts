@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1727 ($.fn.gDialog).
 /**
  * Modal dialogs. A dialog wraps a content element:
  *

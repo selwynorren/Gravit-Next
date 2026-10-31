@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 10 (the app config), the touch part.
 /**
  * The touch timings and distances of the app config. The app config itself
  * (src/app/config.ts, app-config-document) isn't ported yet, and the

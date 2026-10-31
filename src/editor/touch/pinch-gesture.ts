@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1585.
 /**
  * Two fingers on the view: moving them apart or together zooms around
  * their middle, moving them together at the same distance scrolls. While

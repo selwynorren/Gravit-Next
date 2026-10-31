@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1200 (local font helpers).
 /**
  * Helpers for fonts that come as files with their own names: grouping by
  * display name for the font list, reading the fonts of the Local Font

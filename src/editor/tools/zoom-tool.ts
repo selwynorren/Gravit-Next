@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 755 (GZoomTool).
 /**
  * Zooms the view: a click zooms in to the next zoom level at the click
  * (with Alt out to the previous one), a drag zooms into the dragged area

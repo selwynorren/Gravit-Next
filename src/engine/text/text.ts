@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 70 (GText).
 /**
  * The text element. The text itself lives in a GTL core (TLCore): the
  * runs, line breaking, lists and glyph outlines. GText keeps the element

@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 377 (opentype.js types.js, unchanged).
-// The data types of OpenType and CFF files and their big endian encoders.
-
 import * as check from "./check.ts";
 
 const LIMIT16 = 32768; // 2^15: where a 16-bit number switches sign

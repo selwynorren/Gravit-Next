@@ -106,6 +106,8 @@ export interface Fixture {
   actions: Map<string, TestAction>;
   settings: Record<string, unknown>;
   editor: Record<string, unknown> | null;
+  /** The active document's scene (Lock Guides); null by default. */
+  scene: unknown;
   executed: [string, unknown, unknown][];
 }
 
@@ -147,6 +149,7 @@ export function setup(): Fixture {
     actions,
     settings,
     editor: null,
+    scene: null,
     executed: [],
   };
   const designer = Object.assign(new EventTarget(), {
@@ -159,7 +162,7 @@ export function setup(): Fixture {
     getWindows: () => windows,
     getSetting: (key: string) => settings[key],
     getActiveDocument: () =>
-      fixture.editor ? { getEditor: () => fixture.editor, getScene: () => null } : null,
+      fixture.editor ? { getEditor: () => fixture.editor, getScene: () => fixture.scene } : null,
     getRightSidebars: () => ({ getActiveSidebar: () => null, getSidebar: () => null }),
     isTouchEnabled: () => false,
     canActivateTool: () => true,

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1337 ($.fn.gCollapsible and its Orientation).
 /**
  * A panel that folds away behind an arrow button, used by the assistant
  * bar (virtual key bar): the whole bar folds down (vertical, the button

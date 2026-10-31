@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 984 (opentype.js draw.js, unchanged).
-
 /** The part of a 2D canvas context the opentype drawing helpers use. */
 export interface DrawingContext {
   beginPath(): void;

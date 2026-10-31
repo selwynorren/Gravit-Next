@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 545 (GSceneEditor).
 /**
  * The editor of the scene: the root of the editor tree. It paints the
  * page editors at their page position (multi-page view) and owns the

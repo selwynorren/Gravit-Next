@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 28 (GStylable: the constants and property sets).
 /**
  * The GStylable constants and default tables, in their own file so the
  * paint layer and effect classes can use them without importing

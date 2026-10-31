@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 894 (GNode.deserializeAsync).
 /**
  * Restores a document in time slices (AsyncExecutor, 15 ms per slice), so
  * a big file doesn't freeze the page. Same steps as Node.deserialize, with

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 905 (GStylable.Effects).
 import type { Rect } from "../math/rect.ts";
 import { Node, registerNodeClass } from "../scene/node.ts";
 import { NodeChange } from "../scene/node-change.ts";

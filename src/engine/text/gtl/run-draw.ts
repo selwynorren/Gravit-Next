@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 195 (measuring and drawing runs, carota's text.js).
 import type { VertexReader } from "../../geometry/vertex-source.ts";
 import { Formatting, type Run } from "./formatting.ts";
 import type { Measurement } from "./measurement.ts";

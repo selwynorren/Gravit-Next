@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 75 (GEventTarget).
 /**
  * Listener lists per event class. The old GEventTarget was used both as a
  * base class and as a mixin (`inheritAndMix(X, GObject, [GEventTarget])`),

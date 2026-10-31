@@ -1,8 +1,0 @@
-{
- "before": [
-  "0/1:rectangle"
- ],
- "after": [
-  "0/2:ellipse"
- ]
-}

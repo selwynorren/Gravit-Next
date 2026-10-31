@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 141 (GVertexPixelAligner).
 import { registerClass } from "../core/object.ts";
 import { GMath } from "../math/math.ts";
 import { Point } from "../math/point.ts";

@@ -170,7 +170,7 @@ describe("EPSParser.jpeg (page side of the JPEG handshake, BUG-008)", () => {
   });
 });
 
-describe("EPSParser mesh images (BUG-116)", () => {
+describe("EPSParser mesh images", () => {
   // The pixels each fake canvas held when it was turned into a URL.
   const pixels = new Map<string, number[]>();
   const canvas = () => {
@@ -246,7 +246,7 @@ describe("EPSParser mesh images (BUG-116)", () => {
   });
 });
 
-describe("EPSParser stroke joins (BUG-118)", () => {
+describe("EPSParser stroke joins", () => {
   it.each([
     [0, "miter"],
     [1, "round"],

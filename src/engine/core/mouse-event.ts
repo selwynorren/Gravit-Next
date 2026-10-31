@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 77 (GMouseEvent).
 /**
  * Mouse events of the scene views and tools. Each kind is its own class
  * and event type (`MouseEvent.Down`, `MouseEvent.Drag`, ...). DragEnd

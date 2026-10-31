@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1313 (the paste handler, gDesigner.getPaste()).
 /**
  * Turns what the system clipboard holds into document content.
  *

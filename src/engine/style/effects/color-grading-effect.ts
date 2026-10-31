@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1008 (GColorGradingEffect).
 import { Locale } from "../../core/locale/locale.ts";
 import type { PaintCanvas } from "../../paint/paint-canvas.ts";
 import { registerNodeClass } from "../../scene/node.ts";

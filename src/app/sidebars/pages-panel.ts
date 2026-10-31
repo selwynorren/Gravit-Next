@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1717 ($.fn.gPagePanel).
 /**
  * The pages list of the outline sidebar: one row per page in scene order,
  * with the title (rename on double click), lock and visibility buttons.

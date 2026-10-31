@@ -192,7 +192,7 @@ describe("FontsProviderManager.resolveFont", () => {
     expect((missing.mock.calls[0]?.[0] as MissingFontEvent).provider).toBe(second);
   });
 
-  it("goes on to the next provider when a listed font's file doesn't parse (BUG-164)", () => {
+  it("goes on to the next provider when a listed font's file doesn't parse", () => {
     const create = vi.spyOn(OpenTypeFont, "create");
     create.mockReturnValueOnce(null).mockReturnValueOnce(fakeFont as OpenTypeFont);
     const { first, second } = setUp("E ");

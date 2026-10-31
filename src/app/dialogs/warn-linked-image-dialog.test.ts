@@ -25,7 +25,7 @@ afterEach(() => {
 });
 
 describe("warn linked image dialog (module 1511)", () => {
-  it("opens the dialog once it is built when open() comes right after new (BUG-145)", async () => {
+  it("opens the dialog once it is built when open() comes right after new", async () => {
     setContainer(fakeContainer(false) as never);
     const agree = vi.fn();
     const dialog = new WarnLinkedImageDialog(agree);
@@ -38,7 +38,7 @@ describe("warn linked image dialog (module 1511)", () => {
     expect(agree).not.toHaveBeenCalled();
   });
 
-  it("agrees at once and open() does nothing when never-remind is stored (BUG-145)", async () => {
+  it("agrees at once and open() does nothing when never-remind is stored", async () => {
     setContainer(fakeContainer(true) as never);
     const agree = vi.fn();
     expect(() => new WarnLinkedImageDialog(agree).open()).not.toThrow();

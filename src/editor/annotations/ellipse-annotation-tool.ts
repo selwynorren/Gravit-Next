@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 765 (GEllipseAnnotationTool).
 /** Draws an ellipse annotation like the ellipse tool, without the position hint. */
 import { registerClass, type AnyConstructor } from "../../engine/core/object.ts";
 import { EllipseAnnotation } from "../../engine/scene/annotations/ellipse-annotation.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1621 (GOpenLinkAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action } from "../action.ts";
 import type { Category } from "../category.ts";

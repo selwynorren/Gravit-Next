@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 115 (opentype.js table.js, unchanged).
-// Table metadata for the font writer: a table is a list of typed fields,
-// and each field's value is also kept as a property of the table object.
-
 import * as check from "./check.ts";
 import type { FeatureRecord, LangSysTable, ScriptRecord } from "./parse.ts";
 import { encode, sizeOf } from "./types.ts";

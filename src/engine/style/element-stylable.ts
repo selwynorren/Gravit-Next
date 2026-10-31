@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 911 (GElement.Stylable).
 /**
  * GStylable for elements: shared style links (`sref`), style painting
  * (separate canvases for opacity and blend modes, effects per style layer)

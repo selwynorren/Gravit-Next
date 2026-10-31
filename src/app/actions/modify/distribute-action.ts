@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 867 (GDistributeAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Rect } from "../../../engine/math/rect.ts";

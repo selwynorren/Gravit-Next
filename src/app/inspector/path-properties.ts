@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1269 (GPathProperties).
 /**
  * Paths and compound paths: Closed and Autoscale Corners for the path
  * while no anchor point is selected; position, joint type and corner of

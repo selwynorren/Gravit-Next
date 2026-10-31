@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 511 (GStyle).
 import { Node, registerNodeClass } from "../scene/node.ts";
 import { NodeChange } from "../scene/node-change.ts";
 import { Reference } from "../scene/node-identity.ts";

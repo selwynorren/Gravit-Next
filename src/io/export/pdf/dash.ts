@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1220 (the PDF line dash).
 import { PDFArray } from "./pdf-array.ts";
 import { PDFObject } from "./pdf-object.ts";
 import { PDFOperators } from "./operators.ts";

@@ -1,13 +1,3 @@
-// Old: chunk.vendor.js module 1009 (the color grading curves filter).
-//
-// Turns the curves of a color grading effect (points [input, output] per
-// channel, as read from a Photoshop .acv file) into 257-entry lookup
-// tables with a monotone cubic spline, then maps the pixels through them.
-//
-// The old module assigned the spline to an undeclared global
-// (`cubicSpline`) and patched `Array.prototype.getLowestAbove` (an
-// enumerable property, so every later for-in over any array saw it). The
-// port keeps both local and computes the same values.
 import type { BitmapFilter } from "../../paint/bitmap.ts";
 
 /** A curve point: [input, output], both 0..255. */

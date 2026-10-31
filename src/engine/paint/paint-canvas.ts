@@ -1,12 +1,3 @@
-// Old: chunk.vendor.js module 14 (GPaintCanvas).
-//
-// PaintCanvas is the interface the engine paints through, shaped like the
-// old GPaintCanvas; Canvas2DPaintCanvas implements it on a Canvas 2D
-// context. `PaintCanvas` is also exported as a value (the implementation),
-// so `new PaintCanvas()` and `PaintCanvas.BlendMode` read as they did.
-//
-// Every Canvas 2D call, its order, the save/restore pairs, transforms and
-// smoothing switches are the old ones; parity depends on them.
 import { Color } from "../color/color.ts";
 import { RGBColor } from "../color/rgb-color.ts";
 import { GObject, registerClass } from "../core/object.ts";
@@ -1735,7 +1726,7 @@ export class Canvas2DPaintCanvas extends GObject implements PaintCanvas {
     }
     if (image instanceof Canvas2DPaintCanvas) return image._canvasContext.canvas;
     // The old code handed out the recorder's canvas object for a bitmap of
-    // a recorded canvas, which only a recorder could draw (BUG-007). The
+    // a recorded canvas, which only a recorder could draw. The
     // bitmap's canvas is the real one, as for a paint canvas.
     if (image instanceof Bitmap) return image._canvasContext.canvas;
     throw new Error("Not Supported.");

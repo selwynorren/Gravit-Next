@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 752 (GInlineTextEditor).
 import { Locale } from "../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";
 import { Key, type KeyValue } from "../../engine/core/key.ts";

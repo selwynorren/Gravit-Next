@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1472 (the heic2any loader).
 /**
  * HEIC images (FMT-IMPORT-019): converted to a PNG blob by heic2any, which
  * is loaded on first use, then imported like any bitmap. Callers log

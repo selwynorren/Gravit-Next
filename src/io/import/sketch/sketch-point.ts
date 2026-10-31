@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 598 (geometry/sketchpoint).
 import { Point } from "../../../engine/math/point.ts";
 
 /** Sketch's point strings: "{0.5, 1}". */

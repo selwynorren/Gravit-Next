@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 492 (GGLRecolourShader).
-//
-// Gives every pixel except pure white the same hue and scales the
-// saturation.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

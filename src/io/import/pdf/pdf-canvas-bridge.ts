@@ -1,21 +1,3 @@
-// Old: chunk.vendor.js module 1394.
-//
-// The "canvas context" pdf.js renders a page into during a PDF import. It
-// implements the parts of CanvasRenderingContext2D pdf.js's CanvasGraphics
-// calls, but instead of painting it builds scene nodes under a root node:
-// paths become GPaths (filled, stroked, clipping), characters are
-// collected per text object and become GTexts (text-merge.ts), images and
-// scratch canvases become GImages or are moved over as nodes.
-//
-// pdf.js adds its own transform tracking to the context
-// (addContextCurrentTransform wraps save, restore, transform, ...), and
-// assigns the style properties (fillStyle, lineWidth, ...) directly; the
-// bridge reads them when it paints. Methods pdf.js would call but the
-// bridge lacks throw, as before, so the bridge has exactly the old
-// methods.
-//
-// Dropped: createBitmap, applyLayer and isSingleVertexSource, which
-// nothing called.
 import { extend, uuid } from "../../../engine/core/util.ts";
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";

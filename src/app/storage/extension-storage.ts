@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1610.
 /**
  * A storage that keeps one file in memory. File > Print renders into an
  * ExtensionStorage.Item("PDF") and reads the bytes back from it.

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode.Container).
 /**
  * Children as a doubly linked list (each child knows its previous and
  * next sibling, the container its first and last child). Insert and

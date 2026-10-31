@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 64 (GPlatform).
 /**
  * The browser the app runs in: web browser detection, canvas and image
  * size limits per browser, animation frames and the global modifier key

@@ -1,7 +1,7 @@
 /**
  * Which look the app shows (CHANGES.md "Two looks"):
  *
- * - "next": GravitDesign Next, the default. The brand stylesheets load
+ * - "next": Gravit Next, the default. The brand stylesheets load
  *   after the old theme stylesheet, the welcome screen shows the brand,
  *   the title, version line, favicon and web manifest carry the new
  *   name, and the introduction opens on the first start.
@@ -41,15 +41,12 @@ export const BRANDING_ATTRIBUTE = "data-branding";
 
 /** The product names of the two looks. */
 export const PRODUCT_NAME: Record<Branding, string> = {
-  next: "GravitDesign Next",
+  next: "Gravit Next",
   classic: "Gravit Designer",
 };
 
 /** Where problems with the new app are reported. */
 export const ISSUES_URL = "https://github.com/GravitDesign/designer/issues";
-
-/** Where the old Gravit Designer still runs. */
-export const LEGACY_URL = "https://legacy.gravitdesign.com";
 
 export function isBranding(value: unknown): value is Branding {
   return value === "next" || value === "classic";
@@ -122,7 +119,7 @@ export function isNextBranding(): boolean {
   return active === "next";
 }
 
-/** "GravitDesign Next" or "Gravit Designer": the window title suffix and the about text. */
+/** "Gravit Next" or "Gravit Designer": the window title suffix and the about text. */
 export function productName(): string {
   return PRODUCT_NAME[active];
 }

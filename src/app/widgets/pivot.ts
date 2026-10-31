@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1724 ($.fn.gPivot).
 /**
  * The nine-point pivot picker of the transform panels: a `.g-pivot` with a
  * `.borderline` and one `.side[data-side]` per GRect.Side, the chosen one

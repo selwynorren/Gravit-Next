@@ -77,7 +77,7 @@ describe("ClipboardBridge", () => {
     expect(layersOf(b).getChildren().length).toBe(before + 1);
   });
 
-  it("pastes a copied SVG file (BUG-083)", () => {
+  it("pastes a copied SVG file", () => {
     const handled: unknown[] = [];
     const internals = bridge as unknown as {
       _handlePasteData(data: unknown): void;

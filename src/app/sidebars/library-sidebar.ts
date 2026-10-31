@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1662 (GLibrarySidebar).
 /**
  * The Libraries sidebar on the left: the library panel (library-panel.ts)
  * in a scrolling `.library-container`, with the offline overlay the old

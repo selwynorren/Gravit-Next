@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 86 (the GDocument status numbers).
 /**
  * A document's state. Only Init, Ready and the load and save states are
  * reached in the local app; the sync, download and lock states came from

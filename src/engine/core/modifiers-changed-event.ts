@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 150 (GModifiersChangedEvent).
 /**
  * Triggered by Platform when a modifier changes. `changed` says which
  * ones changed; the current state is in `Platform.modifiers`.

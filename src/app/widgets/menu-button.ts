@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1721 ($.fn.gMenuButton).
 /**
  * Makes an element open a Menu below it on mouse down (`.g-menu-button`,
  * `.g-active` while the menu is open). Options as before:

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 179 (GPathUtil).
 /**
  * Turning vertex sources into editable paths, and making paths
  * clockwise.

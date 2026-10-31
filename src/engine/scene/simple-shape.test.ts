@@ -78,7 +78,7 @@ describe("GSimpleShape", () => {
     expect(back.toString()).toBe("Test Triangle");
   });
 
-  it("restores a ready shape with pixel snapping and a reference list (BUG-016)", () => {
+  it("restores a ready shape with pixel snapping and a reference list", () => {
     const empty = new SimpleShape();
     expect(empty.getAnnotationsCount()).toBe(0);
     expect(empty.rewindVertices(0)).toBe(false);
@@ -97,7 +97,7 @@ describe("GSimpleShape", () => {
     expect(back.$refs).toEqual(["style-1"]);
   });
 
-  it("saves a ready shape without handles with an empty list and restores it (BUG-005)", () => {
+  it("saves a ready shape without handles with an empty list and restores it", () => {
     // Like the catalogue's Rectangle: no annotations, no parameters.
     const processor = new ParameterizedVertexProcessor(
       null,

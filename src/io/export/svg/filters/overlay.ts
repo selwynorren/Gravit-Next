@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1464 (the color overlay filter writer).
 import type { Color } from "../../../../engine/color/color.ts";
 import { RGBColor } from "../../../../engine/color/rgb-color.ts";
 import type { PropertiesNode as Node } from "../../../../engine/scene/node-properties.ts";

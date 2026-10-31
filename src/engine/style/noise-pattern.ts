@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 518 (GNoisePattern).
 import { registerClass } from "../core/object.ts";
 import { RGBColor } from "../color/rgb-color.ts";
 import type { Rect } from "../math/rect.ts";

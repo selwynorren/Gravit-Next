@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1467 (the words, lines and paragraph of an exported text).
-//
-// The SVG text layout (svg-tl-render.ts) collects every drawn run as a
-// Word with its position and style. Words on the same baseline form a
-// Line, a word that follows with the same style is merged into the one
-// before; whitespace is appended to the current word. Writing turns
-// every word into a positioned <text> with its font and paint as inline
-// CSS; gradient fills go on a group around all of them.
 import { equals, extend } from "../../../engine/core/util.ts";
 import { Point } from "../../../engine/math/point.ts";
 import { Transform } from "../../../engine/math/transform.ts";

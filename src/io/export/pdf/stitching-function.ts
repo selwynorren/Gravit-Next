@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1416 (the PDF stitching function).
 import type { PDFArray } from "./pdf-array.ts";
 import { PDFFunction } from "./function.ts";
 

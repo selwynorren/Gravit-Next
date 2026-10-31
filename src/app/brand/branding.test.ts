@@ -16,7 +16,7 @@ import {
 afterEach(() => setActiveBranding("classic"));
 
 describe("resolveBranding", () => {
-  it("is GravitDesign Next by default", () => {
+  it("is Gravit Next by default", () => {
     expect(resolveBranding({ search: "", override: undefined, stored: null })).toEqual({
       branding: "next",
       store: null,
@@ -80,7 +80,7 @@ describe("the active look", () => {
     const { doc, window } = fakePage("next");
     expect(initBranding(doc, window)).toBe("next");
     expect(isNextBranding()).toBe(true);
-    expect(productName()).toBe("GravitDesign Next");
+    expect(productName()).toBe("Gravit Next");
   });
 
   it("decides by the same rules when the attribute is missing", () => {
@@ -197,11 +197,10 @@ describe("index.html's script", () => {
     expect(run.links.map((l) => [l.rel, l.href, l.id])).toEqual([
       ["stylesheet", "/brand/accent.dark.css", "brand-accent"],
       ["stylesheet", "/brand/next.css", ""],
-      ["stylesheet", "/brand/editor.css", ""],
       ["icon", "/brand/icons/favicon.ico", ""],
     ]);
     expect(run.manifest).toBe("/brand/manifest.json");
-    expect(run.title).toBe("GravitDesign Next");
+    expect(run.title).toBe("Gravit Next");
     expect(runIndexScript("", undefined, {}).links[0]?.href).toBe("/brand/accent.light.css");
   });
 

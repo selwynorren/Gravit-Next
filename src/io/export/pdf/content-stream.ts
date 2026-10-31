@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 293 (GPDFGraphics, the PDF graphics block).
 import { PDFLineDash } from "./dash.ts";
 import { PDFLineCap } from "./line-cap.ts";
 import { PDFLineJoin } from "./line-join.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 236 (GShapeTool).
 /**
  * The base of the tools that draw a shape by dragging out its box or its
  * line (rectangle, ellipse, line, polygons, simple shapes, text, slice
@@ -253,7 +252,7 @@ export class ShapeTool extends Panning(ItemTool) {
   /**
    * The guides to snap with: none for annotation items. The old code
    * passed the bbox guide class where guide ids are expected, so no guide
-   * matches (see "Annotation tools snap to no guide" in QUESTIONS.md).
+   * matches.
    */
   _getExclusions(): string[] | null {
     const itemClass = this._getRelatedItemClass();

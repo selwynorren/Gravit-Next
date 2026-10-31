@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 163 (the gvdesign branch of
-// GDocument.store and the helper W that defers by 10 ms).
 /**
  * Scene in, .gvdesign bytes out (FMT-GVD-002, FMT-PREVIEW-001): count the
  * scene's descendants, wait 10 ms, serialize with `save: true`, refuse an

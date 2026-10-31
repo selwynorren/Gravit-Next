@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 104 (GItem).
 /**
  * A block that can be placed in a layer, a page or another item: shapes,
  * groups, texts, images. Items carry constraints (GElement.Anchor) and

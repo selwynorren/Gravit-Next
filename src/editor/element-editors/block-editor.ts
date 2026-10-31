@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 154 (GBlockEditor).
 /**
  * The editor of a block (layers, pages, groups, shapes): the box is the
  * element's source box with its transform. A resize previews through the

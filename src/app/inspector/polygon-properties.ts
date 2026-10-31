@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1270 (GPolygonProperties).
 /**
  * Polygons and stars: the number of points, the inner size (stars), the
  * corner radius, and an advanced overlay with the corner type, plain

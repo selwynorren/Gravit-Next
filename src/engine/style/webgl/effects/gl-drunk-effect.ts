@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1033 (GGLDrunkEffect).
-//
-// No padding of its own, but the absolute padding (used when an ancestor
-// has the effect) covers the wobble.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

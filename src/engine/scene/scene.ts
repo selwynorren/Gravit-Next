@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 160 (GScene).
 /**
  * The document, node "scene": the root of the tree. Its children are the
  * pages, the styles container ("styles") and the swatches; anything else
@@ -91,6 +90,11 @@ const MetaProperties: Record<string, unknown> = {
   ga2: null,
   hgl: null,
   vgl: null,
+  // Guide tools. gll: guides are locked, so they can't be picked.
+  // rox/roy: where the rulers' 0 is, in scene space; null is no shift.
+  gll: null,
+  rox: null,
+  roy: null,
   name: null,
   _links: {},
   __ids: [],
@@ -292,6 +296,9 @@ export class Scene extends SceneBase implements SceneHooks {
   declare $ga2: number | null;
   declare $hgl: number[] | null;
   declare $vgl: number[] | null;
+  declare $gll: boolean | null;
+  declare $rox: number | null;
+  declare $roy: number | null;
   declare $name: string | null;
   declare $_links: Links;
   declare $__ids: string[];
@@ -897,6 +904,43 @@ export class Scene extends SceneBase implements SceneHooks {
   stringToPoint(text: string): number | null {
     const length = this.stringToLength(text);
     return length ? length.toPoint() : null;
+  }
+
+  /** Where the rulers' 0 is on x; 0 when no origin was set. */
+  getRulerOriginX(): number {
+    const value = this.getProperty("rox");
+    return typeof value === "number" ? value : 0;
+  }
+
+  /** Where the rulers' 0 is on y; 0 when no origin was set. */
+  getRulerOriginY(): number {
+    const value = this.getProperty("roy");
+    return typeof value === "number" ? value : 0;
+  }
+
+  /**
+   * X and Y variants of pointToString and stringToPoint for a position on
+   * the page (a guide, a ruler tick), shown relative to the ruler origin.
+   * The plain ones stay for lengths (widths, radii, margins), which have no
+   * place on the page and must not shift; they take no axis, and the two
+   * origins differ, so the shift can't live inside them.
+   */
+  pointToStringX(value: number, decimals?: number): string {
+    return this.pointToString(value - this.getRulerOriginX(), decimals);
+  }
+
+  pointToStringY(value: number, decimals?: number): string {
+    return this.pointToString(value - this.getRulerOriginY(), decimals);
+  }
+
+  stringToPointX(text: string): number | null {
+    const value = this.stringToPoint(text);
+    return null === value ? null : value + this.getRulerOriginX();
+  }
+
+  stringToPointY(text: string): number | null {
+    const value = this.stringToPoint(text);
+    return null === value ? null : value + this.getRulerOriginY();
   }
 
   lengthToString(length: Length, decimals?: number): string {

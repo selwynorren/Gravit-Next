@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1419 (the PDF shading pattern).
 import type { PDFGradientShading } from "./gradient-resource.ts";
 import { PDFIndirectReference } from "./indirect-reference.ts";
 import { PDFConcatMatrix } from "./op-cm.ts";

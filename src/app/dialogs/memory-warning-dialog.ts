@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1687 (GMemoryManager and its warning).
 /**
  * Watches the JS heap: once a minute (where the container can tell) it
  * compares the used heap with the limit, and from 80% on shows a warning

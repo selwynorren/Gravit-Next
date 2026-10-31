@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1702 ($.fn.gInputBox).
 /**
  * The number box behaviour of the inspector fields: value normalising
  * (equations, min/max, the unit postfix), arrow-key and wheel steps, and
@@ -218,7 +217,7 @@ export class InputBoxValue {
       size *= 0.1;
     if (0 == decimals) {
       // The old code raised zero and negative scrub moves to 1 too, so
-      // dragging down stepped up (BUG-149). A scrub move keeps its direction.
+      // dragging down stepped up. A scrub move keeps its direction.
       if (!scrub) {
         if (size < 1) size = 1;
       } else if (0 !== size && Math.abs(size) < 1) size = Math.sign(size);

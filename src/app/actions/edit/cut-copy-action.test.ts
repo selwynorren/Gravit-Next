@@ -26,7 +26,7 @@ afterEach(() => {
 });
 
 describe("Cut", () => {
-  it("names its undo step Cut Selection (BUG-139)", () => {
+  it("names its undo step Cut Selection", () => {
     const { editor } = fixture;
     const a = rect("A", 0);
     editor.insertElements([a], true);
@@ -39,7 +39,7 @@ describe("Cut", () => {
 });
 
 describe("Copy", () => {
-  it("leaves out a selected child of a selected group (BUG-140)", () => {
+  it("leaves out a selected child of a selected group", () => {
     const { editor } = fixture;
     const group = new Group();
     const a = rect("A", 0);

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 900 (GStylable.PaintLayer).
 import { containsObjectKey } from "../core/util.ts";
 import { Transform } from "../math/transform.ts";
 import { PaintCanvas } from "../paint/paint-canvas.ts";

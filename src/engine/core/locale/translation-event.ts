@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 891.
-
 /** Base class of the events the translation library sends. */
 export class TranslationEvent {
   /** The event target that sent the event; set by trigger. */

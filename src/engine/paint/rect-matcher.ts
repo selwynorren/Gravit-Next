@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 935.
 import { Rect } from "../math/rect.ts";
 
 /** [from, to) along one axis. */

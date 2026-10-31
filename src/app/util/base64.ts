@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1042 (URL-safe base64 helpers).
 const TO_URL_SAFE: Record<string, string> = { "+": "-", "/": "_" };
 const FROM_URL_SAFE: Record<string, string> = { "-": "+", _: "/", ".": "=" };
 

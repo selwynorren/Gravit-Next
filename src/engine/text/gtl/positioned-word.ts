@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 919 (a word placed on a line, carota's positionedword.js).
 import { Formatting, type Run } from "./formatting.ts";
 import { Part, type CodeResolver } from "./inline.ts";
 import type { Line } from "./line.ts";

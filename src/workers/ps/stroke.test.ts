@@ -12,7 +12,7 @@ function strokes(program: string): unknown[][] {
     });
 }
 
-describe("stroke scales width and dashes by the CTM (BUG-117)", () => {
+describe("stroke scales width and dashes by the CTM", () => {
   it("scales the line width, the dash lengths and the phase", () => {
     expect(
       strokes(

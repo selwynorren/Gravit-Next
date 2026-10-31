@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 5 (GPoint).
-
 /** An immutable 2D point. Every operation returns a new point. */
 export class Point {
   /**

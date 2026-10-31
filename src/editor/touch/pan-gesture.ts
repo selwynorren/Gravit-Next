@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1329.
 /**
  * A moving finger becomes mousemove events, for the fingers that were
  * down at the touch start and only while the browser lets the page cancel

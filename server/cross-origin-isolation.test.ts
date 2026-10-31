@@ -1,5 +1,5 @@
 // The server makes its pages cross-origin isolated (COOP + COEP), so the
-// EPS importer's PostScript worker gets SharedArrayBuffer (BUG-008).
+// EPS importer's PostScript worker gets SharedArrayBuffer.
 import fs from "node:fs";
 import http from "node:http";
 import os from "node:os";

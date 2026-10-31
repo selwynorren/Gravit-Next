@@ -1,7 +1,7 @@
 name: Desktop app
 
 # Builds the desktop app (Electron + electron-builder) for every
-# target the old app shipped: Windows NSIS installer and portable exe,
+# target: Windows NSIS installer and portable exe,
 # Linux AppImage and deb, macOS dmg for x64 and arm64. Every run uploads
 # the packages as workflow artifacts. A pushed version tag (v<version>,
 # matching package.json) also publishes them to a draft GitHub

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 641 (ICC profile reader).
 import { GMath } from "../math/math.ts";
 import { IccHeader } from "./icc-header.ts";
 

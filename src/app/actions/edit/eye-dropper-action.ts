@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1645 (GEyeDropperAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Node } from "../../../engine/scene/node.ts";

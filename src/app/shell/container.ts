@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 85 (GContainer).
 /**
  * The host the designer runs in (browser, PWA, Electron): its runtime,
  * storage, persistent properties and window-level services. The

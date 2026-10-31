@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 640.
 /**
  * Runs a callback over lists of objects in slices, so long jobs don't
  * block the page: after every `executionSteps` callbacks it checks the

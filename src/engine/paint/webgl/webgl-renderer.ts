@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 473 (GWebGLRenderer).
-//
-// Mixed into everything that renders through a WebGL shader (the blender,
-// the WebGL effects): a working texture and a spare one to render into,
-// the shader instance, and drawShader, which runs the shader over a paint
-// canvas.
 import { RGBColor } from "../../color/rgb-color.ts";
 import { defineMixin, type AnyConstructor } from "../../core/object.ts";
 import { Point } from "../../math/point.ts";

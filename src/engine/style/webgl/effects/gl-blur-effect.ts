@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 282 (GGLBlurEffect).
-//
-// Gaussian blur on WebGL, with a CSS blur filter fast path. With `clip` the
-// blur stays inside the shape (GLClipBlurShader) and adds no padding.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerGLBlurEffect } from "../../../paint/late-bound.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../../paint/paint-canvas.ts";

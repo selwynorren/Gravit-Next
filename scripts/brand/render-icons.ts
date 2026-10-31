@@ -1,6 +1,6 @@
 /**
- * Renders the GravitDesign Next app icons from the dark avatar tile
- * (public/brand/avatar-dark.svg) with Playwright's Chromium:
+ * Renders the Gravit Next app icons from the icon drawing
+ * (public/brand/icon.svg) with Playwright's Chromium:
  *
  *     node scripts/brand/render-icons.ts
  *
@@ -11,7 +11,7 @@
  *   electron-builder icons (build/ is its buildResources folder; it turns
  *   the 1024 PNG into the macOS and Linux icons).
  *
- * The outputs are committed; run this again only when the avatar changes.
+ * The outputs are committed; run this again only when the icon changes.
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -20,7 +20,7 @@ import { chromium } from "@playwright/test";
 import { encodeIco } from "./ico.ts";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..");
-const avatar = path.join(root, "public", "brand", "avatar-dark.svg");
+const avatar = path.join(root, "public", "brand", "icon.svg");
 const iconsDir = path.join(root, "public", "brand", "icons");
 const buildDir = path.join(root, "build");
 

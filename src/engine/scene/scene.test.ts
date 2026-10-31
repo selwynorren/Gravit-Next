@@ -212,3 +212,51 @@ describe("Scene quirks", () => {
     expect((scene.getActivePage() as Page).getProperty("bck")).toBe(RGBColor.WHITE);
   });
 });
+
+describe("Scene ruler origin", () => {
+  it("has no origin by default, so positions read as they are", () => {
+    const scene = newScene();
+    expect(scene.getProperty("rox")).toBeNull();
+    expect(scene.getProperty("roy")).toBeNull();
+    expect(scene.getRulerOriginX()).toBe(0);
+    expect(scene.pointToStringX(120, 1)).toBe(scene.pointToString(120, 1));
+    expect(scene.stringToPointY("120")).toBe(scene.stringToPoint("120"));
+  });
+
+  it("shows and reads positions from the origin, per axis", () => {
+    const scene = newScene();
+    scene.setProperties(["rox", "roy"], [200, 50]);
+    expect(scene.pointToStringX(250)).toBe("50");
+    expect(scene.pointToStringY(250)).toBe("200");
+    expect(scene.stringToPointX("50")).toBe(250);
+    expect(scene.stringToPointY("200")).toBe(250);
+    expect(scene.stringToPointX("10+40")).toBe(250);
+    expect(scene.stringToPointX("not a length")).toBeNull();
+  });
+
+  it("leaves lengths alone", () => {
+    const scene = newScene();
+    scene.setProperties(["rox", "roy"], [200, 50]);
+    expect(scene.pointToString(250)).toBe("250");
+    expect(scene.stringToPoint("250")).toBe(250);
+  });
+
+  it("saves nothing for the guide tools until they are used", () => {
+    const scene = newScene();
+    const json = Node.serialize(scene, { copy: true });
+    for (const name of ["gll", "rox", "roy"]) expect(json).not.toContain('"' + name + '"');
+    scene.setProperties(["gll", "rox", "roy"], [true, 20, 30]);
+    const used = Node.serialize(scene, { copy: true });
+    for (const name of ["gll", "rox", "roy"]) expect(used).toContain('"' + name + '"');
+    // A saved document comes back with them.
+    const reopened = Node.deserialize(used) as Scene;
+    expect([
+      reopened.getProperty("gll"),
+      reopened.getProperty("rox"),
+      reopened.getProperty("roy"),
+    ]).toEqual([true, 20, 30]);
+    // Back to the defaults, they are left out again.
+    scene.setProperties(["gll", "rox", "roy"], [null, null, null]);
+    expect(Node.serialize(scene, { copy: true })).toBe(json);
+  });
+});

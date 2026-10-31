@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 713 (opentype.js tables/head.js, unchanged).
-// The head table: global information about the font.
-
 import * as check from "../check.ts";
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";

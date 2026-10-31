@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 990 (opentype.js features/arab/contextCheck/arabicSentence.js, unchanged).
-
 import { isArabicChar, isTashkeelArabicChar, isWhiteSpace } from "../../../char.ts";
 import type { ContextParams } from "../../../tokenizer.ts";
 

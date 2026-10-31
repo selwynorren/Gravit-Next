@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 716 (opentype.js tables/ltag.js, unchanged).
-// The ltag table (Apple): language tags that name records refer to.
-
 import * as check from "../check.ts";
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";

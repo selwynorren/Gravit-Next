@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 479 (GGLColorHalftoneShader, from glfx.js).
-//
-// CMYK halftone: one dot screen per ink, each at its own angle. Tiling
-// aware, so the pattern lines up across tiles.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

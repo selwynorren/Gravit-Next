@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 601 (geometry/sketchrect).
 import { Rect } from "../../../engine/math/rect.ts";
 import { Transform } from "../../../engine/math/transform.ts";
 import type { SketchRectData } from "./sketch-data.ts";

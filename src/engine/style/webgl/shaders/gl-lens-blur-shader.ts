@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 489 (GGLLensBlurShader, from glfx.js).
-//
-// A hexagonal bokeh blur: the image is raised to a power (brightness), blurred
-// along three directions 120 degrees apart in three passes, and brought back.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

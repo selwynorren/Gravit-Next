@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 89 (opentype.js parse.js).
-// Gravit change: the fork has no Parser.prototype.parseList32 (and nothing
-// calls Parser.list32), so both are left out here.
-
 import * as check from "./check.ts";
 
 /** Reads one value with `this` bound to a Parser; the Parser.* statics are of this type. */

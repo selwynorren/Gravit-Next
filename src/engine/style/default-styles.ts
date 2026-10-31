@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 915 (the scene's styles container, no G name).
 /**
  * The document's styles: the "styles" child of the scene. It holds the
  * shared styles (GStyle) and one default style per element class, which

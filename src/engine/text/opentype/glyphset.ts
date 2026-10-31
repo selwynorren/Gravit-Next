@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 529 (opentype.js glyphset.js, unchanged).
-
 import type { Font } from "./font.ts";
 import { Glyph } from "./glyph.ts";
 import type { Path } from "./path.ts";

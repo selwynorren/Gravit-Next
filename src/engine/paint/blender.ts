@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 643 (GBlender).
-//
-// Sits between a paint canvas and its 2D context for every fill, stroke
-// and image draw. When the browser takes the composite operator, the draw
-// goes straight to the context. When it doesn't (the WebGL blend modes,
-// "darker"), the blender reads the backdrop of the dirty area into a WebGL
-// texture, clears it, draws the shape alone, blends both in the blend shader
-// and copies the result back.
 import { GObject, registerClass } from "../core/object.ts";
 import { Point } from "../math/point.ts";
 import type { Rect } from "../math/rect.ts";

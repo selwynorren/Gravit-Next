@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 285 (GCommentAnnotation).
 /**
  * A comment pin, node "anc": a path with the speech-bubble icon. Its hit
  * test only checks the paint box (no custom collision box, no children).

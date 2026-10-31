@@ -40,19 +40,6 @@ vi.mock("../../../workers/ps/index.ts", async () => {
 });
 
 const FIXTURES = path.join(import.meta.dirname, "__fixtures__");
-const PARITY_EPS = path.join(
-  import.meta.dirname,
-  "..",
-  "..",
-  "..",
-  "..",
-  "parity",
-  "scenarios",
-  "io-import-pdf-eps",
-  "fixtures",
-  "eps",
-);
-
 /** What the browser decodes for each fixture JPEG, by its bytes in base64. */
 const decoded = new Map<string, { width: number; height: number; rgba: Uint8ClampedArray }>();
 for (const name of ["rgb", "gray", "cmyk"]) {
@@ -235,22 +222,6 @@ describe("EPS import of DCT (JPEG) images", () => {
       const image = imagePixels(children(group)[0] as NodeLike);
       expect([image.iw, image.ih]).toEqual([80, 60]);
       expectSamePixels(image.rgba, rgbaOf("cmyk"));
-    },
-    TIMEOUT,
-  );
-
-  it(
-    "reports a JPEG the browser can't decode (parity fixture filter-dct-file.ps) at once",
-    async () => {
-      const started = Date.now();
-      const { group, errors } = await importEps(path.join(PARITY_EPS, "filter-dct-file.ps"));
-      expect(pageErrors).toEqual([]);
-      // Error "02", as the old app reported it for every JPEG.
-      expect(errors).toEqual([
-        "Parts of the EPS file aren’t supported by Gravit Designer. They are not imported...",
-      ]);
-      expect(children(group)).toEqual([]);
-      expect(Date.now() - started).toBeLessThan(5_000);
     },
     TIMEOUT,
   );

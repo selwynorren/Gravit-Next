@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 653 (a frame of lines, carota's frame.js).
 import type { TextCode } from "./inline.ts";
 import { LineBuffer } from "./line-buffer.ts";
 import type { Line } from "./line.ts";

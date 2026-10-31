@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1706 ($.fn.gLayerPanel).
 /**
  * The layers list of the outline sidebar: the layers and items of the
  * active page in a virtual tree, top of the list = front of the page (the

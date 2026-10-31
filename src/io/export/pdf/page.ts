@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1439 (the PDF page).
 import { Point } from "../../../engine/math/point.ts";
 import type { Rect } from "../../../engine/math/rect.ts";
 import { Transform } from "../../../engine/math/transform.ts";

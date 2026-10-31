@@ -1,6 +1,3 @@
-// Old: designer.browser.dev.js module 389 (file types), module 119
-// (GDocument.unzipData), module 163 (the gzip and preview steps of
-// GDocument.store), module 519 (UN_BELIVEVABLE_FEW_BYTES_TO_SAVE).
 /**
  * The .gvdesign container: one gzip stream (pako 1.0.11, level 9, no
  * file name, mtime 0) holding the serialized scene as JSON. Files saved

@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 724 (opentype.js util.js, unchanged).
-
 import type * as fs from "node:fs";
 
 type NodeFs = typeof fs;

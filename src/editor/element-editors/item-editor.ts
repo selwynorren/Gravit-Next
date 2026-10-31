@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 274 (GItemEditor).
 /**
  * The editor of an item. An item pasted inside a shape (its parent chain
  * holds a shape, not as a compound path's sub-path) gets a catch handle

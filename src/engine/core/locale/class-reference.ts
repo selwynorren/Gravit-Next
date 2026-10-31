@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 635.
-
 /**
  * Wraps a class id (normally the old class name as a string, such as
  * "GSettingsDialog") so the locale can tell it apart from a class object.

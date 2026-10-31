@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1124 (effects/sketchcoloradjusteffect).
 import { GMath } from "../../../../engine/math/math.ts";
 import { GLColorAdjustEffect } from "../../../../engine/style/webgl/effects/gl-color-adjust-effect.ts";
 import type { SketchColorControlsData } from "../sketch-data.ts";

@@ -1,4 +1,3 @@
-// Old: public/pscore.js, systemdict makepattern … pathbbox.
 import type { PSCore } from "../core.ts";
 import { Access, type GraphicsState, type PSClipPath, type PSValue } from "../objects.ts";
 import { currentPath, type PathBBox, type PathPoint } from "./graphics-support.ts";

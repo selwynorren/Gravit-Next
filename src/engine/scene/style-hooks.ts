@@ -1,5 +1,3 @@
-// Old: the parts of chunk.vendor.js modules 28 (GStylable) and 911
-// (GElement.Stylable) that GElement, GBlock and GItem call.
 /**
  * GStylable and GElement.Stylable belong to the engine-style cluster
  * (engine/style). GElement checks for them and calls into them, so this

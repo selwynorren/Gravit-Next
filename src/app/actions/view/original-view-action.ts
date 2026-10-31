@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1282 (GOriginalViewAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Rect } from "../../../engine/math/rect.ts";

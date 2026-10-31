@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 544 (GFullPixelsGuide).
 import { registerClass } from "../../engine/core/object.ts";
 import { GMath } from "../../engine/math/math.ts";
 import { Length } from "../../engine/math/length.ts";

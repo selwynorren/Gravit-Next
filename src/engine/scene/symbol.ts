@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 216 (GSymbol).
 /**
  * The symbol, node "symbol". A master symbol (`_master`, its own ids in
  * `masterRef` and `masterMultiRef`) holds the content; its clones are
@@ -511,7 +510,7 @@ export class Symbol extends SymbolBase {
         const old = (before[i] as RunRecord)[name];
         if (old !== (after[i] as RunRecord)[name]) {
           if (filter && !filter(name)) continue;
-          // An instance with its own value keeps it (BUG-027). Colors are
+          // An instance with its own value keeps it. Colors are
           // copied as before: the two contents can hold the same color in
           // forms that don't compare ("transparent" and black for a text
           // without its own color), so an in-sync instance would miss it.
@@ -2115,7 +2114,7 @@ export class Symbol extends SymbolBase {
               );
               const formatting = part.getFormatting() as unknown as RunRecord;
               // Colors compare by value: the master's and the instance's
-              // content can hold them in different forms (BUG-027).
+              // content can hold them in different forms.
               if (
                 sameRunValue(change.property, change.oldValue, formatting[change.property]) ||
                 formatting[change.property] === Formatting.multipleValues
@@ -2164,7 +2163,7 @@ export class Symbol extends SymbolBase {
           const previousText = runsText(previousRuns);
           if (previousText === newText) {
             // Only runs that still have the master's old value follow, as
-            // for the other properties (BUG-027).
+            // for the other properties.
             const currentRuns = JSON.parse(
               (target.getProperty("content", false, null, temporary) as string | null) || "[]",
             ) as RunRecord[];

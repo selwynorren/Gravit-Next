@@ -258,7 +258,7 @@ describe("Designer.canUnloadDocument (module 1491)", () => {
     await expect(result).resolves.toBe(true);
   });
 
-  it("shows the document's title as typed, not as markup (BUG-146)", () => {
+  it("shows the document's title as typed, not as markup", () => {
     const asked: { title: string }[] = [];
     setLateModules({
       "dialogs/system-dialog.ts": {
@@ -278,7 +278,7 @@ describe("Designer.canUnloadDocument (module 1491)", () => {
 });
 
 describe("Designer.start: the stored global swatches (module 1491)", () => {
-  it("skips a stored swatch it can't read and keeps the others (BUG-132)", async () => {
+  it("skips a stored swatch it can't read and keeps the others", async () => {
     setContainer({
       getProperty: (key: string) =>
         Promise.resolve("swatches" === key ? ["Q#[1]", "C#[255,0,0]"] : null),
@@ -291,7 +291,7 @@ describe("Designer.start: the stored global swatches (module 1491)", () => {
 });
 
 describe("Designer.registerShortcut (module 1491)", () => {
-  it("binds [META, +] to the numpad +, mod+= and mod+shift+= (BUG-136)", () => {
+  it("binds [META, +] to the numpad +, mod+= and mod+shift+=", () => {
     const bound: string[] = [];
     const record = (combo: string, _callback: unknown, phase?: string) =>
       bound.push(combo + " " + (phase ?? "-"));

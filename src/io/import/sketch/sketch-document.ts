@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1141 (sketchdocument).
 import type { SketchMetaData } from "./sketch-data.ts";
 import { SketchParser } from "./sketch-parser.ts";
 

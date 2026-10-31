@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1221 (the PDF line cap).
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput } from "./output.ts";
 

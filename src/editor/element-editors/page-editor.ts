@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 331 (GPageEditor).
 /**
  * The editor of a page. On a fixed-size scene (pages with a size) the
  * page label above the page is a part: dragging it moves the page

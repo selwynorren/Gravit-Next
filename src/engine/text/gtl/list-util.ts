@@ -1,12 +1,3 @@
-// Old: chunk.vendor.js module 509 (carota's "per" sequence library).
-//
-// A Per wraps a push source: forEach(emit) calls emit for every value and
-// stops early when the source honours a truthy return. Arrays stop that
-// way (Array.prototype.some); a function source bound to a context drops
-// the return value, so such a source always runs to its end. The layout
-// relies on both behaviours, so the wrapping rules stay exactly as they
-// were.
-
 /** Receives one value; a truthy return asks the source to stop. */
 export type Emit<T> = (value: T, ...rest: unknown[]) => unknown;
 

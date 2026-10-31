@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1231 (GPDFFont).
 import type { PDFEncoding } from "./encoding.ts";
 import { PDFEncodings } from "./encodings.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";

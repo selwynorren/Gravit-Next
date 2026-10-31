@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 912 (GElement.Accelerated).
 /**
  * Containers with many children (layers, pages) keep two quadtrees over
  * their element children, by paint box and by geometry box, so hit tests

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1229 (the PDF pattern color space selection).
 import type { PDFGradientShading } from "./gradient-resource.ts";
 import { OPERATIONFLAG_STROKE } from "./operation-flags.ts";
 import { PDFObject } from "./pdf-object.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._mouseDragEnd, the Moving branch).
 /**
  * Finishes a move drag in one transaction: applies the dragged part (an
  * isolated handle) or the selection move (Alt: a moved copy), then puts

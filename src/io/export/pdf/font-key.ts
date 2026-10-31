@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1447 (the PDF font selection).
 import type { PDFFontResource } from "./font-resource.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFFont } from "./pdf-font.ts";

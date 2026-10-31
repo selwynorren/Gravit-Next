@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1440 (the PDF page box).
 import { PDFArray } from "./pdf-array.ts";
 import { PDFNumber } from "./pdf-number.ts";
 import { PDFObject } from "./pdf-object.ts";
@@ -8,7 +7,7 @@ import type { PDFOutput } from "./output.ts";
  * A page box, in PDF coordinates (from the lower left corner), written as
  * PDF expects it: `[llx lly urx ury]`. The old code wrote
  * `[top left width height]`, which only came out right for boxes at 0 0
- * (BUGS-FIXED.md "BUG-089 PDF bleed box is written as x y width height").
+ *.
  */
 export class PDFMediaBox extends PDFObject {
   declare left: number;

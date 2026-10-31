@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 395 (GSidebars).
 /**
  * The sidebars on one side of the shell (#left-sidebars or
  * #right-sidebars): one container per registered sidebar, a selector

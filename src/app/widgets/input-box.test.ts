@@ -95,7 +95,7 @@ describe("InputBox scrubbing (UI-FIELD-173)", () => {
     expect(b.scrub(10, false, false, -2)).toEqual({ value: 8, text: "8" });
   });
 
-  it("keeps the direction of a move without decimals (BUG-149)", () => {
+  it("keeps the direction of a move without decimals", () => {
     const b = box({}, "px", 0);
     expect(b.scrub(10, false, false, 0)).toEqual({ value: 10, text: "10" });
     expect(b.scrub(10, false, false, -3)).toEqual({ value: 7, text: "7" });

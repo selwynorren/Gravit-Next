@@ -49,7 +49,7 @@ export type SidebarEntry =
 
 export interface WelcomeScreenViewProps {
   /**
-   * Shown at the top of the sidebar in the GravitDesign Next look (the
+   * Shown at the top of the sidebar in the Gravit Next look (the
    * mark and wordmark, brand/brand-mark.tsx); absent in the classic look,
    * whose stylesheet paints the old logo there.
    */

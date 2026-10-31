@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1303 (GContextMenu).
 /**
  * The context menus of the canvas and of the panels that open one through
  * it. The old code listened with jQuery on the #windows element:
@@ -433,7 +432,7 @@ export class ContextMenu {
       return;
     select.setEnabled(true);
     // The old caption was HTML, which turned the stored "&lt;" and "&gt;"
-    // back; captions are text now (BUG-167), so see nameAsTyped.
+    // back; captions are text now, so see nameAsTyped.
     const label = (element: ContextElement): string =>
       element instanceof Block ? nameAsTyped(element.getLabel()) : element.getNodeNameTranslated();
     const addHit = (target: Menu, caption: string, element: ContextElement): void => {

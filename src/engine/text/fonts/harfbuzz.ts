@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 838 (the HarfBuzz wrapper, "GHarfBuzz").
 /**
  * The thin layer over HarfBuzz that GOpenTypeFont shapes with: script and
  * direction tables, a text buffer and a font. It mirrors the old wrapper's

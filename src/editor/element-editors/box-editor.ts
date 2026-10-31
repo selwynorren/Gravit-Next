@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 66 (GBoxEditor).
 /**
  * An editor with a box: the resize handles on its corners and edge
  * centres, the rotation handle above (or below) it and the rotation zones

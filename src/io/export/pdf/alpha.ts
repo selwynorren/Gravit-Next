@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1111 (the PDF gray color).
 import { PDFRGBColor } from "./cmyk-color-array.ts";
 import { PDFArray } from "./pdf-array.ts";
 import { PDFColor } from "./pdf-color.ts";

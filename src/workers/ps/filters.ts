@@ -1,27 +1,3 @@
-// Old: public/pscore.js (webpack module 1370 of its own build), the Filter
-// resource dict built in the PSCore constructor.
-//
-// Each entry is a native operator (called with the core as `this` by the
-// filter and eexec operators): it takes the data source (and parameters)
-// off the stack and pushes a file whose `filter` returns one decoded byte
-// per call, or null at the end.
-//
-// There is no ASCIIHexDecode (or any encoding filter): `filter` raises
-// nodecoder for those.
-//
-// SubFileDecode reads only the bytes it needs to match the EOD string,
-// ASCII85Decode keeps its tuple across calls, ends at `~>` and reads
-// strings too, and LZWDecode decodes; the old filters lost or corrupted
-// data or threw ("PostScript filters lose or corrupt data (LZWDecode never
-// works)" in BUGS-FIXED.md).
-//
-// Kept (QUESTIONS.md "PS worker: filter quirks"):
-// - ReusableStreamDecode checks a variable that isn't assigned yet for its
-//   parameter dict, so a dict operand is never taken.
-//
-// DCTDecode decodes through the page (waitForResponse "jpeg", see
-// ./jpeg.ts). The old filter asked for as many bytes as its reader guessed
-// and skipped every fourth byte when alpha was requested (BUG-008).
 import type { PSCore } from "./core.ts";
 import { jpegComponentCount, rgbaToComponents } from "./jpeg.ts";
 import { BitsReader } from "./core.ts";

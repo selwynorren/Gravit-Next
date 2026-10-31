@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 999 (no G name).
 /**
  * The class a collaborative text (GCollabText) turns into while it is in
  * text mode: a GText with action buttons and annotation links.

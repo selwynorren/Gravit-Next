@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1223 (GPDFText, the PDF text object).
 import { Point } from "../../../engine/math/point.ts";
 import { Transform } from "../../../engine/math/transform.ts";
 import type { PDFFontSelection } from "./font-key.ts";

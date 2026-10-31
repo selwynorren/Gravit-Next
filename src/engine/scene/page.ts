@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 83 (GPage).
 /**
  * The page, node "page": a child of the scene that holds layers and
  * items. A page with a width and height (`w`, `h`) is fixed sized: it has

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1205 (model/item/sketchbitmap).
 import type { Rect } from "../../../engine/math/rect.ts";
 import type { Transform } from "../../../engine/math/transform.ts";
 import { Image, type ImageStatusEvent } from "../../../engine/scene/image.ts";

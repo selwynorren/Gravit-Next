@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 744 (GLabelGuide).
 import type { Color } from "../../engine/color/color.ts";
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import { registerClass } from "../../engine/core/object.ts";

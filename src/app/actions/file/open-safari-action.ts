@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1299 (GOpenAction for Safari).
 import { Key } from "../../../engine/core/key.ts";
 import { Platform, WebBrowser } from "../../../engine/core/platform.ts";
 import type { Shortcut } from "../action.ts";

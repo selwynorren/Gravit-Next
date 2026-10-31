@@ -1,15 +1,3 @@
-// Old: chunk.vendor.js module 647.
-//
-// Segment/segment intersections for the polygon boolean code: Kevin
-// Lindsey's intersection library (lines, quadratic and cubic beziers)
-// with Gravit's changes. Cubic/line intersections go through big.js
-// ("precise" variants) unless the caller asks for the fast path, the
-// cubic/cubic case uses a Bezout resultant, and the polynomial roots come
-// from a Jenkins-Traub solver (a JavaScript port of rpoly_ak1).
-//
-// The hand-tuned epsilons, the order of floating-point operations and the
-// way the solver objects are shared between its steps all decide which
-// intersections are found, so they are kept as they were.
 import { GMath } from "../../math/math.ts";
 import { Point } from "../../math/point.ts";
 import { Big } from "./big.ts";

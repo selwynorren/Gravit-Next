@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 486 (GGLHueSaturationShader, from glfx.js).
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

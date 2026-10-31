@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1428 (the PDF font factory).
 import type { OpenTypeFont } from "../../../engine/text/fonts/open-type-font.ts";
 import { PDFCIDFontType, type PDFFontDocument } from "./cid-font-type.ts";
 import { PDFFontDescriptor } from "./font-lookup.ts";

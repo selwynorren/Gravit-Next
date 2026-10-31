@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1027 (GAdjustMultiEffect).
 import { Locale } from "../../core/locale/locale.ts";
 import { registerNodeClass } from "../../scene/node.ts";
 import { GLBlurEffect } from "../webgl/effects/gl-blur-effect.ts";

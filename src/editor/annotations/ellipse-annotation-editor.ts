@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 766 (GEllipseAnnotationEditor).
 /**
  * The editor of an ellipse annotation: an ellipse editor without the rotation corners and handle.
  * See AnnotationEditorMixin for what all annotation editors share.

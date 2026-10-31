@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1275 (GSettingsDialog).
 /**
  * Edit > Settings...: one row per setting, Cancel and Save Changes. The
  * switches start from the current settings and nothing is applied until
@@ -334,7 +333,7 @@ export class SettingsDialogImpl {
 
   /**
    * Old: updateUserSettings({ notifications_disabled }) on the cloud
-   * account when the switch changed. Stored locally now (BUG-131).
+   * account when the switch changed. Stored locally now.
    */
   private _saveNotificationSetting(): void {
     const disabled = this._checked("notifications_disabled");

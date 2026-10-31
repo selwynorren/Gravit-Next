@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1438 (the PDF page resources).
 import { PDFDictionary } from "./pdf-dictionary.ts";
 import type { PDFIndirectReference } from "./indirect-reference.ts";
 import type { PDFObject } from "./pdf-object.ts";

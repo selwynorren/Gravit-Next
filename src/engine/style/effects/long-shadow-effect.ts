@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1031 (GLongShadowEffect).
 import { RGBColor } from "../../color/rgb-color.ts";
 import { Locale } from "../../core/locale/locale.ts";
 import { GMath } from "../../math/math.ts";

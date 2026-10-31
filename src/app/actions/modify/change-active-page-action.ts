@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1341 (GChangeActivePageAction).
 import { Key, type KeyValue } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Node } from "../../../engine/scene/node.ts";
@@ -58,7 +57,7 @@ export class ChangeActivePageAction extends Action {
 
   // The designer binds these as non-global shortcuts, so text fields (and
   // the text editor's input field) keep the keys. Old: a bare key instead
-  // of a key list, which bound to no key at all (BUG-148).
+  // of a key list, which bound to no key at all.
   override getAdditionalShortcuts(): Shortcut[] | null {
     switch (this._type) {
       case Type.Next:

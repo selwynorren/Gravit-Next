@@ -198,7 +198,7 @@ describe("SVGImport.import", () => {
     expect((rect.getProperty("trf") as Transform).getMatrix()).toEqual([4, 0, 0, 4, 9, 4]);
   });
 
-  it("builds only the first child of a switch that isn't a foreignObject (BUG-073)", async () => {
+  it("builds only the first child of a switch that isn't a foreignObject", async () => {
     const result = await importTree(
       el("svg", {}, [
         el("rect", { width: "4", height: "4" }),
@@ -229,7 +229,7 @@ describe("SVGImport.import", () => {
     expect((rect.getProperty("trf") as Transform).getMatrix()).toEqual([5, 0, 0, 3, 30, 23]);
   });
 
-  it("styles a use's instance by the use's class where it sets nothing itself (BUG-075)", async () => {
+  it("styles a use's instance by the use's class where it sets nothing itself", async () => {
     const result = await importTree(
       el("svg", { width: "100", height: "100" }, [
         el("style", {}, [text(".blue { fill: #00c; stroke: #0c0 } use.wide { stroke-width: 3 }")]),
@@ -257,7 +257,7 @@ describe("SVGImport.import", () => {
     expect(layers(red)[1]?.[0]).toBe("C#[0,204,0]");
   });
 
-  it("imports an element whose filter has a feColorMatrix (BUG-077)", async () => {
+  it("imports an element whose filter has a feColorMatrix", async () => {
     const result = await importTree(
       el("svg", { width: "100", height: "100" }, [
         el("filter", { id: "f" }, [el("feColorMatrix", { type: "saturate", values: "0" })]),
@@ -270,7 +270,7 @@ describe("SVGImport.import", () => {
     expect(children.map((c) => c.constructor.name)).toEqual(["Rectangle", "Ellipse"]);
   });
 
-  it("resolves em and ex lengths against the element's font size (BUG-079)", async () => {
+  it("resolves em and ex lengths against the element's font size", async () => {
     const result = await importTree(
       el("svg", { width: "100", height: "100" }, [
         el("g", { "font-size": "20" }, [
@@ -311,7 +311,7 @@ describe("BUG-006: element names that are built-in object members", () => {
 });
 
 describe("SvgImage", () => {
-  it("sizes the image once it has loaded and then stops listening (BUG-082)", () => {
+  it("sizes the image once it has loaded and then stops listening", () => {
     const element = parser().CreateElement(
       el("image", { "xlink:href": "a.png", x: "10", y: "20", width: "100", height: "50" }),
     );
@@ -371,7 +371,7 @@ describe("the font provider queue (old chunk.vendor.js 245127-245131)", () => {
     ]);
   });
 
-  it("asks for each family on its own and answers it with its own answer (BUG-072)", () => {
+  it("asks for each family on its own and answers it with its own answer", () => {
     const asked: string[] = [];
     const answers: ((...args: unknown[]) => void)[] = [];
     const svg = new SvgParser(

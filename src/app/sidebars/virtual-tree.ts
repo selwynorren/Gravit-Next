@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 451 (GVirtualTreeNode, GVirtualTreeNodeNamed, GVirtualTree).
 /**
  * The tree the layers, pages and selected panels show: a virtual list
  * whose rows are the visible nodes of a tree (expanded parents show their

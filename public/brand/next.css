@@ -1,10 +1,10 @@
 /*
- * GravitDesign Next: the parts of the brand that aren't a colour swap
+ * Gravit Next: the parts of the brand that aren't a colour swap
  * (those are in accent.<theme>.css). Loaded after the old theme
  * stylesheet, only in the "next" look (index.html; src/app/brand).
  *
- * Palette: yellow #FFD81F, magenta #E3136B, lime #C3DB4E, olive #6E9A34,
- * ink #1B1B24, light ink #F4F3F8.
+ * Palette: magenta #E3136B, lime #C3DB4E, olive #6E9A34,
+ * ink #2C2C2C (the dark grey of the interface), light ink #F5F5F5.
  */
 
 @font-face {
@@ -17,12 +17,11 @@
 }
 
 html[data-branding="next"] {
-  --gd-yellow: #ffd81f;
   --gd-magenta: #e3136b;
   --gd-lime: #c3db4e;
   --gd-olive: #6e9a34;
-  --gd-ink: #1b1b24;
-  --gd-light-ink: #f4f3f8;
+  --gd-ink: #2c2c2c;
+  --gd-light-ink: #f5f5f5;
   /* What sits behind a wordmark: the selection handles are filled with it. */
   --gd-tile: #ffffff;
 }
@@ -132,7 +131,7 @@ html[data-branding="next"]
   color: rgba(244, 243, 248, 0.62);
 }
 /* Option icons: a bare line glyph instead of the old colour tiles; the
-   active option's glyph takes the yellow of its marker. */
+   active option's glyph takes the magenta of its marker. */
 html[data-branding="next"]
   .g-dialog.g-new-document-dialog
   > .g-dialog-content
@@ -173,7 +172,7 @@ html[data-branding="next"]
   > .sidebar-options
   > .option.active
   > .option-icon::after {
-  background-color: var(--gd-yellow);
+  background-color: var(--gd-magenta);
 }
 html[data-branding="next"]
   .g-dialog.g-new-document-dialog
@@ -182,7 +181,7 @@ html[data-branding="next"]
   > .sidebar-options
   > .option.active {
   background: rgba(244, 243, 248, 0.08);
-  box-shadow: inset 4px 0 0 var(--gd-yellow);
+  box-shadow: inset 4px 0 0 var(--gd-magenta);
 }
 html[data-branding="next"]
   .g-dialog.g-new-document-dialog
@@ -219,6 +218,13 @@ html[data-branding="next"]
 html[data-branding="next"] .g-dialog.g-new-document-dialog > .g-dialog-content > .sidebar > .version {
   color: rgba(244, 243, 248, 0.6);
   font-size: 12px;
+}
+
+/* ---- Menu bar: the mark at the left. ---- */
+
+html[data-branding="next"] #header > .section.menu {
+  padding-left: 40px;
+  background: url("mark.svg") no-repeat 13px center / 20px 20px;
 }
 
 /* ---- The introduction (src/app/brand/intro-dialog.ts). ---- */

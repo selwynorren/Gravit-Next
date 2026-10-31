@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 650 (the GTL text transformer base).
 import { VertexTransformer } from "../../geometry/vertex-transformer.ts";
 import type { VertexReader } from "../../geometry/vertex-source.ts";
 import type { Point } from "../../math/point.ts";

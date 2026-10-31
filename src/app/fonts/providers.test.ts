@@ -193,7 +193,7 @@ describe("ImportedFontsProvider", () => {
     expect(again.fail).toHaveBeenCalledTimes(1);
   });
 
-  it("answers its first list query once (BUG-165)", async () => {
+  it("answers its first list query once", async () => {
     fakeDb({ [FontDB.FONT_LIST]: [{ family: "Mine", weight: "400", style: "N" }] });
     const provider = new ImportedFontsProvider(owner);
     const done = vi.fn<LoadCallbacks["done"]>();
@@ -241,7 +241,7 @@ describe("LocalFontsProvider", () => {
     expect(listed[0]?.fonts).toEqual([data]);
   });
 
-  it("answers a load started from the answer of another one (BUG-096)", async () => {
+  it("answers a load started from the answer of another one", async () => {
     // No local fonts, so every load asks the API again. The first answer
     // starts a second load; the old code dropped its answer.
     vi.stubGlobal("window", { queryLocalFonts: () => Promise.resolve([]) });

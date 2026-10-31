@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 729 (GOverlayEffect).
 import { RGBColor } from "../../color/rgb-color.ts";
 import { Locale } from "../../core/locale/locale.ts";
 import type { Transform } from "../../math/transform.ts";

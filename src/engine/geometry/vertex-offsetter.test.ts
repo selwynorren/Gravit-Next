@@ -142,7 +142,7 @@ describe("VertexOffsetter", () => {
     ]);
   });
 
-  it("clips inset-only parts of an open path that touch the source near its ends (BUG-012)", () => {
+  it("clips inset-only parts of an open path that touch the source near its ends", () => {
     // Found by random search. The trimmed inset crosses itself and splits
     // into parts; a part that comes near the source at one of its ends is
     // clipped like on the outset side. The old code dropped every such
@@ -177,7 +177,7 @@ describe("VertexOffsetter", () => {
     expect(out.every(Number.isFinite)).toBe(true);
   });
 
-  it("puts the tangent point of the segment-to-arc distance on the line (BUG-013)", () => {
+  it("puts the tangent point of the segment-to-arc distance on the line", () => {
     // The old code used dx for y too.
     const offsetter = Object.create(VertexOffsetter.prototype) as VertexOffsetter;
     const quarter = Math.tan(Math.PI / 8);

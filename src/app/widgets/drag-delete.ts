@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1161 (handleDragForDeleteIcon).
 /**
  * While a row (paint layer, effect) is dragged outside its panel, shows
  * the trash drag image beside the pointer. Returns whether the row would

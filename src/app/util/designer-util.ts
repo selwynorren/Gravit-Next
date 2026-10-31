@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 40 (the designer's utility functions).
 /**
  * The designer's grab-bag of helpers: node comparison and merging (used
  * when a symbol or a reloaded file is merged into the scene), change

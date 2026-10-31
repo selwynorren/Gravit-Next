@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1562 (GInstallPwaDialog).
 /**
  * Offers to install the app as a PWA: Install runs file.install-to-desktop
  * (or the prompt directly when the action can't run), "Not now" stores

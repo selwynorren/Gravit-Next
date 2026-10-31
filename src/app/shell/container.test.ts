@@ -33,14 +33,14 @@ afterEach(() => {
 });
 
 describe("Container._estimatingMemoryUsage (module 85)", () => {
-  it("adds up the sizes of every open document (BUG-144)", () => {
+  it("adds up the sizes of every open document", () => {
     useDocuments([100, 200]);
     expect(new TestContainer().estimate()).toBe(
       300 * baseConfig.FILE_SIZE_TO_RAM_COEFFCIENT + baseConfig.MIN_JS_HEAP_SIZE,
     );
   });
 
-  it("counts a document without an item as 0, also after a saved one (BUG-144)", () => {
+  it("counts a document without an item as 0, also after a saved one", () => {
     useDocuments([100, null, 50]);
     expect(new TestContainer().estimate()).toBe(
       150 * baseConfig.FILE_SIZE_TO_RAM_COEFFCIENT + baseConfig.MIN_JS_HEAP_SIZE,

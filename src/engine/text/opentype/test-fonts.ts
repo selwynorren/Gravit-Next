@@ -9,9 +9,9 @@ import type { Font } from "./font.ts";
 import { parse } from "./opentype.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../../assets/font");
+const fontDir = resolve(here, "../../../assets/font");
 
-/** The bytes of a bundled font, path relative to public/assets/font. */
+/** The bytes of a bundled font, path relative to assets/font. */
 export function readTestFont(name: string): ArrayBuffer {
   const bytes = readFileSync(resolve(fontDir, name));
   const buffer = new ArrayBuffer(bytes.length);

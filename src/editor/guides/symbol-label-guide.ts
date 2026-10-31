@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1077 (GSymbolLabelGuide).
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";
 import { Locale } from "../../engine/core/locale/locale.ts";
 import { registerClass } from "../../engine/core/object.ts";

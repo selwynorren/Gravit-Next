@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1597 (GConnectLinesAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Transform } from "../../../engine/math/transform.ts";

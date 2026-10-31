@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 163 (GDocument).
 /**
  * One open design: its scene and editor, its storage item, its windows and
  * its status (module 86). GDocument was a god object; here it keeps the

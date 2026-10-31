@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1328 (unnamed; GDesigner's paint mode event).
 /**
  * Triggered on the designer once setPaintMode has repainted the active
  * view with the new mode (the next frame). The page properties panel

@@ -51003,7 +51003,7 @@ body.g-touch .g-library-panel > .library-search > span {
   src:
     local("Lato Regular"),
     local("Lato-Regular"),
-    url("assets/cloud/font/Lato-Regular.woff2") format("woff2");
+    url("assets/font/Lato-Regular.woff2") format("woff2");
   unicode-range:
     U+0000-00FF, U+0100-024F, U+0259, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0400-052F, U+1C80-1C88, U+1E00-1EFF, U+2000-206F, U+2074, U+20A0-20CF,
@@ -51018,7 +51018,7 @@ body.g-touch .g-library-panel > .library-search > span {
   src:
     local("Lato Bold"),
     local("Lato-Bold"),
-    url("assets/cloud/font/Lato-Bold.woff2") format("woff2");
+    url("assets/font/Lato-Bold.woff2") format("woff2");
   unicode-range:
     U+0000-00FF, U+0100-024F, U+0259, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0400-052F, U+1C80-1C88, U+1E00-1EFF, U+2000-206F, U+2074, U+20A0-20CF,
@@ -51033,7 +51033,7 @@ body.g-touch .g-library-panel > .library-search > span {
   src:
     local("Lato Semibold"),
     local("Lato-Semibold"),
-    url("assets/cloud/font/Lato-Semibold.woff2") format("woff2");
+    url("assets/font/Lato-Semibold.woff2") format("woff2");
   unicode-range:
     U+0000-00FF, U+0100-024F, U+0259, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0400-052F, U+1C80-1C88, U+1E00-1EFF, U+2000-206F, U+2074, U+20A0-20CF,
@@ -51048,7 +51048,7 @@ body.g-touch .g-library-panel > .library-search > span {
   src:
     local("Lato Light"),
     local("Lato-Light"),
-    url("assets/cloud/font/Lato-Light.woff2") format("woff2");
+    url("assets/font/Lato-Light.woff2") format("woff2");
   unicode-range:
     U+0000-00FF, U+0100-024F, U+0259, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
     U+0400-052F, U+1C80-1C88, U+1E00-1EFF, U+2000-206F, U+2074, U+20A0-20CF,
@@ -51605,7 +51605,7 @@ button.buynow:focus {
   src:
     local("Roboto Medium"),
     local("Roboto-Medium"),
-    url("assets/cloud/font/Roboto-Medium.woff2") format("woff2");
+    url("assets/font/Roboto-Medium.woff2") format("woff2");
   unicode-range: U+0000-00FF;
 }
 

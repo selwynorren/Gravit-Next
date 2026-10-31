@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 442 (page clip and export constants).
 /**
  * The page setting "cce" (clip content): 2 clips, 1 doesn't, unset
  * follows PAGE_CLIP_DEFAULT (FMT-EXPORT-042). "__export" holds an

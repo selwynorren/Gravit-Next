@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1213 (model/sketchshapegroup).
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { extend } from "../../../engine/core/util.ts";

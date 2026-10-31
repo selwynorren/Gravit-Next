@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 745 (GSelectionPositionEditor).
 /**
  * The box editor of a multiple selection: one box around all selected
  * elements, with the resize and rotation handles. Its previews go to the

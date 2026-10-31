@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode.Store).
 /**
  * Marks a node as storable: `GNode.store` skips nodes without it, and
  * `clone` is a serialize/deserialize round trip.

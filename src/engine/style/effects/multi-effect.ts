@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 535 (GMultiEffect).
 import { Locale } from "../../core/locale/locale.ts";
 import { getTypeId } from "../../core/object.ts";
 import { equals, extend } from "../../core/util.ts";

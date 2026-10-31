@@ -1,18 +1,3 @@
-// Old: public/psclasses.js (PSClasses, webpack module 1368 of its own build).
-//
-// The PostScript object model of the EPS/PS importer. Every PostScript
-// value the interpreter handles is one of:
-// - a plain JS number (integers and reals), null, or rarely a plain string,
-//   boolean or array (some operators push raw values, see PSValue);
-// - a native operator (a function called with the core as `this`);
-// - a PSObject created through PSClasses.newObject (bool, name, operator,
-//   mark, array, packedarray, dict, string, gstate, file, saveState);
-// - a GraphicsState (the interpreter's graphics state, not a PS object).
-//
-// The old code ran in sloppy mode on ad-hoc objects; the classes here keep
-// the same own properties (`in` checks and for..in enumeration see the
-// same keys) and declare the fields other modules add later with `declare`,
-// so they don't exist until they are assigned.
 import type { PSCore } from "./core.ts";
 import type { PSParser } from "./parser.ts";
 

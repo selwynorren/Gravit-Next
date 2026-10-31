@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 709 (opentype.js bbox.js, unchanged).
-
 function derive(v0: number, v1: number, v2: number, v3: number, t: number): number {
   return (
     Math.pow(1 - t, 3) * v0 +

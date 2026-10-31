@@ -1,5 +1,4 @@
 import type { ReactElement } from "react";
-import type { Container } from "../shell/container.ts";
 import { renderToStaticMarkup } from "react-dom/server";
 import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { FakeElement, installFakeDom } from "../menus/testing/fake-dom.testing.ts";
@@ -30,11 +29,9 @@ Object.assign(globalThis.window as unknown as Record<string, unknown>, {
 
 const { IntroDialog, INTRO_SHOWN_KEY, introWasShown } = await import("./intro-dialog.ts");
 const { ShowIntroAction } = await import("./show-intro-action.ts");
-const { OpenLegacyAction } = await import("./open-legacy-action.ts");
 const { brandActions } = await import("./brand-actions.ts");
 const { setActiveBranding } = await import("./branding.ts");
 const { Category } = await import("../actions/category.ts");
-const { setContainer } = await import("../shell/globals.ts");
 
 function openIntros(): unknown[] {
   return dom.document.querySelectorAll(".g-dialog.gd-intro-dialog");
@@ -115,14 +112,13 @@ describe("the introduction", () => {
     for (const gone of ["cloud sync", "sharing and comments", "templates from the cloud", "Pro"])
       expect(html).toContain(gone);
     expect(html).toContain('href="https://github.com/GravitDesign/designer/issues"');
-    expect(html).toContain('href="https://legacy.gravitdesign.com"');
-    expect(html).toContain("Help &gt; About GravitDesign Next");
+    expect(html).toContain("Help &gt; About Gravit Next");
   });
 });
 
-describe("Help > About GravitDesign Next", () => {
+describe("Help > About Gravit Next", () => {
   it("is an action only in the next look", () => {
-    expect(brandActions().map((a) => a.getId())).toEqual([ShowIntroAction.ID, OpenLegacyAction.ID]);
+    expect(brandActions().map((a) => a.getId())).toEqual([ShowIntroAction.ID]);
     setActiveBranding("classic");
     expect(brandActions()).toEqual([]);
   });
@@ -131,7 +127,7 @@ describe("Help > About GravitDesign Next", () => {
     store.set(INTRO_SHOWN_KEY, "true");
     expect(IntroDialog.showOnFirstStart()).toBeNull();
     const action = new ShowIntroAction();
-    expect(action.getTitle()).toBe("About GravitDesign Next");
+    expect(action.getTitle()).toBe("About Gravit Next");
     expect(action.getCategory()).toBe(Category.CATEGORY_HELP);
     expect(action.isEnabled()).toBe(true);
     action.execute();
@@ -147,20 +143,5 @@ describe("Help > About GravitDesign Next", () => {
     IntroDialog.current()?.close();
     vi.runAllTimers();
     expect(action.isEnabled()).toBe(true);
-  });
-});
-
-describe("Help > Open the Old Gravit Designer", () => {
-  it("opens legacy.gravitdesign.com outside the app", () => {
-    const opened: string[] = [];
-    setContainer({
-      openExternalLink: (_event: unknown, url: string) => opened.push(url),
-    } as unknown as Container);
-    const action = new OpenLegacyAction();
-    expect(action.getTitle()).toBe("Open the Old Gravit Designer");
-    expect(action.getCategory()).toBe(Category.CATEGORY_HELP);
-    action.execute();
-    expect(opened).toEqual(["https://legacy.gravitdesign.com"]);
-    setContainer(null);
   });
 });

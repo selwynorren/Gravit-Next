@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1423 (the PDF document body).
 import { OpenTypeFont } from "../../../engine/text/fonts/open-type-font.ts";
 import type { Point } from "../../../engine/math/point.ts";
 import type { PDFFontDocument } from "./cid-font-type.ts";

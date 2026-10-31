@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1462 (the SVG filter builder).
-//
-// Collects filter primitives per effect and writes them as one <filter>.
-// Each effect adds a "series" filter (primitives chained one after the
-// other: blur, color overlay) or a "parallel" one (primitives that read
-// the source themselves and get merged: drop and inner shadow). Every
-// primitive starts as its own little parsed document, as in the old code,
-// so it keeps the xmlns attribute it was parsed with when it's imported.
 import { uuid } from "../../../engine/core/util.ts";
 import {
   createParsedDocument,

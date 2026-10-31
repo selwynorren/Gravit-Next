@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 166 (GRendererConfig).
-//
-// Settings of the scene renderer, the tile cache and the view. The old
-// module exported a plain mutable object and the view adjusts some entries
-// for the hardware at startup (cache sizes, texture deletion), so this stays
-// a plain mutable object too.
-
 /** Which areas the (debug only) area overlay shows. */
 export const DebugAreasInfo = {
   Scene: 1,

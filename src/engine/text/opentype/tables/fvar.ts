@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 994 (opentype.js tables/fvar.js, unchanged).
-// The fvar table: the axes and named instances of a variable font.
-
 import * as check from "../check.ts";
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";

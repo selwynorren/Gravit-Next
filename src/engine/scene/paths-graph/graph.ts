@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 818 (GGraph, not in the G barrel).
 /**
  * A directed graph of anchors and edges kept in two maps by id, with a
  * depth first search that colors anchors and edges white (unvisited),

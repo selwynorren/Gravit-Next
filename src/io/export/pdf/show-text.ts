@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1411 (GPDFShowText).
 import type { PDFArray } from "./pdf-array.ts";
 import { PDFObject } from "./pdf-object.ts";
 import { PDFOperators } from "./operators.ts";

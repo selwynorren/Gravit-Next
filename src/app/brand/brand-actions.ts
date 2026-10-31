@@ -5,9 +5,8 @@
  */
 import type { Action } from "../actions/action.ts";
 import { isNextBranding } from "./branding.ts";
-import { OpenLegacyAction } from "./open-legacy-action.ts";
 import { ShowIntroAction } from "./show-intro-action.ts";
 
 export function brandActions(): Action[] {
-  return isNextBranding() ? [new ShowIntroAction(), new OpenLegacyAction()] : [];
+  return isNextBranding() ? [new ShowIntroAction()] : [];
 }

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1698 ($.fn.gEyeDropper).
 /**
  * The eye dropper button: a click starts picking a pixel of the active
  * view's canvas. While it picks, a loupe (`.g-eye-dropper-picker`, on
@@ -263,7 +262,7 @@ export class EyeDropper {
       document.addEventListener("mousemove", state.documentMove);
       // A tool change ends picking without a color. The old code made a new
       // listener on every call, so ending never removed it; a tool change
-      // only removed the loupe and the dropper stayed active (BUG-156).
+      // only removed the loupe and the dropper stayed active.
       state.toolChanged = () => this.setActive(false);
       app.getToolManager().addEventListener(ToolChangedEvent, state.toolChanged, this);
     } else {

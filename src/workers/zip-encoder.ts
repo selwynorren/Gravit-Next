@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 1112 (zip task of the PDF export worker).
-//
-// Deflates a PDF stream (zlib format, pako's default level), here
-// (`encode`) or in the first PDF export worker ("zipencoder" command,
-// FMT-WORKER-012).
-
 import { deflate } from "pako";
 import { uuid } from "../engine/core/util.ts";
 import type { MessageWorker, PromiseFactory } from "../io/export/jpeg-encoder.ts";

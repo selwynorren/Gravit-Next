@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 197 (the PDF dictionary).
 import { PDFValue } from "./pdf-name.ts";
 import { PDFObject } from "./pdf-object.ts";
 import { PDFString } from "./pdf-string.ts";

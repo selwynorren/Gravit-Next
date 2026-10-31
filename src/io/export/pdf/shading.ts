@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1146 (the PDF shading base).
 import type { PDFColorSpace } from "./color-spaces.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";
 

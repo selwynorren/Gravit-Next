@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1658 (GSymbolProperties).
 /**
  * The "Symbol" panel of symbol instances: a select that swaps the
  * selected instance for an instance of another symbol, selects the

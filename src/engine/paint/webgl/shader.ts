@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 42 (the GL shader base).
-//
-// A shader program on the shared context (compiled programs are cached by
-// source hash) plus the machinery effects run through: `apply` renders a
-// shader over a paint canvas, in tiles when it is large, and at a lower
-// detail level when the effect's padding is big.
 import { equals, hash } from "../../core/util.ts";
 import type { Point } from "../../math/point.ts";
 import { Rect } from "../../math/rect.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 609 (GSelectByAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { equals } from "../../../engine/core/util.ts";
 import { AnnotationMixin } from "../../../engine/scene/annotations/annotation.ts";

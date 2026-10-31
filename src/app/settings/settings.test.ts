@@ -121,7 +121,7 @@ describe("settings dialog save (UI-SETTING-016, UI-SETTING-005, UI-SETTING-009, 
     expect(values[keys.indexOf("decimals_num")]).toBe(3);
   });
 
-  it("stores a switched notifications row locally and closes (BUG-131)", async () => {
+  it("stores a switched notifications row locally and closes", async () => {
     const designer = fakeDesigner();
     setDesigner(designer as never);
     const { dialog } = dialogWith({
@@ -214,7 +214,7 @@ describe("settings dialog rows model", () => {
       return value;
     });
     // parseNumber never gives null, so the old "2" fallback is unreachable:
-    // see "Settings rounding box shows NaN for text" in QUESTIONS.md.
+    //.
     expect(results).toEqual(["6", "0", "4", "NaN"]);
   });
 });

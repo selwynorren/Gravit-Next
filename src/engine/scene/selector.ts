@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 507 (the node selector engine, no G name).
 /**
  * CSS-like selectors over the node tree ("page > layer:active",
  * "rectangle.tag", "[name=Foo]", ":selected"), adapted by the old engine

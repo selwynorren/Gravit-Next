@@ -8,6 +8,8 @@ import { defineConfig } from "vite";
  * (electron/preload.cjs) is plain CommonJS and ships as it is.
  */
 export default defineConfig({
+  // The main process only; the page and its static files are built by vite.config.ts.
+  publicDir: false,
   build: {
     outDir: "dist-electron",
     emptyOutDir: true,

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1407 (the PDF graphics state reference).
 import type { PDFExtGState } from "./ext-gstate.ts";
 import { PDFConcatMatrix } from "./op-cm.ts";
 import { PDFObject } from "./pdf-object.ts";

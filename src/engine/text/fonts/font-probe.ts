@@ -9,7 +9,7 @@
 export interface ProbeApi {
   GOpenTypeFont: any;
   GOpenTypeUtil: any;
-  /** The bytes of a font under public/assets/font. */
+  /** The bytes of a font under assets/font. */
   readFont(name: string): ArrayBuffer;
 }
 

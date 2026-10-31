@@ -1,16 +1,3 @@
-// Old: chunk.vendor.js module 12 (GMath).
-//
-// The numeric helpers the whole engine shares: angles, rounding,
-// intersections, distances, bezier evaluation and subdivision, and the
-// polynomial root finders behind curve hit tests and boolean operations.
-//
-// Every expression keeps the old order of floating-point operations, and
-// the places that go through Float32Array (Q_rsqrt, inversePolyInterval,
-// inversePolyUnaryInterval) keep that precision loss, because the results
-// end up in saved documents and hit tests.
-//
-// The export is called GMath rather than Math so it doesn't shadow the
-// global Math object in modules that import it.
 import { Point } from "./point.ts";
 
 /** A plain or typed array of numbers that can be written by index. */

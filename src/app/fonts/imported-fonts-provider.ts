@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1118 (GImportedFontsProvider).
 /**
  * The fonts the user imported (File > Import fonts): their list and files
  * live in the font database (font-db.ts). Families are grouped by display
@@ -229,7 +228,7 @@ export class ImportedFontsProvider extends FontsProvider {
    * Reads the font list once, then runs everything that waited for it,
    * the call that started it first. That call waits only in the callback
    * list; the old app also passed it to initialize, so it ran twice
-   * (BUG-165).
+   *.
    */
   initialize(): void {
     if (this._initialized || this._initializing) return;

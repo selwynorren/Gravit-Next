@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 718 (opentype.js tables/name.js, unchanged).
-// The name table: family name, style, copyright and the other font names,
-// per language.
-
 import { Parser } from "../parse.ts";
 import { Record as NameRecordTable, Table } from "../table.ts";
 import { decode, encode } from "../types.ts";

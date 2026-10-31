@@ -22,7 +22,7 @@ function dumped(name: string): string {
     .join("");
 }
 
-describe("PostScript filters (BUG-115)", () => {
+describe("PostScript filters", () => {
   it.each([
     ["filter-lzw.ps", "-----A---B"],
     ["filter-ascii85.ps", "Hello World!"],

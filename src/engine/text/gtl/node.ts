@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 267 (the GTL layout node, carota's node.js).
 import { GObject } from "../../core/object.ts";
 import { TLRect } from "./rect.ts";
 

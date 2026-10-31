@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1088 (GTextAnnotationTool).
 /**
  * Places a text annotation like the text tool. It is not registered in
  * the tool manager.

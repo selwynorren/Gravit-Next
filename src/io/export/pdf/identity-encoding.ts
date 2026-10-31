@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1433 (GPDFIdentityEncoding).
 import type { OpenTypeFont } from "../../../engine/text/fonts/open-type-font.ts";
 import { PDFEncoding } from "./encoding.ts";
 import { PDFGlyph } from "./glyph.ts";

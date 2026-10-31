@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1122 (sketchfile).
 import { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { EventTarget } from "../../../engine/core/event-target.ts";
 import { Scene } from "../../../engine/scene/scene.ts";

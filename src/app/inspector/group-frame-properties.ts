@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1655 (GGroupFrameProperties).
 /**
  * The Group / Frame select of groups: a group with a frame clips its
  * children to its first child. Shown when every inspected element is a

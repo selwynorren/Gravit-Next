@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 24 (GEditorOptions).
 import { CMYKColor } from "../engine/color/cmyk-color.ts";
 import type { Color } from "../engine/color/color.ts";
 import { RGBColor } from "../engine/color/rgb-color.ts";

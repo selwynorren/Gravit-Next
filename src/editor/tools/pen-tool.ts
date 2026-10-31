@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 539 (GPenTool).
 /**
  * The pen: a click places a corner point, a click-drag pulls symmetric
  * bezier handles out of the point just placed. While the button is up the

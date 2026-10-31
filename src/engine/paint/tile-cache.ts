@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 934.
-//
-// Keeps what the tile canvases showed, per zoom level, in 1024 px canvas
-// grids, so a repaint can copy unchanged parts instead of painting them.
-// While a zoom level has nothing yet, getGimmick scales up a lower cached
-// level as a placeholder (the "low-res gimmick").
 import { GObject, registerClass } from "../core/object.ts";
 import type { Point } from "../math/point.ts";
 import { Rect } from "../math/rect.ts";

@@ -1,32 +1,3 @@
-// Old: chunk.vendor.js module 1404 (GEPSParser).
-//
-// The page side of an EPS/PS import (FMT-WORKER-008): the PostScript
-// worker posts paint calls (workerAPI) and this builds the nodes in one
-// group: paths (with clip groups), rectangles, images, gradients and
-// meshes, and texts. "done" hands the group and the page background to
-// the draw callback and reports the queued errors.
-//
-// Kept (old behaviour):
-// - show() without a font name calls getDefaultFont on the wrong object
-//   and throws (QUESTIONS.md "EPS page side: show without a font name
-//   throws").
-// - ImageData.data assignments of the old code did nothing; they are left
-//   out.
-//
-// Fixed (BUG-116): meshes of every type (4 to 7) become images, gray and
-// RGB pixels included (the old page drew only Coons and tensor meshes and
-// only their CMYK pixels; RGB and gray images stayed empty), and a mesh
-// pattern fills a path as the image inside it instead of as the fill.
-//
-// Fixed (BUG-118): line joins 1 and 2 were swapped (1 became bevel and 2
-// round); PostScript's 1 is round and 2 is bevel.
-//
-// Fixed (BUG-008): the JPEG handler signalled the waiting worker with
-// Atomics.wake, which browsers have removed (it threw, and the worker
-// waited until its timeout); it told size requests by a byte view of
-// length 2, which the 8-byte size area never has, so it wrote pixels
-// where the size belonged. The request kind is now explicit and the
-// handler calls Atomics.notify.
 import { Color } from "../../../engine/color/color.ts";
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";

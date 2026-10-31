@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 633 (language and fullLanguage only; the OS
-// and hardware sniffing in that module duplicate GSystem and are dropped).
-
 /** The browser language as the translation library reads it at startup. */
 export interface BrowserLanguage {
   /** First part of the language tag in lower case ("de" for "de-DE"); "" when the tag is empty. */

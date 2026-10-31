@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1153 (the new-document presets).
 /**
  * The document size presets of the new-document dialog, one entry per
  * category with its sizes. The page size select of the inspector reads

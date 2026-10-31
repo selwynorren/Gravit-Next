@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 549 (GRectangleTool).
 /** Draws a rectangle: Shift for a square, Alt from the centre. */
 import { registerClass, type AnyConstructor } from "../../engine/core/object.ts";
 import type { Point } from "../../engine/math/point.ts";

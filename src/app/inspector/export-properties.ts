@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1523 (GExportProperties).
 /**
  * The Export panel at the bottom of the outline sidebar: one row per entry
  * of the elements' "__export" list (size, suffix, format, remove), and the

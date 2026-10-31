@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1080 (GActionManager).
 import { MouseEvent } from "../engine/core/mouse-event.ts";
 import type { Transform } from "../engine/math/transform.ts";
 import { ActionableMixin } from "../engine/scene/annotations/actionable.ts";

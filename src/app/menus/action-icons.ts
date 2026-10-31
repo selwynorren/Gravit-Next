@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 844 (the action icon table).
 /**
  * Icons by action id that the actions' getIcon looks up: icon font class
  * names, and inline SVGs for the align actions (as before, a menu item

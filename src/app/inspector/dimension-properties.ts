@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1294 (GDimensionProperties).
 /**
  * Position, size, angle and anchors of the inspected elements, and the
  * align toolbar above them (align and distribute buttons, the settings
@@ -667,6 +666,15 @@ export class DimensionProperties extends Properties {
   }
 
   _afterPropertiesChange(event: AfterPropertiesChangeEvent): void {
+    // A new ruler origin changes what X and Y read, though no
+    // selected element changed.
+    if (
+      !event.temporary &&
+      this._document &&
+      event.node === sceneOf(this._document) &&
+      (event.properties as string[]).some((name) => name === "rox" || name === "roy")
+    )
+      this._updateDimensions();
     if (
       !event.temporary &&
       this._elements &&
@@ -761,7 +769,15 @@ export class DimensionProperties extends Properties {
           case "w":
           case "h": {
             const scene = sceneOf(this._document as Document);
-            shown = scene.pointToString(value, scene.getOptimalDecimalsCount());
+            // A position is shown from the ruler origin; a size is a
+            // length and stays as it is.
+            const decimals = scene.getOptimalDecimalsCount();
+            shown =
+              "x" === key
+                ? scene.pointToStringX(value, decimals)
+                : "y" === key
+                  ? scene.pointToStringY(value, decimals)
+                  : scene.pointToString(value, decimals);
             break;
           }
           case "rotate":
@@ -815,7 +831,8 @@ export class DimensionProperties extends Properties {
       case "x":
       case "y":
         title = "Move";
-        target = scene.stringToPoint(value);
+        // Typed from the ruler origin, stored as a position on the page.
+        target = "x" === key ? scene.stringToPointX(value) : scene.stringToPointY(value);
         current = dimensions ? ("x" == key ? dimensions.x : dimensions.y) : null;
         break;
       case "w":

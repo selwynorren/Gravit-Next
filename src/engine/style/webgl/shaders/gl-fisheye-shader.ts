@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 484 (GGLFishEyeShader).
-//
-// Fish eye (strength > 0) or its inverse (< 0) around the center of the
-// whole image. Tiling aware.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

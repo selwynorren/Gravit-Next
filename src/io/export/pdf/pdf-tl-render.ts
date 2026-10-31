@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1446 (GPDFTLCore and GPDFTLRender, text as PDF text).
 import { Vertex } from "../../../engine/geometry/vertex.ts";
 import { VertexInfo } from "../../../engine/geometry/vertex-info.ts";
 import type { VertexReader } from "../../../engine/geometry/vertex-source.ts";

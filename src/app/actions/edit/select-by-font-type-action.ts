@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1180 (GSelectByFontTypeAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";
 import { Text } from "../../../engine/text/text.ts";

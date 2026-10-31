@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 494 (GGLSketchShader).
-//
-// A Sobel edge detection (from GPUImage) drawn as dark lines on white.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

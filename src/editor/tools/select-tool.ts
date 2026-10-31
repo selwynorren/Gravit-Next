@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool).
 /**
  * The select tool: the base of the pointer tool (GPointerTool) and the
  * subselect tool. It
@@ -58,6 +57,7 @@ import { Cursor } from "../cursor.ts";
 import { Editor } from "../editor.ts";
 import { EditorOptions } from "../editor-options.ts";
 import { BaseEditor, PartInfo, type EditorPaintContext } from "../element-editors/base-editor.ts";
+import { requestGuideEdit } from "../guides/guide-edit-request.ts";
 import { BlockEditor } from "../element-editors/block-editor.ts";
 import { BoxEditor } from "../element-editors/box-editor.ts";
 import { CompoundPathEditor } from "../element-editors/compound-path-editor.ts";
@@ -1083,6 +1083,16 @@ export class SelectTool extends Panning(EventTargetMixin(Tool)) {
     this._mDownTime2 = null;
     if (tooSlow) return true;
     if (this._editor.getCurrentInlineEditorNode()) return true;
+    // A guide line opens the Manage Guides dialog instead of
+    // the element and inline-edit flow below.
+    if (this._guideLineUnderMouse) {
+      requestGuideEdit({
+        editor: this._editor,
+        isVertical: this._guideLineUnderMouse.isVertical,
+        guideIndex: this._guideLineUnderMouse.guideIndex,
+      });
+      return true;
+    }
     let handled = false;
     if (this._clickedElement) {
       // openInlineEditor takes the editor's structural node type (EdNode).
@@ -1410,7 +1420,7 @@ export class SelectTool extends Panning(EventTargetMixin(Tool)) {
     for (let i = 0; i < elements.length; ++i) {
       const selectable = this._getSelectableElement(elements[i] as Node, deep);
       // The deep flag doubles as indexOf's start index, as in the old code;
-      // see "Selectable elements may repeat the first one" in QUESTIONS.md.
+      //.
       if (selectable && result.indexOf(selectable, deep as unknown as number) < 0) {
         result.push(selectable);
       }

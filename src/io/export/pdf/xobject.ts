@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1225 (the PDF form XObject).
 import { Transform } from "../../../engine/math/transform.ts";
 import { PDFByteStream } from "./byte-stream.ts";
 import { PDFConcatMatrix } from "./op-cm.ts";

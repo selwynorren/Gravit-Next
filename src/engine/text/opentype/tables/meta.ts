@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 722 (opentype.js tables/meta.js, unchanged).
-// The meta table: metadata strings keyed by tag (dlng, slng, ...).
-
 import * as check from "../check.ts";
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1443 (the in-memory PDF output).
 import { PDFOutput, type PDFBytes, type PDFToken } from "./output.ts";
 
 /**

@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 890.
-
 const DEFAULT_OPTIONS: Intl.DateTimeFormatOptions = {
   year: "numeric",
   month: "long",

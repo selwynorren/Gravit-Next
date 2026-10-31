@@ -1,13 +1,3 @@
-// Old: public/pscore.js, systemdict entries matrix … setcachelimit.
-//
-// Kept quirks (QUESTIONS.md "PS worker: matrix and device operator quirks"):
-// - currentmatrix, defaultmatrix and identmatrix leave the matrix on the
-//   stack, as PostScript says, but setmatrix copies into the CTM array in
-//   place.
-// - setscreen and setcachelimit are stubs; currentscreen pushes a fixed
-//   frequency, angle and spot function, marking the function `executive`
-//   (a typo for executable, so it stays a literal string).
-// - cachestatus pushes fixed numbers.
 import type { PSCore } from "../core.ts";
 import type { PSPlainRecord, PSValue } from "../objects.ts";
 

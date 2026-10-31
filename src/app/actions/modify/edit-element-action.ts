@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1312 (GEditElementActon).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Point } from "../../../engine/math/point.ts";
 import type { Node } from "../../../engine/scene/node.ts";

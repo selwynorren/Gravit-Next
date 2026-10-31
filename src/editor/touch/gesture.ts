@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 880.
 /**
  * Base of the gestures the gesture helper runs. A gesture that can
  * activate is activated on every touch start and then gets the start,

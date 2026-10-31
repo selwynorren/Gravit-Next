@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 68 (GColor).
 import { registerClass } from "../core/object.ts";
 import { numToHexSixDigitsString } from "../core/util.ts";
 import { Pattern } from "../style/pattern.ts";

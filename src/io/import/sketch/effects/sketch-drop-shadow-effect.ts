@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1125 (effects/sketchdropshadoweffect).
 import { DropShadowEffect } from "../../../../engine/style/effects/drop-shadow-effect.ts";
 import type { SketchShadowData } from "../sketch-data.ts";
 import { SketchColor } from "../sketch-color.ts";

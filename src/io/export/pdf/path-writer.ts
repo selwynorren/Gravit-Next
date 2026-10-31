@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1147 (the PDF path).
 import { PDFObjectCollection } from "./object-collection.ts";
 import {
   PDFBezierCurveTo,

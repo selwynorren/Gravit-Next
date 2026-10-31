@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 747 (GPolygonEditor).
 /**
  * The editor of a polygon (and star). In detail mode every outer and
  * inner point gets a handle. Dragging one sets the radius of its kind to

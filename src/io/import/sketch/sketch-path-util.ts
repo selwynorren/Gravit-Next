@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1134 (model/sketchpathutil).
 import { GMath } from "../../../engine/math/math.ts";
 import { Point } from "../../../engine/math/point.ts";
 import type { Rect } from "../../../engine/math/rect.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1521 (the footer, GFooter).
 /**
  * The #footer part: one container per footer panel (the notification
  * panel and the software update panel), shown only while one of them is

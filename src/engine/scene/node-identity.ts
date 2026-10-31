@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode.Identity, GNode.Tag, GNode.Reference, GNode.Multireference).
 /**
  * The id mixins. Each id is created on first use and saved under its own
  * blob key: `@id` (Identity, 6 characters, left out of copies), `#`

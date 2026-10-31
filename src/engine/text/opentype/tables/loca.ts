@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 997 (opentype.js tables/loca.js, unchanged).
-
 import { Parser } from "../parse.ts";
 
 /**

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 167 (GKeyEvent).
 /**
  * Key events of the scene views and tools: `KeyEvent.Down`,
  * `KeyEvent.Release` and `KeyEvent.Press`. `key` holds a Key.Constant

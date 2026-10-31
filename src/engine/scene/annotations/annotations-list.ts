@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 506 (GAnnotationsList).
 /**
  * The container of a page's annotations, node "annlst". It sits directly
  * in a page and only exists while annotations are on. It isn't an

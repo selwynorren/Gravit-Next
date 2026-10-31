@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 563 (model/item/sketchshapepath).
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { Path } from "../../../engine/scene/path.ts";
 import type { SketchPathData, SketchRectData } from "./sketch-data.ts";

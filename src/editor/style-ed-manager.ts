@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 779 (GStyleEdManager).
 import { Event } from "../engine/core/event.ts";
 import { EventTarget } from "../engine/core/event-target.ts";
 import { getTypeId, registerClass } from "../engine/core/object.ts";

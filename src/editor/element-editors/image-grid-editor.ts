@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1083 (GImageGridEditor).
 /**
  * The editor of an image grid: its box is the geometry box without a
  * transform and the outline is the grid's own vertices.

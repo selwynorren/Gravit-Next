@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 59 (GVertexInfo).
 /**
  * Measurements on vertex sources: hit tests (outline and fill), bounds,
  * path length, points on segments and collinearity of two segments.

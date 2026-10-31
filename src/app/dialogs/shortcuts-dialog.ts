@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1644 (GShortcutsDialog).
 /**
  * Help > Show Keyboard Shortcuts: every available action with a
  * shortcut, in registration order, then every tool with a key.

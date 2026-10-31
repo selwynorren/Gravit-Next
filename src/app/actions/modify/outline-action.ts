@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1185 (GOutlineAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
@@ -104,7 +103,7 @@ export class OutlineAction extends ElementAction {
         const ed = editor as NonNullable<typeof editor>;
         const offset = parseFloat(value);
         // Old: always Convert to Outline's text, also for Expand/Shrink
-        // (BUG-135).
+        //.
         if (isNaN(offset) || !isFinite(offset) || GMath.isEqualEps(offset, 0)) {
           alertDialog(this._dialogAlertMessage());
           return;

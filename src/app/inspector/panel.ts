@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 606 (GPanel).
 /**
  * A view the #panels part hosts (the panels next to the canvas). The
  * part calls init with the panel's container, then activate and

@@ -1,19 +1,3 @@
-// Old: chunk.vendor.js module 1397.
-//
-// The CanvasGraphics subclass the PDF import renders with (pdf.js's
-// render() option canvasGraphicsClass). It draws into the canvas bridge
-// (pdf-canvas-bridge.ts) and changes a few operators:
-// - beginDrawing sets the context defaults without pdf.js's background
-//   fill and transparency group;
-// - text blocks tell the bridge where they begin and end;
-// - form XObjects don't clip to their bounding box, shading fills paint
-//   into the current clip instead of a rectangle;
-// - tiling patterns don't clip either (tiling-pattern.ts);
-// - inline images become canvases the bridge turns into images.
-//
-// The text, form and shading changes replace pdf.js's operator table
-// entries (numeric keys); the named methods are untouched, as in the old
-// subclass. The class is built once per loaded pdf.js.
 import { System } from "../../../engine/core/system.ts";
 import type {
   PdfCanvasGraphics,

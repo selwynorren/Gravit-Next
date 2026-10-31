@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1431 (GPDFCIDFontType).
 import { parseTableEntries } from "../../../engine/text/opentype/opentype.ts";
 import { tablesOf, type PDFFontDescriptor } from "./font-lookup.ts";
 import { PDFFlateDecode } from "./flate-decode.ts";

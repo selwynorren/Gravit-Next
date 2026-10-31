@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1333 (GSelectAllAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { AnnotationMixin } from "../../../engine/scene/annotations/annotation.ts";

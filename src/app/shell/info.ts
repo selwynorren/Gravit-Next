@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1522 (GInfo).
 /**
  * The #info strip above the header. It only ever showed the cloud
  * account's "please confirm your e-mail" notice, which is gone with the

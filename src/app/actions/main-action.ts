@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1281 (GMainAction).
 import { Key } from "../../engine/core/key.ts";
 import { Action } from "./action.ts";
 import { gDesigner } from "./host.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1139 (model/sketchsymbolinstance).
 import { extend, find } from "../../../engine/core/util.ts";
 import { Rect } from "../../../engine/math/rect.ts";
 import { Transform } from "../../../engine/math/transform.ts";

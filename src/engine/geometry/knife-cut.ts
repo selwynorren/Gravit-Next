@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1079 (no G name; the knife tool's cutter).
 import { GMath } from "../math/math.ts";
 import { Vertex } from "./vertex.ts";
 import { VertexContainer } from "./vertex-container.ts";

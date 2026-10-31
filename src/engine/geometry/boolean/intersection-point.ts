@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 646.
 import type { Point } from "../../math/point.ts";
 
 /**

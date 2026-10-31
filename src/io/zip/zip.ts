@@ -1,19 +1,3 @@
-// Old: designer.browser.dev.js module 1514 (zip.js v1 core, Gildas Lormeau).
-//
-// ZIP reading and writing with callbacks: readers (text, data URI, Blob),
-// writers (text, data URI, Blob), createReader and createWriter. The
-// multi-file export writes its ZIP through this (FMT-EXPORT-048).
-//
-// The old app set zip.useWebWorkers = false and never shipped the zip.js
-// worker scripts (FMT-WORKER-015), so the worker code paths are left out:
-// data always goes through the codec on the main thread in 512 KB chunks,
-// with a setTimeout between chunks, as before.
-//
-// Every entry, stored or deflated, directories included, gets the flags
-// 0x0808 (data descriptor and UTF-8 names) and local time; the method is
-// 8 (deflate) unless the entry is stored (dontDeflate, level 0 or a
-// directory).
-
 import { Deflater, Inflater, type ZipCodec } from "./pako-codec.ts";
 
 export type ErrorCallback = (error: unknown) => void;

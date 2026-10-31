@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 266 (GTLDirectionTextTransformer).
 import { registerClass } from "../core/object.ts";
 import { Point } from "../math/point.ts";
 import type { Rect } from "../math/rect.ts";

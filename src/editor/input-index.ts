@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 15 (the input namespace).
 /**
  * Keys, mouse events, modifiers and the platform, with the scene view, as
  * the old input namespace exported them. GInputRecorder (module 645, a

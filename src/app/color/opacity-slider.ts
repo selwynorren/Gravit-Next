@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 857 ($.fn.gInputSlider and its OPACITY_DEFAULT).
 /**
  * The horizontal slider of the inspector and the color chooser:
  *

@@ -2,7 +2,7 @@
 import { useState, type MouseEvent, type ReactNode } from "react";
 import { BrandLockup } from "./brand-mark.tsx";
 import { brandString, type BrandStringKey } from "./brand-strings.ts";
-import { ISSUES_URL, LEGACY_URL } from "./branding.ts";
+import { ISSUES_URL } from "./branding.ts";
 
 export interface IntroDialogViewProps {
   onLink: (event: MouseEvent<HTMLAnchorElement>, url: string) => void;
@@ -49,12 +49,6 @@ export function IntroDialogView({ onLink }: IntroDialogViewProps): ReactNode {
         text="intro.report"
         label="intro.report-link"
         url={ISSUES_URL}
-        onLink={onLink}
-      />
-      <LinkParagraph
-        text="intro.legacy"
-        label="intro.legacy-link"
-        url={LEGACY_URL}
         onLink={onLink}
       />
       <p className="gd-intro-reopen">{brandString("intro.reopen")}</p>

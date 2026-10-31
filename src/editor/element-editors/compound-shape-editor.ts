@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1082 (GCompoundShapeEditor).
 /**
  * The editor of a compound shape (a boolean combination of shapes). Its
  * box is the combined geometry box without a transform; previews go to

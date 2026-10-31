@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1253 (GExporter, the app side).
 /**
  * The exporter the export dialog, the Export panel and "Export Page" call.
  * Its algorithm (export list, one export per item, file names, ZIP and

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1710 (GVirtualTree._DragAndDropHelper).
 /**
  * The animated drag of the touch layout: while a row is dragged, the tree
  * moves the dragged node above or below the row it passes (or marks a

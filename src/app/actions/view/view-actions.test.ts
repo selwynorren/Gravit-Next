@@ -306,7 +306,7 @@ describe("Outline and fast view", () => {
     ]);
   });
 
-  it("fast view follows the page clip setting on a fixed page, like outline view (BUG-141)", () => {
+  it("fast view follows the page clip setting on a fixed page, like outline view", () => {
     const fast = new FastViewAction();
     const page = known(fixture.scene.getActivePage());
     page.setProperties(["w", "h"], [100, 100]);

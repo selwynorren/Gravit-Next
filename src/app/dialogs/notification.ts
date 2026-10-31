@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1667 (the notification content builder).
 /**
  * Content for the notification panel built on demand, with a way to close
  * the notification from inside the content.

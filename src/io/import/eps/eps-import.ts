@@ -1,20 +1,3 @@
-// Old: chunk.vendor.js module 1403 (GEPSImport).
-//
-// Runs an EPS/PS file through the PostScript worker (FMT-IMPORT-012) and
-// builds the nodes from its calls with EPSParser. The worker gets 300
-// seconds; then it is terminated and the import reports a timeout.
-//
-// The old importer loaded public/ps.worker.js (with a cache-busting query
-// and a blob importScripts wrapper for other origins); the rewrite starts
-// the bundled module worker (workers/ps).
-//
-// An exception in the worker ends its run with error "04" and done, so
-// such an import ends at once with what was read ("Any exception in the
-// PostScript worker makes the EPS import wait 300 s" in BUGS-FIXED.md).
-//
-// Kept: the error-code check compares the arguments array with "04" by
-// `==`, which matches a one-element array; progress must be given (the
-// worker's progress calls it unchecked).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { FontManager } from "../../../engine/text/fonts/font-manager.ts";

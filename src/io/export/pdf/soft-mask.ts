@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1413 (the PDF soft mask).
 import { PDFDictionary } from "./pdf-dictionary.ts";
 
 export interface SoftMaskOptions {

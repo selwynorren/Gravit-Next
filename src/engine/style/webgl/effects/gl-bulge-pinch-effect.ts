@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1004 (GGLBulgePinchEffect).
-//
-// The padding depends on the element's size, so the effect keeps the
-// last bounding box it was given; without one it guesses from the radius.
 import { Locale } from "../../../core/locale/locale.ts";
 import type { Rect } from "../../../math/rect.ts";
 import { registerNodeClass } from "../../../scene/node.ts";

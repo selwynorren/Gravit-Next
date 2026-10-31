@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1651 (GChangeActiveWindowAction).
 import { Key, type KeyValue } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Window } from "../../shell/window.ts";

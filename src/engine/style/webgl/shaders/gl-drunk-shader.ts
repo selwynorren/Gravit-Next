@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 482 (GGLDrunkShader).
-//
-// Wobbles the image along a sine of its own coordinates. `globalCoord` is
-// computed in the GLSL but not used.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

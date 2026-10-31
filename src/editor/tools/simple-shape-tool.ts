@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 762 (GSimpleShapeTool).
 /**
  * Draws a ready shape (GSimpleShape) from the shape library. The app
  * gives the tool the shape's definition (init) and its icon (activateTool

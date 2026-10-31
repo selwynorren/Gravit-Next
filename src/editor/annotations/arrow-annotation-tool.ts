@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 769 (GArrowAnnotationTool).
 /** Draws an arrow annotation like the line tool, without the position hint. */
 import { registerClass, type AnyConstructor } from "../../engine/core/object.ts";
 import { ArrowAnnotation } from "../../engine/scene/annotations/arrow-annotation.ts";

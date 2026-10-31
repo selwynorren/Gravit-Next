@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 217 (GDocumentStatusEvent).
 /**
  * A document's status changed (module 86 numbers). Triggered on the
  * document and on the fonts provider manager, which closes its dialogs

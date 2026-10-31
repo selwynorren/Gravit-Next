@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1643 (GShowShortcutsAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { lateExport } from "../../shell/late.ts";
 import { Action } from "../action.ts";

@@ -191,7 +191,7 @@ describe("GOutlineSidebar", () => {
     expect((element.children[2] as TestElement).id).toBe("page-layer-divider");
   });
 
-  it("unfolds the pages list when a page is added with the section folded (BUG-158)", () => {
+  it("unfolds the pages list when a page is added with the section folded", () => {
     const { sidebar, element } = makeSidebar();
     activate(sidebar);
     const pageToolbar = element.querySelector<TestElement>(".page-toolbar") as TestElement;

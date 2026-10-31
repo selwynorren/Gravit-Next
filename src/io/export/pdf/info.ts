@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1426 (the PDF document information).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";

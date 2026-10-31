@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 642 (ICC profile data).
-
 /** A lookup table as read from the profile: 8-bit (mft1) or 16-bit (mft2). */
 export type IccTable = Uint8Array | Uint16Array;
 

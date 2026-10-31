@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1136 (model/item/sketchtext).
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";

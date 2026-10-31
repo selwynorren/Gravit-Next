@@ -1,8 +1,3 @@
-// Old: designer.browser.dev.js module 1516 (zip.js codec on pako).
-//
-// zip.Deflater / zip.Inflater: raw deflate streams through pako with 1 MB
-// output chunks. The deflate output decides the ZIP bytes.
-
 import { Deflate, Inflate } from "pako";
 
 /** What zip.js feeds data through: append returns what is ready, flush the rest. */

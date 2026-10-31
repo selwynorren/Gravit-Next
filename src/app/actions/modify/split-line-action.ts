@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1319 (GSplitLineAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
@@ -149,7 +148,7 @@ export class SplitLineAction extends ElementAction {
             } else following = null;
             // A line piece without a border gets a black one. Old: only when
             // the source had fills; otherwise it appended the source's
-            // missing first fill and threw (BUG-137).
+            // missing first fill and threw.
             if (piece.isLine() && !layersOf(piece).getBorderLayers(true).length) {
               layersOf(piece).appendChild(new BorderPaintLayer(RGBColor.BLACK));
             }

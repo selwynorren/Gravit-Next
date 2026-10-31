@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 378 (opentype.js tokenizer.js).
-// Gravit change: the FAIL messages of Event.subscribe, registerContextChecker
-// and getContextRanges don't quote the name ("invalid newToken event
-// handler" instead of "invalid 'newToken' event handler").
-
 /** A token's state value: a glyph index, a ligature ([ligGlyph]) or null for no glyph. */
 export type TokenValue = number | number[] | null;
 

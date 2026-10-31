@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 36 (GElementEditor).
 /**
  * The editor of one element. Element classes register their editor class
  * (`ElementEditor.exports(PathEditor, Path)`); openEditor creates it, hangs

@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1015 (GGLOuterGlowEffect).
-//
-// A glow around the outside of the shape, painted as a post effect. The
-// radius slider is quadratic.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import { Effect, type EffectPadding, type EffectTypeValue } from "../../effect.ts";

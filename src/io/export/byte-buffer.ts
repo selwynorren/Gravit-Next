@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 850 (the JPEG encoder's output buffer).
-//
-// A growing byte buffer. Values are clamped to 0..255 on write, since the
-// backing store is a Uint8ClampedArray.
-
 export class ByteBuffer {
   private _bytePosition = 0;
   private _buffer: Uint8ClampedArray;

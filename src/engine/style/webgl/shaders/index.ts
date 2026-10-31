@@ -1,9 +1,3 @@
-// Old: designer.browser.dev.js module 817 (the webpack context of the
-// shader modules).
-//
-// GWebGLEffect finds its shader by the name in its `sh` property:
-// "GGLBlurShader" becomes the request "./glblurshader". The old context
-// resolved that to a module; here it is an explicit table.
 import { BlendShader } from "../../../paint/webgl/blend-shader.ts";
 import { GLAngularGradientShader } from "./gl-angular-gradient-shader.ts";
 import { GLBendBlurShader } from "./gl-bend-blur-shader.ts";

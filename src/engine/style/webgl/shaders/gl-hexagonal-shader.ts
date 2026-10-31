@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 485 (GGLHexagonalShader, from glfx.js).
-//
-// Pixelates into hexagons of `scale` percent of the smaller side, around a
-// center given in percent. Tiling aware: coordinates are in the full image.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

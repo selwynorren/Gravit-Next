@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 761 (GBezigonTool).
 /**
  * The bezigon tool: a click places a point with automatic handles (`ah`),
  * so the path runs smoothly through the points without dragging handles;

@@ -6,7 +6,7 @@
 *.jpg binary
 *.wasm binary
 
-# The old app's assets and user guide are served as they were checked out
-# on Windows when the parity suite was recorded: text files with CRLF.
-assets/** text=auto eol=crlf
-guide/** text=auto eol=crlf
+# The assets and the user guide are kept as they were checked out on
+# Windows: text files with CRLF.
+src/assets/** text=auto eol=crlf
+docs/guide/** text=auto eol=crlf

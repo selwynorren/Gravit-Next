@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 347 (GPGEdge).
 /**
  * An edge of the paths graph: a bare GPathBase child (the curve) between
  * two anchors, with its own copy of the graph's style. `cSt` marks an

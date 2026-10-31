@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1602 (GNewClipboardAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";

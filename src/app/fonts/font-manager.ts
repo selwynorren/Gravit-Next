@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 255 (FontsProviderManager).
 /**
  * The designer's font manager: the one place the app asks its font
  * providers (fonts-provider.ts) for fonts. It answers the engine font
@@ -16,7 +15,7 @@
  * connection are reset when the browser reports it is online again (init).
  * The "feature unavailable offline" dialog (old module 256) is dropped
  * with the cloud, so a font whose own download failed offline goes on to
- * the next providers and fails when none has it (BUG-164).
+ * the next providers and fails when none has it.
  */
 import { Event } from "../../engine/core/event.ts";
 import { EventTarget } from "../../engine/core/event-target.ts";

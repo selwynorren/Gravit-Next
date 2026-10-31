@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 22 (GElement.Flag, GElement.CollisionFlag, GElement._Change).
 /**
  * GElement's flags and change codes, and a late-bound `isElement` check.
  * The element mixins (element-*.ts) need both, and element.ts imports the

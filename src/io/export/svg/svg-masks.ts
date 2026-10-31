@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1236 (SVG masks and clip paths of the exporter).
 import { uuid } from "../../../engine/core/util.ts";
 import { SVG_NAMESPACE, SvgElement, type SvgDocument, type SvgNode } from "./svg-dom.ts";
 import type { SvgRenderContext } from "./svg-images.ts";

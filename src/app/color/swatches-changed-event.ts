@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1151 (GSwatchesChangedEvent).
 /**
  * The designer triggers this after setSwatches changed the swatches of a
  * scope ("global", "document-linear-gradient", ...). The open color

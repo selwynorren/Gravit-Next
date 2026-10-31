@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1121 (GSketchImport).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { renderPdfImage } from "../pdf/pdf-import.ts";

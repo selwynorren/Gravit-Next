@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1729 ($.fn.gAccordion).
 /**
  * Fold buttons of the panel headers. A header gets a `button.g-accordion`
  * with a right or down arrow and a `.g-accordion-ghost`; the button shows

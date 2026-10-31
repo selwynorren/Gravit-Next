@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1458 (the exporter's post-processing).
 import type { SvgDocument, SvgElement, SvgNode } from "./svg-dom.ts";
 
 /**

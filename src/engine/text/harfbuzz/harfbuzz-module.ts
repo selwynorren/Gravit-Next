@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 998 (the Emscripten build of HarfBuzz 2.2.0).
 /**
  * HarfBuzz 2.2.0 compiled to WebAssembly (vendor/harfbuzz, see its README),
  * loaded once when this module is first imported. The old bundle embedded

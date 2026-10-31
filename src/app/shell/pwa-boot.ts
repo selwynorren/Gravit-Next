@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1373 (the entry point).
 /**
  * Starts the app once the page has loaded: the browser container reads
  * the language setting, then runs the boot with itself. The install

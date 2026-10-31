@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1586.
 /**
  * One finger resting on the target for LONG_PRESS_TIME_OUT ms opens the
  * context menu at the finger. Any move, end, cancel or system gesture

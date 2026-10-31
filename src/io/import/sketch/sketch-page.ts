@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1135 (model/item/sketchpage).
 import { Page } from "../../../engine/scene/page.ts";
 import { SketchElement } from "./sketch-element.ts";
 

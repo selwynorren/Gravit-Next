@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 725 (opentype.js tables/glyf.js).
-// Gravit change: getPath adds explicit lineTo commands before each quadratic
-// curve (see there), so TrueType paths have more commands than in opentype.js.
-
 import * as check from "../check.ts";
 import type { Font } from "../font.ts";
 import type { Glyph, GlyphComponent, GlyphPoint } from "../glyph.ts";

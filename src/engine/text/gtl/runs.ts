@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 926 (the character cursor over runs, carota's characters.js).
 import { Formatting, type Run, type TextPiece } from "./formatting.ts";
 
 function checkSameRuns(a: Character, b: Character): void {

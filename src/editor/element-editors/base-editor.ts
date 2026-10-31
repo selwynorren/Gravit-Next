@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 39 (GBaseEditor).
 /**
  * The root of the editor tree. Every selected (or highlighted) element gets
  * an editor; editors nest like the elements (a group's editor holds its

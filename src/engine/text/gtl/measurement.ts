@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 508 (the GTL text measurement).
-
 /** What measuring a piece of text gives: advance width, font metrics and ink extents. */
 export class Measurement {
   // All eight metrics default to 0 on the prototype, as in the old module.

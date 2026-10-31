@@ -5,7 +5,7 @@ export default defineConfig({
     include: [
       "src/**/*.test.ts",
       "src/**/*.test.tsx",
-      "parity/support/**/*.test.ts",
+      "electron/**/*.test.ts",
       "server/**/*.test.ts",
       "scripts/**/*.test.ts",
     ],

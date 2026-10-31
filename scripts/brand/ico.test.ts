@@ -25,7 +25,7 @@ describe("ico", () => {
 });
 
 describe("the committed app icons", () => {
-  it("are the rendered avatar at every size the manifest, favicon and desktop builds use", () => {
+  it("are the rendered icon at every size the manifest, favicon and desktop builds use", () => {
     for (const size of [16, 32, 48, 64, 128, 180, 192, 256, 512, 1024]) {
       const png = PNG.sync.read(
         fs.readFileSync(path.join(root, `public/brand/icons/icon-${size}.png`)),
@@ -34,8 +34,8 @@ describe("the committed app icons", () => {
     }
     const desktop = PNG.sync.read(fs.readFileSync(path.join(root, "build/icon.png")));
     expect([desktop.width, desktop.height]).toEqual([1024, 1024]);
-    // The dark tile: its corner is the avatar's background.
-    expect([...desktop.data.subarray(0, 4)]).toEqual([0x14, 0x13, 0x19, 255]);
+    // No tile behind the mark: the corner is transparent.
+    expect([...desktop.data.subarray(0, 4)]).toEqual([0, 0, 0, 0]);
   });
 
   it("hold the sizes Windows needs in the .ico files", () => {

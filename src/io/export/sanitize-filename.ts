@@ -1,9 +1,3 @@
-// Old: designer.browser.dev.js module 1154 (GUtil.sanitizeFilename, ADD-EXPORT-001).
-//
-// The exporter names files with this. Module 1154 as a whole belongs to
-// the app-config-document cluster (src/app/util/download.ts); it
-// should re-export this function rather than keep a second copy.
-
 const RESERVED_CHARACTERS = /["*/:<>?\\|]/g;
 // eslint-disable-next-line no-control-regex -- control characters are what it replaces
 const CONTROL_CHARACTERS = /[\0-\x1F\x80-\x9F]/g;

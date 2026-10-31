@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 445 (GSaveAsAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
@@ -115,9 +114,8 @@ export class SaveAsAction extends Action {
   }
 
   override getShortcut(): Shortcut | null {
-    return this._isNativeExt
-      ? [Key.Constant.SHIFT, Key.Constant.META, Key.Constant.OPTION, "S"]
-      : null;
+    // Ctrl/Cmd+Shift+S, the usual Save As. It was Shift+Ctrl+Alt+S.
+    return this._isNativeExt ? [Key.Constant.SHIFT, Key.Constant.META, "S"] : null;
   }
 
   override isEnabled(storage?: ActionStorage | null, document?: ActionDocument | null): boolean {

@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 226 (the shared GL context and GLTexture),
-// plus the WebGL set-up the dropped recorder did when it loaded (module 899):
-// probing the best texture type and a readPixels fallback.
-//
-// All WebGL work (effects, the blender's extra blend modes) shares one
-// context with premultipliedAlpha off. Textures are made with the best
-// type the probe found: FLOAT, else HALF_FLOAT, else UNSIGNED_BYTE.
 import { RenderScheduler } from "../render-scheduler.ts";
 import type { Context2D } from "../context-2d.ts";
 import { GLTextures } from "../gl-textures.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1725 ($.fn.gPropertyRow).
 /**
  * A labelled row of the inspector panels:
  *

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 922 (GTLCodes.String: an inline code drawn as text).
 import type { Run } from "./formatting.ts";
 import type { CodeMeasurement, TextCode } from "./inline.ts";
 import { RunDraw, type RunDrawContext } from "./run-draw.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 135 (GSettingChangedEvent).
 /**
  * A setting changed (Designer.setSetting), or was restored at start
  * (`restoring`, one event per stored key from Designer.start).

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1483 (the app bootstrap and the gravit table).
 /**
  * boot(container): creates the designer, builds the registration table
  * (window.gravit in the old app: actions, sidebars, panels, footer
@@ -30,6 +29,7 @@ import { PageGuide } from "../../editor/guides/page-guide.ts";
 import { PointsGuide } from "../../editor/guides/points-guide.ts";
 import type { Action } from "../actions/action.ts";
 import { installMousetrapBinder } from "../actions/mousetrap-binder.ts";
+import { installManageGuidesDialog } from "../dialogs/manage-guides-dialog.ts";
 import { WebBrowser } from "../../engine/core/platform.ts";
 import { OperatingSystem } from "../../engine/core/system.ts";
 import { brandActions } from "../brand/brand-actions.ts";
@@ -708,7 +708,7 @@ export async function boot(container: Container): Promise<Designer> {
     designer.trigger(new ApplicationStatusEvent(ApplicationStatusEvent.Status.Init));
   designer.setIsBeta(false);
   const registry = buildRegistry();
-  // GravitDesign Next adds Help > About GravitDesign Next (none in the classic look).
+  // Gravit Next adds Help > About Gravit Next (none in the classic look).
   registry.actions.push(...brandActions());
   setAppRegistry(registry);
   Designer.loadsCmykProfile = true;
@@ -737,6 +737,8 @@ export async function boot(container: Container): Promise<Designer> {
   const request: OpenFileRequest | null = container.start();
   // The data-title tooltips (module 1673, Fn.init() in the old bootstrap).
   installTooltips();
+  // Double-clicking a guide opens the Manage Guides dialog.
+  installManageGuidesDialog();
   document.body.classList.remove("loading");
   window.onbeforeunload = (event) => beforeUnload(designer, container, event);
   if (request) {

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 552 (GEllipseEditor).
 /**
  * The editor of an ellipse. In detail mode the start and end of the arc
  * (`sa`, `ea`) get handles; dragging a selected one turns the selected

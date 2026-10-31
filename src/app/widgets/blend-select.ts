@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1696 ($.fn.gBlendMode).
 /**
  * Fills a `<select>` with the blend modes, grouped as the old inspector
  * listed them. Modes only the WebGL renderer has (no CSS equivalent) are

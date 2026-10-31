@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 636 (the language table), re-exported as
-// GLocaleLanguage by module 457.
-
 /** The fixed languages plus any names added at runtime. */
 export interface LanguageTable {
   English: number;

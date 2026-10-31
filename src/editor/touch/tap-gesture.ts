@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 879.
 /**
  * Turns taps into mouse events: a finger down is a mousedown, up a
  * mouseup and (unless the touch became a swipe) a click, and a second tap

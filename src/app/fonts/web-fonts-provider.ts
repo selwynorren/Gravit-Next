@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1379 (the Google fonts provider).
 /**
  * The Google fonts: the family list comes from assets/data/googlefonts.json
  * (loaded on first use), the font files from fonts.gstatic.com.

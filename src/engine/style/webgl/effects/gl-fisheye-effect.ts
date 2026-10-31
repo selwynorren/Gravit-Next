@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 1034 (GGLFisheyeEffect).
-//
-// The shader name is spelled "GGLFishEyeShader"; the lookup lower-cases it.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

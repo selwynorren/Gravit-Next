@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 872 (GVectorizeBorderAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { each } from "../../../engine/core/util.ts";

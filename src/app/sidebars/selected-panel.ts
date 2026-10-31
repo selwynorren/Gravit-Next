@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1711 ($.fn.gSelectedPanel).
 /**
  * The list of the touch context menu's "Select" overlay: the elements
  * under the pressed point as layer rows (a row with its sub entries when

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 316 (GRectangleAnnotation).
 /**
  * A rectangle annotation, node "anr".
  */

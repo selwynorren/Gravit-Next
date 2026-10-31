@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 852 (SVG formatting helpers of the exporter).
 import { map } from "../../../engine/core/util.ts";
 import { Rect } from "../../../engine/math/rect.ts";
 import { Image } from "../../../engine/scene/image.ts";

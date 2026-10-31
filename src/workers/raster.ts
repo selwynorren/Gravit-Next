@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 1113 (raster task of the PDF export worker).
-//
-// Converts RGBA pixels to a PDF colour space (and an alpha mask), either
-// here (`raster`) or split across the PDF export workers
-// (`concurrencyRaster`, "raster" command, FMT-WORKER-012). The worker side
-// calls `raster` on its slice.
-
 import { bubbleSort, uuid } from "../engine/core/util.ts";
 import type { MessageWorker, PromiseFactory } from "../io/export/jpeg-encoder.ts";
 import { ColorSpaces } from "../io/export/pdf/color-spaces.ts";

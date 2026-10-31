@@ -1,8 +1,3 @@
-// Old: public/psctm.js (PSCTM, webpack module 1371 of its own build).
-//
-// Matrix helpers for the interpreter. Matrices are PostScript arrays of six
-// numbers [a b c d tx ty]; without an explicit matrix the current CTM of
-// the graphics state is used.
 import type { PSCore } from "./core.ts";
 
 export interface PSPoint {

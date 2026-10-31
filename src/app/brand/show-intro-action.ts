@@ -1,5 +1,5 @@
 /**
- * Help > About GravitDesign Next: opens the introduction again
+ * Help > About Gravit Next: opens the introduction again
  * (intro-dialog.ts). Registered only in the "next" look (brand-actions.ts),
  * so the classic menus stay as they were.
  */

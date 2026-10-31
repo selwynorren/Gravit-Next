@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1002 (GVertexSimplifier).
 import { GMath } from "../math/math.ts";
 import { Point } from "../math/point.ts";
 import { PolyLineExtended } from "./boolean/poly-line-extended.ts";

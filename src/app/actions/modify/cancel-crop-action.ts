@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1311 (GCancelCropAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Transform } from "../../../engine/math/transform.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1583.
 /** Questions the gestures ask about one touch event. */
 export class TouchEventInfo {
   _event: TouchEvent;

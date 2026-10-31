@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 176 (GSystem).
 import UAParser from "ua-parser-js";
 
 /**

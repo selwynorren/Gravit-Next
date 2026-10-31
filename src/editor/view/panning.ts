@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 333 (the panning mixin of the tools).
 /**
  * Auto-panning for tools that drag (select, shapes, pen, freehand,
  * bezigon): while the pointer is within a margin of the view box edge, or

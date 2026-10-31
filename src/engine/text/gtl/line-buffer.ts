@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 918 (line breaking, carota's wrap.js).
 import type { TextCode } from "./inline.ts";
 import { Line } from "./line.ts";
 import type { TLNode } from "./node.ts";

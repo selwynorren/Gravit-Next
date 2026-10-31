@@ -1,6 +1,3 @@
-// Old: public/pscore.js, systemdict findresource … endcidrange (the second
-// half of the operator table). The parts keep the old key order, so
-// systemdict enumerates in the old order.
 import type { PSPlainRecord } from "../objects.ts";
 import { clippingOperators } from "./graphics-clipping.ts";
 import { fontOperators } from "./graphics-fonts.ts";

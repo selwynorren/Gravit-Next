@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 44 (GSystemDialog).
 /**
  * The app's standard dialogs: alert, confirm, prompt, error, the one-time
  * notice, the v1 info/warning dialogs, custom and advanced. Each builds a

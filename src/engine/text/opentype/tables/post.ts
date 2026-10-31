@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 720 (opentype.js tables/post.js, unchanged).
-// The post table: PostScript information and glyph names.
-
 import { standardNames } from "../encoding.ts";
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";

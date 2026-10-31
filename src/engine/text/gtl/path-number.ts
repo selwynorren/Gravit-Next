@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 923 (GTLCodes.PathNumber: a list number from the item's path).
 import { StringCode } from "./string-part.ts";
 
 /** Where a list marker sits: its item node and the item's index path in the list tree. */

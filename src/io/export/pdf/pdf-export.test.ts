@@ -208,7 +208,7 @@ describe("PDFExport.export error and abort paths", () => {
     expect(progress).toEqual([0, 25]);
   });
 
-  it("calls back once without bytes after an abort while nodes are rasterized (BUG-088)", async () => {
+  it("calls back once without bytes after an abort while nodes are rasterized", async () => {
     const running: { document?: PDFDocument } = {};
     const unhandled: unknown[] = [];
     const onUnhandled = (reason: unknown) => unhandled.push(reason);

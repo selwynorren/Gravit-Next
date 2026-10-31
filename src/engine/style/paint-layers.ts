@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 904 (GStylable.PaintLayers).
 import { each } from "../core/util.ts";
 import type { AnyConstructor } from "../core/object.ts";
 import { Node, registerNodeClass } from "../scene/node.ts";

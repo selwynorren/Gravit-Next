@@ -1,5 +1,3 @@
-// Old: public/pscore.js, systemdict moveto … arct: path construction and
-// the coordinate transforms.
 import type { PSCore } from "../core.ts";
 import type { PSPoint } from "../ctm.ts";
 import type { PSArray, PSPathSegment, PSValue } from "../objects.ts";

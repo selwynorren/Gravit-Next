@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 264 (GVertexPolyBoolean).
 import { GMath } from "../../math/math.ts";
 import { Vertex } from "../vertex.ts";
 import { VertexContainer } from "../vertex-container.ts";

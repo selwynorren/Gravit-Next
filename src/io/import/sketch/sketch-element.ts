@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 439 (model/sketchelement).
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { PaintCanvas } from "../../../engine/paint/paint-canvas.ts";
 import { Element } from "../../../engine/scene/element.ts";

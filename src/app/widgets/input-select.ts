@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1703 ($.fn.gInputSelect).
 /**
  * A number box with a dropdown of presets: `.g-input-select` holding an
  * InputBox `<input>` and a `<button>` that opens a menu of the list. A

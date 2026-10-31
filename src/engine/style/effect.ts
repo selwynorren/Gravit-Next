@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 906 (GStylable.Effect).
 import { getTypeId, registerClass } from "../core/object.ts";
 import { containsObjectKey } from "../core/util.ts";
 import { Node } from "../scene/node.ts";

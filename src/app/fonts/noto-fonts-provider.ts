@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 590 (the bundled fonts provider).
 /**
  * The fonts the app ships in assets/font: Open Sans, the simplified and
  * traditional Chinese Noto Sans CJK, and the Noto families of

@@ -36,7 +36,7 @@ afterEach(() => {
   terminate.mockClear();
 });
 
-describe("PDFImport.import for a PDF pdf.js can't open (BUG-102)", () => {
+describe("PDFImport.import for a PDF pdf.js can't open", () => {
   it("calls back with the error and ends the worker when the document is rejected", async () => {
     const error = new Error("Invalid PDF structure.");
     loading = Promise.reject(error);

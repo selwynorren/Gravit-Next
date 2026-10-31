@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1110 (the PDF primitive).
 import { PDFNumber } from "./pdf-number.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput, PDFToken } from "./output.ts";

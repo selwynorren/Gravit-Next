@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 261 (getName of the translation library's
-// own copy of the type system; the rest of that copy is dropped).
-
 /**
  * The name the translation tables use for a class id. Callers pass the old
  * class name as a string ("GLength"), which is returned as is. For an

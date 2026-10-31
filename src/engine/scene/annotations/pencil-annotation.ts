@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 320 (GPencilAnnotation).
 /**
  * A freehand pencil annotation, node "anp"; saved separately with its geometry box.
  */

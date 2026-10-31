@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1459 (the effects of an element as an SVG filter).
 import { Color } from "../../../engine/color/color.ts";
 import { uuid } from "../../../engine/core/util.ts";
 import type { PropertiesNode as Node } from "../../../engine/scene/node-properties.ts";

@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 1021 (GGLVibranceEffect).
-//
-// Boosts (or lowers) the saturation of dull colours (glfx.js).
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

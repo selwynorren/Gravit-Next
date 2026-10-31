@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 163 (the functions Q, Y and X and the
-// property list q after GDocument).
 /**
  * The import optimiser (FMT-IMPORT-030), run on PDF pages and EPS groups:
  * a path followed by a sibling path of the same class with the same

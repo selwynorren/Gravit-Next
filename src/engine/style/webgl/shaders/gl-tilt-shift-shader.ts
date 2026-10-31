@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 497 (GGLTiltShiftShader, from glfx.js).
-//
-// Blurs more the farther a pixel is from the line through start and end,
-// in two passes (along the line and across it). When the whole image is
-// in one tile, the texture is mirrored first depending on the line's
-// direction and mirrored back afterwards.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

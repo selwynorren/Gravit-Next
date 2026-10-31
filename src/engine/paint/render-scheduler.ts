@@ -1,15 +1,3 @@
-// Old: chunk.vendor.js module 103 (the renderer).
-//
-// The old renderer handed out command recorders while a render phase ran
-// (and on request), then replayed them into real canvases in 75 ms slices
-// spread over animation frames. The port drops the recorder (see
-// recorder-state-context.ts), so everything is painted when it is called
-// and `render` only reports the finished canvas. What stays is the render
-// phase flag, the render parameters, the queue of renderings that arrive
-// while one runs and the choice of context in getRenderer.
-//
-// Not ported: worker rendering (WORKER_RENDERING_ENABLED is false) and the
-// debug recorder with its code dump (GRendererCtxDbg, ENABLE_DEBUG false).
 import { releaseCanvas, takeCanvas } from "./canvas-pool.ts";
 import { RecorderStateContext, type ReplayPolicy } from "./recorder-state-context.ts";
 import { RenderJob, type RenderParameters } from "./render-job.ts";

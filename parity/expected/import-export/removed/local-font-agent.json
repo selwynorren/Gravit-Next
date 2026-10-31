@@ -1,5 +1,0 @@
-{
- "webSockets": [
-  "ws://127.0.0.1:3190/license/license?lang=0"
- ]
-}

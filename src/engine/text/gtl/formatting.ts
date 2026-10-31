@@ -1,12 +1,3 @@
-// Old: chunk.vendor.js module 148 (the GTL run formatting helpers, carota's runs.js).
-//
-// A run is a piece of text with its formatting: `{text: "Hello",
-// fontSize: 12, ...}`. The text is a string, a code object (`{$:
-// "ListStart"}`, an inline marker) or an array of pieces. Runs are plain
-// objects that the layout derives from each other with Object.create, so
-// formatting often sits on the prototype chain; the helpers here read it
-// through the chain (`in`, property reads) and Object.keys only where the
-// old code did.
 import { equals } from "../../core/util.ts";
 import { Pattern } from "../../style/pattern.ts";
 

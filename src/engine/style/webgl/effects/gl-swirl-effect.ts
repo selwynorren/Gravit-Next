@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1016 (GGLSwirlEffect).
-//
-// The swirl radius is relative to the element's bounding box, which
-// getEffectPadding keeps in `swirlBBox` when it is given one; the shader
-// reads it from there.
 import { Locale } from "../../../core/locale/locale.ts";
 import type { Rect } from "../../../math/rect.ts";
 import { registerNodeClass } from "../../../scene/node.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 531 (GCollabText).
 /**
  * A collaborative text, node "collabtext": an image of a text block that
  * collaborators could switch into an editable text (text mode) through

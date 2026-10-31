@@ -124,7 +124,7 @@ describe("SliceProperties", () => {
   });
 
   // The old code passed true as setProperties' third argument, which is
-  // "custom", so a temporary change landed in the custom property (BUG-161).
+  // "custom", so a temporary change landed in the custom property.
   it("writes temporary changes as temporary values, the rest in one transaction", () => {
     fakeDesigner();
     const log: string[] = [];

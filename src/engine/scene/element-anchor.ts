@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 910 (GElement.Anchor).
 /**
  * Constraints: an element inside a Layout container keeps its distance to
  * the container's edges when the container is resized. Per axis, the

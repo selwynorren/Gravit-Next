@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 932 (JPEG decoder factory).
 import { JpegDecoder } from "./jpeg-decoder.ts";
 
 const BASE64_DIGITS = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";

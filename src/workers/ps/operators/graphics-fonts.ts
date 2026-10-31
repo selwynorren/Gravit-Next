@@ -1,4 +1,3 @@
-// Old: public/pscore.js, systemdict findfont … SharedFontDirectory.
 import type { PSCore } from "../core.ts";
 import type { PSArray, PSDict, PSProcedure, PSValue } from "../objects.ts";
 

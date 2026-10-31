@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1656 (GItemProperties).
 /**
  * "Click through" (clk) and, for shapes, "Scale with content" (scc) of
  * items that have item children. Shown when every inspected element is

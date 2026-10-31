@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 163 (GDocument.buildPreview).
 /**
  * The JPEG preview a save embeds (FMT-PREVIEW-002): the first page of the
  * scene, its bitmap paint area scaled so the longer side is 600 px, drawn

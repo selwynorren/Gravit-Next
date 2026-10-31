@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1168 (GSubAction).
 import { Locale } from "../../engine/core/locale/locale.ts";
 import { Action, type ActionTitle, type ShortcutHintOptions } from "./action.ts";
 import { gDesigner } from "./host.ts";

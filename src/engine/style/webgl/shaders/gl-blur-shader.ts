@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 206 (the Gaussian blur shader, GGLBlurShader).
-//
-// A separable Gaussian blur: one horizontal and one vertical pass. The
-// sample count is a loop constant, so there is one program per 32 pixels
-// of radius (up to 128, more are made on demand).
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 

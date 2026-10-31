@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 992 (opentype.js features/arab/arabicRequiredLigatures.js, unchanged).
-
 import type { Bidi } from "../../bidi.ts";
 import { ContextParams } from "../../tokenizer.ts";
 import type { ContextRange, Token } from "../../tokenizer.ts";

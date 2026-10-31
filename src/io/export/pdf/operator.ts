@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1217 (the PDF matrix operator).
 import type { Transform } from "../../../engine/math/transform.ts";
 import { PDFArray } from "./pdf-array.ts";
 import { PDFNumber } from "./pdf-number.ts";

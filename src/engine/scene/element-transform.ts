@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 908 (GElement.Transform).
 /**
  * Elements that can be transformed. The base `transform` only moves the
  * children (when the scene's transform settings or the element's `scc`

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 318 (GHighlighterAnnotation).
 /**
  * A highlighter stroke annotation, node "anh"; saved separately with its geometry box.
  */

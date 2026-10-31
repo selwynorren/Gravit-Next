@@ -1,19 +1,3 @@
-// Old: designer.browser.dev.js module 1253 (GExporter).
-//
-// The exporter behind the export dialog, the Export panel and "Export
-// Page": builds the export list, runs one export per item, names the
-// files and writes several of them into a directory or a ZIP.
-//
-// Changes from the old module:
-// - The commercial-file paywall check (_validateCommercialDocument,
-//   FMT-EXPORT-049) is gone with the marketplace.
-// - The PRO gate (watchDog.check) is gone; the old local app had
-//   subscriptions off, so the check always passed the value through.
-// - What came from the app (the user name, the active window title, the
-//   storage classes and the file-type table) comes through ExportHost and
-//   the small storage interfaces below, until the app shell (phase 7)
-//   provides them.
-
 import { getTypeId } from "../../engine/core/object.ts";
 import { Locale } from "../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";

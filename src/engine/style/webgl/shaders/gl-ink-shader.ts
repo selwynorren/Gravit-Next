@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 487 (GGLInkShader, from glfx.js).
-//
-// Darkens edges: the difference of a 5 x 5 and a small cross average,
-// weighted by strength to the fifth power.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

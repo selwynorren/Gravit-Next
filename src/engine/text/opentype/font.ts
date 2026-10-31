@@ -1,15 +1,3 @@
-// Old: chunk.vendor.js module 982 (opentype.js font.js).
-// Gravit changes:
-// - stringToGlyphs takes the text direction from options.direction for Bidi
-//   and can report the characters behind each glyph (third argument).
-// - stringToGlyphs applies the frac (numr/dnom), locl and stylistic set
-//   (ssNN) features; the default options gain frac: false and stylisticSet: null.
-// - forEachGlyph passes the glyph's characters (with options.generateText)
-//   and the kerning value to the callback, and adds the kerning only when it
-//   is non-zero. The kerning value is not reset per glyph, so the last glyph
-//   gets the previous pair's kerning again (old quirk, kept).
-// - parse() sets hasGHBTables for fonts with a morx table (see opentype.ts).
-
 import type { Bidi } from "./bidi.ts";
 import { Bidi as BidiProcessor } from "./bidi.ts";
 import type { DrawingContext } from "./draw.ts";

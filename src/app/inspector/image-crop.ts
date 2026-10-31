@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1268 (the image panel's actions).
 /**
  * What the image panel's buttons do: enter or leave crop mode (resetting
  * the crop when one is shown), replace the image's bitmap from a file,

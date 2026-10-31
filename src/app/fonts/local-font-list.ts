@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1199 (the local fonts provider).
 /**
  * The fonts installed on the machine, through the Local Font Access API
  * (window.queryLocalFonts). The browser container registers it last when

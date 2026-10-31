@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1149 (the exporter's CSS declaration map).
 import type { SvgElement } from "./svg-dom.ts";
 
 /**

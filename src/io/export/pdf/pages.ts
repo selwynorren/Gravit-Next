@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1436 (the PDF page tree).
 import { PDFArray } from "./pdf-array.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";
 import type { PDFIndirectReference } from "./indirect-reference.ts";

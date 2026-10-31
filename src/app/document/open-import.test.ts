@@ -82,7 +82,7 @@ async function open(name: string, extension: string): Promise<number[]> {
   return statuses;
 }
 
-describe("opening a PDF that pdf.js can't open (BUG-102)", () => {
+describe("opening a PDF that pdf.js can't open", () => {
   it("fails the load with the error-reading-file message", async () => {
     importer.error = new Error("Invalid PDF structure.");
     expect(await open("broken.pdf", "PDF")).toEqual([DocumentStatus.LoadFailed]);
@@ -91,7 +91,42 @@ describe("opening a PDF that pdf.js can't open (BUG-102)", () => {
   });
 });
 
-describe("opening a HEIC that can't be converted (BUG-108)", () => {
+describe("opening an Illustrator file", () => {
+  /** Opens `name` as AI with `bytes`; returns what the context saw. */
+  function openAi(bytes: number[]): { statuses: number[]; cancelHandlers: number } {
+    const seen = { statuses: [] as number[], cancelHandlers: 0 };
+    const context: OpenImportContext = {
+      document: {},
+      updateStatus: (status) => seen.statuses.push(status),
+      setTitle: () => {},
+      setScene: () => {},
+      preProcessFonts: () => {},
+      postProcessFonts: () => {},
+      initCancelHandler: () => {
+        seen.cancelHandlers++;
+      },
+    };
+    openImportedFile(context, new NamedItem("logo.ai"), "AI", new Uint8Array(bytes), {
+      progress: null,
+    });
+    return seen;
+  }
+
+  it("reads a PDF-compatible .ai with the PDF importer", async () => {
+    importer.error = new Error("Invalid PDF structure.");
+    const seen = openAi([0x25, 0x50, 0x44, 0x46]); // %PDF
+    await vi.waitFor(() => expect(seen.statuses).toEqual([DocumentStatus.LoadFailed]));
+    expect(seen.cancelHandlers).toBe(0);
+  });
+
+  it("reads an old PostScript .ai with the EPS importer", () => {
+    const seen = openAi([0x25, 0x21, 0x50, 0x53]); // %!PS
+    expect(seen.cancelHandlers).toBe(1);
+    expect(seen.statuses).toEqual([]);
+  });
+});
+
+describe("opening a HEIC that can't be converted", () => {
   it("fails the load with the error-reading-file message", async () => {
     setHeicConverterLoader(() => Promise.resolve(() => Promise.reject(new Error("bad HEIC"))));
     try {
@@ -104,7 +139,7 @@ describe("opening a HEIC that can't be converted (BUG-108)", () => {
   });
 });
 
-describe("cancelling an EPS import (BUG-113)", () => {
+describe("cancelling an EPS import", () => {
   it("fails the load after the cancel message", () => {
     const statuses: number[] = [];
     const calls: string[] = [];

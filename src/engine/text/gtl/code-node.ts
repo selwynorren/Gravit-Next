@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 921 (a block node of a code: list and list item).
 import { uuid } from "../../core/util.ts";
 import { TLNode } from "./node.ts";
 

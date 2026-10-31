@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 90 (GPDFObject).
 import type { PDFOutput } from "./output.ts";
 
 /**

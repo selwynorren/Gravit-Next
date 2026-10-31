@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1264 (GBoolOpProperties).
 /**
  * The boolean operation (union, subtract, intersect, difference) of the
  * children of a compound shape after the first one. Shown for a compound

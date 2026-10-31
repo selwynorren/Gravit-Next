@@ -1,13 +1,3 @@
-// Old: designer.browser.dev.js module 1515 (zip.js v1 zip-fs.js).
-//
-// An in-memory file tree that exports to (or imports from) a ZIP. The
-// export dialog's ZipDirectory builds one per multi-file export and calls
-// exportBlob (FMT-EXPORT-048).
-//
-// Left out: the FileSystem API helpers (addFileEntry, getFileEntry,
-// exportFileEntry). The last two used zip.FileWriter, which the old app
-// didn't ship, so they threw; nothing called any of them.
-
 import type { Writer } from "./zip.ts";
 import {
   BlobReader,

@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1201: the importers, and the pdf.js worker
-// location (now the bundled worker each PDF import starts, see
-// io/import/pdf/pdfjs.ts). The Sketch importer installs the PDF renderer
-// of its image fills itself (sketch-import.ts).
 import { BitmapImport } from "./bitmap-import.ts";
 import { EPSImport } from "./eps/eps-import.ts";
 import { PDFImport } from "./pdf/pdf-import.ts";

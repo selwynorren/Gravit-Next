@@ -1,16 +1,3 @@
-// Old: chunk.vendor.js module 710 (opentype.js tables/cmap.js).
-// The cmap table maps character codes to glyph indexes.
-// Gravit changes:
-// - Sub-table choice: Windows (3) and also Macintosh (1) platform tables with
-//   encoding 0, 1 or 10 are taken, besides Unicode (0) with encoding 0 to 4.
-//   As a fallback, any other Unicode platform sub-table is used.
-// - When no sub-table fits, parse returns null instead of throwing (opentype.ts
-//   then throws "Font doesn't contain known CMAP table.").
-// - Formats 0, 6, 10 and 13 are read too, not only 4 and 12; the error for
-//   other formats doesn't name the format.
-// - make() is the format 4 only writer of earlier opentype.js versions (no
-//   format 12 sub-table, segments without glyphIndex, the length field is set).
-
 import * as check from "../check.ts";
 import type { Glyph } from "../glyph.ts";
 import type { GlyphSet } from "../glyphset.ts";

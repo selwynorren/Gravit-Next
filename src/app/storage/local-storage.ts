@@ -1,6 +1,3 @@
-// Old: designer.browser.dev.js module 85 (GContainer.getProperty, setProperty,
-// removeProperty, getPropertyKeyByIndex, getStorageLength) and the key names
-// scattered over the modules listed per key below.
 /**
  * Every localStorage key the app uses, with the type of its value, in one
  * place (UI-STORAGE-001 to -014, FMT-STORAGE-014). Users moving from the
@@ -62,7 +59,7 @@ export interface LocalStorageValues {
    * (src/app/brand/branding.ts; index.html's script writes it).
    */
   "designer.branding": "next" | "classic";
-  /** New in the rewrite: the GravitDesign Next introduction was closed (src/app/brand/intro-dialog.ts). */
+  /** New in the rewrite: the Gravit Next introduction was closed (src/app/brand/intro-dialog.ts). */
   "designer.next-intro-shown": boolean;
 }
 

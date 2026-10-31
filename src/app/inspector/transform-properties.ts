@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1660 (GTransformProperties).
 /**
  * The advanced transform of transform mode: move, scale, rotate, reflect
  * and skew by typed values, applied around a pivot, optionally to a

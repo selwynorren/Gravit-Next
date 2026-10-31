@@ -1,6 +1,3 @@
-// Old: public/pscore.js, systemdict srand … endcidrange: random numbers,
-// rectangles, stroke, the show family, gsave/grestore, gstate objects and
-// the CMap stubs.
 import type { PSCore } from "../core.ts";
 import type { GraphicsState, PSClipPath, PSPathSegment, PSValue } from "../objects.ts";
 import { ShowMode } from "../show.ts";

@@ -1,4 +1,3 @@
-// Old: public/pscore.js, systemdict shfill, fill, eofill.
 import type { PSCore } from "../core.ts";
 import type { PSValue } from "../objects.ts";
 import { colorHelper } from "./graphics-support.ts";

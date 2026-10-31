@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1460 (the blur filter writer).
 import type { PropertiesNode as Node } from "../../../../engine/scene/node-properties.ts";
 import type { FilterBuilder, FilterWriter } from "../filter-builder.ts";
 import { SvgUtil } from "../svg-util.ts";

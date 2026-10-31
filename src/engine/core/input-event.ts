@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 505 (GInputEvent).
 /** Base class of mouse and key events. */
 import { Event } from "./event.ts";
 import { registerClass } from "./object.ts";

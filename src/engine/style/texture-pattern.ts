@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 139 (GTexturePattern).
 import { Event } from "../core/event.ts";
 import { EventTargetMixin } from "../core/event-target.ts";
 import { registerClass } from "../core/object.ts";

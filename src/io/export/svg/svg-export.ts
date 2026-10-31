@@ -1,17 +1,3 @@
-// Old: chunk.vendor.js module 1455 (GSVGExport).
-//
-// Writes a page, a scene or an element as SVG text. The tree is walked
-// node by node (renderNode): simple shapes without unsupported features
-// are written as native SVG elements (rect, circle, ellipse, line,
-// polygon, path) with their fills, borders and effects as attributes,
-// gradients and filters (checkNativeShape). Everything else is painted
-// through the SVG paint context, which records the engine's canvas calls
-// as paths (generateSvgPath); texts go through an SVG text layout core
-// that writes <text> elements. Nodes with effects, patterns or blends SVG
-// can't express are rasterized into an <image> (checkRasterize).
-//
-// The order of DOM operations, attribute writes and id generation is the
-// old one; the output is compared byte for byte.
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { Color } from "../../../engine/color/color.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";

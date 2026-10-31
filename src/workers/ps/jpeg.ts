@@ -1,4 +1,4 @@
-// The JPEG handshake between the PostScript worker and the page (BUG-008).
+// The JPEG handshake between the PostScript worker and the page.
 //
 // The worker can't decode JPEGs, so DCTDecode asks the page: it posts a
 // "jpeg" call with `data = [dataUrl, kind]` and a SharedArrayBuffer as

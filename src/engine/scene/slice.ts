@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 289 (GSlice).
 /**
  * The export slice, node "slice": a box (`x`, `y`, `w`, `h`) on a page
  * or layer that exports what lies below it. It paints only as a marker

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode.Properties).
 /**
  * Named properties on a node.
  *

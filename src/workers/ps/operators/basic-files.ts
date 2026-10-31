@@ -1,14 +1,3 @@
-// Old: public/pscore.js, systemdict entries file … writestring.
-//
-// Kept quirks (QUESTIONS.md "PS worker: file operator quirks"):
-// - file, currentfile and status are stubs: file pops its two operands and
-//   pushes a file on the program input, status always answers false.
-// - fileposition of an unpositioned file pushes undefined (the file object
-//   has no valuePointer).
-// - readline appends the line to the target string's old content and
-//   skips leading line breaks.
-// - readstring and readhexstring replace the target string's value.
-// - writestring discards its operands.
 import type { PSCore } from "../core.ts";
 import type { PSPlainRecord, PSString, PSValue } from "../objects.ts";
 import { sloppySet } from "./basic-support.ts";

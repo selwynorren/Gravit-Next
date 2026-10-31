@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (the GNode.*Event classes).
 /**
  * The events a node sends about itself and its children. A node sends
  * them to itself and then to every ancestor that is an event target

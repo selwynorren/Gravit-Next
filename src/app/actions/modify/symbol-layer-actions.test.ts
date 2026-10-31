@@ -163,7 +163,7 @@ describe("Change active page", () => {
     expect(changed).toEqual([second, null]);
   });
 
-  it("binds Page Down and Page Up as one-key shortcuts (BUG-148)", () => {
+  it("binds Page Down and Page Up as one-key shortcuts", () => {
     // Designer.registerAdditionalShortcuts binds each entry through shortcutToMousetrap.
     const combos = (type: string) =>
       (new ChangeActivePageAction(type).getAdditionalShortcuts() || []).map((shortcut) =>

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 863.
 /** The parts of the shell: each is the element with this id under #mainframe > .frame. */
 export interface LayoutPart {
   readonly id: string;

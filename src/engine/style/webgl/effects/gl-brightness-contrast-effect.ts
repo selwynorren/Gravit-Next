@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 730 (GGLBrightnessContrastEffect).
-//
-// Brightness and contrast on WebGL; without a brightness change the CSS
-// contrast filter does it.
 import { Locale } from "../../../core/locale/locale.ts";
 import { GMath } from "../../../math/math.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../../paint/paint-canvas.ts";

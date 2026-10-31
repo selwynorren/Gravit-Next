@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 764 (GMagicTool).
 /**
  * Freehand shaping: draws a freehand stroke and adds it to the selected
  * shapes (when the stroke starts inside one of them) or cuts it out of

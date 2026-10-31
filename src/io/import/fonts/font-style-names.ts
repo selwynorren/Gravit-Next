@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1204.
-//
-// Helpers the PDF import's text handling shares: comparing word
-// transforms, reading weight and style from font names, comparing word
-// formatting, and the base class of the text merger (text-merge.ts).
 import { equals as utilEquals } from "../../../engine/core/util.ts";
 import { Transform, type TransformDecomposition } from "../../../engine/math/transform.ts";
 import { Font } from "../../../engine/text/fonts/font.ts";

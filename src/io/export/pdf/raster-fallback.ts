@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1451 (the PDF raster fallback).
 import { Length } from "../../../engine/math/length.ts";
 import type { Rect } from "../../../engine/math/rect.ts";
 import { Canvas2DPaintCanvas } from "../../../engine/paint/paint-canvas.ts";

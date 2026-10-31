@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1278 (the scrubbing setting).
 import { designer } from "../shell/globals.ts";
 
 /**

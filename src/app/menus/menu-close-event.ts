@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1156 (GMenuCloseEvent).
 /** A menu was closed (detached from the page). Menus trigger the shared EVENT instance. */
 import { Event } from "../../engine/core/event.ts";
 import { registerClass } from "../../engine/core/object.ts";

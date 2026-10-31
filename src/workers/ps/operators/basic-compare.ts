@@ -1,17 +1,3 @@
-// Old: public/pscore.js, systemdict entries eq … exit.
-//
-// Kept quirks (QUESTIONS.md "PS worker: comparison and control operator
-// quirks"):
-// - eq and ne compare with JS loose equality; ne of two composite objects
-//   (or an object and a number) is always false.
-// - not on integers is a bitwise not (correct), but `and`/`or` check the
-//   operands as integers before popping them, and bitshift uses JS 32-bit
-//   shifts.
-// - ifelse and if skip silently when the condition isn't a bool but still
-//   pop their operands; they execute the procedure without checking it.
-// - loop ends on stop (clearing the stop flag) and exit; for, forall and
-//   repeat end only on exit. exit outside a loop and outside stopped runs
-//   quit.
 import type { PSCore } from "../core.ts";
 import type { PSPlainRecord, PSValue } from "../objects.ts";
 import { executeValue } from "./basic-support.ts";

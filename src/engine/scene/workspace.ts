@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 280 (GWorkspace).
 /**
  * What the documents of one app share: the font manager, the transaction
  * recorder that undo listens to, the registry of referenceable nodes (by

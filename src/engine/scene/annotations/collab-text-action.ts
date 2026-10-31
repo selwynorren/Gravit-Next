@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1000 (no G name; the "A" button of GCollabText).
 /**
  * The button on a collaborative text (GCollabText) that opens the inline
  * text editor: a green 24 by 24 circle with a white "A" and a speech

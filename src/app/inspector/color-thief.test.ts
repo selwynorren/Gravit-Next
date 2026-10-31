@@ -44,7 +44,7 @@ describe("quantize", () => {
     ]);
   });
 
-  it("raises the maximum for a sample that also lowers the minimum (BUG-155)", () => {
+  it("raises the maximum for a sample that also lowers the minimum", () => {
     // One sample: the box is its bin. The old "else if" left rmax at 0, so
     // the box was empty and the colour was its centre, [104, 104, 104].
     const single = quantize([[200, 200, 200]], 2);

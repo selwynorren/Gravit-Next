@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 657 (GPGAnchor, not in the G barrel).
 /**
  * A vertex of the paths graph: a point with the edges that start (out)
  * and end (in) there, kept sorted by the angle at which each edge leaves

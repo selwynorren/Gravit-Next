@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 6 (GRect).
 import { GMath } from "./math.ts";
 import { Point } from "./point.ts";
 

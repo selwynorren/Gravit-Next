@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 233 (GCompoundShape).
 /**
  * A live boolean of its children, node "Compound Shape" (with the space).
  * The first child that is a vertex source is the main shape; every later

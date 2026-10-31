@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 329 (GImageEditor).
 /**
  * The editor of an image. Besides the rectangle editor's handles it has an
  * edit (crop) mode: the element's box becomes the crop frame with angle

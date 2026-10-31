@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 568 (an unnamed GFont subclass).
 /**
  * A font that is known by family, style and weight only: the placeholder
  * GFontManager keeps while a font is being resolved (or after resolving it

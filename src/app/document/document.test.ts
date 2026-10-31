@@ -158,7 +158,7 @@ describe("Document", () => {
   it.each([
     ["cut-off JSON", "{"],
     ["a group root", '{"@":"group"}'],
-  ])("fails the load with a message for %s (BUG-100)", async (_name, text) => {
+  ])("fails the load with a message for %s", async (_name, text) => {
     const document = new Document(
       new MemoryItem("broken.gvdesign", new TextEncoder().encode(text)),
     );

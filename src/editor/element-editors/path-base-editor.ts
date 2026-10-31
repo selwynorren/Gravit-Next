@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 155 (GPathBaseEditor).
 /**
  * The editor of anchor point based shapes (paths, rectangles, ellipses,
  * polygons). Point edits preview on a plain GPathBase copy of the anchor

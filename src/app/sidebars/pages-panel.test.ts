@@ -94,7 +94,7 @@ describe("GPagePanel", () => {
     ]);
   });
 
-  it("shows a page name as typed, as text and not as markup (BUG-166)", () => {
+  it("shows a page name as typed, as text and not as markup", () => {
     const { first, element, panel } = setup();
     first.setProperty("name", "a <b>x</b>");
     panel.vtree.requestInvalidation(true);
@@ -107,7 +107,7 @@ describe("GPagePanel", () => {
     expect(title.querySelector("b")).toBeNull();
   });
 
-  it("renames a page with < in its name the way the old app stored it (BUG-166)", () => {
+  it("renames a page with < in its name the way the old app stored it", () => {
     const { first, element, panel } = setup();
     first.setProperty("name", "a<b");
     panel.vtree.requestInvalidation(true);
@@ -121,7 +121,7 @@ describe("GPagePanel", () => {
     expect(first.getProperty("name")).toBe("a&lt;b&gt;");
   });
 
-  it("shows the dragged page names as typed while dragging, then its own (BUG-166)", () => {
+  it("shows the dragged page names as typed while dragging, then its own", () => {
     const { first, second, element, panel } = setup({
       startDraggingCallback: () => [first, second],
     });

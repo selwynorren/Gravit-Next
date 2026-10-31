@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1295 (GSnapUnitAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
@@ -25,7 +24,7 @@ type TransformableElement = Node & {
  * Modify > Align > Snap to Full / Half Pixel: moves and scales each
  * selected element so its geometry box starts and ends on whole units
  * (half: on .5). Zero-sized boxes are left alone. Half also makes the box
- * half a unit larger; see "Snap to Half Pixel grows the size" in QUESTIONS.md.
+ * half a unit larger;.
  */
 export class SnapUnitAction extends Action {
   static Type = Type;

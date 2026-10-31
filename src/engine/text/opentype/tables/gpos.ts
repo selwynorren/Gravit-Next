@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 995 (opentype.js tables/gpos.js, unchanged).
-// The GPOS table: kerning pairs and other glyph positioning. Only lookup
-// types 1 and 2 are read; the others give an { error } placeholder.
-// https://docs.microsoft.com/en-us/typography/opentype/spec/gpos
-
 import * as check from "../check.ts";
 import type { LayoutTable } from "../layout.ts";
 import { Parser } from "../parse.ts";

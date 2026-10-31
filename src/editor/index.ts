@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 53 (the editor barrel), as far as loading goes.
 /**
  * Loads the editor with every element editor. Each element editor
  * registers itself for the element class it edits (ElementEditor.exports),

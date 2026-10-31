@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 914 (GAnnotation.Linkable).
 /**
  * Annotations that point at elements (a comment pinned to a shape) save
  * the reference ids of those elements as `annotablerefs` and hand them

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1454 (the PDF compatibility processor).
 import { hasContainer } from "../../../engine/scene/node-container.ts";
 import type { Node } from "../../../engine/scene/node.ts";
 import { Page } from "../../../engine/scene/page.ts";

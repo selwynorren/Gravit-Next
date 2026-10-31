@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 877 (GPasteAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";

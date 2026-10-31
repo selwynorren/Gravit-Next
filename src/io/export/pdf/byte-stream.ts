@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1143 (the byte output of the PDF writer).
 import { ByteBuffer } from "../byte-buffer.ts";
 import { PDFOutput, type PDFBytes, type PDFToken } from "./output.ts";
 

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 741 (GPointsGuide).
 import { registerClass } from "../../engine/core/object.ts";
 import { QuadTree } from "../../engine/geometry/quadtree.ts";
 import { Point } from "../../engine/math/point.ts";

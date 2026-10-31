@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1421 (the PDF DCTDecode data).
 import { JpegEncoder, type JpegColorSpace } from "../jpeg-encoder.ts";
 import { PDFFilter } from "./pdf-filter.ts";
 import type { PDFOutput } from "./output.ts";

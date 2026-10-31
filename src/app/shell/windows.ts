@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 603 (GWindows).
 /**
  * The document windows in #windows. Only the active window's container
  * is attached; activating another one detaches it, tells the designer

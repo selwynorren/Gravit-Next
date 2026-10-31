@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 264 (GVertexPolyBoolean.PolyLineExtended).
 /* eslint-disable @typescript-eslint/no-this-alias -- the ring and list walks start at this node */
 import { GMath } from "../../math/math.ts";
 import { Point } from "../../math/point.ts";

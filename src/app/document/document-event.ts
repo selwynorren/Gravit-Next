@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 78 (GDocumentEvent).
 /**
  * What happened to a document, triggered on the designer. Only some types
  * still fire in the local app (Added, Removed, Deactivated, Activated,

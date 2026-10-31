@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 893 (GRulerWidget).
 /**
  * The horizontal and vertical rulers of a scene view and the unit box in
  * their corner. A ruler paints its ticks and labels on a canvas in the
@@ -222,13 +221,21 @@ export class RulerWidget extends Widget {
       labelStep /= fraction;
       tickStep /= fraction;
     }
-    const start = (-this._offset * inverseScale) / unitInPoints;
+    // The ruler origin relabels which value reads as 0 without
+    // moving a tick: the sweep runs in origin-relative units, so round
+    // numbers land on major ticks, and the origin is added back for the
+    // pixel position. With no origin it is 0 and nothing changes.
+    const origin =
+      (this._orientation === Orientation.Vertical
+        ? this._scene.getRulerOriginY()
+        : this._scene.getRulerOriginX()) / unitInPoints;
+    const start = (-this._offset * inverseScale) / unitInPoints - origin;
     const firstTick = Math.ceil(start / tickStep) * tickStep;
     const firstLabel = Math.ceil(start / labelStep) * labelStep;
-    const end = ((length - this._offset) * inverseScale) / unitInPoints;
+    const end = ((length - this._offset) * inverseScale) / unitInPoints - origin;
     let label: string;
     for (let value = firstTick, counter = -9; value < end; value += tickStep, ++counter) {
-      const position = Math.round((value / inverseScale) * unitInPoints) + this._offset;
+      const position = Math.round(((value + origin) / inverseScale) * unitInPoints) + this._offset;
       if (GMath.isEqualEps(value, firstLabel, 0.01 / fraction)) counter = Math.floor(10 * dpi);
       if (counter % Math.floor(10 * dpi) == 0) {
         label = String(GMath.round(value, false, fractional ? decimals : 0));
@@ -250,7 +257,9 @@ export class RulerWidget extends Widget {
     if (
       !event.temporary &&
       event.node === this._scene &&
-      (event.properties as string[]).indexOf("ut") >= 0
+      ((event.properties as string[]).indexOf("ut") >= 0 ||
+        (event.properties as string[]).indexOf("rox") >= 0 ||
+        (event.properties as string[]).indexOf("roy") >= 0)
     ) {
       if (this._isUnitRuler) this._updateUnitRuler();
       else this._paint();

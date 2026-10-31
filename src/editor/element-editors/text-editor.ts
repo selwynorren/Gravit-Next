@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 387 (GTextEditor).
 import { Color } from "../../engine/color/color.ts";
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import { Key } from "../../engine/core/key.ts";

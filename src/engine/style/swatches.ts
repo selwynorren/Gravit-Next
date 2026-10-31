@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 662 (GSwatches).
 import { Node, registerNodeClass } from "../scene/node.ts";
 import { Container } from "../scene/node-container.ts";
 import { Store } from "../scene/node-store.ts";

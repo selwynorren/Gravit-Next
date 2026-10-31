@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 483 (GGLEdgeWorkShader, from glfx.js).
-//
-// Edge work: a horizontal pass that blurs the luminance at two widths,
-// then a vertical pass that draws the difference of both as black and
-// white.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

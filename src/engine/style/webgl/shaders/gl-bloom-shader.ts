@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 475 (GGLBloomShader).
-//
-// Bloom: the bright parts (over a threshold) go into the extra texture,
-// are blurred there and then blended back over the saturation-adjusted
-// image.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 import { GLBlurShader } from "./gl-blur-shader.ts";

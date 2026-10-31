@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1654 (GFrameProperties).
 /**
  * The "Frame" checkbox of layers: a layer with a frame clips its content
  * to the page. Shown when every inspected element is a layer.

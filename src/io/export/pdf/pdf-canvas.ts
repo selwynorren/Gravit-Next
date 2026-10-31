@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1216 (the PDF 2D context).
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { Point } from "../../../engine/math/point.ts";
 import { Rect } from "../../../engine/math/rect.ts";

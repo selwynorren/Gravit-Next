@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 541 (GPathTool).
 /**
  * The base of the pen, bezigon and knife tools: a path being drawn or
  * edited through its GPathEditor. The tool works on the editor's path

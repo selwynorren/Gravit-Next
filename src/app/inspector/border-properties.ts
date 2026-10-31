@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1162 (the border paint layer panel).
 /**
  * The inspector's border panel: one row per border paint layer of the
  * first inspected element (color swatch, width, blend mode, opacity,
@@ -20,7 +19,7 @@
  * - "Dropping a border outside the list is named after fills";
  * - "Border width box ignores the document unit".
  * The undo/redo re-open of the chooser referenced an undefined variable
- * and threw; it reopens the chooser like the fill panel (BUG-153).
+ * and threw; it reopens the chooser like the fill panel.
  */
 import type { Pattern } from "../../engine/style/pattern.ts";
 import { Color } from "../../engine/color/color.ts";
@@ -137,7 +136,7 @@ function tooltip(fields: ConstructorParameters<typeof RichTooltipConfig>[0]): Ri
  * The alignment a new border gets on `element` (the Add Border button):
  * outside for texts, center for open paths and arcs, inside for every
  * other shape. The old code checked shapes first, and paths are shapes,
- * so open paths got Inside, which they can't show (BUG-154).
+ * so open paths got Inside, which they can't show.
  */
 export function newBorderAlignment(element: unknown): string | null {
   if (element instanceof Text) return BorderAlignment.Outside;
@@ -1372,7 +1371,7 @@ export class BorderProperties extends Properties {
     )
       // Reopens the chooser of the layer's row, like the fill panel. The old
       // code clicked `$element.find(".preview")`, a variable that doesn't
-      // exist, so it threw a ReferenceError here (BUG-153).
+      // exist, so it threw a ReferenceError here.
       for (const block of findAll(this._panel as HTMLElement, ".border-block"))
         if (layerOf(block) === layer)
           for (const preview of findAll(block, ".preview"))

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1081 (GEditorWidget).
 /**
  * The scene view of the editor. Over the rendered scene it paints the page
  * backgrounds and shadows (under the scene, on the element canvas), the
@@ -109,6 +108,10 @@ export class EditorWidget extends SceneWidget {
   _guideLineViewPoint: Point | null = null;
   _guideLinePosition: Point | null = null;
   _guideLineInfo: GuideLineInfo | null = null;
+  /** The crosshair dragged out of the ruler corner to set the ruler origin. */
+  _originCrosshairV: HTMLDivElement | null = null;
+  _originCrosshairH: HTMLDivElement | null = null;
+  _originPosition: Point | null = null;
   _lastFocus: globalThis.Element | null = null;
   _inputListener: ((event: globalThis.Event) => void) | null = null;
   _inputListenerCompStart: ((event: globalThis.Event) => void) | null = null;
@@ -201,11 +204,18 @@ export class EditorWidget extends SceneWidget {
       const vertical = this._verticalRuler as RulerWidget;
       horizontal.addEventListener(MouseEvent.Down, this._rulerDownLister, this);
       vertical.addEventListener(MouseEvent.Down, this._rulerDownLister, this);
+      // The corner between the rulers sets and resets the ruler origin.
+      const corner = this._unitRuler as RulerWidget;
+      corner.addEventListener(MouseEvent.Down, this._cornerDownListener, this);
+      corner.addEventListener(MouseEvent.DblClick, this._cornerDblClickListener, this);
     } else if (!visible && this.hasRulers()) {
       const horizontal = this._horizontalRuler as RulerWidget;
       const vertical = this._verticalRuler as RulerWidget;
       horizontal.removeEventListener(MouseEvent.Down, this._rulerDownLister, this);
       vertical.removeEventListener(MouseEvent.Down, this._rulerDownLister, this);
+      const corner = this._unitRuler as RulerWidget;
+      corner.removeEventListener(MouseEvent.Down, this._cornerDownListener, this);
+      corner.removeEventListener(MouseEvent.DblClick, this._cornerDblClickListener, this);
       super.setRulers(visible);
     }
   }
@@ -270,7 +280,7 @@ export class EditorWidget extends SceneWidget {
         ? (this._horizontalRuler.getY() as number) + this._horizontalRuler.getHeight()
         : (this._viewOffset[1] as number);
       this.updateInlineHint(
-        scene.pointToString(world.getX(), 1) + String(scene.getProperty("ut")),
+        scene.pointToStringX(world.getX(), 1) + String(scene.getProperty("ut")),
         new Point(point.getX(), dpi * top + 3),
         Rect.Side.TOP_CENTER,
       );
@@ -280,7 +290,7 @@ export class EditorWidget extends SceneWidget {
         ? (this._verticalRuler.getX() as number) + this._verticalRuler.getWidth()
         : (this._viewOffset[0] as number);
       this.updateInlineHint(
-        scene.pointToString(world.getY(), 1) + String(scene.getProperty("ut")),
+        scene.pointToStringY(world.getY(), 1) + String(scene.getProperty("ut")),
         new Point(dpi * left + 3, point.getY()),
         Rect.Side.LEFT_CENTER,
       );
@@ -588,6 +598,111 @@ export class EditorWidget extends SceneWidget {
     };
     this.addEventListener(MouseEvent.Move, onMove, this);
     this.addEventListener(MouseEvent.Release, onRelease, this);
+  }
+
+  /** A press on the corner between the rulers drags out the new ruler origin. */
+  _cornerDownListener(event: MouseEvent & { stopPropagation?: () => void }): void {
+    (event.stopPropagation as () => void)();
+    this._startMoveRulerOrigin();
+    const onMove = function (this: EditorWidget, move: MouseEvent): void {
+      this._moveRulerOrigin(move.client);
+    };
+    const onRelease = function (this: EditorWidget): void {
+      this.removeEventListener(MouseEvent.Move, onMove, this);
+      this.removeEventListener(MouseEvent.Release, onRelease, this);
+      this._finishMoveRulerOrigin();
+    };
+    this.addEventListener(MouseEvent.Move, onMove, this);
+    this.addEventListener(MouseEvent.Release, onRelease, this);
+  }
+
+  /** Two lines like a dragged guide's, one per axis, since an origin is a point. */
+  _startMoveRulerOrigin(): void {
+    const color = String(EditorOptions.guideLineHintColor);
+    const vertical = document.createElement("div");
+    vertical.style.position = "absolute";
+    vertical.style.top = "0px";
+    vertical.style.bottom = "0px";
+    vertical.style.width = "1px";
+    vertical.style.backgroundColor = color;
+    const horizontal = document.createElement("div");
+    horizontal.style.position = "absolute";
+    horizontal.style.left = "0px";
+    horizontal.style.right = "0px";
+    horizontal.style.height = "1px";
+    horizontal.style.backgroundColor = color;
+    this._htmlElement.insertBefore(vertical, this._inlineHintDiv);
+    this._htmlElement.insertBefore(horizontal, this._inlineHintDiv);
+    this._originCrosshairV = vertical;
+    this._originCrosshairH = horizontal;
+  }
+
+  /** Moves the crosshair to view point `point`, snapped by the guides as a dragged guide is. */
+  _moveRulerOrigin(point: Point): void {
+    const vertical = this._originCrosshairV;
+    const horizontal = this._originCrosshairH;
+    if (!vertical || !horizontal) return;
+    const guides = this._editor.getGuides();
+    let world = this.getViewTransform().mapPoint(point);
+    guides.beginMap();
+    world = guides.mapPoint(world, null, [BBoxGuide.ID, FullPixelsGuide.ID]);
+    guides.finishMap();
+    this._originPosition = world;
+    const mapped = this.getWorldTransform().mapPoint(world);
+    const dpi = PaintCanvas.getScreenDPI();
+    vertical.style.left = mapped.getX() / dpi + "px";
+    horizontal.style.top = mapped.getY() / dpi + "px";
+    // The position being set is shown as it is on the page, not relative to the old origin.
+    const scene = this._editor.getScene();
+    const unit = String(scene.getProperty("ut"));
+    this.updateInlineHint(
+      scene.pointToString(world.getX(), 1) +
+        unit +
+        ", " +
+        scene.pointToString(world.getY(), 1) +
+        unit,
+      new Point(mapped.getX() + 3, mapped.getY() + 3),
+      Rect.Side.TOP_LEFT,
+    );
+  }
+
+  /** Ends the drag: the dropped position becomes the ruler origin, as one undo step. */
+  _finishMoveRulerOrigin(): void {
+    const vertical = this._originCrosshairV;
+    const horizontal = this._originCrosshairH;
+    if (!vertical || !horizontal) return;
+    const position = this._originPosition;
+    const scene = this._editor.getScene();
+    if (
+      position &&
+      (position.getX() !== scene.getRulerOriginX() || position.getY() !== scene.getRulerOriginY())
+    ) {
+      this._editor.beginTransaction();
+      try {
+        scene.setProperties(["rox", "roy"], [position.getX(), position.getY()]);
+      } finally {
+        this._editor.commitTransaction("Change ruler origin");
+      }
+    }
+    this._htmlElement.removeChild(vertical);
+    this._htmlElement.removeChild(horizontal);
+    this._originCrosshairV = null;
+    this._originCrosshairH = null;
+    this._originPosition = null;
+    this.updateInlineHint(null);
+  }
+
+  /** A double click on the corner puts the origin back where it was by default. */
+  _cornerDblClickListener(event: MouseEvent & { stopPropagation?: () => void }): void {
+    (event.stopPropagation as () => void)();
+    const scene = this._editor.getScene();
+    if (null === scene.getProperty("rox") && null === scene.getProperty("roy")) return;
+    this._editor.beginTransaction();
+    try {
+      scene.setProperties(["rox", "roy"], [null, null]);
+    } finally {
+      this._editor.commitTransaction("Reset ruler origin");
+    }
   }
 
   _guideMoveModifierChangeListener(event: ModifiersChangedEvent): void {

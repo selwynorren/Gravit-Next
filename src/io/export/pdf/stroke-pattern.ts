@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 853 (the PDF stroke paint).
 import type { PDFPaintOptions } from "./gradient-resource.ts";
 import { OPERATIONFLAG_STROKE } from "./operation-flags.ts";
 import { PDFPaintStyle, type PDFPaintDocument } from "./pattern-resource.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 751 (GGroupEditor).
 /**
  * The editor of a group. A group without a frame (`frm`) has no geometry
  * of its own: a previewed transform goes to the children's editors, the

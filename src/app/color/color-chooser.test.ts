@@ -404,7 +404,7 @@ describe("PatternChooser quirks kept from the old code", () => {
     expect(relayout).toHaveBeenLastCalledWith({ preserveTop: true });
   });
 
-  it("selects the noise type of the pattern in the type select (BUG-157)", () => {
+  it("selects the noise type of the pattern in the type select", () => {
     const { chooser: c, root } = chooser();
     open(c);
     const noise = new NoisePattern();
@@ -631,7 +631,7 @@ describe("PatternChooser branches without a parity scenario (R7-C-103)", () => {
     expect(clicked).toEqual(["C#[255,0,0]"]);
   });
 
-  it("paste without a shape on the clipboard alerts with the texture message (BUG-133)", () => {
+  it("paste without a shape on the clipboard alerts with the texture message", () => {
     const { chooser: c, root } = chooser();
     const onPattern = vi.fn();
     open(c, { onPattern });

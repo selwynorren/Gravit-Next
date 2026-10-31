@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1342 (GEnhancedTooltipsAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action } from "../action.ts";

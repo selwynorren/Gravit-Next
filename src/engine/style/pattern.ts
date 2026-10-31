@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 50 (GPattern).
 import { hasMixin } from "../core/object.ts";
 
 /** A pattern class that the registry can create from its id. */

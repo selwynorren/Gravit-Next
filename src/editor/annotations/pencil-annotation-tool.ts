@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 773 (GPencilAnnotationTool).
 /**
  * Draws a pencil annotation with the freehand tool's stroke. One stroke ends the
  * tool's job; Esc and Enter do nothing.

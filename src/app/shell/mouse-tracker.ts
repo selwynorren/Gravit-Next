@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1492 (the cursor manager).
 /** Remembers where the mouse last was on the page (paste at cursor, drops). */
 import { Point } from "../../engine/math/point.ts";
 

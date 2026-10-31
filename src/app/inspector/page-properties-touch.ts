@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1604 (the touch layout of GPageProperties).
 /**
  * The page panel's rows in the touch layout: the color swatch next to
  * the preset select and the size boxes, then a row with the bleed box

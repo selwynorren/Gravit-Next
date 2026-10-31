@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 476 (GGLBrightnessContrastShader, from glfx.js).
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

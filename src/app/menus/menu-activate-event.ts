@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1499 (GMenuActivateEvent).
 /** An item of a menu was activated; the menu triggers it with the item. */
 import { Event } from "../../engine/core/event.ts";
 import { registerClass } from "../../engine/core/object.ts";

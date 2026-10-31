@@ -1,16 +1,3 @@
-// Old: chunk.vendor.js module 1391 (the canvg 1.x fork behind GSVGImport).
-//
-// canvg parsed an SVG DOM into its own element objects and drew them on a
-// canvas. Gravit's fork kept the parsing and added `toScene`: every
-// element builds Gravit scene nodes (groups, rectangles, paths, texts,
-// images) with fills, borders, effects, clip paths and masks. The canvas
-// drawing that was left behind (render, setContext, markers, the
-// clipPath and feColorMatrix canvas code) can't run any more and is not
-// ported; where the scene building still calls into it the port throws
-// the TypeError the old code threw.
-//
-// The element classes keep canvg's names (svg.Element.rect -> SvgRect)
-// and its quirks; QUESTIONS.md lists them under "SVG import".
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import type { Event } from "../../../engine/core/event.ts";
 import { decompressString, each, extend, find } from "../../../engine/core/util.ts";
@@ -2656,7 +2643,7 @@ const USE_PARAMETERS = ["href", "xlink:href", "x", "y", "transform", "width", "h
  * rules of the use's classes style the copy where it sets nothing itself,
  * as if it inherited them from the use. The old code copied the class
  * only as an attribute, after the copy had picked its rules
- * (BUGS-FIXED.md "BUG-075 class on <use> doesn't style the instance").
+ *.
  */
 export class SvgUse extends SvgRenderedElementBase {
   element: SvgElementBase | undefined;

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1130 (pattern/sketchradialgradient).
 import { GMath } from "../../../engine/math/math.ts";
 import { Point } from "../../../engine/math/point.ts";
 import { Transform } from "../../../engine/math/transform.ts";

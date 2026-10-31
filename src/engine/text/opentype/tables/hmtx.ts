@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 715 (opentype.js tables/hmtx.js, unchanged).
-// The hmtx table: advance width and left side bearing of every glyph.
-
 import type { Glyph } from "../glyph.ts";
 import type { GlyphSet } from "../glyphset.ts";
 import { Parser } from "../parse.ts";

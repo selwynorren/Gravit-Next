@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1010 (GGLInnerGlowEffect).
-//
-// A glow along the inside of the shape's edge. The radius slider is
-// quadratic.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import { Effect, type EffectPadding, type EffectTypeValue } from "../../effect.ts";

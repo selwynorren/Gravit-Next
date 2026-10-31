@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 854 (the PDF clip path).
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput } from "./output.ts";
 

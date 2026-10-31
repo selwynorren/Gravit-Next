@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1133 (pattern/sketchnoisepattern).
 import { NoisePattern } from "../../../engine/style/noise-pattern.ts";
 import type { SceneNodeLike } from "./scene-node.ts";
 import type { SketchFillData } from "./sketch-data.ts";

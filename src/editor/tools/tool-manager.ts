@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 553 (GToolManager).
 /**
  * The app's tools and which one is active. There is one tool manager per
  * workspace (the editor workspace makes it); the app gives it the active

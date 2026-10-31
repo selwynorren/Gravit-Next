@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 133 (GScenePaintConfiguration).
 import { LocaleKey } from "../core/locale/locale-key.ts";
 import { registerClass } from "../core/object.ts";
 import { PaintConfiguration } from "./paint-configuration.ts";

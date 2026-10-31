@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 56 (GShape).
 /**
  * The base of every vector shape (rectangle, ellipse, polygon, path,
  * compound path and shape, text, image frame): an item with a `trf`

@@ -3,11 +3,7 @@ dist
 dist-electron
 release
 test-results
-parity/expected
 docs
 public
-scripts/data
-legacy
-native
-assets
-guide
+electron/native
+src/assets

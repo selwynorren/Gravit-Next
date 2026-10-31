@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 989 (opentype.js features/arab/contextCheck/arabicWord.js, unchanged).
-
 import { isArabicChar } from "../../../char.ts";
 import type { ContextParams } from "../../../tokenizer.ts";
 

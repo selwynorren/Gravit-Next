@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 95 (GImage).
 /**
  * The image, node "image": a rectangle (so corner radii and styles apply)
  * that paints a bitmap. `url` is usually a "dictionary://" url into the

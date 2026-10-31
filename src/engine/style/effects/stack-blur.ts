@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 931 (StackBlur fork).
-//
-// Mario Klingemann's StackBlur, as the old engine modified it: the pixels
-// are premultiplied by alpha before blurring and divided again afterwards,
-// so transparent pixels don't bleed black into the edges. The rounding of
-// the clamped array writes, the `>>>` shifts and the order of the running
-// sums are the old ones; the blurred pixels must match byte for byte.
 import type { BitmapFilter } from "../../paint/bitmap.ts";
 
 // prettier-ignore

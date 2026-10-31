@@ -1,6 +1,3 @@
-// Old: designer.browser.dev.js module 163 (hasPagesWithInfiniteEmptyCanvas),
-// module 119 (the 507 refusal in performSave), module 237 (the storage
-// item's size checks), module 447 (the linked-files check of GSaveAction).
 /**
  * The checks around a save (FMT-GVD-014, FMT-GVD-015). They decide which
  * message the app shows; showing it is the app's part (phase 7).

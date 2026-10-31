@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 119 (GCloud), its local parts.
 /**
  * What is left of the cloud helper class without the cloud: resolving an
  * image URL from the scene dictionary (FMT-GVD-011, UI-IMAGE-002), the

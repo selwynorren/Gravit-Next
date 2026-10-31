@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 210 (GGuides).
 import type { Color } from "../../engine/color/color.ts";
 import { Event } from "../../engine/core/event.ts";
 import { EventTarget } from "../../engine/core/event-target.ts";

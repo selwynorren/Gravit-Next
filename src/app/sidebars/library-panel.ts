@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1663 (the library panel, unnamed class).
 /**
  * The content of the Libraries sidebar: a search box and the category
  * tiles (library-elements.ts), three per row, each row followed by the

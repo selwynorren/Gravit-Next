@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 364 (GGLAngularGradientShader).
-//
-// Paints an angular (conic) gradient. GLSL has no loops over uniform
-// arrays, so the source unrolls one `if` per stop interval; the number of
-// stops it can take is 16 divided by the screen DPI (at least one). Each
-// fragment finds the interval its angle falls in and mixes the two colors.
 import { Canvas2DPaintCanvas } from "../../../paint/paint-canvas.ts";
 import type { GLTexture } from "../../../paint/webgl/gl-context.ts";
 import { Shader } from "../../../paint/webgl/shader.ts";

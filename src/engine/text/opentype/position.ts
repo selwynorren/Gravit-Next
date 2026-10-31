@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 985 (opentype.js position.js, unchanged).
-
 import type { Font } from "./font.ts";
 import { Layout } from "./layout.ts";
 import type { LookupTable } from "./parse.ts";

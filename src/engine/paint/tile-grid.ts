@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 936.
 import { GObject, registerClass } from "../core/object.ts";
 import { Rect } from "../math/rect.ts";
 import type { Destroyable } from "./destroyable.ts";

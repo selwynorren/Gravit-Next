@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._updateEditorUnderMouse,
-// _updateDistanceHelper).
 /**
  * What is under the pointer while no button is held: a ruler guide line
  * (within half the pick distance), a transform box part, an element
@@ -75,7 +73,10 @@ export function updateEditorUnderMouse(tool: SelectTool, position: Point): void 
   let guideLine: GuideLineHit | null = null;
   if (
     (!tool._mode || tool._mode == Mode.Transforming) &&
-    tool._view.getViewConfiguration().guideLinesVisible
+    tool._view.getViewConfiguration().guideLinesVisible &&
+    // Locked guides are never found under the mouse, so they can't
+    // be moved, deleted or opened in the Manage Guides dialog.
+    !scene.getProperty("gll")
   ) {
     guideLine = guideLineAt(tool, position, sceneTransform);
   }

@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 712 (opentype.js glyph.js, unchanged).
-
 import * as check from "./check.ts";
 import * as draw from "./draw.ts";
 import type { DrawingContext } from "./draw.ts";

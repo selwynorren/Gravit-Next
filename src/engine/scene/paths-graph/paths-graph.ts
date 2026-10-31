@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 162 (GPathsGraph).
 /**
  * The paths graph ("live paint" vector network), node "Paths Graph": a
  * shape made of anchors (GPGAnchor), edges between them (GPGEdge, each a

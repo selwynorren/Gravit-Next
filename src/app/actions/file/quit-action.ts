@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1632 (GQuitAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Runtime } from "../../shell/container.ts";

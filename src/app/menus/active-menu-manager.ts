@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1157 (the active menu manager).
 /**
  * Tracks the one open top-level menu. While a menu is active, a mouse
  * press or release anywhere (the release only after 250 ms, so the click

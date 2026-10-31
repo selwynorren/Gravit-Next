@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1399.
-//
-// The canvas factory pdf.js uses for scratch canvases (groups, soft masks,
-// patterns) during a PDF import: every canvas gets a canvas bridge of its
-// own, so what pdf.js draws into it becomes scene nodes too.
 import { CanvasHolder } from "../../export/canvas-holder.ts";
 
 /** The graphics object the factory belongs to (set by the import's CanvasGraphics). */

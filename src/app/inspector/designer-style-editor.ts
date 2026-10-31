@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1731 (GDesignerStyleEditor, $.fn.gDesignerStyleEditor).
 /**
  * The shared style picker of the appearance panel. `attach(field)` (the
  * old `$(field).gDesignerStyleEditor()`) makes a click on the field open

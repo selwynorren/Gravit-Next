@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1026 (GColorAdjustMultiEffect).
 import { Locale } from "../../core/locale/locale.ts";
 import type { Rect } from "../../math/rect.ts";
 import type { PaintCanvas } from "../../paint/paint-canvas.ts";

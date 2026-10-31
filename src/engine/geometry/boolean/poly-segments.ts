@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 187 (polygon intersector, no G name).
 /* eslint-disable @typescript-eslint/no-this-alias -- the ring and list walks start at this node */
 import { GMath } from "../../math/math.ts";
 import { Point } from "../../math/point.ts";
@@ -1059,7 +1058,7 @@ export class PolyIntersector {
                   const curve = poly.currCurve;
                   const otherCurve = other.currCurve;
                   // A quadratic first is limited like the other way round;
-                  // the old code gave the truthy constants 6 or 4 (BUG-014).
+                  // the old code gave the truthy constants 6 or 4.
                   add = curve.cp2
                     ? otherCurve.cp2
                       ? count < 9

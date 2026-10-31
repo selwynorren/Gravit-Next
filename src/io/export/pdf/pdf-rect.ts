@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1452 (GPDFRect).
 import { Rect } from "../../../engine/math/rect.ts";
 
 export const PDFRect = {

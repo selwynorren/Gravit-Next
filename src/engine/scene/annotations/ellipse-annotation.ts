@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 317 (GEllipseAnnotation).
 /**
  * An ellipse annotation, node "ane".
  */

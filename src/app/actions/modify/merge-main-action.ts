@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 812 (GMergeMainAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { VertexSource } from "../../../engine/geometry/vertex-source.ts";

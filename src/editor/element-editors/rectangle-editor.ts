@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 330 (GRectangleEditor).
 /**
  * The editor of a rectangle. In detail mode each corner gets a shoulder
  * handle, placed `annotationHandles.rectangle.margin` px inside the corner

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1482 (mixed into GBrowserContainer).
 /**
  * gContainer.download: saves a buffer as "<name>.<extension>". The caller
  * (downloadDataURI, module 1154) passes `mime` as Blob options

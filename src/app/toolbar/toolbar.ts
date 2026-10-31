@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1541 (GToolbar).
 /**
  * The toolbar (#toolbar): sections of label buttons in the old order
  *
@@ -139,6 +138,12 @@ interface MainActionLike {
 }
 
 /** The parts of a window the toolbar uses. */
+/** The scene calls of the Lock Guides button. */
+interface GuideLockScene {
+  getProperty(name: string): unknown;
+  setProperties(names: string[], values: unknown[]): void;
+}
+
 /** The document calls of the toolbar (GDocument). */
 interface ToolbarDocument {
   getEditor(): Editor | null;
@@ -258,6 +263,8 @@ export class Toolbar {
   _initShapeMenu = false;
   _toolsDiv: HTMLElement | null = null;
   _exportButton: HTMLElement | null = null;
+  /** The Lock Guides button. */
+  _guideLockButton: HTMLElement | null = null;
   _viewMenu: Menu | null = null;
   readonly _touch: TouchToolbar;
 
@@ -446,6 +453,7 @@ export class Toolbar {
       this._createLabelButton({ action: action(ToolbarActionIds.VectorizeBorder) }),
     );
     this._htmlElement.append(actions);
+    this._htmlElement.append(this._createGuideLockSection());
     this._htmlElement.append(this._createExportSection());
     const active = d.getToolManager().getActiveTool();
     if (active) this._updateActiveTool(active);
@@ -456,6 +464,51 @@ export class Toolbar {
     d.getWindows().addEventListener(WindowEvent, this._windowEvent, this);
     d.addEventListener(DocumentEvent, this._documentEvent, this);
     d.addEventListener(SettingChangedEvent, this._settingChangedEvent, this);
+  }
+
+  /**
+   * The Lock Guides toggle. It is not an action of the registry:
+   * it owns its click handler and reads its state from the scene's "gll".
+   */
+  private _createGuideLockSection(): HTMLElement {
+    const section = el("div", "section", "compound-section", "guide-lock-section");
+    this._guideLockButton = this._createLabelButton({
+      icon: "gravit-icon-unlock",
+      label: "Lock Guides",
+      click: () => this._toggleGuideLock(),
+    });
+    section.append(this._guideLockButton);
+    return section;
+  }
+
+  /** Locks or unlocks the guides of the active document as one undo step. */
+  _toggleGuideLock(): void {
+    const document = designer().getActiveDocument() as ToolbarDocument | null;
+    const editor = document && document.getEditor();
+    const scene = document && (document.getScene() as GuideLockScene | null);
+    if (!editor || !scene) return;
+    editor.beginTransaction();
+    try {
+      // Unlocking writes the default (null), not false, so a document that
+      // was never locked saves no "gll".
+      scene.setProperties(["gll"], [scene.getProperty("gll") ? null : true]);
+    } finally {
+      editor.commitTransaction("Toggle guide lock");
+    }
+    this._updateGuideLockButton();
+  }
+
+  /** Shows the active document's lock state on the Lock Guides button. */
+  _updateGuideLockButton(): void {
+    if (!this._guideLockButton) return;
+    const document = designer().getActiveDocument() as ToolbarDocument | null;
+    const scene = document && (document.getScene() as GuideLockScene | null);
+    const locked = !!(scene && scene.getProperty("gll"));
+    const actionButton = this._guideLockButton.querySelector(".action-button");
+    if (!actionButton) return;
+    actionButton.classList.toggle("g-active", locked);
+    const icon = actionButton.querySelector<HTMLElement>(".icon");
+    if (icon) this._updateIcon(icon, locked ? "gravit-icon-lock" : "gravit-icon-unlock");
   }
 
   /** The export button and the (empty) share section. */
@@ -506,7 +559,7 @@ export class Toolbar {
 
   /**
    * As before this returns nothing, so setVisible always lays out again:
-   * see "Toolbar.isVisible returns nothing" in QUESTIONS.md.
+   *.
    */
   isVisible(): boolean | undefined {
     return undefined;
@@ -912,6 +965,7 @@ export class Toolbar {
           editor.addEventListener(Editor.SelectionChangedEvent, this._selectionChangedEvent, this);
         this._updateActions();
         this._updateContextTools();
+        this._updateGuideLockButton();
         break;
       case DocumentEvent.Type.Deactivated: {
         if (editor)
@@ -922,6 +976,7 @@ export class Toolbar {
           );
         this._updateActions();
         this._updateContextTools();
+        this._updateGuideLockButton();
         const manager = designer().getToolManager();
         if (manager) {
           const tool = manager.getActiveTool() as
@@ -934,6 +989,8 @@ export class Toolbar {
       case DocumentEvent.Type.Modified:
         this._updateActions();
         this._updateContextTools();
+        // Undo and redo of a lock toggle arrive here.
+        this._updateGuideLockButton();
         this._touch.updateActiveWindow();
         break;
       case DocumentEvent.Type.StorageItemUpdated:

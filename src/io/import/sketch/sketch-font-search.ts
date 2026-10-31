@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 1142 (sketchfontsearch). Only the Sketch
-// importer (module 1122) requires it.
 import { find } from "../../../engine/core/util.ts";
 import { Font, type FontStyle } from "../../../engine/text/fonts/font.ts";
 import {

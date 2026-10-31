@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 172 (GAnnotationEditor).
 /**
  * What the editors of review annotations share.
  *

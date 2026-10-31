@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 562 (sketchparser).
 import type { SketchFile } from "./sketch-file.ts";
 
 /** The base of every importer object: the JSON it reads and the file it came from. */

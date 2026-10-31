@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 738 (GConnectorTool).
 /**
  * Draws a connector with the pen tool between two shapes: the first press
  * on a shape (highlighted while hovering) picks the source, a press on

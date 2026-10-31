@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 488 (GGLInnerGlowShader).
-//
-// Paints the transparent surroundings in the glow color, blurs that into
-// the extra texture and lays it over the opaque part of the content.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 import { GLBlurShader } from "./gl-blur-shader.ts";

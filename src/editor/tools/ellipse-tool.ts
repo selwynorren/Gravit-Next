@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 551 (GEllipseTool).
 /** Draws an ellipse: Shift for a circle, Alt from the centre. */
 import { registerClass, type AnyConstructor } from "../../engine/core/object.ts";
 import type { Point } from "../../engine/math/point.ts";

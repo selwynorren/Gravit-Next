@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 717 (opentype.js tables/maxp.js, unchanged).
-// The maxp table: the number of glyphs and (version 1, TrueType) memory limits.
-
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";
 

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1665 (GSoftwareUpdatePanel).
 /**
  * The footer panel for software updates: it follows the update events
  * the SoftwareUpdateManager triggers on the designer (while active) and

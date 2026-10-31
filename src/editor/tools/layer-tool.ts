@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 759 (GLayerTool).
 /**
  * The select tool for layers: clicks select the layer an element is in.
  * Activated with a selection that isn't only layers, it stores that

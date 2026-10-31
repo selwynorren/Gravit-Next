@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1 (the engine namespace, G).
 /**
  * The engine's public classes, the ones the old engine namespace (module 1,
  * GScene, GRectangle, GTransform ...) exported, in its order and under

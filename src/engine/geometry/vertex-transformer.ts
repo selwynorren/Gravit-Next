@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 63 (GVertexTransformer).
 import { registerClass } from "../core/object.ts";
 import type { Transform } from "../math/transform.ts";
 import { Vertex } from "./vertex.ts";

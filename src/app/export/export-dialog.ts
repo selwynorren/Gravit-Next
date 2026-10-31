@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1513 (the export dialog, unnamed; its strings are GExportDialog).
 /**
  * File > Export > Advanced Export... and the PDF "Advanced Options...":
  *

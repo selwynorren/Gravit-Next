@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 275 (GPathsGraphEditor).
 /**
  * The editor of a paths graph (live paint vector network). Its part
  * selection holds one kind of part at a time (the selection mode):
@@ -1882,7 +1881,7 @@ export class PathsGraphEditor extends ShapeEditor<EditedPathsGraph> {
   /**
    * Copied from GPathEditor: reads the element's anchor points, which a
    * paths graph doesn't have, so it throws for a single selected part;
-   * see "Paths graph editor path-only methods" in QUESTIONS.md.
+   *.
    */
   getPointsSelectionType(): string {
     let type: string = PointsSelectionType.No;

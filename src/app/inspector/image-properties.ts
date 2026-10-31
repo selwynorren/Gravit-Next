@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1266 (GImageProperties).
 /**
  * The image row: replace, original size, crop and palette buttons, the
  * extracted palette swatches below, and the colour profile status in the

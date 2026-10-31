@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1274 (GAlignProperties).
 /**
  * Transform mode with two or more elements: the justify buttons and the
  * spacing boxes that distribute the elements with a fixed gap (Enter in

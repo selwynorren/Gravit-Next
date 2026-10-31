@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 798 (GBitmapExport).
-//
-// PNG/JPEG export of a node: the size spec parser ("2x", "512w", "128h",
-// "100x50", "300dpi"), the exported pixel area and the clamp to the
-// largest canvas the browser allows.
-
 import { Platform } from "../../engine/core/platform.ts";
 import { extend, parseNumber } from "../../engine/core/util.ts";
 import { Length } from "../../engine/math/length.ts";

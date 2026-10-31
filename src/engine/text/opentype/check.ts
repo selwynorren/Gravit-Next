@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 105 (opentype.js check.js, unchanged).
-
 /** Run-time checking of preconditions. */
 export function fail(message: string): never {
   throw new Error(message);

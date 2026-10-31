@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 326 (opentype.js path.js, unchanged).
-
 import { BoundingBox } from "./bbox.ts";
 import type { DrawingContext } from "./draw.ts";
 

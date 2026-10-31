@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1318 (GSimplifyAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
@@ -36,7 +35,7 @@ interface ToleranceContent {
  * unit conversion and rounded, into the field, and a changed field writes
  * its value the same way into the slider, which is what OK reads. The old
  * field handler looked for the slider inside the field's own span and
- * never found it, so typed values were lost (BUG-134).
+ * never found it, so typed values were lost.
  */
 function createToleranceContent(scene: Scene | null): ToleranceContent {
   const root = document.createElement("div");

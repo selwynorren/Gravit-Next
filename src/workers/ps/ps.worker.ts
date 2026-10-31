@@ -1,9 +1,3 @@
-// Old: public/ps.worker.js (webpack module 1367 of its own build).
-//
-// The PostScript worker: answers the page's `{func, data}` calls (see
-// protocol.ts). The old worker looked the function up on its global scope
-// (`self[func]`); only init and run were ever called, and those are the
-// only functions here.
 import type { PSHost, PSHostMessage } from "./host.ts";
 import { PSInterpreter, type PSInitOptions } from "./interpreter.ts";
 import type { PSWorkerCall, PSWorkerReply } from "./protocol.ts";

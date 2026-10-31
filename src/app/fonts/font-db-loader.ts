@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1245 (GFontDBLoader).
 /**
  * File > Import > Add Fonts: asks for font files and stores every font in
  * them in the font database (font-db.ts), where the imported fonts
@@ -69,7 +68,7 @@ export class FontDBLoader {
    * Opens the font file picker. While another import is running (or the
    * database isn't open yet) it tries again every 100 ms; the counter goes
    * up twice per retry, so it calls `done` and gives up after about 50
-   * (see "Font import gives up after about 50 tries" in QUESTIONS.md).
+   *.
    * The retries don't pass `options` on, as before. Returns true when the
    * picker was asked for.
    */

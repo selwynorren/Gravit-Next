@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 499 (GGLTrueBlurShader).
-//
-// A one-pass blur over jittered samples around each pixel.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 

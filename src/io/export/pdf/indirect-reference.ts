@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 391 (the PDF indirect reference).
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFIndirectObject } from "./xref-entry.ts";
 import type { PDFOutput } from "./output.ts";

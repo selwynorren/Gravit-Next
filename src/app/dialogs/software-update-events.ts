@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1188 (the software update events).
 /**
  * The events the software update manager triggers on the designer and
  * the software update panel shows. Each takes an options object; fields

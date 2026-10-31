@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1737 ($.fn.gToolbarShadow).
 /**
  * In the touch layout a sidebar toolbar casts a shadow that grows with
  * the scroll position of the list under it (up to 20px), in the theme's

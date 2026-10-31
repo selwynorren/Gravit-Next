@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1622 (the Help menu links).
 import { Category } from "../category.ts";
 
 /** One Help menu link: GOpenLinkAction gets one of these. */

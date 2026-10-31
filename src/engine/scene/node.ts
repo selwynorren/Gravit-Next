@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode).
 /**
  * The base of the document tree: every scene, page, layer, shape, style,
  * paint layer and effect is a node.

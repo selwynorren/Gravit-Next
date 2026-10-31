@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 760 (GLayerEditor).
 /**
  * The editor of a layer. It paints in the layer's own colour (`cls`), and
  * like a group without a frame it previews and applies transforms through

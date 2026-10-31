@@ -16,7 +16,7 @@ describe("arcToBezier", () => {
   // BUG-070: the old helper took the rotation as degrees, so it gave the
   // right arc only for a rotation in degrees. The same rotation in
   // radians now gives that arc.
-  it("takes the rotation in radians (BUG-070)", () => {
+  it("takes the rotation in radians", () => {
     const inputs = recorded.inputs.ARCS as ArcParameters[];
     let checked = 0;
     inputs.forEach((input, i) => {
@@ -35,7 +35,7 @@ describe("arcToBezier", () => {
     expect(checked).toBe(3);
   });
 
-  it("draws a quarter-turned ellipse upright (BUG-070)", () => {
+  it("draws a quarter-turned ellipse upright", () => {
     // rx 20 along the rotated x axis, which now points down: the half
     // ellipse from (0, 0) to (0, 40) bulges 10 to the side.
     const segments = arcToBezier({

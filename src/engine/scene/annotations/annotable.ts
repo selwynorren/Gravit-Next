@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 532 (GAnnotable).
 /**
  * Elements annotations can be linked to: the scene keeps the links, so an
  * annotation finds the elements it points at and the other way round.

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 536 (a promise cache).
 /**
  * Caches the promise a factory returns. With a timeout the cache is
  * dropped on the first get() at least `timeout` ms after the last drop

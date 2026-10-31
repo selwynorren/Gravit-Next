@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1587 (the assistant bar, "virtual key bar").
 /**
  * The touch layout's bar at the bottom of the canvas (#assistant-bar):
  * virtual Shift, Ctrl and Alt keys, the arrow keys (on a side that

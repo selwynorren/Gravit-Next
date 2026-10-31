@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 379 (opentype.js char.js, unchanged).
-//
-// Character class checks for the Arabic shaping code. The context checks
-// also pass null (no neighbour); RegExp.test turns that into "null", which
-// matches none of the classes, as in the old code.
-
 type MaybeChar = string | null | undefined;
 
 /** An Arabic letter. */

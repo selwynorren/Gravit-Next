@@ -1,17 +1,3 @@
-// Old: public/pscolor.js, the Pattern branch of PSColor._getGColor.
-//
-// Shadings become what the page can draw: axial and radial shadings
-// (types 2 and 3) become linear/radial gradients with stops sampled from
-// their functions; free-form and lattice triangle meshes (4, 5) and Coons
-// and tensor patch meshes (6, 7) are rasterized into a small image in
-// device space ("imageData"). Everything else is error "01" and blue.
-//
-// BUG-116: the mesh parameters (BitsPerComponent, BitsPerCoordinate,
-// BitsPerFlag, Decode, VerticesPerRow, Function) come from the shading
-// dict, also when it sits in a PatternType 2 pattern; mesh data can be a
-// file, a string or an array; triangle meshes get their triangles and a
-// lattice joins all its rows. The old code read the pattern dict, read
-// only files, threw on the first triangle vertex and joined two rows.
 import {
   ColorBitsReader,
   failedColor,

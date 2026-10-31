@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1119 (number rounding for the exporters).
 import { GMath } from "../../../engine/math/math.ts";
 import { Rect } from "../../../engine/math/rect.ts";
 

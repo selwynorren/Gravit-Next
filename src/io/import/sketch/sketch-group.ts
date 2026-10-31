@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1212 (model/sketchgroup).
 import { Group } from "../../../engine/scene/group.ts";
 import { SketchShape } from "./sketch-shape.ts";
 

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 163 (GDocument.store).
 /**
  * Writes a document to a storage item in the item's format: .gvdesign
  * through io/gvdesign/store.ts (FMT-GVD-002), and the quick exports

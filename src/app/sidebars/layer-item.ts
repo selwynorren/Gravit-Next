@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1351 (the layers panel row builder).
 /**
  * What a layers panel row shows for a node: the title group (icon and
  * name), the row's state classes, and the status the lock, visibility and

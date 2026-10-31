@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1306 (GSelectByTransparencyAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";
 import { props } from "../host.ts";

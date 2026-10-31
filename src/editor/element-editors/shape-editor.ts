@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 128 (GShapeEditor).
 /**
  * The editor of a shape: a new shape gets the scene's default style for
  * its class (initialSetup), a pattern dropped on it becomes its only fill

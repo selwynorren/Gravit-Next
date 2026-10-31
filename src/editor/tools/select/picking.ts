@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool: _getSelectableForPosition,
-// _checkSelectedUnderMouse, _getAllHitTestedElems, _getTopMostHit).
 /**
  * What a click selects. A hit selects the item at the top of the tree
  * (a page's direct child) unless its group is already selected, in which

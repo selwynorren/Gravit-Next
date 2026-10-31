@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 634 (GTranslation).
 import cloudDiff from "./data/cloud-diff.json";
 import designerDiff from "./data/designer-diff.json";
 import { Projects, createProjectSources } from "./projects.ts";

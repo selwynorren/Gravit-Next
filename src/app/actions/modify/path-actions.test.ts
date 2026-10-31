@@ -148,7 +148,7 @@ describe("Create Nested Compound", () => {
     expect(fixture.editor.getUndoStateName()).toBe("Create nested compound");
   });
 
-  it("has no shortcut, so Ctrl+Alt+M stays Clip Selection's (BUG-147)", () => {
+  it("has no shortcut, so Ctrl+Alt+M stays Clip Selection's", () => {
     expect(new CreateNestedCompoundAction().getShortcut()).toBeNull();
     expect(new ClipAction().getShortcut()).toEqual([Key.Constant.OPTION, Key.Constant.META, "M"]);
   });
@@ -261,7 +261,7 @@ describe("Convert to Outline and Expand/Shrink", () => {
     expect(fixture.editor.getUndoStateName()).toBe("Convert to Outline");
   });
 
-  it("shows its own alert for an invalid offset (BUG-135)", () => {
+  it("shows its own alert for an invalid offset", () => {
     const seen = answerPrompts("0");
     const p = path(
       "P",
@@ -316,7 +316,7 @@ describe("Convert to Outline and Expand/Shrink", () => {
 });
 
 describe("Split Line", () => {
-  it("gives line pieces of a path without fill and border a black border (BUG-137)", () => {
+  it("gives line pieces of a path without fill and border a black border", () => {
     const p = path("P", [
       [0, 0],
       [50, 0],

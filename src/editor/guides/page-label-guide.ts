@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 743 (GPageLabelGuide).
 import type { Color } from "../../engine/color/color.ts";
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";
 import { Locale } from "../../engine/core/locale/locale.ts";

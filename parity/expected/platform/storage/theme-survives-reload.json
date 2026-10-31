@@ -1,9 +1,0 @@
-{
- "storedTheme": "dark",
- "afterReload": {
-  "theme": "dark"
- },
- "stylesheet": [
-  "/designer.browser.dark.css"
- ]
-}

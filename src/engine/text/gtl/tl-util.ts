@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 161 (GTLUtil).
 import { GMath } from "../../math/math.ts";
 import { Font } from "../fonts/font.ts";
 import { Formatting } from "./formatting.ts";
@@ -150,7 +149,7 @@ function parseFont(font: string): ParsedFont {
 /**
  * Normalizes every line break (\r\n and \r) and turns tabs into three
  * spaces. The old code replaced only the first \r\n and the first \r
- * (BUGS-FIXED.md "BUG-023 deCRLFify replaces only the first line break").
+ *.
  */
 function deCRLFify(text: string): string {
   return text.replace(/\r\n/g, "\n").replace(/\r/g, "\n").replace(/\t/g, "   ");

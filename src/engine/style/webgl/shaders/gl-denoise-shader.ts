@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 480 (GGLDenoiseShader, from glfx.js).
-//
-// A 9 x 9 bilateral-style smoothing, run twice.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

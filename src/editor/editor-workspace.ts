@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 778 (GEditorWorkspace).
 import { registerClass } from "../engine/core/object.ts";
 import { Workspace } from "../engine/scene/workspace.ts";
 import { StyleEdManager } from "./style-ed-manager.ts";

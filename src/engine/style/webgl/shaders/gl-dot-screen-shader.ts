@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 481 (GGLDotScreenShader, from glfx.js).
-//
-// Black and white dot screen. Not tiling aware: the center and size are
-// taken from the tile, not the whole image.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

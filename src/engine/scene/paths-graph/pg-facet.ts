@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 656 (GPGFacet).
 /**
  * A closed region of the paths graph, bounded by a cycle of directed
  * edges (an edge walked forwards or backwards). It builds a closed path

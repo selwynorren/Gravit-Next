@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 10 (the browser build's app config).
 /**
  * The app config: the base defaults (./file-formats.ts, module 519) with
  * the browser build's overrides. Only the local keys are ported; the

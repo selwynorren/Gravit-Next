@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 763 (GSliceTool).
 /**
  * Draws a slice (an export area) by dragging its box: Shift for a square,
  * Alt from the centre. Unlike the shape tools the slice is only inserted

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 510 (a measured run piece, carota's part.js).
 import type { Run } from "./formatting.ts";
 import { Measurement } from "./measurement.ts";
 import { RunDraw, type RunDrawContext, type ShapedTextHolder } from "./run-draw.ts";

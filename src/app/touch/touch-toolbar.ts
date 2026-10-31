@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1540 (GSidebars._updateTouchToolbar).
 /**
  * The touch layout's toolbar of a sidebar side (`.g-touch-toolbar`, the
  * first child of #left-sidebars or #right-sidebars): one button per touch

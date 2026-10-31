@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1661 (GSymbolsSidebar).
 /**
  * The Symbols sidebar on the left: a toolbar with Delete Symbol and
  * Create New Symbol, and the symbol masters of the active document as

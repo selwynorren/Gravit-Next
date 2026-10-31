@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1272 (GSliceProperties).
 /**
  * Position, size, "trim transparent pixels" and the background color of
  * slices. Shown when every inspected element is a slice; with several
@@ -305,7 +304,7 @@ export class SliceProperties extends Properties {
   ): void {
     // A temporary change, as the drag preview. The old code passed true as
     // the third argument, which is "custom", so it wrote "@" properties
-    // that showed nothing and were saved (BUG-161).
+    // that showed nothing and were saved.
     if (temporary) {
       for (let i = 0; i < this._slices.length; ++i)
         (this._slices[i] as Slice).setProperties(properties, values, false, false, true);

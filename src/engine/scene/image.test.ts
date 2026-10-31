@@ -537,7 +537,7 @@ describe("GImage", () => {
 });
 
 describe("GImage broken-image box", () => {
-  it("draws the error cross corner to corner of a crop box that doesn't start at 0 (BUG-018)", () => {
+  it("draws the error cross corner to corner of a crop box that doesn't start at 0", () => {
     const image = new Image();
     image.setProperties(["px", "py", "pw", "ph"], [10, 5, 20, 30]);
     image._status = Image.ImageStatus.Error;

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1126 (effects/sketchinnershadoweffect).
 import { InnerShadowEffect } from "../../../../engine/style/effects/inner-shadow-effect.ts";
 import type { SketchShadowData } from "../sketch-data.ts";
 import { SketchColor } from "../sketch-color.ts";

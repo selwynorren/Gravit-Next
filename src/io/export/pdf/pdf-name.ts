@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 560 (the PDF value wrapper).
 import { PDFObject } from "./pdf-object.ts";
 import { PDFPrimitive } from "./primitive.ts";
 import type { PDFOutput } from "./output.ts";

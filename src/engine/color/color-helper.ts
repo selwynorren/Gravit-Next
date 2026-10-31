@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 648 (GColorHelper).
 import { CMYKColor } from "./cmyk-color.ts";
 import { Color } from "./color.ts";
 import { HSVColor } from "./hsv-color.ts";

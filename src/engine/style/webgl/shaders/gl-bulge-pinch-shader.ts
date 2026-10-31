@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 477 (GGLBulgePinchShader, from glfx.js).
-//
-// Bulges (strength > 0) or pinches (< 0) a circle around a center given
-// in percent of the whole image.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

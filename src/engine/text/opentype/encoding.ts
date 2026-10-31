@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 376 (opentype.js encoding.js, unchanged).
-
 import type { Font } from "./font.ts";
 import type { Glyph } from "./glyph.ts";
 import type { CmapTable } from "./tables/cmap.ts";

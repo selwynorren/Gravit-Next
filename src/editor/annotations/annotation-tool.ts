@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 212 (GAnnotationTool).
 /**
  * What the review annotation tools share: the insert transaction carries
  * the add-annotation data (old: for the cloud comment sync). GShapeTool

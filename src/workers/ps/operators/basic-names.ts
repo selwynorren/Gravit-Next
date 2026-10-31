@@ -1,16 +1,3 @@
-// Old: public/pscore.js, systemdict entries def … filter.
-//
-// Kept quirks (QUESTIONS.md "PS worker: stop, save/restore, wcheck and
-// eexec quirks"):
-// - stop outside `stopped` runs quit, which reports error "04" to the page
-//   (the page then ends the import), and still sets the stop flag.
-// - save/restore only version composite objects and the graphics state
-//   stack; restore keeps the state saved at the matching save.
-// - wcheck reports false for anything that isn't an object with unlimited
-//   access, including numbers.
-// - eexec pushes the plain systemdict object on the dictionary stack while
-//   it runs the decrypted font program, so `def` inside it writes into
-//   `.value` of a plain object and throws.
 import type { PSCore } from "../core.ts";
 import type { PSDict, PSObject, PSPlainRecord, PSProcedure, PSValue } from "../objects.ts";
 import { sloppySet } from "./basic-support.ts";

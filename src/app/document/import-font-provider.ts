@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 163 (the font provider J the SVG and
-// Sketch importers get).
 /**
  * Maps a font named in an imported file to the closest family the font
  * library has (FMT-IMPORT-028). It queries the fonts provider manager for
@@ -48,7 +46,7 @@ export function editDistance(first: string, second: string): number {
     longer = swap;
   }
   // The old code swapped the strings but kept the lengths it read before
-  // (see "Import font matching wraps long edit distances" in QUESTIONS.md).
+  //.
   const g = firstLength;
   const h = secondLength;
   const row = new Int8Array(g + 1);

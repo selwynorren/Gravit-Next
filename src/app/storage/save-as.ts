@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1117 (FileSaver.js 1.3.x saveAs), dropped for this helper.
 /**
  * Saves a Blob as a browser download, the way FileSaver.js did it in
  * Chromium (FMT-STORAGE-009): a blob URL, and on the next tick a detached

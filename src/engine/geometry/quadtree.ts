@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 140 (quadtree, no G name).
-
 /** An axis-aligned box as the quadtree reads it. */
 export interface QuadTreeBounds {
   x: number;

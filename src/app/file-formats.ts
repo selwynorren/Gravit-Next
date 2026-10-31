@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 519 (the base app config).
 /**
  * The defaults of the app config, before the browser build's overrides in
  * ./config.ts. Only the local keys are kept. Dropped with the cloud,

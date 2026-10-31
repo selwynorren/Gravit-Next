@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1202 (the SVG export's render context).
-//
-// Holds the document being built, the element stack the exporter renders
-// into (push/pop/peek), the export options and the image dictionary: an
-// image from the scene dictionary ("dictionary://<key>") is written once
-// as `<image id="img_<key>">` in a trailing `<defs>` and referenced with
-// `<use>`. When the last job ends, the document is serialized and handed
-// to the result callback.
 import type { Rect } from "../../../engine/math/rect.ts";
 import type { Image } from "../../../engine/scene/image.ts";
 import type { Scene } from "../../../engine/scene/scene.ts";

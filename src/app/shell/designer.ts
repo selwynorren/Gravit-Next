@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1491 (GDesigner).
 /**
  * The app: the workspace, the open documents and the active one, the
  * shell parts, the actions and their shortcuts, the settings and the
@@ -2185,7 +2184,7 @@ export class Designer extends EventTarget {
 
   /**
    * The window title: "<active window title> - Gravit Designer", or the app
-   * name; "GravitDesign Next" in the "next" look (brand/branding.ts).
+   * name; "Gravit Next" in the "next" look (brand/branding.ts).
    */
   async _updateTitle({
     saveToSessionHistory = true,

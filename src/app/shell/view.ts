@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 394 (GView).
 /**
  * The base of everything the shell hosts in a sidebar, the footer or the
  * panels part: an event target with an id and a title. A view tells its

@@ -1,13 +1,3 @@
-// Old: public/pscore.js (PSCore, webpack module 1370 of its own build).
-//
-// The PostScript interpreter: operand, execution, dictionary and graphics
-// state stacks, error handling, and the bridge to the page (toGravit,
-// waitForResponse). The operators of systemdict live in ./operators, the
-// filters in ./filters.ts, text output in ./show.ts and Type 1 charstrings
-// in ./charstrings.ts.
-//
-// Dropped: the old file also built a table of Standard 14 AFM widths, but
-// never stored it anywhere (dead code).
 import type { PSColor } from "./color.ts";
 import type { PSCTM } from "./ctm.ts";
 import { createFilters } from "./filters.ts";

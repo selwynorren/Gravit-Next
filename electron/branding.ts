@@ -5,7 +5,7 @@
  * the window as a command line switch and the preload hands it to the
  * page as window.__gdBranding. The parity suite starts the app with
  * "classic" (parity/scenarios/electron/launcher.ts), so it compares
- * against the old app. Unset, the page decides (GravitDesign Next unless
+ * against the old app. Unset, the page decides (Gravit Next unless
  * the user chose otherwise).
  */
 export const BRANDING_SWITCH = "--gd-branding=";
@@ -17,5 +17,5 @@ export function brandingArgument(env: NodeJS.ProcessEnv = process.env): string[]
 
 /** The name in the native dialogs and the first window title: the old one in the classic look. */
 export function productName(env: NodeJS.ProcessEnv = process.env): string {
-  return env.GD_BRANDING === "classic" ? "Gravit Designer" : "GravitDesign Next";
+  return env.GD_BRANDING === "classic" ? "Gravit Designer" : "Gravit Next";
 }

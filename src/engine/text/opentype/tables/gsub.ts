@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 721 (opentype.js tables/gsub.js, unchanged).
-// The GSUB table: ligatures, alternates and other glyph substitutions.
-// https://www.microsoft.com/typography/OTSPEC/gsub.htm
-
 import * as check from "../check.ts";
 import type { LayoutTable } from "../layout.ts";
 import { Parser } from "../parse.ts";

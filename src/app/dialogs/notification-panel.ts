@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1666 (GNotificationPanel).
 /**
  * The footer panel that shows the designer's notifications
  * (Designer.addNotification): a close button and the last message.

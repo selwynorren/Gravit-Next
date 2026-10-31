@@ -79,7 +79,7 @@ afterEach(() => {
 });
 
 describe("Simplify Path", () => {
-  it("simplifies with the tolerance typed into the field (BUG-134)", () => {
+  it("simplifies with the tolerance typed into the field", () => {
     typeIntoPrompt("40");
     const tolerances = recordTolerances();
     const p = selectWave();
@@ -89,7 +89,7 @@ describe("Simplify Path", () => {
     expect(fixture.editor.getUndoStateName()).toBe("Simplify Path");
   });
 
-  it("refuses a typed tolerance of 0 (BUG-134)", () => {
+  it("refuses a typed tolerance of 0", () => {
     const seen = typeIntoPrompt("0");
     const tolerances = recordTolerances();
     const p = selectWave();

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 776 (GHighlighterAnnotationEditor).
 /**
  * The editor of a highlighter annotation: a path editor that shows no point handles.
  * See AnnotationEditorMixin for what all annotation editors share.

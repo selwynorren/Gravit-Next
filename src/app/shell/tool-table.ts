@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1483 (gravit.tools).
 /**
  * The app's tools in toolbar and shortcut order, with their keys, groups,
  * icons and rich tooltips. The first one is activated at start. The

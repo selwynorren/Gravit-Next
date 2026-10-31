@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1429 (the PDF font descriptor).
 import type { OpenTypeFont } from "../../../engine/text/fonts/open-type-font.ts";
 import type { Font as OpenTypeJsFont } from "../../../engine/text/opentype/font.ts";
 import type { PDFIndirectReference } from "./indirect-reference.ts";

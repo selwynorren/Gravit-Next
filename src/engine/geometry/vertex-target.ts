@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 903 (GVertexTarget).
 /**
  * Something vertices can be written to. Only used as a mixin in the old
  * code (GVertexContainer); the base members throw until a class

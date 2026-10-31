@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 569 (GAnchor, not in the G barrel).
 /**
  * A vertex of a graph with in and out edges and a payload. This is the
  * interface the paths graph implements (engine-paths-graph); the base

@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 1154 (downloads, data URLs, file
-// names, the ACV curve reader).
 import { sanitizeFilename } from "../../io/export/sanitize-filename.ts";
 import { containerOrNull, designerOrNull } from "../shell/globals.ts";
 

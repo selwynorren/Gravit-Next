@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1730 ($.fn.gInputLabel).
 /**
  * A small label inside a field: a `span.g-input-label` before the input,
  * whose left padding makes room for it.

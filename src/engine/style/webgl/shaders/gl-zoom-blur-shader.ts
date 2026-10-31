@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 504 (GGLZoomBlurShader, from glfx.js).
-//
-// Blurs along rays from a center given in percent of the whole image.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

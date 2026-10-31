@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 986 (opentype.js substitution.js).
-// Gravit change: getFeature also answers locl (single substitutions) and
-// numr / dnom (single substitutions plus alternates), which Font uses for
-// localized forms and fractions.
-
 import * as check from "./check.ts";
 import type { Font } from "./font.ts";
 import { Layout } from "./layout.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 276 (GGradientStyleEditor).
 import { RGBColor } from "../../engine/color/rgb-color.ts";
 import { Locale } from "../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";

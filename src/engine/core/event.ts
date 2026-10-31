@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 72 (GEvent).
 /**
  * Base class of every engine event. An event class is its own event type:
  * listeners are registered per class (by type id, see object.ts), so every

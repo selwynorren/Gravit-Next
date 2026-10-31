@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 207 (GSceneOptions).
 /**
  * Global page layout switches of the multi-page canvas, set by the app.
  * A plain mutable object, as in the old code, so the editor and the

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 127 (GPathEditor).
 /**
  * The editor of a path: its anchor points, their handles (hl/hr), the
  * corner shoulders (cl/cr) of styled corners and the segments between

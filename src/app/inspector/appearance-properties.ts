@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1160 (GAppearanceProperties).
 /**
  * The appearance rows of the inspector: opacity (slider and box), the
  * blend mode select with the mask modes, and the shared style picker with

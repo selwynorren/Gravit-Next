@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1723 ($.fn.gPatternTarget).
 /**
  * Makes an element a drag source and drop target for paints (the
  * previews of the color fields, the swatches of the effect forms). It

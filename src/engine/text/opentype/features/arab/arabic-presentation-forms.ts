@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 991 (opentype.js features/arab/arabicPresentationForms.js, unchanged).
-
 import type { Bidi } from "../../bidi.ts";
 import { isIsolatedArabicChar, isTashkeelArabicChar } from "../../char.ts";
 import { ContextParams } from "../../tokenizer.ts";

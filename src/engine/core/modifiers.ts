@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 514 (GModifiers).
 /** The state of the modifier keys and the middle mouse button. */
 export class Modifiers {
   metaKey = false;

@@ -72,7 +72,7 @@ describe("effect table", () => {
     expect(() => entryOf(Rectangle)).toThrow("Invalid effect/class");
   });
 
-  it("finds an entry for the effects the old table missed (BUG-151)", () => {
+  it("finds an entry for the effects the old table missed", () => {
     // The old table had none, so building their rows threw "Invalid
     // effect/class" and the inspector stopped updating.
     expect(entryOf(new GLTrueBlurEffect()).createSettings).toBe(webGLForm);

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1127 (geometry/sketchcurvepoint).
 import type { Point } from "../../../engine/math/point.ts";
 import type { Transform } from "../../../engine/math/transform.ts";
 import type { SketchCurvePointData } from "./sketch-data.ts";

@@ -118,7 +118,7 @@ describe("Google fonts previews (UI-FONT-007)", () => {
   });
 });
 
-describe("font names in the imported and local previews (BUG-146)", () => {
+describe("font names in the imported and local previews", () => {
   /** Records what was put in as markup and what as text. */
   class NameElement {
     html: string | undefined = undefined;

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1265 (GEllipseProperties).
 /**
  * Start and end angle and the arc / chord / pie type of ellipses. Shown
  * when every inspected element is an ellipse. Angles are shown in

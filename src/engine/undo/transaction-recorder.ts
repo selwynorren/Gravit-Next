@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 471 (GTransactionRecorder).
 /**
  * Records what happens to the nodes of a workspace between
  * `beginTransaction` and `endTransaction`, as pairs of closures: `action`

@@ -118,7 +118,7 @@ describe("Select All, Deselect All, Invert Selection", () => {
     expect(names(editor.getSelection())).toEqual(["A", "C"]);
   });
 
-  it("select and deselect the text of a focused field instead (BUG-138)", () => {
+  it("select and deselect the text of a focused field instead", () => {
     const { editor } = fixture;
     editor.insertElements([rect("A", 0)], true);
     const setSelectionRange = vi.fn();
@@ -134,7 +134,7 @@ describe("Select All, Deselect All, Invert Selection", () => {
     expect(names(editor.getSelection())).toEqual(["A"]);
   });
 
-  it("deselect the page selection in a focused contenteditable (BUG-138)", () => {
+  it("deselect the page selection in a focused contenteditable", () => {
     const { editor } = fixture;
     editor.insertElements([rect("A", 0)], true);
     const collapseToEnd = vi.fn();

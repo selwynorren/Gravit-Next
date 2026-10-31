@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 1195 (GBrowserFileStorage). Module 1512 is a
-// second, unused copy and is not ported.
 /**
  * The local storage (FMT-STORAGE-002 to -008): files the user opens and
  * saves on this computer.

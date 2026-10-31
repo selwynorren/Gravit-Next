@@ -1,17 +1,3 @@
-// Old: public/pscore.js, systemdict entries systemdict … product.
-//
-// Kept quirks (QUESTIONS.md "PS worker: dictionary operator quirks"):
-// - systemdict, statusdict and where wrap plain JS objects (and where even
-//   PSDict objects) in new global dict objects on every call.
-// - internaldict's error path names an undeclared `myname` and throws.
-// - where also finds names that are properties of the dict object itself
-//   (value, access, ...), and store/def write into `.value` of whatever is
-//   on top of the dictionary stack.
-// - put's string range check compares with the string object's `length`,
-//   which doesn't exist, so only negative indices are refused.
-// - maxlength is the number of entries plus 100; dict ignores its size.
-// - packedarray takes its count unchecked: a non-number count packs the
-//   whole stack.
 import type { PSCore } from "../core.ts";
 import type { PSDict, PSPlainRecord, PSValue } from "../objects.ts";
 import { undeclaredMyname, valueOf } from "./basic-support.ts";

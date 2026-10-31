@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1273 (GTextProperties).
 /**
  * The text part of the appearance panel: color and font family, weight
  * and size, decoration, alignment, spacing, sizing, script and

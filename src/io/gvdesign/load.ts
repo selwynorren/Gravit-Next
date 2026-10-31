@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 163 (GDocument._loadDataIntoDocument
-// and GDocument.deserializeData), module 40 (sleep).
 /**
  * .gvdesign bytes in, scene out (FMT-GVD-003, FMT-GVD-006): wait 10 ms,
  * unpack (gzip, or plain UTF-8 JSON), wait 10 ms, restore the scene in

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 235 (GCompoundPathEditor).
 /**
  * The editor of a compound path. Each sub-path gets its own path editor
  * (opened as a child of this one, without a catch handle and without

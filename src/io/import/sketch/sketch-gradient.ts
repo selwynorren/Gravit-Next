@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 793 (pattern/sketchgradient).
 import type { GradientStop } from "../../../engine/style/gradient.ts";
 import type { SceneNodeLike } from "./scene-node.ts";
 import { SketchColor } from "./sketch-color.ts";

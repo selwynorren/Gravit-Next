@@ -1,6 +1,3 @@
-// Old: designer.browser.dev.js module 1262 (GEffectProperties), the
-// settings forms and the effect table (the module's locals P, D, L, I, k,
-// O, F, R, M, N, B, U and H).
 /**
  * The settings form of each effect in the effects panel. Most effects
  * (the WebGL ones) get the generic form built from the effect's `shp`

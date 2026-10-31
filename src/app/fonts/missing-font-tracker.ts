@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1470 (missing font tracker).
 /**
  * Collects the families the font manager couldn't resolve while it runs,
  * for the missing-fonts dialog after a document opened.

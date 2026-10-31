@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 796 (model/sketchbase).
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { GMath } from "../../../engine/math/math.ts";
 import { Rect } from "../../../engine/math/rect.ts";

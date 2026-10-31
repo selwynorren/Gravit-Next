@@ -18,7 +18,7 @@ import { RenderFlags } from "./render-flags.ts";
 import { TLCore } from "./tl-core.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../../assets/font");
+const fontDir = resolve(here, "../../../assets/font");
 
 const FILL = RenderFlags.RENDERFLAG_FILL | RenderFlags.RENDERFLAG_VERTEX;
 const PATH_CALL =

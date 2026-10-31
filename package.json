@@ -21,13 +21,10 @@
     "@types/react-dom": "^19.3.0",
     "@types/ua-parser-js": "^0.7.39",
     "@vitejs/plugin-react": "^6.1.2",
-    "cross-env": "^10.1.0",
     "electron": "45.0.0",
     "electron-builder": "26.15.3",
     "eslint": "^10.13.0",
     "eslint-plugin-react-hooks": "^7.1.1",
-    "globals": "^17.13.0",
-    "pixelmatch": "^7.1.0",
     "pngjs": "^7.0.0",
     "prettier": "^3.9.10",
     "typescript": "^6.0.3",
@@ -37,7 +34,6 @@
   },
   "dependencies": {
     "big.js": "6.2.2",
-    "comlink": "^4.4.2",
     "electron-updater": "6.8.11",
     "express": "^5.3.0",
     "heic2any": "0.0.3",
@@ -50,29 +46,27 @@
     "zustand": "^5.0.15"
   },
   "scripts": {
-    "dev": "vite",
     "build": "npm run build:client && npm run build:electron",
     "build:client": "tsc -p tsconfig.json && vite build",
     "build:electron": "vite build --config vite.electron.config.ts",
-    "start": "node server/main.ts",
     "electron": "npm run build && electron .",
     "lint": "eslint . && prettier --check .",
     "format": "prettier --write .",
     "typecheck": "tsc -p tsconfig.json",
     "test": "vitest run",
-    "parity": "playwright test --project parity",
-    "parity:record": "cross-env GD_RECORD=1 playwright test --project parity",
-    "parity:prove": "node scripts/prove-failing.ts",
-    "inventory:check": "node scripts/inventory-check.ts",
-    "parity:mutations": "node scripts/prove-mutations.ts",
     "dist:win": "npm run build && electron-builder --win",
     "dist:linux": "npm run build && electron-builder --linux",
+    "dist:appimage": "npm run build && electron-builder --linux AppImage",
     "dist:mac": "npm run build && electron-builder --mac"
   },
   "main": "dist-electron/main.js",
   "build": {
     "appId": "com.gravit.designer.local",
-    "productName": "GravitDesign Next",
+    "productName": "Gravit Next",
+    "compression": "store",
+    "electronLanguages": [
+      "en-US"
+    ],
     "directories": {
       "output": "release",
       "buildResources": "build"
@@ -87,12 +81,20 @@
     ],
     "extraResources": [
       {
-        "from": "assets",
+        "from": "src/assets",
         "to": "assets"
       },
       {
-        "from": "guide",
+        "from": "docs/guide",
         "to": "docs"
+      }
+    ],
+    "fileAssociations": [
+      {
+        "ext": "gvdesign",
+        "name": "Gravit document",
+        "mimeType": "application/x-gravit-design",
+        "role": "Editor"
       }
     ],
     "publish": [

@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 478 (GGLColorAdjustShader).
-//
-// Brightness, contrast, hue and saturation in one pass (the glfx.js
-// brightness/contrast and hue/saturation filters combined).
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

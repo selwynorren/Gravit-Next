@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 632 (helpers of the translation library).
-
 type Bag = Record<string, unknown>;
 
 /**

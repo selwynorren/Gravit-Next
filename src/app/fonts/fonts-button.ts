@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1700 (GFontsButton, $.fn.gFontsButton).
 /**
  * The font chooser on an `<input type="button">` (the text panel's font
  * field, the missing-fonts dialog's replacement fields). Clicking it

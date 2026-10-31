@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1612 (GSaveAllAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action } from "../action.ts";
 import { Category } from "../category.ts";

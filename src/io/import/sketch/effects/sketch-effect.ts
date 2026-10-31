@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 597 (effects/sketcheffect).
 import { Stylable } from "../../../../engine/style/stylable.ts";
 import type { SceneNodeLike } from "../scene-node.ts";
 import { SketchParser } from "../sketch-parser.ts";

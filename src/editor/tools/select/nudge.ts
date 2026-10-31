@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._keyDown, the arrow keys).
 /**
  * The arrow keys move the selection by cursorDistanceSmall (Shift:
  * cursorDistanceBig). With + or - held they resize it from the side the

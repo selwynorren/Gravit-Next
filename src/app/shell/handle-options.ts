@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 1491 (GDesigner._applyTouchEditorOptions and
-// _applyDefaultEditorOptions).
 /**
  * The handle look of the touch and the desktop layout: handle sizes scaled
  * by the screen DPI, pick distances, the transform box and the handle

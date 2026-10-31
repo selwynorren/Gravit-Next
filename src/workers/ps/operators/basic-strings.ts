@@ -1,8 +1,3 @@
-// Old: public/pscore.js, systemdict entries anchorsearch … aload.
-//
-// getinterval links the new object to its source through the interval
-// fields of objects.ts, so later writes to either side show up in the
-// other (strings excepted: their characters can't be assigned).
 import type { PSCore } from "../core.ts";
 import type { PSArray, PSPlainRecord, PSString, PSValue } from "../objects.ts";
 

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 607.
 /** The ids of the style panels that the mouse-over context names. */
 export const PanelIds = {
   FillPropertiesPanel: "fill-properties-panel",

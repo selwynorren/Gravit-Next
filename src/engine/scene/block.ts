@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 69 (GBlock).
 /**
  * An element with a name that can be hidden and locked: layers, pages,
  * groups, shapes. Hiding or locking a block hides or locks everything in

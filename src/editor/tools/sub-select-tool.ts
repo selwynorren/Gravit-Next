@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 386 (GSubSelectTool).
 /**
  * The subselect tool (direct selection): selects the shapes themselves
  * instead of their groups, shows the element editors in detail mode

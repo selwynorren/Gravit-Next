@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 644 (GWidget).
 /**
  * The base of the canvas views and the rulers: a div with a size and a
  * position, and the engine's input events (GMouseEvent, GKeyEvent) built

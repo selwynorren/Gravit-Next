@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 490 (GGLNoiseShader).
-//
-// Random noise: gray offsets scaled by `amount`, or random hues when
-// `colored`; with `transparency` the noise is opaque and `amount` becomes
-// the alpha instead (what GNoisePattern uses).
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

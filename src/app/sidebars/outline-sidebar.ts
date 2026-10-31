@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1260 (GOutlineSidebar).
 /**
  * The "Layers" sidebar on the left: the pages toolbar and list (with the
  * single/multi-page switch), a divider to resize the pages list, the
@@ -318,7 +317,7 @@ export class OutlineSidebar extends Sidebar {
         // Shows the list again. The old code ran gAccordion("init",
         // $(pagePanel)) for this, but the element after the header is the
         // .pages-container, not the .pages list, so a folded list stayed
-        // hidden under an open header (BUGS-FIXED.md "BUG-158").
+        // hidden under an open header.
         initAccordion(pageToolbar, { next: ".pages-container", title: "label" });
       },
     );

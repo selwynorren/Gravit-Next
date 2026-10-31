@@ -1,19 +1,3 @@
-// Old: chunk.vendor.js module 849 (Gravit's own baseline JPEG encoder).
-//
-// A port of the classic Java JpegEncoder (James R. Weeks) that the PDF
-// exporter uses for DCT image streams, on the main thread or in the PDF
-// export worker ("jpegencoder" command). Its output is the file format, so
-// the quirks stay:
-// - The luminance and chrominance quantization tables are Int32Array(32)
-//   although 64 values are written into them. Entries 32..63 are lost, so
-//   their divisors are NaN, those coefficients quantize to 0, and the DQT
-//   segment writes 0 for them.
-// - Pixels and colour components go through Int32Array blocks, which
-//   truncates the YCbCr values and every value of the DCT row pass.
-// - Blocks at the right edge read on into the next row; blocks below the
-//   last row read past the buffer and get 0.
-// - The final bits are flushed without the usual 1-bit padding.
-
 import { uuid } from "../../engine/core/util.ts";
 import { ByteBuffer } from "./byte-buffer.ts";
 

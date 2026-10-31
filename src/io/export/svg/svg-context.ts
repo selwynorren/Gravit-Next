@@ -1,11 +1,3 @@
-// Old: chunk.vendor.js module 1465 (GSVGContext, the exporter's 2D context).
-//
-// A stand-in for CanvasRenderingContext2D that the paint code draws into
-// while exporting. Path calls build SVG path data ("M x y L x y ... Z");
-// every fill or stroke pushes the path with a snapshot of the drawing state
-// (_svgs and _svgStyles, same index). Drawing another SVG canvas into this
-// one pushes a { drawImage } entry, which the exporter unfolds into a
-// nested group. Everything the exporter doesn't read is a no-op.
 import type { Color } from "../../../engine/color/color.ts";
 import { Point } from "../../../engine/math/point.ts";
 import { Rect } from "../../../engine/math/rect.ts";

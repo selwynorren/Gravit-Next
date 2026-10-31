@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 547 (GTextTool).
 /**
  * Creates texts. A drag draws a fixed-size text box, a click places an
  * auto-sized text ("Your text here"); either way the new text opens in

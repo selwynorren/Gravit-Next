@@ -331,7 +331,7 @@ function oldRecording(file: string): Record<string, RecordedRun> {
   );
 }
 
-/** `value` with every moveto that starts an arc's subpath taken out (BUG-110). */
+/** `value` with every moveto that starts an arc's subpath taken out. */
 function withoutArcMoveto(value: unknown): unknown {
   if (Array.isArray(value)) {
     const items = value.map(withoutArcMoveto);

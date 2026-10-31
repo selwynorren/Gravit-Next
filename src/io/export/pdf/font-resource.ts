@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1437 (the PDF font resource).
 import type { PDFIndirectReference } from "./indirect-reference.ts";
 import type { PDFFont } from "./pdf-font.ts";
 import { PDFResource } from "./resource.ts";

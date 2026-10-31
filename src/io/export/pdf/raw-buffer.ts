@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1218 (GPDFRawBuffer).
 import { PDFFilter } from "./pdf-filter.ts";
 import type { PDFOutput } from "./output.ts";
 

@@ -1,6 +1,3 @@
-// Old: designer.browser.dev.js module 250 (base64-js toByteArray), as the
-// NSKeyedArchiver reader used it.
-
 const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
 const REVERSE: number[] = [];
 for (let i = 0; i < ALPHABET.length; i++) REVERSE[ALPHABET.charCodeAt(i)] = i;

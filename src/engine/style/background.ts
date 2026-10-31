@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 265 (GBackground).
 import { registerClass } from "../core/object.ts";
 import { Pattern } from "./pattern.ts";
 

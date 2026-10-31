@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1028 (GContactShadowEffect, whose toString says GContactShadow).
 import { Color } from "../../color/color.ts";
 import { RGBColor } from "../../color/rgb-color.ts";
 import { Locale } from "../../core/locale/locale.ts";

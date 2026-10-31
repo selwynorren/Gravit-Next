@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1263 (the color stops and $.fn.gColorSlider).
 /**
  * Color sliders: an input slider (color-deps.ts) whose background is a
  * gradient through the colors of its range, used by the hue, saturation,

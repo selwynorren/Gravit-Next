@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1705 ($.fn.gUnitBox).
 /**
  * A length box: an InputBox whose postfix is its unit and whose value is a
  * Length. Typed text is an equation in the box's unit ("10mm + 2"). With

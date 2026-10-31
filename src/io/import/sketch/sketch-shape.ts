@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 794 (model/sketchshape).
 import type { AsyncExecutor } from "../../../engine/core/async-executor.ts";
 import { Event } from "../../../engine/core/event.ts";
 import { registerClass } from "../../../engine/core/object.ts";

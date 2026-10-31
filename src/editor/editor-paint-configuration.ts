@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 777 (GEditorPaintConfiguration).
 import { registerClass } from "../engine/core/object.ts";
 import { ScenePaintConfiguration } from "../engine/paint/scene-paint-configuration.ts";
 

@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 495 (GGLStrokeLayerShader).
-//
-// A stroke around the content's alpha: the alpha is grown one pixel per
-// pass (`width` passes) in the stroke color, outside the shape, inside it
-// (on the inverted alpha) or half each way for the center placement, and
-// merged with the content.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { GLTexture } from "../../../paint/webgl/gl-context.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";

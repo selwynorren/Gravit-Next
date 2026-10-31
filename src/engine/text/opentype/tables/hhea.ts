@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 714 (opentype.js tables/hhea.js, unchanged).
-// The hhea table: information for horizontal layout.
-
 import { Parser } from "../parse.ts";
 import { Table } from "../table.ts";
 

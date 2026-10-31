@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1182 (GPasteHereAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import type { Point } from "../../../engine/math/point.ts";

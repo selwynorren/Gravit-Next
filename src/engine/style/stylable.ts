@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 28 (GStylable).
 /**
  * The style mixin: style properties grouped in property sets, paint layers
  * (fills and borders) and effects. Elements get it through

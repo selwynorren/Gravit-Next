@@ -98,7 +98,7 @@ describe("setTheme", () => {
     return { themed, toggles };
   }
 
-  it("recreates the rulers only once the new stylesheet has loaded (BUG-170)", async () => {
+  it("recreates the rulers only once the new stylesheet has loaded", async () => {
     const { themed, toggles } = windows();
     const relayout = vi.fn();
     setTheme("dark", themed, relayout);

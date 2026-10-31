@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1589 (the quick help screen).
 /**
  * Help > Quick Help in the touch layout: a full-screen layer
  * (`.g-quick-help-screen`, body gets `g-quick-help`) with three gesture

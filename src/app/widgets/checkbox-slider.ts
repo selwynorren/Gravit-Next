@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1704 ($.fn.gCheckboxSlider).
 /**
  * A checkbox drawn as a slider switch: the `g-checkbox-slider` class, and
  * `checked` while it is on. The touch layout mounts it on the panels'
@@ -6,7 +5,7 @@
  *
  * The `checked` class follows the box only at mount and on user changes;
  * setting `checked` from code leaves it as it was (the old plugin did the
- * same, see "Checkbox slider class lags behind" in QUESTIONS.md).
+ * same).
  */
 
 export interface CheckboxSliderOptions {

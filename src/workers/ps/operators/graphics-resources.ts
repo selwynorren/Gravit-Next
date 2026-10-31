@@ -1,4 +1,3 @@
-// Old: public/pscore.js, systemdict findresource … resourceforall.
 import type { PSCore } from "../core.ts";
 import type { PSDict, PSPlainRecord, PSValue } from "../objects.ts";
 

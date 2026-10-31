@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 76 (no G name; the base of GElement).
 /**
  * A node that can live in a scene: it knows its scene (`getScene`), gets a
  * scene-wide id (`getSceneId`), finds its page and keeps the scene's links

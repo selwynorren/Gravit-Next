@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1406 (GPDFExport).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Platform } from "../../../engine/core/platform.ts";

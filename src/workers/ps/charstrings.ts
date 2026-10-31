@@ -1,12 +1,3 @@
-// Old: public/pscore.js (webpack module 1370 of its own build), the
-// helpers in front of PSCore: the Type 1 → Type 2 charstring converter
-// (minified `k`) and the Type 2 charstring interpreter that turns a glyph
-// into path commands (`d`).
-//
-// Dropped as dead code: a cmap lookup (`g`) and a compiled-glyph class
-// (`m`, getPathJs/compileGlyph) that nothing ever instantiated; both came
-// from pdf.js's font code.
-
 /** A path command of a glyph outline, as the show operators read it. */
 export type GlyphCommand =
   | { cmd: "moveTo" | "lineTo" | "bezierCurveTo" | "translate"; args: number[] }

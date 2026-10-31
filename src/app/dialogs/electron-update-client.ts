@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1677 (GElectronUpdateServiceClient).
 /**
  * Talks to the Electron updater in the main process over IPC. The old app
  * reached ipcRenderer through Node integration; the new Electron window

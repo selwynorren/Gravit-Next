@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 599 (pattern/sketchcolor).
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import type { SceneNodeLike } from "./scene-node.ts";
 import type { SketchColorData } from "./sketch-data.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 164 (GKey).
 /**
  * Key constants, the mapping from DOM key events to them, and the
  * localized names and symbols the menus and tooltips show for shortcuts.

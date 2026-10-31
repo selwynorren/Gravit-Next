@@ -67,7 +67,7 @@ describe("GImageGrid", () => {
     expect((grid._images as ImageGridImages).getChildren()).toEqual([image]);
   });
 
-  it("fits a dropped image with a finite itrf, two offset numbers per cell (BUG-017)", () => {
+  it("fits a dropped image with a finite itrf, two offset numbers per cell", () => {
     const grid = new ImageGrid(true);
     grid.setProperty("trf", new Transform(100, 0, 0, 100, 0, 0));
     vertices(grid);

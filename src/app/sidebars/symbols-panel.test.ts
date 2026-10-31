@@ -128,7 +128,7 @@ describe("SymbolsPanel", () => {
     expect(other.toBitmap).toHaveBeenCalled();
   });
 
-  it("shows the symbol name in the tooltip as typed (BUG-166)", () => {
+  it("shows the symbol name in the tooltip as typed", () => {
     const scene = makeScene();
     // Stored as the engine's name filter stores "a<b>".
     makeSymbol(scene, "a1", "a&lt;b&gt;");

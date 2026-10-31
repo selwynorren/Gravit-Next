@@ -19,7 +19,7 @@ import { TextTransformer } from "./gtl/transformer-util.ts";
 import { ShapedText, TLCanvasContext, type TLCanvasCore } from "./tl-canvas-context.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const fontDir = resolve(here, "../../../assets/font");
+const fontDir = resolve(here, "../../assets/font");
 
 const FILL = RenderFlags.RENDERFLAG_FILL | RenderFlags.RENDERFLAG_VERTEX;
 

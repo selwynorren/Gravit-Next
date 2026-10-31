@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js modules 1595 (Mousetrap 1.6.5) and 1596
-// (its global-bind plugin).
 /**
  * The shortcut binder Designer.registerShortcut uses (shell/shortcut-binder.ts),
  * backed by the npm Mousetrap the old app bundled.

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 726 (GOpenTypeUtil).
 /**
  * Reads what the font lists need from font files without parsing them
  * fully: family, weight and style from the name table, and the single

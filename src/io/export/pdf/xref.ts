@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1441 (the PDF cross-reference table).
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFOutput } from "./output.ts";
 import type { PDFIndirectObject } from "./xref-entry.ts";

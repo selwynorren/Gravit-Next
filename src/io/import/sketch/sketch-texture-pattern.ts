@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1132 (pattern/sketchtexturepattern).
 import { equals } from "../../../engine/core/util.ts";
 import { TexturePattern } from "../../../engine/style/texture-pattern.ts";
 import type { SceneNodeLike } from "./scene-node.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1588 (the fullscreen banner).
 /**
  * The banner that says how to leave View > Fullscreen. It fades in when
  * shown, fades out after five seconds (or when hidden) and is removed from

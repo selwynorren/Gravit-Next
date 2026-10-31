@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1543 (the toolbar's touch parts).
 /**
  * What the toolbar adds in touch mode (old module 1543 mixed these into
  * GToolbar): a `.menu-section` in front with the hamburger button (the

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 219.
 /**
  * A message with an OK button. The dialog is built at construction and
  * opened closable; close() runs the callback.

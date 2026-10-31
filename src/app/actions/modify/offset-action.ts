@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1317 (GOffsetAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { PathUtil } from "../../../engine/geometry/path-util.ts";

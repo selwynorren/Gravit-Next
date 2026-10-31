@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 770 (GArrowAnnotationEditor).
 /**
  * The editor of an arrow annotation: a path editor.
  * See AnnotationEditorMixin for what all annotation editors share.

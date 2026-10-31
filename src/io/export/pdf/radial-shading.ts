@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1418 (the PDF radial shading).
 import type { RadialGradient } from "../../../engine/style/radial-gradient.ts";
 import { PDFGradientShading, type PDFPaintOptions } from "./gradient-resource.ts";
 import { PDFArray } from "./pdf-array.ts";

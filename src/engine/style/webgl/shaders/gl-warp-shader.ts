@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 503 (GGLWarpShader).
-//
-// A fixed sine warp without parameters. No effect names it; it is only
-// reachable through the shader table.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 

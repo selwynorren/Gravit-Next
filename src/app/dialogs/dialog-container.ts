@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1722 ($.fn.gOverlay).
 /**
  * Overlays: popups that are placed next to a target element or point
  * (choosers, the unit list, tooltips, dropdown panels). The content
@@ -374,7 +373,7 @@ export class Overlay {
       this._wrapper.remove();
       if (modal) modal.remove();
       // The old code popped the top entry even when it closed a lower one
-      // (see "Closing a lower overlay pops the top one" in QUESTIONS.md).
+      //.
       stack.pop();
       if (options.closeCallback) options.closeCallback();
     }

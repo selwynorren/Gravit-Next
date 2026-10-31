@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 367 (the GTL core: the text layout engine behind GText).
 import { GObject } from "../../core/object.ts";
 import { VertexCommand } from "../../geometry/vertex.ts";
 import { VertexContainer } from "../../geometry/vertex-container.ts";

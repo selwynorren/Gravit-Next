@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1693 (GLongPressEvent).
 /**
  * A page-wide "long-press" DOM event: holding a finger (on a touch device;
  * else the mouse button) on an element for LONG_PRESS_TIME_OUT ms, or the

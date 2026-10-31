@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1475 (the document chooser, unnamed; its strings are GDocumentChooser).
 /**
  * Asks which of two versions of a document to keep: a preview of each
  * (an "online" and an "offline" one), its date, and "newer file" on the

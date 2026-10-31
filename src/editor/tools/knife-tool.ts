@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 757 (GKnifeTool).
 /**
  * The knife: a drag draws a cut line (a press, moves, a release), and the
  * release cuts every shape the line crosses, or only the selected shapes

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 548 (GPointerTool).
 /**
  * The default tool: the select tool with the style editors (gradient
  * handles) on and a double click that, depending on

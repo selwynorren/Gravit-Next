@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1582 (GGestureHelper in its log messages).
 /**
  * Runs the gestures of a touch target over its touch events, in the order
  * they were added. On a touch start each gesture is activated or

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 0 (GObject).
 /**
  * The type system: type ids, class registration and mixins.
  *

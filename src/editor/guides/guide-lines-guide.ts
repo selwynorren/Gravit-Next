@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 739 (GGuideLinesGuide).
 import { registerClass } from "../../engine/core/object.ts";
 import { Point } from "../../engine/math/point.ts";
 import type { Transform } from "../../engine/math/transform.ts";

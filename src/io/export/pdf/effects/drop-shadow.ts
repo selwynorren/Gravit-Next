@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1448 (GPDFDropShadowEffect).
 import { VertexSource } from "../../../../engine/geometry/vertex-source.ts";
 import { Point } from "../../../../engine/math/point.ts";
 import { Rect } from "../../../../engine/math/rect.ts";

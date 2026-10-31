@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 230 (the GTL rectangle, carota's rect.js).
 import { Rect } from "../../math/rect.ts";
 
 /** The fields of a layout rectangle: left, top, width, height, right, bottom. */

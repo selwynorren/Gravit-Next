@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 51 (GWebGLEffect).
-//
-// The base of the WebGL filter effects. `shp` holds the shader parameters
-// (one object, saved as JSON) and `sh` the shader name ("GGLBlurShader"),
-// which getShaderClass resolves through the shader table in shaders/index.ts
-// (the old code used a webpack context for that).
 import { getTypeId } from "../../core/object.ts";
 import type { Rect } from "../../math/rect.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../paint/paint-canvas.ts";

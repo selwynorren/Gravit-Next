@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 281 (GFontManager).
 /**
  * The fonts a workspace knows. `getFont` answers from the list or asks the
  * app to resolve the font (ResolveFontEvent); until then the list holds a

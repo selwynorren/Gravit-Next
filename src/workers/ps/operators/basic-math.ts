@@ -1,18 +1,3 @@
-// Old: public/pscore.js, systemdict entries null … log.
-//
-// Kept quirks (QUESTIONS.md "PS worker: math operator quirks"):
-// - div rounds its result to 9 decimals (5 above 1e5) through a string
-//   round trip.
-// - idiv computes parseInt(1 / (top / second)), i.e. second / top through
-//   two divisions.
-// - cos's typecheck path and atan both throw: cos names an undeclared
-//   `myname`, atan calls a radianToDegree that PSCore doesn't have.
-// - cvr and cvi test `"number" !== (value, false)`, which is always true,
-//   so their typecheck branch never runs; cvr leaves numbers alone and
-//   executes anything else.
-// - cvs never writes into the target string (string indices are read-only)
-//   and pushes a new string instead.
-// - There is no truncate, ln or xor operator.
 import type { PSCore } from "../core.ts";
 import type { PSPlainRecord, PSValue } from "../objects.ts";
 import { executeValue, sloppySet, undeclaredMyname } from "./basic-support.ts";

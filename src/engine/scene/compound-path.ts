@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 113 (GCompoundPath, GCompoundPath.Paths).
 /**
  * Several paths painted as one shape (even-odd by default), node
  * "compoundpath". The sub-paths live in their own container

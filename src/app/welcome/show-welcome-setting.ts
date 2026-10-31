@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1487 (the welcome screen setting).
 import { designer } from "../shell/globals.ts";
 
 /** Whether the welcome screen opens at startup: yes unless the setting is false. */

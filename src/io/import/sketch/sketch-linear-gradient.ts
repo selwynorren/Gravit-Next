@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1129 (pattern/sketchlineargradient).
 import { GMath } from "../../../engine/math/math.ts";
 import { LinearGradient } from "../../../engine/style/linear-gradient.ts";
 import { SketchGradient } from "./sketch-gradient.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1228 (the PDF function base).
 import { PDFArray } from "./pdf-array.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";
 

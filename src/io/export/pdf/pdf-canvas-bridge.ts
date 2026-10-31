@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1445 (the PDF paint canvas).
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import type { Color } from "../../../engine/color/color.ts";
 import { GObject } from "../../../engine/core/object.ts";

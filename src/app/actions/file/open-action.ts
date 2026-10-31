@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 813 (GOpenAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Platform, WebBrowser } from "../../../engine/core/platform.ts";

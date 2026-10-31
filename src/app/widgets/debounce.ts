@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 1689 ($.fn.debounce and the
-// :editable and :textSelectable selectors).
 /**
  * The two focus tests the shortcuts, the edit actions and the designer's
  * key and context menu handlers make. The old module added them to

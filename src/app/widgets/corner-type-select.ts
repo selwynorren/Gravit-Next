@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1697 ($.fn.gCornerTypePicker).
 /**
  * The corner type picker of the rectangle and polygon panels: a row of
  * buttons (rounded, inverse rounded, bevel, inset, fancy), either inline

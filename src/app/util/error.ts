@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 594 (GError).
 export class GError extends Error {
   constructor(...args: ConstructorParameters<typeof Error>) {
     super(...args);

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1517 (tab rearranging), with the parts of module 1518 (jQuery UI 1.12.1 sortable) and module 1519 (ui.mouse) it used.
 /**
  * The document tabs in the header can be dragged sideways to change their
  * order, and the "more" button next to them lists every tab (a click on

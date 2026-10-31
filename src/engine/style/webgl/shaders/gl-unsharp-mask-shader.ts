@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 500 (GGLUnsharpMaskShader, from glfx.js).
-//
-// Blurs the working texture, keeping a copy of the original in the extra
-// texture, and pushes the original away from the blurred version.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import type { EffectShaderHost } from "./effect-shader-host.ts";
 import { GLBlurShader } from "./gl-blur-shader.ts";

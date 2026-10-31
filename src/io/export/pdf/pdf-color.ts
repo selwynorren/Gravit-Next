@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 390 (the PDF color base).
 import { Color } from "../../../engine/color/color.ts";
 import type { PDFArray } from "./pdf-array.ts";
 import { PDFObject } from "./pdf-object.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 517 (GSwatch).
 import { CMYKColor } from "../color/cmyk-color.ts";
 import { equals } from "../core/util.ts";
 import { Node, registerNodeClass } from "../scene/node.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 229 (GHitResult).
 import type { VertexHitResult } from "./vertex-info.ts";
 
 /**

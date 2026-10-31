@@ -169,6 +169,6 @@ describe("welcome screen in the two looks (CHANGES.md)", () => {
     const head = view(screen).props.brandHead as { type: unknown; props: { className: string } };
     expect(head.type).toBe(BrandLockup);
     expect(head.props.className).toBe("gd-welcome-lockup");
-    expect(view(screen).props.state.version).toBe(`GravitDesign Next ${APP_VERSION} Web`);
+    expect(view(screen).props.state.version).toBe(`Gravit Next ${APP_VERSION} Web`);
   });
 });

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 658 (GSceneDictionary).
 /**
  * The image dictionary of one scene. Images and texture fills store a
  * "dictionary://<uuid>" url instead of their data url; this dictionary

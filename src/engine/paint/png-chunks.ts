@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 895.
-//
-// Writes the DPI of a PNG: inserts a pHYs chunk (pixels per metre, unit
-// metre) in front of the first IDAT chunk.
-
 const CRC_TABLE: number[] = [];
 for (let n = 0; n < 256; n++) {
   let c = n;

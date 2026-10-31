@@ -1,9 +1,0 @@
-[
-  "electron/embedded-server",
-  "electron/embedded-server-dropped",
-  "electron/single-instance",
-  "electron/migration-old-userdata",
-  "electron/file-argument",
-  "electron/lifecycle",
-  "electron/port-in-use"
-]

@@ -1,6 +1,0 @@
-{
-  "bug": "BUG-134",
-  "why": "Simplify Path uses the tolerance typed into the % field. simplify-typed-0 now shows the invalid-value alert and leaves the document unchanged. simplify-typed-40 is unchanged: its path simplifies the same with 10 or 40.",
-  "scenarios": ["editor-actions/path-dialogs/simplify-typed-0"],
-  "pending": []
-}

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1409 (the PDF graphics state parameters).
 import type { Transform } from "../../../engine/math/transform.ts";
 import { OPERATIONFLAG_FILL, OPERATIONFLAG_STROKE } from "./operation-flags.ts";
 import { PDFDictionary } from "./pdf-dictionary.ts";

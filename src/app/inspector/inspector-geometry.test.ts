@@ -46,13 +46,18 @@ function fakeDesigner(): void {
   } as unknown as Designer);
 }
 
-function fakeDocument(log: string[] = []): Document {
+function fakeDocument(log: string[] = [], origin = { x: 0, y: 0 }): Document {
   const listeners = { addEventListener() {}, removeEventListener() {} };
   const scene = {
     ...listeners,
     getOptimalDecimalsCount: () => 2,
     pointToString: (v: number) => String(v),
     stringToPoint: (s: string) => parseFloat(s),
+    // Positions are shown from the ruler origin.
+    pointToStringX: (v: number) => String(v - origin.x),
+    pointToStringY: (v: number) => String(v - origin.y),
+    stringToPointX: (s: string) => parseFloat(s) + origin.x,
+    stringToPointY: (s: string) => parseFloat(s) + origin.y,
     setBorderScale: (on: boolean) => log.push("borders " + on),
     setCornersScale: (on: boolean) => log.push("corners " + on),
   };
@@ -288,6 +293,38 @@ describe("the dimension panel", () => {
     panel._assignDimension("w", "0");
     panel._assignDimension("x", "10");
     expect(log).toEqual([]);
+  });
+
+  it("reads and writes X and Y from the ruler origin, but not W and H", () => {
+    const log: string[] = [];
+    fakeDesigner();
+    const panel = new DimensionProperties();
+    panel._panel = emptyPanel;
+    panel._document = fakeDocument(log, { x: 100, y: 50 });
+    const applied: number[][] = [];
+    const element = {
+      hasMixin: () => true,
+      getGeometryBBox: () => new Rect(110, 80, 40, 30),
+      getAngle: () => 0,
+      _scene: {},
+      __editor__: {
+        _setTransform: (t: { getMatrix(): number[] }) => applied.push(t.getMatrix()),
+        applyTransform: () => applied.push([]),
+      },
+    };
+    panel._elements = [element as never];
+    // The box is at 110, 80 on the page: 10, 30 from the origin.
+    // A value that is already where the element is changes nothing.
+    panel._assignDimension("x", "10");
+    panel._assignDimension("y", "30");
+    expect(applied).toEqual([]);
+    // 25 from the origin is 125 on the page: 15 to the right.
+    panel._assignDimension("x", "25");
+    expect(applied).toEqual([[1, 0, 0, 1, 15, 0], []]);
+    // A size is a length: typing the same 40 changes nothing, whatever the origin.
+    applied.length = 0;
+    panel._assignDimension("w", "40");
+    expect(applied).toEqual([]);
   });
 
   it("updates only for transformable non-page elements", () => {

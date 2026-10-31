@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1427 (the PDF trailer).
 import { PDFDictionary } from "./pdf-dictionary.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFIndirectReference } from "./indirect-reference.ts";

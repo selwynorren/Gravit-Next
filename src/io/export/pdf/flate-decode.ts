@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 856 (GPDFFlateDecode).
 import { deflate } from "pako";
 import { PDFFilter } from "./pdf-filter.ts";
 import type { PDFOutput } from "./output.ts";

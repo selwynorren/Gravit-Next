@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 268 (GConnector).
 /**
  * The connector, node "connector": a path whose first and last anchor
  * points are linked to a source and a destination element. relayout()

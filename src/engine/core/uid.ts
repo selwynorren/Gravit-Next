@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 513.
 /** A unique id, random unless given. */
 import { uuid } from "./util.ts";
 

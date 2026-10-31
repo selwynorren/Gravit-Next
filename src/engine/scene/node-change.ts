@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (GNode.Flag, GNode._Change).
 /**
  * The node flags and change codes. They live in their own file so the
  * node mixins can use them without importing node.ts at runtime (node.ts

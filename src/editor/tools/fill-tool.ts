@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 758 (GFillTool).
 /**
  * Fills the facets of selected paths graphs: pressing or dragging over a
  * facet gives it the tool's fill (setFill), or without one the style of

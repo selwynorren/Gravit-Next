@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 2 (the blob format of GNode.store / GNode.restore).
 /**
  * A stored node, the unit of the file format. Keys, in the order store
  * writes them:

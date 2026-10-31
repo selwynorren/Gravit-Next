@@ -154,7 +154,7 @@ describe("PageProperties._windowEvent", () => {
     };
   }
 
-  it("keeps listening to a document's scene when a second window of it activates (BUG-160)", () => {
+  it("keeps listening to a document's scene when a second window of it activates", () => {
     const page = sizedPage(100, 50);
     const first = fakeScene(page);
     const second = fakeScene(page);

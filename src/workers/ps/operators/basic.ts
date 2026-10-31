@@ -1,6 +1,3 @@
-// Old: public/pscore.js, the first half of systemdict (null … setcachelimit),
-// assembled in the old key order: getMyName finds an operator's name by
-// iterating systemdict, and PostScript code can enumerate it.
 import type { PSPlainRecord } from "../objects.ts";
 import { compareOperators } from "./basic-compare.ts";
 import { dictOperators } from "./basic-dicts.ts";

@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 1019 (GGLInkEffect).
-//
-// Darkens edges like ink (glfx.js).
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

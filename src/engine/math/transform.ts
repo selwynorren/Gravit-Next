@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 7 (GTransform).
 import { GMath } from "./math.ts";
 import { Point } from "./point.ts";
 import { Rect, type RectSide } from "./rect.ts";

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 800 (the PDF stream).
 import { PDFDictionary } from "./pdf-dictionary.ts";
 import { PDFObject } from "./pdf-object.ts";
 import type { PDFStreamData } from "./pdf-filter.ts";

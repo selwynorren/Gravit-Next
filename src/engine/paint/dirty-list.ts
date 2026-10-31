@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 664 (GDirtyList).
 import { Rect } from "../math/rect.ts";
 import type { Transform } from "../math/transform.ts";
 

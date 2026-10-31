@@ -47,7 +47,7 @@ describe("Window overlay (module 1503)", () => {
     expect(overlay.removed).toBe(1);
   });
 
-  it("keeps a later overlay open on a click after a cancelable one (BUG-143)", () => {
+  it("keeps a later overlay open on a click after a cancelable one", () => {
     const { overlay, show } = overlayWindow();
     show({}, true);
     show(null);
@@ -57,7 +57,7 @@ describe("Window overlay (module 1503)", () => {
     expect(overlay.listeners).toHaveLength(0);
   });
 
-  it("keeps a later overlay open after a cancelable one closed on a click (BUG-143)", () => {
+  it("keeps a later overlay open after a cancelable one closed on a click", () => {
     const { overlay, show } = overlayWindow();
     show({}, true);
     overlay.click();

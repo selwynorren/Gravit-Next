@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1728 ($.fn.gRichTooltip).
 /**
  * Rich tooltips: after 500 ms over an element (at once while another one
  * is up) an overlay with the title, shortcut, description, video or

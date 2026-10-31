@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 366 (GComment).
 /**
  * A comment in an annotation's thread, node "cmt". It lives only below a
  * node with the annotation mixin. Setting `uid` adds the uid to `read`;

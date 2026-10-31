@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 654 (a laid out line, carota's line.js).
 import type { Part } from "./inline.ts";
 import { TLNode } from "./node.ts";
 import { PositionedWord } from "./positioned-word.ts";

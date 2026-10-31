@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1198 (GFontDBClient).
 /**
  * The IndexedDB database "gravitFontsDB" (one object store, "gravitFonts")
  * where imported fonts live: every font file under

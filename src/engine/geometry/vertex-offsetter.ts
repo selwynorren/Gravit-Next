@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 651 (GVertexOffsetter).
 import { registerClass } from "../core/object.ts";
 import { GMath, type NumberList, type RootInterval, type SturmCache } from "../math/math.ts";
 import { Point } from "../math/point.ts";

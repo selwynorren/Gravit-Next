@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1735 ($.fn.gPageButton).
 /**
  * The page button of the simple (view or comment only) toolbar:
  * `.g-page-button` showing the active page's name, opening `g-page-menu`

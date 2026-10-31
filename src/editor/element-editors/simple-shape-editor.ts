@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1085 (GSimpleShapeEditor).
 /**
  * The editor of a simple shape (the parametric shapes of the shapes
  * library). In detail mode it shows the shape's annotations (its

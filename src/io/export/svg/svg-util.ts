@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 438 (SVG helpers shared by the exporter and the importer).
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import { each } from "../../../engine/core/util.ts";
 import type { Polygon } from "../../../engine/scene/polygon.ts";

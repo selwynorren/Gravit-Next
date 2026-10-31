@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1334 (GDeselectAllAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action, type Shortcut } from "../action.ts";
@@ -65,7 +64,7 @@ export class DeselectAllAction extends Action {
   }
 
   // In a text field this deselects its text. Old: execCommand("selectAll"),
-  // which selected all of it like Select All (BUG-138).
+  // which selected all of it like Select All.
   override execute(): void {
     if (isSelectAllInTextField()) collapseTextSelection(document.activeElement as Element);
     else activeDocument().getEditor().clearSelection();

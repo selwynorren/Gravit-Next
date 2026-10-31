@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1131 (pattern/sketchangulargradient).
 import { AngularGradient } from "../../../engine/style/angular-gradient.ts";
 import { SketchGradient } from "./sketch-gradient.ts";
 

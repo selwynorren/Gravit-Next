@@ -297,7 +297,7 @@ describe("ContextMenu", () => {
     expect(world.selections).toEqual([[other]]);
   });
 
-  it("shows a hit's name in Select as typed, not as stored (BUG-167)", () => {
+  it("shows a hit's name in Select as typed, not as stored", () => {
     const rectangle = new Rectangle();
     rectangle.setProperty("name", "a<b> & c");
     // The engine stores "<" and ">" escaped (Block's name filter).

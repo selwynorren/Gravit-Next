@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 22 (GElement).
 /**
  * A node that has geometry and paints: bounding boxes (cached, reset
  * through the change codes 210-260), hit testing, collisions, painting and

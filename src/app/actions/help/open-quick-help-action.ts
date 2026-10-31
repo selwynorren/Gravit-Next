@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1336 (GOpenQuickHelpScreenAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { quickHelp } from "../../touch/quick-help.ts";
 import { Action } from "../action.ts";

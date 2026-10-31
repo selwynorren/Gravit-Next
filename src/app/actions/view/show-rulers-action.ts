@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1614 (GShowRulersAction).
 import { Key } from "../../../engine/core/key.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Action, type Shortcut } from "../action.ts";

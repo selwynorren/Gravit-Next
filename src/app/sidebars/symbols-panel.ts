@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1718 ($.fn.gSymbolsPanel).
 /**
  * The tiles of the Symbols sidebar: one tile per symbol master of the
  * scene, with its thumbnail, highlighted while the master is selected.
@@ -168,7 +167,7 @@ export class SymbolsPanel {
       const inScene = this._sceneSymbol(symbol);
       if (inScene) {
         // The old code removed an unbound listener here, so nothing came off
-        // (see "The symbols panel piles up thumbnail listeners" in QUESTIONS.md).
+        //.
         if (!keepSymbol) {
           const blocked = this.blockHandlers;
           this.blockHandlers = true;

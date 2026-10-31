@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 1664 (the library elements) and the
-// category table it reads, config ELEMENTS (chunk.vendor.js module 832).
 /**
  * The categories of the Libraries sidebar. The table is the old one byte
  * for byte, including the category icons on the old asset CDN; see

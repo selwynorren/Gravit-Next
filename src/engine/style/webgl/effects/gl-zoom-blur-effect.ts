@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 839 (GGLZoomBlurEffect).
-//
-// Zoom blur from a center in percent of the element. The padding grows
-// with the strength and with the distance to each side, measured on the
-// last bounding box getEffectPadding was given.
 import { Locale } from "../../../core/locale/locale.ts";
 import type { Rect } from "../../../math/rect.ts";
 import { registerNodeClass } from "../../../scene/node.ts";

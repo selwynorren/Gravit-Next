@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1123 (effects/sketchblureffect).
 import { Element } from "../../../../engine/scene/element.ts";
 import { Background } from "../../../../engine/style/background.ts";
 import { Stylable } from "../../../../engine/style/stylable.ts";

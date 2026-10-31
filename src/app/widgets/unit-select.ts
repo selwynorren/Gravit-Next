@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1726 ($.fn.gUnit).
 /**
  * The unit options of a `<select>`: px, mm, cm, in, pc, pt, with their
  * long names in the current language or their short names in English.

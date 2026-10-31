@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 996 (opentype.js tables/kern.js, unchanged).
-// The kern table: pair kerning, Windows (version 0) and Mac (version 1) layouts.
-
 import * as check from "../check.ts";
 import { Parser } from "../parse.ts";
 

@@ -1,7 +1,3 @@
-// Old: chunk.vendor.js module 1030 (GGLBendBlurEffect).
-//
-// Not in the effects menu: GCurvedShadowEffect uses it to bend and blur
-// its shadow.
 import { Locale } from "../../../core/locale/locale.ts";
 import { registerNodeClass } from "../../../scene/node.ts";
 import type { EffectPadding } from "../../effect.ts";

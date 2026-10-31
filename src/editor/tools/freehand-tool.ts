@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 335 (GFreehandTool).
 /**
  * The freehand tool: a drag draws a path through the pointer positions,
  * smoothed on the fly by fitting cubic beziers (GVertexFitter) to runs of
@@ -322,7 +321,7 @@ export class FreehandTool extends Panning(ItemTool) {
       (event.key as string).match(/^[0-9]$/)
     ) {
       // Sets the legacy border opacity, which a path neither paints nor
-      // saves; see "Freehand digits set _bop" in QUESTIONS.md.
+      // saves;.
       const digit = parseInt(event.key as string);
       const path = this._newPath || this._createdPath;
       if (path) {

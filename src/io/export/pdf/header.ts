@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1442 (the PDF header).
 import type { PDFOutput } from "./output.ts";
 
 /**

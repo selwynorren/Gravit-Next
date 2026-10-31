@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1137 (ns/nsarchiver).
 import { base64ToBytes } from "./base64-bytes.ts";
 import { BPlistParser, type PlistValue } from "./bplist-parser.ts";
 

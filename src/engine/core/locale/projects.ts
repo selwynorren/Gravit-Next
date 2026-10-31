@@ -1,13 +1,3 @@
-// Old: chunk.vendor.js module 884 (the project list) and module 455 (the
-// project names).
-//
-// The tables are JSON written by scripts/extract-locales.ts. Dropped
-// tables, with what the old app did with them:
-// - Cloud (designer.browser.dev.js module 815): login and cloud strings,
-//   only read through the Cloud project, which the rewrite removes.
-// - Analytics (module 816): empty in the old build.
-// - Cloud/Analytics/WebTrial overrides (chunk.vendor.js module 456): every
-//   language is empty, so loading them changed nothing.
 import designerTable from "../../../app/locale/data/en.json";
 import designerTemporary from "./data/designer-temporary.json";
 import webTrialTable from "./data/web-trial.json";

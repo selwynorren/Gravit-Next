@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 533 (GCollaborativeTextAnnotation).
 /**
  * The annotation behind a collaborative text (GCollabText), node
  * "ancotext": an invisible rectangle annotation linked to the collab

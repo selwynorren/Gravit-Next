@@ -1,10 +1,9 @@
-// Old: designer.browser.dev.js module 389 (the file-type table).
 /**
  * The file types the app opens, saves, places and drops (FMT-IMPORT-002).
- * getFileTypesArray() is the list open, place and drop accept: it leaves
- * out SVGZ, AI, SKETCH and ZIP although their entries exist, so those are
- * refused before any importer runs (see "Q-008 AI, SVGZ and Sketch import
- * are unreachable" in QUESTIONS.md).
+ * getFileTypesArray() is the list open, place and drop accept. It leaves
+ * out SVGZ, SKETCH and ZIP although their entries exist, so those are
+ * refused before any importer runs. AI is in the list: an Illustrator file
+ * saved with PDF compatibility is a PDF and goes through the PDF importer.
  */
 import { LocaleKey } from "../../engine/core/locale/locale-key.ts";
 
@@ -146,6 +145,7 @@ export const FileTypes = {
       FileTypes.JPEG,
       FileTypes.SVG,
       FileTypes.PDF,
+      FileTypes.AI,
       FileTypes.EPS,
     ];
   },

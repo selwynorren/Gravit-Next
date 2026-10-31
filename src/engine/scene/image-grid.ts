@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 534 (GImageGrid).
 /**
  * The image grid, node "imagegrid": a shape made of rows of cells, each
  * cell [width, height] in grid units, separated by the margin `mg`.

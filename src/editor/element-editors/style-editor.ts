@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 385 (GStyleEditor).
 import { registerClass } from "../../engine/core/object.ts";
 import type { Point } from "../../engine/math/point.ts";
 import type { Rect } from "../../engine/math/rect.ts";

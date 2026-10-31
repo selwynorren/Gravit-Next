@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 211 (GTool).
 /**
  * The base of every editor tool. The tool manager activates a tool on a
  * view (the document's GEditorWidget); while active the tool knows the

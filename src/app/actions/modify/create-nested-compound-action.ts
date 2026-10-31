@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1316 (GCreateNestedCompoundAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { CompoundShape } from "../../../engine/scene/compound-shape.ts";
 import { Node } from "../../../engine/scene/node.ts";
@@ -35,7 +34,7 @@ export class CreateNestedCompoundAction extends ElementAction {
   }
 
   // Old: Cmd+Alt+M, the keys of Clip Selection, which always won; the
-  // menu showed a shortcut that never ran this action (BUG-147).
+  // menu showed a shortcut that never ran this action.
   override getShortcut(): null {
     return null;
   }

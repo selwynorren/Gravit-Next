@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 1234 (the PDF Unicode helpers).
-
 const Surrogate = {
   Lead: { FirstChar: 55296, EndChar: 56319 },
   Trail: { FirstChar: 56320, EndChar: 57343 },

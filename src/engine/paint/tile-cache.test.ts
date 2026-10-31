@@ -235,7 +235,7 @@ describe("TileRenderer", () => {
     expect(painted).toEqual(["painted"]);
   });
 
-  it("fails the tile on other painting errors and keeps painting afterwards (BUG-009)", () => {
+  it("fails the tile on other painting errors and keeps painting afterwards", () => {
     const renderer = new TileRenderer(1, 1);
     renderer.resize(50, 50);
     const tile = renderer._paintCanvases[0] as Canvas2DPaintCanvas;

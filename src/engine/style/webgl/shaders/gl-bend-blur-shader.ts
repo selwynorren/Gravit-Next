@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 315 (GGLBendBlurShader).
-//
-// The curved shadow's blur: the first pass bends the image along a sine
-// and blurs it horizontally, the second blurs it vertically. The blur grows
-// with the distance from the middle (or from the sides for a negative
-// bend), and `krycie` (Polish for "coverage") sets how opaque it stays.
 import { Shader } from "../../../paint/webgl/shader.ts";
 import { radiusToSigma, type EffectShaderHost } from "./effect-shader-host.ts";
 

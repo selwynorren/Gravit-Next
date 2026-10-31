@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1699 (an unnamed draggable-point helper).
 /**
  * Lets the user drag an element with the mouse: a press on it starts the
  * drag, every move calls `onMove` with the pointer and the element's

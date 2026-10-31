@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1109 (the PDF CMYK color).
 import { CMYKColor } from "../../../engine/color/cmyk-color.ts";
 import { PDFRGBColor } from "./cmyk-color-array.ts";
 import { PDFArray } from "./pdf-array.ts";

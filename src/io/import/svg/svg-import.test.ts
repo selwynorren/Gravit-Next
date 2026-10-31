@@ -3,7 +3,7 @@ import { describe, expect, it, vi } from "vitest";
 import { FontManager } from "../../../engine/text/fonts/font-manager.ts";
 import { SVGImport } from "./svg-import.ts";
 
-describe("SVGImport.import of a Blob (BUG-084)", () => {
+describe("SVGImport.import of a Blob", () => {
   /** FileReader as far as the importer uses it, on top of Blob's own readers. */
   class FakeFileReader {
     result: unknown = null;

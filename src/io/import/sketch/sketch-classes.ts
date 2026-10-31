@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 561 (sketchclasses) with designer module 1400,
-// the webpack context that resolved its file names to modules.
 import { SketchBlurEffect } from "./effects/sketch-blur-effect.ts";
 import { SketchColorAdjustEffect } from "./effects/sketch-color-adjust-effect.ts";
 import { SketchDropShadowEffect } from "./effects/sketch-drop-shadow-effect.ts";

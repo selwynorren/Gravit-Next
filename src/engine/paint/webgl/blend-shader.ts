@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 346.
-//
-// The shader for the blend modes Canvas 2D doesn't have. It blends the
-// host's working texture (the backdrop) with a source texture and leaves
-// the result in the working texture; one compiled program per mode.
 import type { Rect } from "../../math/rect.ts";
 import { GLContext, type GLTexture } from "./gl-context.ts";
 import { Shader, type ShaderHost } from "./shader.ts";

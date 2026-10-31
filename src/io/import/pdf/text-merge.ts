@@ -1,15 +1,3 @@
-// Old: chunk.vendor.js module 1396.
-//
-// Turns the characters the canvas bridge collected during a PDF text
-// object into GText nodes: characters on the same baseline with the same
-// transform and color join into lines (gaps become letter spacing), and a
-// new text starts otherwise. mergeTexts then joins a new text with the
-// previous text node on the same clip when they continue the same line
-// (horizontal) or the next line of a paragraph (vertical), and marks
-// centered or indented lines.
-//
-// The words are the plain objects the bridge builds (see Word); GText
-// stores them as its content, so their keys are kept as they are.
 import { equals as utilEquals, extend } from "../../../engine/core/util.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import { Point } from "../../../engine/math/point.ts";

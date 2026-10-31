@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 742 (GPageGuide).
 import { registerClass } from "../../engine/core/object.ts";
 import { Point } from "../../engine/math/point.ts";
 import { Rect } from "../../engine/math/rect.ts";

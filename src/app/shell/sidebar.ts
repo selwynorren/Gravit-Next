@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 806 (GSidebar).
 /**
  * The base of the sidebars (inspector, outline, library, symbols): a view
  * with the defaults GSidebars (layout.ts) relies on. Subclasses give the

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1430 (the PDF embedded font file).
 import { PDFFlateDecode } from "./flate-decode.ts";
 import { PDFStream } from "./pdf-stream.ts";
 import { PDFRawBuffer } from "./raw-buffer.ts";
@@ -6,7 +5,7 @@ import { PDFRawBuffer } from "./raw-buffer.ts";
 /**
  * The font file, deflated when the document compresses. /Length1 is the
  * length of the written (compressed) data, not of the font file as PDF
- * asks; kept from the old code (see "PDF writer quirks kept from the old code" in QUESTIONS.md).
+ * asks; kept from the old code.
  */
 export class PDFFontStream extends PDFStream {
   constructor(buffer: ArrayBuffer | ArrayBufferView, compress: boolean) {

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1539 (GPanels, the #panels part).
 /**
  * The bottom panels part: a tab per panel and a frame with one container
  * per panel, collapsible to half or full (class "collapse-<mode>"). The

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1238 (the unsupported-features dialog of the SVG export).
 /**
  * The dialog an SVG export shows when elements have effects or paints SVG
  * can't hold. Port-map named the file after the pattern-type strings it

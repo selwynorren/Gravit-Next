@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 380 (GVertexFitter).
 import { GMath } from "../math/math.ts";
 import { Point } from "../math/point.ts";
 import { VertexInfo, type VertexHitResult } from "./vertex-info.ts";

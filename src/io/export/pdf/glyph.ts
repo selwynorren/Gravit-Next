@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1434 (GPDFGlyph).
 import type { Font as OpenTypeJsFont } from "../../../engine/text/opentype/font.ts";
 
 /** A glyph used by a CID font: its id (the glyph index), width in 1/1000 em and code point. */

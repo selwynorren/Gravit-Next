@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 319 (GArrowAnnotation).
 /**
  * An arrow annotation, node "anarr": a path whose end markers grow a bit faster with the border width than on plain paths.
  */

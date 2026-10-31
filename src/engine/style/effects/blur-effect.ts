@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 249 (GBlurEffect).
 import { Locale } from "../../core/locale/locale.ts";
 import type { Rect } from "../../math/rect.ts";
 import { Canvas2DPaintCanvas, type PaintCanvas } from "../../paint/paint-canvas.ts";

@@ -1,10 +1,3 @@
-// Old: chunk.vendor.js module 1003 (GImageTracer).
-//
-// A fork of imagetracerjs 1.1 by András Jankovics (public domain). The
-// Gravit changes kept here: a seeded random generator (rand, _m_w/_m_z)
-// instead of Math.random, so the same image always traces the same way;
-// tracepath2, which fits cubic curves with GVertexFitter; and no SVG
-// output (the caller builds paths from the trace data).
 import { GObject, registerClass } from "../core/object.ts";
 import { Point } from "../math/point.ts";
 import { VertexFitter } from "./vertex-fitter.ts";

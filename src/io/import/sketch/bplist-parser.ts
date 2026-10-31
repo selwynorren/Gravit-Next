@@ -1,6 +1,3 @@
-// Old: chunk.vendor.js module 1138 (ns/bplistparser), on designer module
-// 1210 (jDataView), which the port replaces with native DataViews.
-
 /** A plist value: null, boolean, number, Date, string, data (a view), array or dict. */
 export type PlistValue =
   | null

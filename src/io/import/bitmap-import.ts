@@ -1,9 +1,3 @@
-// Old: chunk.vendor.js module 1405 (GBitmapImport).
-//
-// Reads an image file as a data URL and checks it against the platform's
-// size limits (FMT-IMPORT-016). The callback gets (error) or
-// (null, dataUrl, width, height). Whatever <img> can't decode never calls
-// back; a read error only logs.
 import { Platform } from "../../engine/core/platform.ts";
 
 export type BitmapImportCallback = (

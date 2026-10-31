@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 363 (GSceneWidget).
 /**
  * The canvas view of a scene: scroll and zoom, the tile renderer the scene
  * paints into, and the element canvas on screen, which shows the rendered

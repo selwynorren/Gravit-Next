@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1310 (GCropAction).
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Image } from "../../../engine/scene/image.ts";
 import type { Node } from "../../../engine/scene/node.ts";

@@ -1,19 +1,3 @@
-// Old: chunk.vendor.js module 1393 (GPDFImport).
-//
-// Imports PDF pages as GPages: pdf.js (with Gravit's CMYK patch) renders
-// each page into the canvas bridge, which turns the drawing into nodes.
-// The callback gets (error, pages, missingFonts, embeddedFonts) once the
-// fonts the texts asked for have resolved (FMT-IMPORT-009). AI files are
-// PDFs too; with an aiCallback the import first checks the XMP format and
-// lets the caller decide (FMT-IMPORT-011).
-//
-// A document pdf.js can't open calls back with the error (the old loading
-// promise had no rejection handler; "A broken or encrypted PDF never
-// finishes loading" in BUGS-FIXED.md).
-//
-// Kept: a font that resolves is added to the resolved list as a
-// one-element slice that is never matched, so readiness only depends on
-// the counts.
 import { extend } from "../../../engine/core/util.ts";
 import { RGBColor } from "../../../engine/color/rgb-color.ts";
 import { Page } from "../../../engine/scene/page.ts";

@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1511 (GWarnLinkedImageDialog).
 /**
  * Asked before saving a document with linked images to the desktop
  * storage: proceed (optionally never asking again) or cancel. When the

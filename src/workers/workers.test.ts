@@ -96,7 +96,7 @@ describe("Raster.concurrencyRaster", () => {
     ]);
     expect(log.map((m) => m.colorspace)).toEqual(["RGB", "RGB"]);
     const expected = new Uint8ClampedArray(width * height * 3);
-    // Every pixel, the remainder too (BUG-087).
+    // Every pixel, the remainder too.
     new Raster().raster(pixels.slice().buffer, ColorSpaces.RGB, expected);
     expect(Array.from(image)).toEqual(Array.from(expected));
     expect(mask).not.toBeNull();
@@ -173,7 +173,7 @@ class HandlerWorker {
 
 const asWorker = (worker: HandlerWorker): MessageWorker => worker as unknown as MessageWorker;
 
-describe("Raster.concurrencyRaster remainder (BUG-087)", () => {
+describe("Raster.concurrencyRaster remainder", () => {
   it("rasters the last pixels of an opaque 101x101 image on 4 workers", async () => {
     const width = 101;
     const height = 101;

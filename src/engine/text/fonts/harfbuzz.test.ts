@@ -16,9 +16,7 @@ import {
 } from "./harfbuzz.ts";
 
 const here = dirname(fileURLToPath(import.meta.url));
-const arabic = readFileSync(
-  resolve(here, "../../../../assets/font/noto/NotoSansArabic-Regular.ttf"),
-);
+const arabic = readFileSync(resolve(here, "../../../assets/font/noto/NotoSansArabic-Regular.ttf"));
 
 function shape(text: string, size: number, stylisticSet?: string) {
   const font = createFontFromArrayBuffer(new Uint8Array(arabic).buffer);

@@ -122,7 +122,7 @@ describe("EyeDropper (UI-COLOR-029)", () => {
     );
   });
 
-  it("ends picking without a color on a tool change (BUG-156)", () => {
+  it("ends picking without a color on a tool change", () => {
     const { element, dropper: d } = dropper();
     const picked: unknown[] = [];
     onPatternEvent(element as unknown as Element, "colorchange", (_e, rgba) => picked.push(rgba));

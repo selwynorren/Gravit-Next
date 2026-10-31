@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1709 (the virtual list base of GVirtualTree).
 /**
  * A scrolling list that only builds the rows near the visible part: a
  * `.vscroller` element gives the container its full height, and the rows

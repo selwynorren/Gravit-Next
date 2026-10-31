@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 108 (GFont).
 /**
  * A font as the text engine sees it: family, style and weight, plus the
  * glyph API GOpenTypeFont implements. The base class only answers the

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 17 (GRGBColor).
 import { registerClass } from "../core/object.ts";
 import { equals as valuesEqual } from "../core/util.ts";
 import { Pattern } from "../style/pattern.ts";

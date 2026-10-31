@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 1145 (GPDFFilter).
 import type { PDFBytes, PDFOutput } from "./output.ts";
 
 /**

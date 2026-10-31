@@ -1,8 +1,3 @@
-// Old: chunk.vendor.js module 1120.
-//
-// A canvas element with width/height accessors, for the PDF exporter's
-// rasterized fallbacks. `context` is set by whoever draws into it.
-
 export class CanvasHolder {
   private readonly _canvas: HTMLCanvasElement;
   context: CanvasRenderingContext2D | null;

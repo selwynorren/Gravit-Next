@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1255 (the direct-link document opener, unnamed class).
 /**
  * Opens a document the start URL named: a shared file, a template or a
  * size preset (`?token=`, `?directlink=`). The old bootstrap called it for

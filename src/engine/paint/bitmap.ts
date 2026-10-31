@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 345 (GBitmap).
 import { Length } from "../math/length.ts";
 import { Point } from "../math/point.ts";
 import { Rect } from "../math/rect.ts";

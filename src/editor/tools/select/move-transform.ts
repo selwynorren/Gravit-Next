@@ -1,5 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._updateSelectionTransform,
-// _cleanupTargetHighlights, _gatherItemsForAdd).
 /**
  * The drag preview. Each pointer move (or modifier change) recomputes it
  * from the press point:

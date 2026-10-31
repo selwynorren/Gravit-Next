@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 60 (GPath).
 /**
  * The editable path, node "path": anchor points saved as `pts`, `closed`,
  * and the path edits the tools use (inserting a point at a hit,

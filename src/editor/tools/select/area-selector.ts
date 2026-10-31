@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 334 (GSelectTool._AreaSelector).
 /**
  * The marquee of the select tools: a rectangle from the press point to the
  * pointer, in view pixels. With Space held the whole rectangle moves

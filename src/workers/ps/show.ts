@@ -1,24 +1,3 @@
-// Old: public/pscore.js (webpack module 1370 of its own build),
-// PSCore.prototype._show.
-//
-// The text operators. With outlined fonts (or for charpath and
-// stringwidth) a Type 1 font defined in the program is converted to path
-// segments and posted as "fill" (or appended to the path for charpath);
-// otherwise the text goes to the page as a "show" call that names the
-// font, so the page sets it as text.
-//
-// Kept (QUESTIONS.md "PS worker: show operator quirks"):
-// - kshow and cshow ignore their procedure and behave like show, as do
-//   xshow/yshow/xyshow when the widths are a number string.
-// - ashow/awidthshow pop the string before checking the numbers, so a
-//   typecheck leaves the stack changed.
-// - stringwidth of an outlined font pushes 0 0.
-//
-// charpath advances from glyph to glyph and leaves the current point after
-// the text, and an outlined font with PaintType 2 is stroked; the old code
-// put every charpath glyph at the start and read a lowercase `paintType`
-// that fonts don't have ("Text set with xshow, yshow, xyshow and charpath
-// stacks at the start point; stroked fonts are filled" in BUGS-FIXED.md).
 import type { PSPoint } from "./ctm.ts";
 import { compileType2Glyph, type GlyphCommand } from "./charstrings.ts";
 import type { PSCore } from "./core.ts";

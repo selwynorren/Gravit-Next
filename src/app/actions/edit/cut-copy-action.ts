@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1331 (GCutCopyAction).
 import { Key } from "../../../engine/core/key.ts";
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
@@ -164,7 +163,7 @@ export class CutCopyAction extends Action {
    * (tree order puts a group before its children), so a group copied
    * together with its child holds the child once. Old: the predicate never
    * returned true, so only the topmost ancestor decided and in practice
-   * nothing was dropped (BUG-140).
+   * nothing was dropped.
    */
   private _filterOutSelectionWithSameParent(selection: Node[] = []): Node[] {
     const nodes = Node.order(selection.slice()) as Node[];
@@ -284,7 +283,7 @@ export class CutCopyAction extends Action {
   }
 
   private _deleteCutSelection(): void {
-    // Old: the key name as class and no key, which named the step "" (BUG-139).
+    // Old: the key name as class and no key, which named the step "".
     let title = Locale.get(new LocaleKey("GCutCopyAction", "text.cut-selection"));
     const designer = gDesigner();
     const designerDocument = designer.getActiveDocument();

@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 901 (GStylable.FillPaintLayer).
 import { equals, extend } from "../core/util.ts";
 import { registerNodeClass } from "../scene/node.ts";
 import { NodeChange } from "../scene/node-change.ts";

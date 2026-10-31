@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1177 (GResetInstanceAction).
 import { Locale } from "../../../engine/core/locale/locale.ts";
 import { LocaleKey } from "../../../engine/core/locale/locale-key.ts";
 import { Node } from "../../../engine/scene/node.ts";

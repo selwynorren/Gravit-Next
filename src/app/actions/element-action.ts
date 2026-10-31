@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 106 (GElementAction).
 import { Action } from "./action.ts";
 import { gDesigner } from "./host.ts";
 

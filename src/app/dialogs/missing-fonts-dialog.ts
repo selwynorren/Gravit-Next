@@ -1,5 +1,3 @@
-// Old: designer.browser.dev.js module 841 (GMissingFontsDialog), and the
-// part of module 255 (GFontsProviderManager) that opened it.
 /**
  * Lists the fonts a document uses that no provider could load, with a
  * font button per row to pick a replacement. "Replace Fonts" swaps them in

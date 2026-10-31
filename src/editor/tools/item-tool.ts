@@ -1,4 +1,3 @@
-// Old: chunk.vendor.js module 332 (GItemTool).
 /**
  * The base of the tools that create items. New items take the scene's
  * default style for their item class: the style tagged with the class's

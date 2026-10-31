@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 1500 (GHeader).
 /**
  * The #header part: the menu bar, an empty spacer section, the document
  * tabs, the busy indicator. A tab shows its window's title (with a "*"

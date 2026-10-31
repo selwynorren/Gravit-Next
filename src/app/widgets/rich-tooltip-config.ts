@@ -1,4 +1,3 @@
-// Old: designer.browser.dev.js module 67 (GRichTooltipConfig, TOOLTIP_AREA).
 /**
  * What a rich tooltip shows: title, description, shortcut, video or
  * picture, and how it is placed. The tooltip itself is widgets/rich-tooltip.ts.
