@@ -13,10 +13,7 @@
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/readme/hero-dark.png" />
-    <img src="docs/readme/hero-light.png" alt="The Gravit Next editor with the logo open and its planet selected" width="900" />
-  </picture>
+  <img src="docs/readme/logo-editor.png" alt="The Gravit Next logo, a planet and a rocket, open in the editor" width="900" />
 </p>
 
 Gravit Next is a community rebuild of Gravit Designer. It looks and
@@ -41,10 +38,7 @@ and no subscription. It reads and writes Gravit's `.gvdesign` files.
 <table>
   <tr>
     <td width="50%">
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="docs/readme/start-dark.png" />
-        <img src="docs/readme/start-light.png" alt="The welcome screen with presets for UI, social media, print, presentations, web and video" />
-      </picture>
+      <img src="docs/readme/welcome.png" alt="The welcome screen with presets for UI, social media, print, presentations, web and video" />
     </td>
     <td width="50%">
       <picture>

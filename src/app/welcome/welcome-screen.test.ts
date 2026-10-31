@@ -171,4 +171,17 @@ describe("welcome screen in the two looks (CHANGES.md)", () => {
     expect(head.props.className).toBe("gd-welcome-lockup");
     expect(view(screen).props.state.version).toBe(`Gravit Next ${APP_VERSION} Web`);
   });
+
+  it("says Desktop when the page has the desktop bridge", () => {
+    setActiveBranding("next");
+    const target = globalThis as unknown as { gravitDesktop?: unknown };
+    target.gravitDesktop = {};
+    try {
+      expect(view(new WelcomeScreen()).props.state.version).toBe(
+        `Gravit Next ${APP_VERSION} Desktop`,
+      );
+    } finally {
+      delete target.gravitDesktop;
+    }
+  });
 });

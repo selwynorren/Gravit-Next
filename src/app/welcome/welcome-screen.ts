@@ -62,7 +62,11 @@ export interface WelcomeScreenOptions {
 function runtimeAbbreviation(): string | null {
   const runtime = container().getRuntime();
   if (runtime === Runtime.PWA) return "Pwa";
-  if (runtime === Runtime.Browser) return "Web";
+  if (runtime === Runtime.Browser) {
+    // The desktop app's page runs in a browser runtime but has the desktop bridge.
+    const desktop = (globalThis as unknown as { gravitDesktop?: unknown }).gravitDesktop;
+    return desktop ? "Desktop" : "Web";
+  }
   if (runtime === Runtime.Electron) {
     const platform = (container() as unknown as { getPlatform?(): string }).getPlatform?.();
     if (platform === "darwin") return "Mac";
