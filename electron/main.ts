@@ -21,6 +21,7 @@ import { sanitizeWindowState } from "./file-paths.ts";
 import { DesktopFiles } from "./files.ts";
 import { registerLinuxMime } from "./linux-mime.ts";
 import { installUpdater } from "./updater.ts";
+import { APP_NAME, resolveUserDataDir } from "./user-data.ts";
 
 /**
  * Fixed port, so the page origin (http://127.0.0.1:47823) stays the same
@@ -156,6 +157,13 @@ function run(command: string, args: string[]): Promise<string | null> {
     execFile(command, args, { timeout: 15_000 }, (error, stdout) => resolve(error ? null : stdout));
   });
 }
+
+// The app is called Gravit Next, not after the npm package: that is the title
+// a window has before its page loads, and the name of the settings folder
+// (moved from the old gravit-designer-local one, user-data.ts). Both before
+// anything uses the folder, the instance lock included.
+app.setName(APP_NAME);
+app.setPath("userData", resolveUserDataDir(app.getPath("appData")));
 
 // One instance only, so the fixed port is reliably ours. A second launch
 // focuses the existing window and opens the documents it names.
