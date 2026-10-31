@@ -1,6 +1,6 @@
 /**
  * Software updates for the desktop app: electron-updater, checking the
- * GitHub releases of GravitDesign/designer (the "publish" entry of the
+ * GitHub releases of selwynorren/Gravit-Next (the "publish" entry of the
  * electron-builder config, which writes resources/app-update.yml).
  *
  * The client drives it: its update manager (src/app/dialogs/

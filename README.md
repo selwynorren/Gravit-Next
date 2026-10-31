@@ -8,10 +8,10 @@
 <p align="center">A free, offline vector design app that opens your Gravit Designer files.</p>
 
 <p align="center">
-  <a href="https://github.com/GravitDesign/designer/releases"><img src="https://img.shields.io/badge/download-desktop%20app-E3136B?style=flat-square" alt="Download the desktop app" /></a>
+  <a href="https://github.com/selwynorren/Gravit-Next/releases"><img src="https://img.shields.io/badge/download-desktop%20app-E3136B?style=flat-square" alt="Download the desktop app" /></a>
   <img src="https://img.shields.io/badge/platforms-Windows%20%7C%20Linux%20%7C%20macOS-1B1B24?style=flat-square" alt="Windows, Linux and macOS" />
   <img src="https://img.shields.io/badge/account-not%20needed-6E9A34?style=flat-square" alt="No account needed" />
-  <a href="https://github.com/GravitDesign/designer/issues"><img src="https://img.shields.io/badge/issues-welcome-FFD81F?style=flat-square&labelColor=1B1B24" alt="Issues welcome" /></a>
+  <a href="https://github.com/selwynorren/Gravit-Next/issues"><img src="https://img.shields.io/badge/issues-welcome-FFD81F?style=flat-square&labelColor=1B1B24" alt="Issues welcome" /></a>
 </p>
 
 <p align="center">
@@ -74,12 +74,12 @@ and no subscription. It reads and writes Gravit's `.gvdesign` files.
 
 Cloud sync, sharing and comments, and templates from the cloud. They
 depended on Corel's servers. Something else broken or different from what
-you're used to? Please [open an issue](https://github.com/GravitDesign/designer/issues).
+you're used to? Please [open an issue](https://github.com/selwynorren/Gravit-Next/issues).
 
 ## Download
 
 Get the installer for your system from the
-[releases page](https://github.com/GravitDesign/designer/releases).
+[releases page](https://github.com/selwynorren/Gravit-Next/releases).
 
 ## Run it from source
 

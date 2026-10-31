@@ -46,7 +46,7 @@ export const PRODUCT_NAME: Record<Branding, string> = {
 };
 
 /** Where problems with the new app are reported. */
-export const ISSUES_URL = "https://github.com/GravitDesign/designer/issues";
+export const ISSUES_URL = "https://github.com/selwynorren/Gravit-Next/issues";
 
 export function isBranding(value: unknown): value is Branding {
   return value === "next" || value === "classic";

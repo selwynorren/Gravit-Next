@@ -53,7 +53,7 @@ const en: BrandStrings = {
   ],
   "intro.report":
     "Something broken, or different from what you're used to? Please tell us at %link.",
-  "intro.report-link": "github.com/GravitDesign/designer/issues",
+  "intro.report-link": "github.com/selwynorren/Gravit-Next/issues",
   "intro.reopen": "You can read this again under Help > About Gravit Next.",
   "intro.confirm": "I understand that this is a different app",
   "intro.ok": "Got it",

@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "private": true,
   "description": "Gravit Designer, rewritten in TypeScript",
-  "homepage": "https://github.com/GravitDesign/designer",
+  "homepage": "https://github.com/selwynorren/Gravit-Next",
   "type": "module",
   "engines": {
     "node": ">=22.12.0"
@@ -100,8 +100,8 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "GravitDesign",
-        "repo": "designer"
+        "owner": "selwynorren",
+        "repo": "Gravit-Next"
       }
     ],
     "win": {
@@ -145,7 +145,7 @@
       ],
       "icon": "build/icon.png",
       "category": "Graphics",
-      "maintainer": "GravitDesign <https://github.com/GravitDesign/designer>"
+      "maintainer": "Selwyn Orren <https://github.com/selwynorren/Gravit-Next>"
     },
     "mac": {
       "target": [

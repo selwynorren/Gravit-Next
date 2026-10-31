@@ -111,7 +111,7 @@ describe("the introduction", () => {
     expect(html).toContain("no account, no cloud and no subscription");
     for (const gone of ["cloud sync", "sharing and comments", "templates from the cloud", "Pro"])
       expect(html).toContain(gone);
-    expect(html).toContain('href="https://github.com/GravitDesign/designer/issues"');
+    expect(html).toContain('href="https://github.com/selwynorren/Gravit-Next/issues"');
     expect(html).toContain("Help &gt; About Gravit Next");
   });
 });

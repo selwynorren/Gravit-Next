@@ -5,7 +5,7 @@ name: Desktop app
 # Linux AppImage and deb, macOS dmg for x64 and arm64. Every run uploads
 # the packages as workflow artifacts. A pushed version tag (v<version>,
 # matching package.json) also publishes them to a draft GitHub
-# release of GravitDesign/designer, with the latest*.yml files the app's
+# release of selwynorren/Gravit-Next, with the latest*.yml files the app's
 # updater reads; publishing the draft is done by hand, and that also
 # triggers thumbnail-provider.yml, which attaches the Explorer thumbnail
 # DLL to the same release.
