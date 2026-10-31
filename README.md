@@ -111,10 +111,21 @@ npm run typecheck
 
 ## Brand
 
-<img src="public/brand/mark.svg" alt="" width="64" align="left" />
+<img src="public/brand/mark.svg" alt="The Gravit Next mark: a planet with a rocket leaving it" width="120" align="left" />
 
-The mark is a faceted sphere with a pointer. The colours are yellow
-`#FFD81F`, magenta `#E3136B` and ink `#2C2C2C`, and the type is
-[Manrope](https://fonts.google.com/specimen/Manrope).
+**The sky is no longer the limit.**
+
+The mark is a planet and a rocket. The wedge cut across the planet is the
+rocket's contrail, and the rocket is already past the edge of the world.
+That is the idea behind Gravit Next: start from the Gravit you know and
+keep going, beyond its boundaries and past every earthly limit.
+
+Drop a guide at an exact position and lock it in place. Open the Illustrator
+files that were out of reach before. Keep every document on your own disk,
+with no account and no cloud in the way. Every release should carry you a
+little further from the ground.
+
+The colours are yellow `#FFD81F`, magenta `#E3136B` and ink `#2C2C2C`, and
+the type is [Manrope](https://fonts.google.com/specimen/Manrope).
 
 <br clear="left" />
