@@ -116,8 +116,7 @@ npm run typecheck
 **Freedom lies beyond the limits.**
 
 The mark is a rocket escaping the bounds of gravity into an expanse of
-freedom. The wedge cut across the planet is its contrail, and the sky is no
-longer the limit.
+freedom. The sky is no longer the limit.
 
 **GravitNext: boundless, limitless and yours in freedom.**
 
