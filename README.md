@@ -115,10 +115,11 @@ npm run typecheck
 
 **Freedom lies beyond the limits.**
 
-The mark is a planet and a rocket. The wedge cut across the planet is the
-rocket's contrail, and the rocket has already left the edge of the world
-behind. That is the idea behind Gravit Next: the sky is no longer the limit,
-and everything past the boundary is yours to work with.
+The mark is a rocket escaping the bounds of gravity into an expanse of
+freedom. The wedge cut across the planet is its contrail, and the sky is no
+longer the limit.
+
+**GravitNext: boundless, limitless and yours in freedom.**
 
 Guides you can place at an exact position, lock and manage. Illustrator
 files you can open and edit. Documents that stay on your own disk, with no
