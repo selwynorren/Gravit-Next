@@ -113,17 +113,17 @@ npm run typecheck
 
 <img src="public/brand/mark.svg" alt="The Gravit Next mark: a planet with a rocket leaving it" width="120" align="left" />
 
-**The sky is no longer the limit.**
+**Freedom lies beyond the limits.**
 
 The mark is a planet and a rocket. The wedge cut across the planet is the
-rocket's contrail, and the rocket is already past the edge of the world.
-That is the idea behind Gravit Next: start from the Gravit you know and
-keep going, beyond its boundaries and past every earthly limit.
+rocket's contrail, and the rocket has already left the edge of the world
+behind. That is the idea behind Gravit Next: the sky is no longer the limit,
+and everything past the boundary is yours to work with.
 
-Drop a guide at an exact position and lock it in place. Open the Illustrator
-files that were out of reach before. Keep every document on your own disk,
-with no account and no cloud in the way. Every release should carry you a
-little further from the ground.
+Guides you can place at an exact position, lock and manage. Illustrator
+files you can open and edit. Documents that stay on your own disk, with no
+account, no cloud and no subscription in the way. Each of these removes a
+limit, and the room it frees up is where your best work happens.
 
 The colours are yellow `#FFD81F`, magenta `#E3136B` and ink `#2C2C2C`, and
 the type is [Manrope](https://fonts.google.com/specimen/Manrope).
