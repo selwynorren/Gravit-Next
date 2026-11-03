@@ -1,14 +1,17 @@
 name: Desktop app
 
-# Builds the desktop app (Electron + electron-builder) for every
-# target: Windows NSIS installer and portable exe,
-# Linux AppImage and deb, macOS dmg for x64 and arm64. Every run uploads
-# the packages as workflow artifacts. A pushed version tag (v<version>,
-# matching package.json) also publishes them to a draft GitHub
-# release of selwynorren/Gravit-Next, with the latest*.yml files the app's
-# updater reads; publishing the draft is done by hand, and that also
-# triggers thumbnail-provider.yml, which attaches the Explorer thumbnail
-# DLL to the same release.
+# Builds the desktop app (Electron + electron-builder) for Windows (NSIS
+# installer), Linux and macOS (dmg for x64 and arm64). Linux
+# releases (tags) get the AppImage and the deb; test runs (pull requests and
+# manual runs) build only the AppImage to save time. Every run uploads the
+# packages as workflow artifacts.
+#
+# Release flow: bump "version" in package.json by hand, commit, then push a
+# tag v<version>. The run checks that the tag matches package.json, creates a
+# DRAFT release of selwynorren/Gravit-Next, and each platform job attaches its
+# packages and the latest*.yml files the app's updater reads. Nothing is
+# visible to users until the draft is published by hand; publishing also
+# triggers thumbnail-provider.yml, which attaches the Explorer thumbnail DLL.
 on:
   push:
     tags: ["v*"]
@@ -26,17 +29,50 @@ permissions:
   contents: write
 
 jobs:
+  # Tag runs only. Creates the draft release once, before the platform jobs
+  # start, so they do not race to create three separate drafts.
+  prepare:
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Tag must match package.json version
+        run: |
+          version=$(node -p "require('./package.json').version")
+          if [[ "$GITHUB_REF_NAME" != "v$version" ]]; then
+            echo "::error::Tag $GITHUB_REF_NAME does not match package.json version $version. Bump package.json, then tag again."
+            exit 1
+          fi
+      - name: Create the draft release
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+        run: |
+          if gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1; then
+            echo "Release $GITHUB_REF_NAME already exists, attaching to it."
+          else
+            gh release create "$GITHUB_REF_NAME" --draft --verify-tag \
+              --title "Gravit Next ${GITHUB_REF_NAME#v}" \
+              --notes "Draft. Write the release notes, then publish."
+          fi
+
   package:
+    needs: prepare
+    # prepare is skipped on pull requests and manual runs; build anyway then,
+    # but never when prepare ran and failed.
+    if: ${{ !cancelled() && (needs.prepare.result == 'success' || needs.prepare.result == 'skipped') }}
     strategy:
       fail-fast: false
       matrix:
         include:
           - os: windows-latest
             platform: win
+            targets: ""
           - os: ubuntu-latest
             platform: linux
+            targets: ""
           - os: macos-latest
             platform: mac
+            targets: ""
     runs-on: ${{ matrix.os }}
     defaults:
       run:
@@ -54,16 +90,21 @@ jobs:
       - name: Package
         run: |
           if [[ "$GITHUB_REF" == refs/tags/v* ]]; then publish=always; else publish=never; fi
-          npx electron-builder --${{ matrix.platform }} --publish "$publish"
+          targets="${{ matrix.targets }}"
+          # Test runs only need the AppImage; releases also ship the deb.
+          if [[ "${{ matrix.platform }}" == linux && "$publish" == never ]]; then targets=AppImage; fi
+          npx electron-builder --${{ matrix.platform }} $targets --publish "$publish"
         env:
           # Only used when publishing (tags).
           GH_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+          # electron-builder defaults to a draft; stated so it cannot change.
+          EP_DRAFT: "true"
           # No signing certificates: build unsigned (arm64 gets an ad-hoc
           # signature from electron-builder).
           CSC_IDENTITY_AUTO_DISCOVERY: "false"
       - uses: actions/upload-artifact@v4
         with:
-          name: gravit-designer-${{ matrix.platform }}
+          name: gravit-next-${{ matrix.platform }}
           if-no-files-found: error
           path: |
             release/*.exe
