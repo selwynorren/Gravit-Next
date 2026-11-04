@@ -1,4 +1,4 @@
-name: Gravit Next
+name: Checks
 
 on:
   push:
