@@ -2,7 +2,7 @@
   "name": "gravit-designer-local",
   "version": "2.0.0",
   "private": true,
-  "description": "Gravit Designer, rewritten in TypeScript",
+  "description": "A free, offline vector design app that opens Gravit Designer files",
   "homepage": "https://github.com/selwynorren/Gravit-Next",
   "type": "module",
   "engines": {
@@ -140,6 +140,10 @@
       "icon": "build/icon.png",
       "category": "Graphics",
       "maintainer": "Selwyn Orren <https://github.com/selwynorren/Gravit-Next>"
+    },
+    "deb": {
+      "packageName": "gravit-next",
+      "artifactName": "Gravit-Next-${version}-${arch}.${ext}"
     },
     "mac": {
       "target": [
