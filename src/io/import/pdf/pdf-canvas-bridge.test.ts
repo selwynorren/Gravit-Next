@@ -22,22 +22,7 @@ const OPEN_SANS = new Uint8Array(
   ),
 );
 /** A font whose names match no family in the list. */
-const ICONS = new Uint8Array(
-  fs.readFileSync(
-    path.join(
-      here,
-      "..",
-      "..",
-      "..",
-      "..",
-      "parity",
-      "fixtures",
-      "import",
-      "font",
-      "gravit-icons.ttf",
-    ),
-  ),
-);
+const ICONS = fixture("gravit-icons.ttf");
 
 /** What the bridge asks the font manager for, and what it registers. */
 class FakeFont {
