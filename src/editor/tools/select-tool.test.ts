@@ -521,3 +521,19 @@ describe("SelectTool distance helper on click (touch layout)", () => {
     }
   });
 });
+
+describe("SelectTool context menu after a quick drag", () => {
+  it("catches no context menu once a drag shorter than the move delay is released", async () => {
+    const s = setup();
+    const a = rect(s.page, 100, 100, 100, 100);
+    s.editor.updateSelection(false, [a]);
+    s.input.move(150, 150);
+    s.input.down(150, 150);
+    // The release comes before the 33 ms timer that turns Move into Moving.
+    s.input.drag(155, 150);
+    await s.input.up(155, 150);
+    vi.runAllTimers();
+    expect(s.tool._dragHandling).toBe(false);
+    expect(s.tool.catchesContextMenu()).toBeFalsy();
+  });
+});

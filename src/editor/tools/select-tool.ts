@@ -965,12 +965,15 @@ export class SelectTool extends Panning(EventTargetMixin(Tool)) {
 
   _mouseDragEnd(event: MouseEvent): void {
     const finish = (done?: () => void): void => {
+      // Whatever mode the drag ended in: a drag released within the 33 ms
+      // before Move turns into Moving left this set, and a set flag
+      // swallows every context menu (canvas, layers and pages panels).
+      if (this._dragHandling) {
+        setTimeout(() => {
+          this._dragHandling = false;
+        }, 0);
+      }
       if (this._mode == Mode.Moving) {
-        if (this._dragHandling) {
-          setTimeout(() => {
-            this._dragHandling = false;
-          }, 0);
-        }
         applyMoveDrop(this, event);
       } else if (this._mode == Mode.Select && event.button != MouseEvent.BUTTON_RIGHT) {
         this._editor.clearHighlighted();
